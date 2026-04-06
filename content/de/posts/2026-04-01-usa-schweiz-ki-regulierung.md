@@ -9,7 +9,7 @@ Die Schweiz und die Vereinigten Staaten unterhalten seit dem 19. Jahrhundert eng
 
 ## Ein anderer Ansatz zur KI-Governance
 
-Im Juli 2025 kündigten die Vereinigten Staaten an, eine innovationsorientierte KI-Politik zu verfolgen — mit einem Schwerpunkt auf der Förderung von Innovation. Diese Ausrichtung wurde mit der Veröffentlichung des [White House AI Framework](https://www.whitehouse.gov/) am 21. März 2026 bekräftigt.
+Im Juli 2025 kündigten die Vereinigten Staaten an, eine innovationsorientierte KI-Politik zu verfolgen — mit einem Schwerpunkt auf der Förderung von Innovation. Diese Ausrichtung wurde mit der Veröffentlichung des [White House AI Framework](https://www.whitehouse.gov/wp-content/uploads/2026/03/03.20.26-National-Policy-Framework-for-Artificial-Intelligence-Legislative-Recommendations.pdf) am 21. März 2026 bekräftigt.
 
 Der US-amerikanische Ansatz stützt sich nicht auf einen einzigen, rechtlich verbindlichen Regulierungsrahmen. Stattdessen wird die Governance durch eine Kombination aus freiwilligen Standards, institutionellen Leitlinien und sektorspezifischen Anforderungen geprägt. Das [NIST AI Risk Management Framework (AI RMF 1.0)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf) ist das bekannteste Beispiel: eine strukturierte Methodik zur Identifikation, Bewertung und Steuerung von KI-bezogenen Risiken, die keine rechtliche Verpflichtung begründet, aber branchen- und länderübergreifend weit verbreitet ist.
 

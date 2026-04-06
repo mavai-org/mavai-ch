@@ -9,7 +9,7 @@ La Svizzera e gli Stati Uniti intrattengono solidi legami economici sin dal XIX 
 
 ## Un approccio diverso alla governance dell'IA
 
-Nel luglio 2025, gli Stati Uniti hanno annunciato l'intenzione di perseguire una politica sull'IA orientata all'innovazione — con un accento sulla promozione dell'innovazione. Questa direzione è stata rafforzata dalla pubblicazione del [White House AI Framework](https://www.whitehouse.gov/) il 21 marzo 2026.
+Nel luglio 2025, gli Stati Uniti hanno annunciato l'intenzione di perseguire una politica sull'IA orientata all'innovazione — con un accento sulla promozione dell'innovazione. Questa direzione è stata rafforzata dalla pubblicazione del [White House AI Framework](https://www.whitehouse.gov/wp-content/uploads/2026/03/03.20.26-National-Policy-Framework-for-Artificial-Intelligence-Legislative-Recommendations.pdf) il 21 marzo 2026.
 
 L'approccio americano non si basa su un unico quadro normativo giuridicamente vincolante. La governance è invece plasmata da una combinazione di standard volontari, orientamenti istituzionali e requisiti settoriali. Il [NIST AI Risk Management Framework (AI RMF 1.0)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf) ne è l'esempio più noto: una metodologia strutturata per identificare, valutare e gestire i rischi legati all'IA, priva di obbligo legale ma ampiamente adottata in diversi settori e paesi.
 

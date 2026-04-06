@@ -9,7 +9,7 @@ La Suisse et les États-Unis entretiennent des liens économiques étroits depui
 
 ## Une approche différente de la gouvernance de l'IA
 
-En juillet 2025, les États-Unis ont annoncé leur intention de poursuivre une politique de l'IA axée sur l'innovation — en mettant l'accent sur la promotion de l'innovation. Cette orientation a été renforcée par la publication du [White House AI Framework](https://www.whitehouse.gov/) le 21 mars 2026.
+En juillet 2025, les États-Unis ont annoncé leur intention de poursuivre une politique de l'IA axée sur l'innovation — en mettant l'accent sur la promotion de l'innovation. Cette orientation a été renforcée par la publication du [White House AI Framework](https://www.whitehouse.gov/wp-content/uploads/2026/03/03.20.26-National-Policy-Framework-for-Artificial-Intelligence-Legislative-Recommendations.pdf) le 21 mars 2026.
 
 L'approche américaine ne repose pas sur un cadre réglementaire unique et juridiquement contraignant. La gouvernance est plutôt façonnée par une combinaison de normes volontaires, de directives institutionnelles et d'exigences sectorielles. Le [NIST AI Risk Management Framework (AI RMF 1.0)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf) en est l'exemple le plus emblématique : une méthodologie structurée pour identifier, évaluer et gérer les risques liés à l'IA, sans obligation légale, mais largement adoptée dans les différents secteurs et pays.
 
