@@ -1,4 +1,14 @@
 # -- Published feed ---------------------------------------------------------
+- title: "FINMA survey: artificial intelligence gaining traction at Swiss financial institutions"
+  url: "https://www.finma.ch/en/news/2025/04/20250424-mm-umfrage-ki/"
+  date: "2025-04-24"
+  source: "FINMA"
+  summary: "FINMA surveyed around 400 Swiss financial institutions on their use of AI. About half already use AI or have applications in development, 91% of those use generative AI, and roughly 50% have an explicit AI strategy. The survey highlights data quality, data protection, and explainability as top risk priorities."
+  tags: ["global", "swiss", "financial", "ai-governance"]
+  relevance: "First comprehensive FINMA survey of AI adoption across Swiss financial institutions — establishes the baseline for supervisory expectations and industry practice."
+  accepted: y
+  featured: y
+
 - title: "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act"
   url: "https://www.edps.europa.eu/system/files/2026-03/26-03-17_edps-compass-under-ai-act-2026-2027_en.pdf"
   date: "2026-03-17"
