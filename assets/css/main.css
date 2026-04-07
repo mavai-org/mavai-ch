@@ -447,20 +447,6 @@ code {
   margin-bottom: var(--space-md);
 }
 
-/* ---- Feed banner (temporary notices) ---- */
-.feed-banner {
-  background: #fff3cd;
-  border-bottom: 1px solid #e0c566;
-  padding: var(--space-sm) 0;
-}
-
-.feed-banner p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #664d03;
-  line-height: 1.5;
-}
-
 /* ---- Feed portal ---- */
 .feed-portal {
   padding: var(--space-xxl) 0;

@@ -145,9 +145,6 @@ other = "Message"
 [contact_send]
 other = "Envoyer le message"
 
-[feed_banner]
-other = "Veuillez actualiser votre flux. Un problème récent a causé des liens incorrects sur certains éléments. Cela a été corrigé."
-
 [cta_heading]
 other = "Vous cherchez les outils ?"
 
