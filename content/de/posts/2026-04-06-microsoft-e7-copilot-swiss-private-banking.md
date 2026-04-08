@@ -3,6 +3,7 @@ title: "Microsoft 365 E7 und Copilot: Was Schweizer Privatbanken beachten sollte
 date: 2026-04-06
 description: "Microsoft 365 E7 bündelt Copilot in die Unternehmenslizenzierung. Für Schweizer Privatbanken ist die Chance real — aber ebenso die Fragen zu Governance, Datensouveränität und Aufsicht."
 summary: "Microsoft 365 E7 macht KI-gestützte Produktivität im Frontoffice kommerziell zugänglich. Doch für eine Schweizer Privatbank ist die Lizenz der einfache Teil. Vertraulichkeit, Datensouveränität, FINMA-Erwartungen und der US CLOUD Act bestimmen, ob und wie Copilot sicher eingesetzt werden kann."
+author: "Mike Mannion"
 ---
 
 [Microsoft hat Microsoft 365 E7 am 9. März 2026 angekündigt](https://blogs.microsoft.com/blog/2026/03/09/introducing-the-first-frontier-suite-built-on-intelligence-trust/), mit allgemeiner Verfügbarkeit ab 1. Mai 2026. Die Suite bündelt Microsoft 365 E5, Microsoft 365 Copilot, Agent 365 und die Microsoft Entra Suite in einer einzigen Lizenz. Für Privatbanken, die KI-gestützte Produktivität im Frontoffice evaluieren, wird der kommerzielle Einstieg damit erstmals unkompliziert.
