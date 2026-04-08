@@ -31,7 +31,7 @@
 
 <script>
   // Fetch timeline data
-  const timelineDataUrl = '{{ .Site.BaseURL }}data/timeline.json';
+  const timelineDataUrl = '/data/timeline.json';
 
   fetch(timelineDataUrl)
     .then(response => response.json())
