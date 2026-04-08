@@ -35,6 +35,8 @@ But Copilot introduces processing flows that go beyond storage. When a user invo
 
 The deeper issue is legal jurisdiction. Microsoft is a US-headquartered company subject to the [US CLOUD Act](https://www.congress.gov/bill/115th-congress/house-bill/4943), which can compel US providers to produce data regardless of where it is stored, and to potential [FISA Section 702](https://www.congress.gov/bill/110th-congress/senate-bill/2248) exposure for non-US persons' data. Swiss banking secrecy under [Art. 47 of the Banking Act](https://www.fedlex.admin.ch/eli/cc/51/117_121_129/en#art_47) creates a direct tension. A bank storing client communication data in a Microsoft tenancy — even a Swiss-hosted one — needs to assess whether US government access requests could force disclosure that would violate Swiss law.
 
+The [FDPIC](https://www.edoeb.admin.ch/en/data-processing-in-the-cloud) — the Swiss Federal Data Protection and Information Commissioner — has published guidance on cloud data processing and positions on the use of US cloud providers that are directly relevant here. Any bank conducting its CLOUD Act risk assessment should consider the FDPIC's guidance alongside its FINMA-required risk evaluation, as the Commissioner's views on cross-border data access and US jurisdictional reach inform the standard of care expected under Swiss data protection law.
+
 "Swiss datacentre" and "Swiss data sovereignty" are not the same thing.
 
 ## What a controlled rollout looks like

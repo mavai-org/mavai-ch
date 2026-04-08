@@ -35,6 +35,8 @@ Aber Copilot führt Verarbeitungsflüsse ein, die über die reine Datenspeicheru
 
 Das tiefere Problem ist die rechtliche Zuständigkeit. Microsoft ist ein US-Unternehmen, das dem [US CLOUD Act](https://www.congress.gov/bill/115th-congress/house-bill/4943) unterliegt, der US-Anbieter zur Herausgabe von Daten verpflichten kann, unabhängig davon, wo diese gespeichert sind, sowie einer möglichen [FISA Section 702](https://www.congress.gov/bill/110th-congress/senate-bill/2248)-Exposition für Nicht-US-Personen. Das Schweizer Bankgeheimnis nach [Art. 47 des Bankengesetzes](https://www.fedlex.admin.ch/eli/cc/51/117_121_129/de#art_47) schafft eine direkte Spannung. Eine Bank, die Kundenkommunikationsdaten in einem Microsoft-Mandanten speichert — auch in einem Schweizer Rechenzentrum — muss prüfen, ob US-Herausgabeanordnungen eine Offenlegung erzwingen könnten, die gegen Schweizer Recht verstösst.
 
+Der [EDÖB](https://www.edoeb.admin.ch/de/datenbearbeitungen-in-der-cloud) — der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte — hat Leitlinien zur Datenbearbeitung in der Cloud und Stellungnahmen zur Nutzung von US-Cloud-Anbietern veröffentlicht, die hier unmittelbar relevant sind. Jede Bank, die ihre CLOUD-Act-Risikobeurteilung durchführt, sollte die Leitlinien des EDÖB neben der von der FINMA verlangten Risikobewertung berücksichtigen, da die Positionen des Beauftragten zum grenzüberschreitenden Datenzugriff und zur US-Jurisdiktion den nach Schweizer Datenschutzrecht erwarteten Sorgfaltsmassstab mitbestimmen.
+
 «Schweizer Rechenzentrum» und «Schweizer Datensouveränität» sind nicht dasselbe.
 
 ## Wie ein kontrollierter Rollout aussieht
