@@ -153,3 +153,27 @@ other = "Suchen Sie die Werkzeuge?"
 
 [cta_body]
 other = "Javai entwickelt Open-Source-Frameworks für probabilistisches Testen. Besuchen Sie javai.org für technische Dokumentation, Quellcode und Einstiegsanleitungen."
+
+[timeline_title]
+other = "KI-Zeitstrahl"
+
+[timeline_intro]
+other = "Erkunden Sie wichtige Meilensteine der KI-Regulierung und technologischen Entwicklung, die für die Schweiz und die weitere Welt relevant sind."
+
+[timeline_jump_to]
+other = "Springen zu"
+
+[timeline_regulatory]
+other = "Regulierung"
+
+[timeline_technological]
+other = "Technologisch"
+
+[timeline_today]
+other = "Heute"
+
+[timeline_view_source]
+other = "Quelle ansehen →"
+
+[timeline_load_error]
+other = "Zeitstrahldaten konnten nicht geladen werden. Bitte versuchen Sie es später erneut."

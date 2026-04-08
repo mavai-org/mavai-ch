@@ -1,0 +1,482 @@
+{
+  "events": [
+    {
+      "date_iso": "2017-06-12",
+      "headline": "\"Attention Is All You Need\" paper published",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Google Brain and Google Research publish the Transformer architecture paper, foundational to modern LLMs.",
+      "source": "https://arxiv.org/abs/1706.03762",
+      "source_label": "Read paper →"
+    },
+    {
+      "date_iso": "2018-06-11",
+      "headline": "GPT-1 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "OpenAI releases the first Generative Pre-trained Transformer model.",
+      "source": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+      "source_label": "View paper →"
+    },
+    {
+      "date_iso": "2018-10-11",
+      "headline": "BERT released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Google releases BERT, a bidirectional Transformer model that set new benchmarks across NLP tasks.",
+      "source": "https://arxiv.org/abs/1810.04805",
+      "source_label": "Read paper →"
+    },
+    {
+      "date_iso": "2020-06-11",
+      "headline": "GPT-3 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "OpenAI releases GPT-3 with 175 billion parameters, demonstrating strong few-shot learning.",
+      "source": "https://arxiv.org/abs/2005.14165",
+      "source_label": "Read paper →"
+    },
+    {
+      "date_iso": "2022-11-30",
+      "headline": "ChatGPT launched",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "OpenAI launches ChatGPT, bringing LLM interaction to the general public.",
+      "source": "https://openai.com/blog/chatgpt",
+      "source_label": "Visit site →"
+    },
+    {
+      "date_iso": "2023-02-06",
+      "headline": "Google Bard announced",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Google announces Bard, its conversational AI service powered by LaMDA.",
+      "source": "https://blog.google/technology/ai/bard-google-ai-search-updates/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2023-02-24",
+      "headline": "Llama 1 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Meta releases LLaMA, its first open-weight large language model, initially for researchers.",
+      "source": "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2023-03-14",
+      "headline": "GPT-4 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "OpenAI releases GPT-4, a multimodal large language model.",
+      "source": "https://openai.com/research/gpt-4",
+      "source_label": "Learn more →"
+    },
+    {
+      "date_iso": "2023-03-14",
+      "headline": "Claude 1 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Anthropic releases Claude 1, its first publicly available large language model.",
+      "source": "https://www.anthropic.com/news/introducing-claude",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2023-07-11",
+      "headline": "Claude 2 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Anthropic releases Claude 2 with improved coding, math, and reasoning capabilities.",
+      "source": "https://www.anthropic.com/news/claude-2",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2023-07-18",
+      "headline": "Llama 2 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Meta releases Llama 2, an open-weight large language model family available for commercial use.",
+      "source": "https://ai.meta.com/llama/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2023-09-27",
+      "headline": "Mistral 7B released",
+      "origin": "FR",
+      "category": "technological",
+      "summary": "Mistral AI releases its first model, a 7-billion-parameter open-weight model that outperforms Llama 2 13B on all benchmarks.",
+      "source": "https://mistral.ai/news/announcing-mistral-7b/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2023-12-06",
+      "headline": "Gemini 1.0 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Google DeepMind releases Gemini, a natively multimodal model family.",
+      "source": "https://deepmind.google/technologies/gemini/",
+      "source_label": "Learn more →"
+    },
+    {
+      "date_iso": "2024-02-15",
+      "headline": "Sora announced",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "OpenAI announces Sora, a text-to-video generative model.",
+      "source": "https://openai.com/sora",
+      "source_label": "View site →"
+    },
+    {
+      "date_iso": "2024-02-21",
+      "headline": "Gemini 1.5 Pro released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Google DeepMind releases Gemini 1.5 Pro with a 1-million-token context window.",
+      "source": "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2024-02-26",
+      "headline": "Mistral Large released",
+      "origin": "FR",
+      "category": "technological",
+      "summary": "Mistral AI releases its first frontier-class model, competitive with GPT-4.",
+      "source": "https://mistral.ai/news/mistral-large/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2024-03-04",
+      "headline": "Claude 3 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Anthropic releases the Claude 3 model family (Haiku, Sonnet, Opus).",
+      "source": "https://www.anthropic.com/news/claude-3-family",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2024-04-18",
+      "headline": "Llama 3 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Meta releases Llama 3 in 8B and 70B parameter variants.",
+      "source": "https://ai.meta.com/blog/meta-llama-3/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2024-05-13",
+      "headline": "GPT-4o released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "OpenAI releases GPT-4o (\"omni\"), a natively multimodal model with voice, vision, and text.",
+      "source": "https://openai.com/index/hello-gpt-4o/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2024-06-20",
+      "headline": "Claude 3.5 Sonnet released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Anthropic releases Claude 3.5 Sonnet, outperforming Claude 3 Opus at lower cost.",
+      "source": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2024-07-23",
+      "headline": "Llama 3.1 405B released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Meta releases Llama 3.1 with a 405-billion-parameter open-weight model.",
+      "source": "https://ai.meta.com/blog/meta-llama-3-1/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2024-09-12",
+      "headline": "OpenAI o1-preview released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "OpenAI releases o1-preview, a model trained with reinforcement learning to perform complex reasoning.",
+      "source": "https://openai.com/index/introducing-openai-o1-preview/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2024-12-05",
+      "headline": "Gemini 2.0 Flash released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Google DeepMind releases Gemini 2.0 Flash with agentic capabilities.",
+      "source": "https://deepmind.google/technologies/gemini/flash/",
+      "source_label": "Learn more →"
+    },
+    {
+      "date_iso": "2024-12-20",
+      "headline": "OpenAI o3 announced",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "OpenAI announces o3, a next-generation reasoning model, initially available to researchers.",
+      "source": "https://openai.com/index/deliberative-alignment/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2025-01-20",
+      "headline": "DeepSeek-R1 released",
+      "origin": "CN",
+      "category": "technological",
+      "summary": "DeepSeek releases R1, an open-weight reasoning model competitive with leading Western models.",
+      "source": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "source_label": "View repo →"
+    },
+    {
+      "date_iso": "2025-02-24",
+      "headline": "Grok 3 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "xAI releases Grok 3, claiming state-of-the-art reasoning benchmarks.",
+      "source": "https://x.ai/blog/grok-3",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2025-03-04",
+      "headline": "Claude 3.7 Sonnet released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Anthropic releases Claude 3.7 Sonnet with extended thinking capability.",
+      "source": "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2025-03-25",
+      "headline": "Gemini 2.5 Pro released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Google DeepMind releases Gemini 2.5 Pro, a thinking model with strong reasoning and coding.",
+      "source": "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2025-04-05",
+      "headline": "Llama 4 Scout and Maverick released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Meta releases Llama 4 Scout and Maverick, the first open-weight natively multimodal MoE models.",
+      "source": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2025-04-16",
+      "headline": "OpenAI o4-mini released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "OpenAI releases o4-mini, a compact but powerful reasoning model in the o-series.",
+      "source": "https://openai.com/index/introducing-o3-and-o4-mini/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2025-05-22",
+      "headline": "Claude 4 Opus and Sonnet released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Anthropic releases Claude 4 Opus and Claude 4 Sonnet with major capability gains.",
+      "source": "https://www.anthropic.com/news/claude-4",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2025-06-25",
+      "headline": "Mistral Magistral released",
+      "origin": "FR",
+      "category": "technological",
+      "summary": "Mistral AI releases Magistral Small (open-source) and Medium, its first reasoning models with chain-of-thought capabilities.",
+      "source": "https://mistral.ai/news/magistral/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2025-08-07",
+      "headline": "GPT-5 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "OpenAI releases GPT-5, a major leap in intelligence across coding, math, writing, and vision.",
+      "source": "https://openai.com/index/introducing-gpt-5/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2025-10-15",
+      "headline": "Claude Haiku 4.5 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Anthropic releases Claude Haiku 4.5, a fast and cost-efficient model.",
+      "source": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2025-11-24",
+      "headline": "Claude Sonnet 4.5 and Opus 4.5 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Anthropic releases Claude 4.5 Sonnet and Opus with further capability improvements.",
+      "source": "https://www.anthropic.com/news/claude-4-5",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2025-12-02",
+      "headline": "Mistral 3 family released",
+      "origin": "FR",
+      "category": "technological",
+      "summary": "Mistral AI releases the Mistral 3 family: Large 3 frontier model plus nine dense open-weight models.",
+      "source": "https://mistral.ai/news/mistral-3",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2026-02-05",
+      "headline": "Claude Opus 4.6 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Anthropic releases Claude Opus 4.6.",
+      "source": "https://www.anthropic.com/news/claude-4-6",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2026-02-17",
+      "headline": "Claude Sonnet 4.6 released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Anthropic releases Claude Sonnet 4.6 with improved agentic search and lower token consumption.",
+      "source": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2026-02-19",
+      "headline": "Gemini 3.1 Pro released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "Google DeepMind releases Gemini 3.1 Pro with significantly improved reasoning.",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2026-03-17",
+      "headline": "GPT-5.4 Mini and Nano released",
+      "origin": "USA",
+      "category": "technological",
+      "summary": "OpenAI releases GPT-5.4 Mini and Nano, cost-efficient versions of their flagship model.",
+      "source": "https://openai.com/index/gpt-5-4-mini-nano/",
+      "source_label": "View post →"
+    },
+    {
+      "date_iso": "2019-05-22",
+      "headline": "OECD AI Principles adopted",
+      "origin": "OECD",
+      "category": "regulatory",
+      "summary": "OECD member countries adopt principles for trustworthy AI.",
+      "source": "https://oecd.ai/en/ai-principles",
+      "source_label": "View principles →"
+    },
+    {
+      "date_iso": "2021-04-21",
+      "headline": "EU AI Act proposed",
+      "origin": "EU",
+      "category": "regulatory",
+      "summary": "European Commission publishes its proposal for a regulation on artificial intelligence.",
+      "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206",
+      "source_label": "View proposal →"
+    },
+    {
+      "date_iso": "2022-09-28",
+      "headline": "China AI algorithm regulation effective",
+      "origin": "CN",
+      "category": "regulatory",
+      "summary": "China's regulation on deep synthesis (deepfakes) and algorithmic recommendation comes into force.",
+      "source": "http://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm",
+      "source_label": "View regulation →"
+    },
+    {
+      "date_iso": "2023-07-21",
+      "headline": "China Generative AI regulation effective",
+      "origin": "CN",
+      "category": "regulatory",
+      "summary": "China's Interim Measures for the Management of Generative AI Services take effect.",
+      "source": "http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "source_label": "View measures →"
+    },
+    {
+      "date_iso": "2023-10-30",
+      "headline": "US Executive Order on AI",
+      "origin": "USA",
+      "category": "regulatory",
+      "summary": "President Biden signs Executive Order 14110 on safe, secure, and trustworthy AI.",
+      "source": "https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/",
+      "source_label": "View order →"
+    },
+    {
+      "date_iso": "2024-03-13",
+      "headline": "EU AI Act adopted by Parliament",
+      "origin": "EU",
+      "category": "regulatory",
+      "summary": "European Parliament votes to adopt the EU AI Act.",
+      "source": "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law",
+      "source_label": "View article →"
+    },
+    {
+      "date_iso": "2024-08-01",
+      "headline": "EU AI Act enters into force",
+      "origin": "EU",
+      "category": "regulatory",
+      "summary": "The EU AI Act is published in the Official Journal and enters into force.",
+      "source": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "source_label": "View text →"
+    },
+    {
+      "date_iso": "2024-09-01",
+      "headline": "Switzerland FADP fully effective",
+      "origin": "CH",
+      "category": "regulatory",
+      "summary": "Switzerland's revised Federal Act on Data Protection (nFADP) is fully in effect, with relevance to AI data processing.",
+      "source": "https://www.fedlex.admin.ch/eli/cc/2022/491/en",
+      "source_label": "View law →"
+    },
+    {
+      "date_iso": "2025-02-02",
+      "headline": "EU AI Act — prohibited practices apply",
+      "origin": "EU",
+      "category": "regulatory",
+      "summary": "The EU AI Act's provisions on prohibited AI practices and AI literacy obligations become applicable.",
+      "source": "https://artificialintelligenceact.eu/article/5/",
+      "source_label": "View article →"
+    },
+    {
+      "date_iso": "2025-06-01",
+      "headline": "Japan AI Promotion Act effective",
+      "origin": "JP",
+      "category": "regulatory",
+      "summary": "Japan's Act on the Promotion of Research and Development and Utilisation of AI-Related Technologies takes effect.",
+      "source": "https://www.japaneselawtranslation.go.jp/",
+      "source_label": "View law →"
+    },
+    {
+      "date_iso": "2025-08-02",
+      "headline": "EU AI Act — GPAI model rules apply",
+      "origin": "EU",
+      "category": "regulatory",
+      "summary": "Rules for general-purpose AI models and governance obligations under the EU AI Act become applicable.",
+      "source": "https://artificialintelligenceact.eu/article/51/",
+      "source_label": "View article →"
+    },
+    {
+      "date_iso": "2026-08-02",
+      "headline": "EU AI Act — high-risk system rules apply",
+      "origin": "EU",
+      "category": "regulatory",
+      "summary": "Obligations for high-risk AI systems (Annex III) and transparency rules under the EU AI Act become applicable.",
+      "source": "https://artificialintelligenceact.eu/article/6/",
+      "source_label": "View article →"
+    },
+    {
+      "date_iso": "2027-08-02",
+      "headline": "EU AI Act — full enforcement",
+      "origin": "EU",
+      "category": "regulatory",
+      "summary": "Full roll-out of the EU AI Act, including obligations for high-risk AI systems under existing harmonisation legislation.",
+      "source": "https://artificialintelligenceact.eu/implementation-timeline/",
+      "source_label": "View timeline →"
+    }
+  ],
+  "todayDate": "2026-04-08"
+}

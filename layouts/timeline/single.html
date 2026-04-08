@@ -1,0 +1,228 @@
+{{ define "main" }}
+<div class="tl-page">
+  {{ partial "section-banner.html" (dict "title" (i18n "timeline_title") "color" "darkred") }}
+
+  <div class="container tl-container">
+    <div class="tl-intro">
+      <p>{{ i18n "timeline_intro" }}</p>
+    </div>
+
+    <div class="tl-layout">
+      <!-- Main timeline pane -->
+      <div class="tl-main-pane" id="tlMainPane">
+        <div class="tl-track">
+          <div class="tl-line"></div>
+          <div class="tl-events-container" id="tlEventsContainer"></div>
+        </div>
+      </div>
+
+      <!-- Minimap sidebar -->
+      <div class="tl-minimap-pane" id="tlMinimapPane">
+        <div class="tl-minimap-title">{{ i18n "timeline_jump_to" }}</div>
+        <div class="tl-minimap-container" id="tlMinimapContainer">
+          <div class="tl-minimap-line"></div>
+          <div class="tl-minimap-events" id="tlMinimapEvents"></div>
+          <div class="tl-viewport-indicator" id="tlViewportIndicator"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Fetch timeline data
+  const timelineDataUrl = '{{ .Site.BaseURL }}data/timeline.json';
+
+  fetch(timelineDataUrl)
+    .then(response => response.json())
+    .then(data => {
+      initializeTimeline(data.events, data.todayDate);
+    })
+    .catch(error => {
+      console.error('Error loading timeline data:', error);
+      document.getElementById('tlEventsContainer').innerHTML = '<div class="tl-error">{{ i18n "timeline_load_error" }}</div>';
+    });
+
+  function initializeTimeline(events, todayDateStr) {
+    const today = new Date(todayDateStr);
+
+    // Sort events by date (ascending = past to future)
+    events.sort((a, b) => new Date(a.date_iso) - new Date(b.date_iso));
+
+    // Calculate date range
+    const minDate = new Date(events[0].date_iso);
+    const maxDate = new Date(events[events.length - 1].date_iso);
+    const totalDays = (maxDate - minDate) / (1000 * 60 * 60 * 24);
+
+    // Calculate position on timeline (fraction: 0 = bottom/past, 1 = top/future)
+    function getTimelinePosition(dateStr) {
+      const eventDate = new Date(dateStr);
+      const daysFromMin = (eventDate - minDate) / (1000 * 60 * 60 * 24);
+      const fraction = daysFromMin / totalDays;
+      return fraction;
+    }
+
+    // Render main timeline
+    function renderTimeline() {
+      const container = document.getElementById('tlEventsContainer');
+      const mainPane = document.getElementById('tlMainPane');
+
+      const viewportHeight = mainPane.clientHeight;
+      const pixelsPerDay = viewportHeight / (totalDays + 60);
+      const totalHeight = totalDays * pixelsPerDay + 120;
+
+      container.style.position = 'relative';
+      container.style.height = totalHeight + 'px';
+
+      events.forEach((event, index) => {
+        const position = getTimelinePosition(event.date_iso);
+        const topPx = position * (totalHeight - 120) + 60;
+
+        const eventEl = document.createElement('div');
+        eventEl.className = `tl-event ${index % 2 === 0 ? 'tl-left' : 'tl-right'} tl-${event.category}`;
+        eventEl.style.top = topPx + 'px';
+        eventEl.setAttribute('data-event-index', index);
+
+        const dotEl = document.createElement('div');
+        dotEl.className = `tl-event-dot tl-${event.category}`;
+        dotEl.setAttribute('data-event-index', index);
+
+        const connectorEl = document.createElement('div');
+        connectorEl.className = 'tl-connector';
+
+        const cardEl = document.createElement('div');
+        cardEl.className = 'tl-event-card';
+
+        const dateEl = document.createElement('div');
+        dateEl.className = 'tl-event-date';
+        const eventDate = new Date(event.date_iso);
+        dateEl.textContent = eventDate.toLocaleDateString('{{ .Site.LanguageCode }}', { year: 'numeric', month: 'short', day: 'numeric' });
+
+        const headerEl = document.createElement('div');
+        headerEl.className = 'tl-event-header';
+
+        const originEl = document.createElement('span');
+        originEl.className = 'tl-event-origin';
+        originEl.textContent = event.origin;
+
+        const categoryBadgeEl = document.createElement('span');
+        categoryBadgeEl.className = 'tl-category-badge';
+        categoryBadgeEl.textContent = event.category === 'regulatory' ? '{{ i18n "timeline_regulatory" }}' : '{{ i18n "timeline_technological" }}';
+
+        headerEl.appendChild(originEl);
+        headerEl.appendChild(categoryBadgeEl);
+
+        const headlineEl = document.createElement('div');
+        headlineEl.className = 'tl-event-headline';
+        headlineEl.textContent = event.headline;
+
+        const detailEl = document.createElement('div');
+        detailEl.className = 'tl-event-detail';
+        detailEl.setAttribute('data-event-index', index);
+
+        const summaryEl = document.createElement('div');
+        summaryEl.className = 'tl-event-summary';
+        summaryEl.textContent = event.summary;
+
+        const sourceEl = document.createElement('a');
+        sourceEl.className = 'tl-event-source';
+        sourceEl.href = event.source;
+        sourceEl.target = '_blank';
+        sourceEl.rel = 'noopener noreferrer';
+        sourceEl.textContent = event.source_label || '{{ i18n "timeline_view_source" }}';
+
+        detailEl.appendChild(summaryEl);
+        detailEl.appendChild(sourceEl);
+
+        cardEl.appendChild(dateEl);
+        cardEl.appendChild(headerEl);
+        cardEl.appendChild(headlineEl);
+        cardEl.appendChild(detailEl);
+
+        eventEl.appendChild(dotEl);
+        eventEl.appendChild(connectorEl);
+        eventEl.appendChild(cardEl);
+
+        container.appendChild(eventEl);
+      });
+
+      // Add today marker
+      const todayPosition = getTimelinePosition(today.toISOString().split('T')[0]);
+      const todayTopPx = todayPosition * (totalHeight - 120) + 60;
+
+      const todayEl = document.createElement('div');
+      todayEl.className = 'tl-today-marker';
+      todayEl.style.top = todayTopPx + 'px';
+      todayEl.innerHTML = '<div class="tl-today-dot"></div><div class="tl-today-label">{{ i18n "timeline_today" }} · ' + today.toLocaleDateString('{{ .Site.LanguageCode }}', { year: 'numeric', month: 'long', day: 'numeric' }) + '</div>';
+      container.appendChild(todayEl);
+
+      // Setup scroll tracking
+      updateViewportIndicator(mainPane, todayEl, totalHeight);
+      mainPane.addEventListener('scroll', () => updateViewportIndicator(mainPane, todayEl, totalHeight));
+    }
+
+    // Render minimap
+    function renderMinimap() {
+      const minimapEvents = document.getElementById('tlMinimapEvents');
+      const minimapContainer = document.getElementById('tlMinimapContainer');
+      const minimapHeight = minimapContainer.clientHeight - 40; // Subtract header
+
+      events.forEach((event, index) => {
+        const position = getTimelinePosition(event.date_iso);
+        const topPx = position * minimapHeight;
+
+        const minimapEventEl = document.createElement('div');
+        minimapEventEl.className = `tl-minimap-event tl-${event.category}`;
+        minimapEventEl.style.top = topPx + 'px';
+        minimapEventEl.setAttribute('data-event-index', index);
+        minimapEventEl.title = event.headline;
+
+        minimapEventEl.addEventListener('click', () => {
+          const mainEvent = document.querySelector(`[data-event-index="${index}"]`);
+          if (mainEvent) {
+            mainEvent.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        });
+
+        minimapEvents.appendChild(minimapEventEl);
+      });
+
+      // Add today marker to minimap
+      const todayPosition = getTimelinePosition(today.toISOString().split('T')[0]);
+      const todayTopPx = todayPosition * minimapHeight;
+
+      const minimapTodayEl = document.createElement('div');
+      minimapTodayEl.className = 'tl-minimap-today';
+      minimapTodayEl.style.top = todayTopPx + 'px';
+      minimapEvents.appendChild(minimapTodayEl);
+    }
+
+    function updateViewportIndicator(mainPane, todayEl, totalHeight) {
+      const indicator = document.getElementById('tlViewportIndicator');
+      if (!indicator) return;
+
+      const scrollTop = mainPane.scrollTop;
+      const viewportHeight = mainPane.clientHeight;
+      const minimapContainer = document.getElementById('tlMinimapContainer');
+      const minimapHeight = minimapContainer.clientHeight - 40;
+
+      const indicatorTop = (scrollTop / totalHeight) * minimapHeight;
+      const indicatorHeight = (viewportHeight / totalHeight) * minimapHeight;
+
+      indicator.style.top = indicatorTop + 'px';
+      indicator.style.height = indicatorHeight + 'px';
+    }
+
+    renderTimeline();
+    renderMinimap();
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      document.getElementById('tlEventsContainer').innerHTML = '';
+      document.getElementById('tlMinimapEvents').innerHTML = '';
+      renderTimeline();
+      renderMinimap();
+    });
+  }
+</script>
+{{ end }}

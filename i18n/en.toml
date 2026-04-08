@@ -153,3 +153,27 @@ other = "Looking for the tools?"
 
 [cta_body]
 other = "Javai develops open-source frameworks for probabilistic testing. Visit javai.org for technical documentation, source code, and getting started guides."
+
+[timeline_title]
+other = "AI Timeline"
+
+[timeline_intro]
+other = "Explore key milestones in AI regulation and technology development relevant to Switzerland and the wider world."
+
+[timeline_jump_to]
+other = "Jump to"
+
+[timeline_regulatory]
+other = "Regulatory"
+
+[timeline_technological]
+other = "Technological"
+
+[timeline_today]
+other = "Today"
+
+[timeline_view_source]
+other = "View source →"
+
+[timeline_load_error]
+other = "Unable to load timeline data. Please try again later."
