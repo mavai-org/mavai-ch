@@ -150,3 +150,27 @@ other = "Cercate gli strumenti?"
 
 [cta_body]
 other = "Javai sviluppa framework open source per i test probabilistici. Visitate javai.org per la documentazione tecnica, il codice sorgente e le guide introduttive."
+
+[timeline_title]
+other = "Cronologia dell'IA"
+
+[timeline_intro]
+other = "Esplorate i principali traguardi della regolamentazione dell'IA e dello sviluppo tecnologico rilevanti per la Svizzera e il resto del mondo."
+
+[timeline_jump_to]
+other = "Vai a"
+
+[timeline_regulatory]
+other = "Regolamentare"
+
+[timeline_technological]
+other = "Tecnologico"
+
+[timeline_today]
+other = "Oggi"
+
+[timeline_view_source]
+other = "Visualizza fonte →"
+
+[timeline_load_error]
+other = "Impossibile caricare i dati della cronologia. Riprova più tardi."

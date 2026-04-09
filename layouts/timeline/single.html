@@ -1,0 +1,346 @@
+{{ define "main" }}
+<div class="tl-page">
+  {{ partial "section-banner.html" (dict "title" .Title "subtitle" .Description "color" "darkred") }}
+
+  <div class="tl-container">
+    <div class="tl-main-pane" id="tlMainPane">
+      <div class="tl-track">
+        <div class="tl-line"></div>
+        <div class="tl-events-container" id="tlEventsContainer"></div>
+      </div>
+    </div>
+
+    <!-- Minimap sidebar -->
+    <div class="tl-minimap-pane" id="tlMinimapPane">
+      <div class="tl-minimap-container" id="tlMinimapContainer">
+        <div class="tl-minimap-line"></div>
+        <div class="tl-minimap-events" id="tlMinimapEvents"></div>
+        <div class="tl-viewport-indicator" id="tlViewportIndicator"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tl-dim-overlay" id="tlDimOverlay"></div>
+</div>
+
+<script>
+  // Fetch timeline data
+  const timelineDataUrl = '/data/timeline.json';
+
+  fetch(timelineDataUrl)
+    .then(response => response.json())
+    .then(data => {
+      initializeTimeline(data);
+    })
+    .catch(error => {
+      console.error('Error loading timeline data:', error);
+      document.getElementById('tlEventsContainer').innerHTML = '<div class="tl-error">{{ i18n "timeline_load_error" }}</div>';
+    });
+
+  function initializeTimeline(events) {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    // Sort events by date (ascending = past to future)
+    events.sort((a, b) => new Date(a.date_iso) - new Date(b.date_iso));
+
+
+
+    // Render main timeline
+    function renderTimeline() {
+      const container = document.getElementById('tlEventsContainer');
+      const mainPane = document.getElementById('tlMainPane');
+
+      const cardSpacing = 80;       // px between cards on same side
+      const gapThreshold = 180;     // days — gaps larger than this get a break marker
+      const gapMarkerHeight = 50;   // px for the dotted break section
+
+      container.style.position = 'relative';
+
+      // Remove the static line — we draw segments instead
+      const staticLine = container.parentElement.querySelector('.tl-line');
+      if (staticLine) staticLine.style.display = 'none';
+
+      let cursorY = 40; // current vertical position
+      let lastLeftY = -Infinity;
+      let lastRightY = -Infinity;
+      let todayMarkerY = null;
+      let prevDate = null;
+      let lineSegments = []; // track solid line segments
+      let segmentStart = cursorY;
+
+      // Insert today marker at the right chronological position
+      const todayISO = today.toISOString().split('T')[0];
+      let todayInserted = false;
+
+      events.forEach((event, index) => {
+        const eventDate = new Date(event.date_iso);
+
+        // Check if today marker should appear before this event
+        if (!todayInserted && todayISO < event.date_iso) {
+          // Advance cursor past the previous card
+          cursorY = Math.max(cursorY, lastLeftY + cardSpacing, lastRightY + cardSpacing);
+
+          // Insert gap break before today if needed
+          if (prevDate) {
+            const daysSincePrev = (today - prevDate) / (1000 * 60 * 60 * 24);
+            if (daysSincePrev > gapThreshold) {
+              lineSegments.push({ top: segmentStart, bottom: cursorY });
+              addGapMarker(container, cursorY);
+              cursorY += gapMarkerHeight;
+              segmentStart = cursorY;
+            }
+          }
+          todayMarkerY = cursorY;
+          const todayEl = document.createElement('div');
+          todayEl.className = 'tl-today-marker';
+          todayEl.style.top = todayMarkerY + 'px';
+          todayEl.innerHTML = '<div class="tl-today-dot"></div><div class="tl-today-label">{{ i18n "timeline_today" }} · ' + today.toLocaleDateString('{{ .Site.LanguageCode }}', { year: 'numeric', month: 'long', day: 'numeric' }) + '</div>';
+          container.appendChild(todayEl);
+          cursorY += cardSpacing;
+          prevDate = today;
+          todayInserted = true;
+        }
+
+        // Check for time gap — insert dotted break
+        if (prevDate) {
+          const daysSincePrev = (eventDate - prevDate) / (1000 * 60 * 60 * 24);
+          if (daysSincePrev > gapThreshold) {
+            lineSegments.push({ top: segmentStart, bottom: cursorY });
+            addGapMarker(container, cursorY);
+            cursorY += gapMarkerHeight;
+            segmentStart = cursorY;
+          }
+        }
+
+        // Determine side and enforce per-side spacing
+        const side = event.category === 'regulatory' ? 'tl-right' : 'tl-left';
+        let topPx = cursorY;
+
+        if (side === 'tl-left') {
+          if (topPx < lastLeftY + cardSpacing) topPx = lastLeftY + cardSpacing;
+          lastLeftY = topPx;
+        } else {
+          if (topPx < lastRightY + cardSpacing) topPx = lastRightY + cardSpacing;
+          lastRightY = topPx;
+        }
+
+        cursorY = Math.max(cursorY, topPx);
+
+        const eventEl = document.createElement('div');
+        eventEl.className = `tl-event ${side} tl-${event.category}`;
+        eventEl.style.top = topPx + 'px';
+        eventEl.setAttribute('data-event-index', index);
+
+        const dotEl = document.createElement('div');
+        dotEl.className = `tl-event-dot tl-${event.category}`;
+
+        const connectorEl = document.createElement('div');
+        connectorEl.className = 'tl-connector';
+
+        const cardEl = document.createElement('div');
+        cardEl.className = 'tl-event-card';
+        cardEl.addEventListener('click', () => {
+          const detail = cardEl.querySelector('.tl-event-detail');
+          if (detail) {
+            const isExpanding = !detail.classList.contains('visible');
+            // Collapse any other expanded card first
+            const prevExpanded = container.querySelector('.tl-expanded');
+            if (prevExpanded && prevExpanded !== eventEl) {
+              prevExpanded.classList.remove('tl-expanded');
+              prevExpanded.querySelector('.tl-event-detail').classList.remove('visible');
+            }
+            detail.classList.toggle('visible');
+            eventEl.classList.toggle('tl-expanded');
+            // Toggle overlay
+            document.querySelector('.tl-page').classList.toggle('tl-dimmed', isExpanding);
+          }
+        });
+
+        const headerEl = document.createElement('div');
+        headerEl.className = 'tl-event-header';
+
+        const dateEl = document.createElement('span');
+        dateEl.className = 'tl-event-date';
+        dateEl.textContent = eventDate.toLocaleDateString('{{ .Site.LanguageCode }}', { year: 'numeric', month: 'short', day: 'numeric' });
+
+        const originEl = document.createElement('span');
+        originEl.className = 'tl-event-origin';
+        originEl.textContent = event.origin;
+
+        headerEl.appendChild(dateEl);
+        headerEl.appendChild(originEl);
+
+        const headlineEl = document.createElement('div');
+        headlineEl.className = 'tl-event-headline';
+        headlineEl.textContent = event.headline;
+
+        const detailEl = document.createElement('div');
+        detailEl.className = 'tl-event-detail';
+
+        const summaryEl = document.createElement('div');
+        summaryEl.className = 'tl-event-summary';
+        summaryEl.textContent = event.summary;
+
+        const sourceEl = document.createElement('a');
+        sourceEl.className = 'tl-event-source';
+        sourceEl.href = event.source;
+        sourceEl.target = '_blank';
+        sourceEl.rel = 'noopener noreferrer';
+        sourceEl.textContent = event.source_label || '{{ i18n "timeline_view_source" }}';
+        sourceEl.addEventListener('click', (e) => e.stopPropagation());
+
+        detailEl.appendChild(summaryEl);
+        detailEl.appendChild(sourceEl);
+
+        cardEl.appendChild(headerEl);
+        cardEl.appendChild(headlineEl);
+        cardEl.appendChild(detailEl);
+
+        eventEl.appendChild(dotEl);
+        eventEl.appendChild(connectorEl);
+        eventEl.appendChild(cardEl);
+        container.appendChild(eventEl);
+
+        prevDate = eventDate;
+        cursorY = topPx + 20; // advance cursor past the dot
+      });
+
+      // Insert today marker at end if not yet inserted
+      if (!todayInserted) {
+        if (prevDate) {
+          const daysSincePrev = (today - prevDate) / (1000 * 60 * 60 * 24);
+          if (daysSincePrev > gapThreshold) {
+            lineSegments.push({ top: segmentStart, bottom: cursorY });
+            addGapMarker(container, cursorY);
+            cursorY += gapMarkerHeight;
+            segmentStart = cursorY;
+          }
+        }
+        todayMarkerY = cursorY;
+        const todayEl = document.createElement('div');
+        todayEl.className = 'tl-today-marker';
+        todayEl.style.top = todayMarkerY + 'px';
+        todayEl.innerHTML = '<div class="tl-today-dot"></div><div class="tl-today-label">{{ i18n "timeline_today" }} · ' + today.toLocaleDateString('{{ .Site.LanguageCode }}', { year: 'numeric', month: 'long', day: 'numeric' }) + '</div>';
+        container.appendChild(todayEl);
+        cursorY += 40;
+      }
+
+      // Close final line segment
+      lineSegments.push({ top: segmentStart, bottom: cursorY });
+
+      // Draw solid line segments
+      lineSegments.forEach(seg => {
+        const lineEl = document.createElement('div');
+        lineEl.className = 'tl-line-segment';
+        lineEl.style.top = seg.top + 'px';
+        lineEl.style.height = (seg.bottom - seg.top) + 'px';
+        container.appendChild(lineEl);
+      });
+
+      const totalHeight = cursorY + 40;
+      container.style.height = totalHeight + 'px';
+
+      // Setup scroll tracking
+      updateViewportIndicator(mainPane, totalHeight);
+      mainPane.addEventListener('scroll', () => updateViewportIndicator(mainPane, totalHeight));
+    }
+
+    function addGapMarker(container, topPx) {
+      const marker = document.createElement('div');
+      marker.className = 'tl-gap-marker';
+      marker.style.top = topPx + 'px';
+      container.appendChild(marker);
+    }
+
+    // Render minimap — evenly spaced to match main timeline's sequential layout
+    function renderMinimap() {
+      const minimapEvents = document.getElementById('tlMinimapEvents');
+      const minimapContainer = document.getElementById('tlMinimapContainer');
+      const minimapHeight = minimapContainer.clientHeight - 40;
+
+      // Build a list of all items (events + today) in chronological order
+      const todayISO = today.toISOString().split('T')[0];
+      const allItems = events.map((e, i) => ({ type: 'event', index: i, date: e.date_iso, event: e }));
+      // Insert today
+      let todayIdx = allItems.findIndex(item => item.date > todayISO);
+      if (todayIdx === -1) todayIdx = allItems.length;
+      allItems.splice(todayIdx, 0, { type: 'today', date: todayISO });
+
+      const totalItems = allItems.length;
+
+      allItems.forEach((item, i) => {
+        const topPx = (i / (totalItems - 1)) * minimapHeight;
+
+        if (item.type === 'today') {
+          const minimapTodayEl = document.createElement('div');
+          minimapTodayEl.className = 'tl-minimap-today';
+          minimapTodayEl.style.top = topPx + 'px';
+          minimapTodayEl.addEventListener('click', () => {
+            const todayMarker = document.querySelector('.tl-today-marker');
+            if (todayMarker) todayMarker.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          });
+          minimapEvents.appendChild(minimapTodayEl);
+        } else {
+          const minimapEventEl = document.createElement('div');
+          minimapEventEl.className = `tl-minimap-event tl-${item.event.category}`;
+          minimapEventEl.style.top = topPx + 'px';
+          minimapEventEl.setAttribute('data-event-index', item.index);
+          minimapEventEl.title = item.event.headline;
+
+          minimapEventEl.addEventListener('click', () => {
+            const mainEvent = document.querySelector(`.tl-event[data-event-index="${item.index}"]`);
+            if (mainEvent) mainEvent.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          });
+
+          minimapEvents.appendChild(minimapEventEl);
+        }
+      });
+    }
+
+    function updateViewportIndicator(mainPane, totalHeight) {
+      const indicator = document.getElementById('tlViewportIndicator');
+      if (!indicator) return;
+
+      const scrollTop = mainPane.scrollTop;
+      const viewportHeight = mainPane.clientHeight;
+      const minimapContainer = document.getElementById('tlMinimapContainer');
+      const minimapHeight = minimapContainer.clientHeight - 40;
+
+      const indicatorTop = (scrollTop / totalHeight) * minimapHeight;
+      const indicatorHeight = (viewportHeight / totalHeight) * minimapHeight;
+
+      indicator.style.top = indicatorTop + 'px';
+      indicator.style.height = Math.max(indicatorHeight, 20) + 'px';
+    }
+
+    renderTimeline();
+    renderMinimap();
+
+    // Click on dimmed area or overlay to collapse expanded card
+    function collapseExpanded() {
+      const expanded = document.querySelector('.tl-expanded');
+      if (expanded) {
+        expanded.classList.remove('tl-expanded');
+        expanded.querySelector('.tl-event-detail').classList.remove('visible');
+        document.querySelector('.tl-page').classList.remove('tl-dimmed');
+      }
+    }
+
+    document.getElementById('tlDimOverlay').addEventListener('click', collapseExpanded);
+    document.getElementById('tlMainPane').addEventListener('click', (e) => {
+      if (!e.target.closest('.tl-event-card') && !e.target.closest('.tl-dim-overlay')) {
+        collapseExpanded();
+      }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      document.getElementById('tlEventsContainer').innerHTML = '';
+      document.getElementById('tlMinimapEvents').innerHTML = '';
+      renderTimeline();
+      renderMinimap();
+    });
+  }
+</script>
+{{ end }}
