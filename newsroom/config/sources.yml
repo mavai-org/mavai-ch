@@ -241,13 +241,6 @@ sources:
     baseUrl: "https://iapp.org"
     tags: ["governance", "privacy", "compliance"]
 
-  - id: fda-ai
-    name: "FDA CDER AI"
-    tier: 2
-    type: rss
-    url: "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/drugs/rss.xml"
-    tags: ["us", "pharma", "health", "ai", "regulatory", "fda"]
-
   - id: mhra
     name: "MHRA"
     tier: 2

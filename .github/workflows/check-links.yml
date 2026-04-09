@@ -14,7 +14,9 @@ on:
 
 permissions:
   contents: read
-  issues: write
+  # Note: issue management uses ORG_REPO_TOKEN (below), not GITHUB_TOKEN,
+  # because the org restricts GITHUB_TOKEN to read-only. The issues: write
+  # scope is therefore not requested here — ORG_REPO_TOKEN carries it.
 
 concurrency:
   group: check-links
@@ -82,7 +84,7 @@ jobs:
       - name: Ensure link-check label exists
         if: always() && steps.linkcheck.outcome != 'skipped'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
         working-directory: javai-ch
         run: |
           gh label create "$ISSUE_LABEL" \
@@ -94,7 +96,7 @@ jobs:
         id: existing
         if: always() && steps.linkcheck.outcome != 'skipped'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
         working-directory: javai-ch
         run: |
           number=$(gh issue list \
@@ -112,7 +114,7 @@ jobs:
       - name: Create or update failure issue
         if: steps.linkcheck.outcome == 'failure'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
           NUMBER: ${{ steps.existing.outputs.number }}
         working-directory: javai-ch
         run: |
@@ -133,7 +135,7 @@ jobs:
       - name: Close resolved issue
         if: steps.linkcheck.outcome == 'success' && steps.existing.outputs.number != ''
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
           NUMBER: ${{ steps.existing.outputs.number }}
         working-directory: javai-ch
         run: |
