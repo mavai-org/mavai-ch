@@ -30,15 +30,16 @@
   fetch(timelineDataUrl)
     .then(response => response.json())
     .then(data => {
-      initializeTimeline(data.events, data.todayDate);
+      initializeTimeline(data);
     })
     .catch(error => {
       console.error('Error loading timeline data:', error);
       document.getElementById('tlEventsContainer').innerHTML = '<div class="tl-error">{{ i18n "timeline_load_error" }}</div>';
     });
 
-  function initializeTimeline(events, todayDateStr) {
-    const today = new Date(todayDateStr);
+  function initializeTimeline(events) {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
 
     // Sort events by date (ascending = past to future)
     events.sort((a, b) => new Date(a.date_iso) - new Date(b.date_iso));
