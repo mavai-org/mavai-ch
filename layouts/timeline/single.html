@@ -19,6 +19,8 @@
       </div>
     </div>
   </div>
+
+  <div class="tl-dim-overlay" id="tlDimOverlay"></div>
 </div>
 
 <script>
@@ -147,8 +149,7 @@
             detail.classList.toggle('visible');
             eventEl.classList.toggle('tl-expanded');
             // Toggle overlay
-            const tlContainer = document.querySelector('.tl-container');
-            tlContainer.classList.toggle('tl-dimmed', isExpanding);
+            document.querySelector('.tl-page').classList.toggle('tl-dimmed', isExpanding);
           }
         });
 
@@ -312,15 +313,20 @@
     renderTimeline();
     renderMinimap();
 
-    // Click on dimmed area to collapse expanded card
+    // Click on dimmed area or overlay to collapse expanded card
+    function collapseExpanded() {
+      const expanded = document.querySelector('.tl-expanded');
+      if (expanded) {
+        expanded.classList.remove('tl-expanded');
+        expanded.querySelector('.tl-event-detail').classList.remove('visible');
+        document.querySelector('.tl-page').classList.remove('tl-dimmed');
+      }
+    }
+
+    document.getElementById('tlDimOverlay').addEventListener('click', collapseExpanded);
     document.getElementById('tlMainPane').addEventListener('click', (e) => {
-      if (!e.target.closest('.tl-event-card')) {
-        const expanded = document.querySelector('.tl-expanded');
-        if (expanded) {
-          expanded.classList.remove('tl-expanded');
-          expanded.querySelector('.tl-event-detail').classList.remove('visible');
-          document.querySelector('.tl-container').classList.remove('tl-dimmed');
-        }
+      if (!e.target.closest('.tl-event-card') && !e.target.closest('.tl-dim-overlay')) {
+        collapseExpanded();
       }
     });
 

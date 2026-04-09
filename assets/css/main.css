@@ -1295,24 +1295,28 @@ code {
   z-index: 10;
 }
 
-/* Dim the main pane and minimap when a card is expanded */
-.tl-container.tl-dimmed .tl-main-pane::after,
-.tl-container.tl-dimmed .tl-minimap-pane::after {
-  content: '';
-  position: absolute;
-  inset: 0;
+/* Dim overlay — covers entire viewport below header */
+.tl-dim-overlay {
+  display: none;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.3);
   z-index: 5;
-  pointer-events: none;
 }
 
-.tl-container.tl-dimmed .tl-main-pane,
-.tl-container.tl-dimmed .tl-minimap-pane {
-  position: relative;
+.tl-page.tl-dimmed .tl-dim-overlay {
+  display: block;
 }
 
 /* Keep the expanded card above the overlay */
-.tl-container.tl-dimmed .tl-event.tl-expanded .tl-event-card {
+.tl-page.tl-dimmed .tl-event.tl-expanded {
+  z-index: 10;
+}
+
+.tl-page.tl-dimmed .tl-event.tl-expanded .tl-event-card {
   z-index: 15;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
@@ -1399,6 +1403,7 @@ code {
 
 /* Minimap sidebar */
 .tl-minimap-pane {
+  position: relative;
   width: 200px;
   min-width: 200px;
   background: var(--color-bg);
