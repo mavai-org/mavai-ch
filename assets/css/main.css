@@ -1135,18 +1135,14 @@ code {
 
 .tl-container {
   padding: 0;
-  margin-right: 200px;
+  display: flex;
 }
 
 
-@media (max-width: 768px) {
-  .tl-container {
-    margin-right: 0;
-  }
-}
 
 
 .tl-main-pane {
+  flex: 1;
   overflow-y: auto;
   position: relative;
   padding: var(--space-md) 0;
@@ -1292,6 +1288,33 @@ code {
   padding: var(--space-xs) var(--space-sm);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tl-event.tl-expanded {
+  z-index: 10;
+}
+
+/* Dim the main pane and minimap when a card is expanded */
+.tl-container.tl-dimmed .tl-main-pane::after,
+.tl-container.tl-dimmed .tl-minimap-pane::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.tl-container.tl-dimmed .tl-main-pane,
+.tl-container.tl-dimmed .tl-minimap-pane {
+  position: relative;
+}
+
+/* Keep the expanded card above the overlay */
+.tl-container.tl-dimmed .tl-event.tl-expanded .tl-event-card {
+  z-index: 15;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
 
 .tl-event-card:hover {
@@ -1376,17 +1399,13 @@ code {
 
 /* Minimap sidebar */
 .tl-minimap-pane {
-  position: fixed;
-  right: 0;
-  top: calc(64px + 220px);
   width: 200px;
-  height: calc(100vh - 64px - 220px);
+  min-width: 200px;
   background: var(--color-bg);
   border-left: 1px solid var(--color-border);
   padding: var(--space-sm);
   display: flex;
   flex-direction: column;
-  z-index: 99;
 }
 
 .tl-minimap-container {
@@ -1437,11 +1456,13 @@ code {
 .tl-minimap-today {
   position: absolute;
   left: 50%;
-  width: 8px;
-  height: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
   background: var(--color-accent);
   transform: translateX(-50%);
-  box-shadow: 0 0 0 2px var(--color-surface), 0 0 0 4px var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-bg), 0 0 0 4px var(--color-accent);
+  cursor: pointer;
 }
 
 .tl-viewport-indicator {
@@ -1482,14 +1503,10 @@ code {
 .tl-event:nth-child(2) { animation-delay: 0.1s; }
 .tl-event:nth-child(3) { animation-delay: 0.2s; }
 
-/* Hide minimap below 600px viewport height */
-@media (max-height: 599px) {
+/* Hide minimap on small viewports */
+@media (max-height: 599px), (max-width: 768px) {
   .tl-minimap-pane {
     display: none;
-  }
-
-  .tl-container {
-    margin-right: 0;
   }
 }
 

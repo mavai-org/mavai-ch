@@ -9,14 +9,14 @@
         <div class="tl-events-container" id="tlEventsContainer"></div>
       </div>
     </div>
-  </div>
 
-  <!-- Minimap sidebar -->
-  <div class="tl-minimap-pane" id="tlMinimapPane">
-    <div class="tl-minimap-container" id="tlMinimapContainer">
-      <div class="tl-minimap-line"></div>
-      <div class="tl-minimap-events" id="tlMinimapEvents"></div>
-      <div class="tl-viewport-indicator" id="tlViewportIndicator"></div>
+    <!-- Minimap sidebar -->
+    <div class="tl-minimap-pane" id="tlMinimapPane">
+      <div class="tl-minimap-container" id="tlMinimapContainer">
+        <div class="tl-minimap-line"></div>
+        <div class="tl-minimap-events" id="tlMinimapEvents"></div>
+        <div class="tl-viewport-indicator" id="tlViewportIndicator"></div>
+      </div>
     </div>
   </div>
 </div>
@@ -136,7 +136,20 @@
         cardEl.className = 'tl-event-card';
         cardEl.addEventListener('click', () => {
           const detail = cardEl.querySelector('.tl-event-detail');
-          if (detail) detail.classList.toggle('visible');
+          if (detail) {
+            const isExpanding = !detail.classList.contains('visible');
+            // Collapse any other expanded card first
+            const prevExpanded = container.querySelector('.tl-expanded');
+            if (prevExpanded && prevExpanded !== eventEl) {
+              prevExpanded.classList.remove('tl-expanded');
+              prevExpanded.querySelector('.tl-event-detail').classList.remove('visible');
+            }
+            detail.classList.toggle('visible');
+            eventEl.classList.toggle('tl-expanded');
+            // Toggle overlay
+            const tlContainer = document.querySelector('.tl-container');
+            tlContainer.classList.toggle('tl-dimmed', isExpanding);
+          }
         });
 
         const headerEl = document.createElement('div');
@@ -298,6 +311,18 @@
 
     renderTimeline();
     renderMinimap();
+
+    // Click on dimmed area to collapse expanded card
+    document.getElementById('tlMainPane').addEventListener('click', (e) => {
+      if (!e.target.closest('.tl-event-card')) {
+        const expanded = document.querySelector('.tl-expanded');
+        if (expanded) {
+          expanded.classList.remove('tl-expanded');
+          expanded.querySelector('.tl-event-detail').classList.remove('visible');
+          document.querySelector('.tl-container').classList.remove('tl-dimmed');
+        }
+      }
+    });
 
     // Handle window resize
     window.addEventListener('resize', () => {
