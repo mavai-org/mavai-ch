@@ -1546,4 +1546,89 @@ code {
   .feed-subscribe-bar { flex-wrap: wrap; }
 
   .site-footer .container { flex-direction: column; text-align: center; }
+
+  /* ---- Mobile timeline ---- */
+
+  /* Line moves to left edge */
+  .tl-line-segment,
+  .tl-gap-marker {
+    left: 20px !important;
+  }
+
+  /* All dots on the left line */
+  .tl-event-dot {
+    left: 20px !important;
+    width: 12px;
+    height: 12px;
+    top: 16px;
+  }
+
+  /* Today marker on left line */
+  .tl-today-dot {
+    left: 20px !important;
+    width: 16px;
+    height: 16px;
+  }
+
+  .tl-today-label {
+    left: 20px !important;
+    transform: translateX(20px);
+    font-size: 0.8rem;
+  }
+
+  /* Connectors from left line to card */
+  .tl-connector {
+    left: 28px !important;
+    right: auto !important;
+    width: 20px !important;
+  }
+
+  /* All cards on the right of the line, full width */
+  .tl-event-card {
+    left: 55px !important;
+    right: 8px !important;
+    width: auto !important;
+  }
+
+  /* Both sides get the same positioning */
+  .tl-event.tl-left .tl-event-card,
+  .tl-event.tl-right .tl-event-card {
+    left: 55px !important;
+    right: 8px !important;
+    width: auto !important;
+  }
+
+  /* Technological cards keep orange border on left */
+  .tl-event.tl-left .tl-event-card {
+    border-left: 4px solid #f97316;
+  }
+
+  /* Regulatory cards keep blue border on left */
+  .tl-event.tl-right .tl-event-card {
+    border-left: 4px solid #3b82f6;
+  }
+
+  /* Slightly smaller text */
+  .tl-event-headline {
+    font-size: 0.9rem;
+  }
+
+  .tl-event-date {
+    font-size: 0.75rem;
+  }
+
+  .tl-event-summary {
+    font-size: 0.85rem;
+  }
+
+  /* Track uses full width */
+  .tl-track {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  /* Main pane height for mobile header */
+  .tl-main-pane {
+    height: calc(100vh - 180px - 120px);
+  }
 }
