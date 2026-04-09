@@ -78,6 +78,9 @@
 
         // Check if today marker should appear before this event
         if (!todayInserted && todayISO < event.date_iso) {
+          // Advance cursor past the previous card
+          cursorY = Math.max(cursorY, lastLeftY + cardSpacing, lastRightY + cardSpacing);
+
           // Insert gap break before today if needed
           if (prevDate) {
             const daysSincePrev = (today - prevDate) / (1000 * 60 * 60 * 24);
