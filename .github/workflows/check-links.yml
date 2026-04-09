@@ -1,0 +1,149 @@
+name: Check Links
+
+on:
+  schedule:
+    # Weekly — Monday at 05:30 UTC, before Curate News runs at 06:00.
+    - cron: '30 5 * * 1'
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: 'Fail the build on warnings, not just failures'
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: check-links
+  cancel-in-progress: true
+
+env:
+  LINKCHECK_REPORT_MD: ${{ github.workspace }}/link-check-report.md
+  ISSUE_TITLE: "Link check — broken links detected"
+  ISSUE_LABEL: link-check
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: javai-ch
+
+      # javai-newsroom is required by the Gradle composite build; the link
+      # checker's source set pulls it in transitively via sourceSets["main"].
+      - uses: actions/checkout@v4
+        with:
+          repository: javai-org/javai-newsroom
+          ref: main
+          path: javai-newsroom
+          token: ${{ secrets.ORG_REPO_TOKEN }}
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25-ea
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      # continue-on-error lets subsequent steps run (summary, issue
+      # management) regardless of the checker's exit code. The job is
+      # failed explicitly at the end based on steps.linkcheck.outcome.
+      - name: Run link checker
+        id: linkcheck
+        working-directory: javai-ch
+        continue-on-error: true
+        run: |
+          ARGS="checkLinks"
+          if [ "${{ inputs.strict }}" = "true" ]; then
+            ARGS="$ARGS -Pstrict"
+          fi
+          ./gradlew $ARGS
+
+      - name: Write job summary
+        if: always()
+        run: |
+          if [ -f "$LINKCHECK_REPORT_MD" ]; then
+            cat "$LINKCHECK_REPORT_MD" >> "$GITHUB_STEP_SUMMARY"
+          else
+            {
+              echo "## Link check report"
+              echo ""
+              echo "_No report produced — the link checker failed to start. See the run log._"
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # Ensure the label exists so subsequent `gh issue list --label` and
+      # `gh issue create --label` calls don't fail on a fresh repo.
+      # `--force` updates colour/description if the label already exists.
+      - name: Ensure link-check label exists
+        if: always() && steps.linkcheck.outcome != 'skipped'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: javai-ch
+        run: |
+          gh label create "$ISSUE_LABEL" \
+            --description "Automated reports from the link checker workflow" \
+            --color b60205 \
+            --force
+
+      - name: Look up existing link-check issue
+        id: existing
+        if: always() && steps.linkcheck.outcome != 'skipped'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: javai-ch
+        run: |
+          number=$(gh issue list \
+            --label "$ISSUE_LABEL" \
+            --state open \
+            --json number \
+            --jq '.[0].number // ""')
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+          if [ -n "$number" ]; then
+            echo "Found existing open issue #$number"
+          else
+            echo "No existing open link-check issue"
+          fi
+
+      - name: Create or update failure issue
+        if: steps.linkcheck.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUMBER: ${{ steps.existing.outputs.number }}
+        working-directory: javai-ch
+        run: |
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          if [ -n "$NUMBER" ]; then
+            echo "Updating existing issue #$NUMBER"
+            gh issue edit "$NUMBER" --body-file "$LINKCHECK_REPORT_MD"
+            gh issue comment "$NUMBER" \
+              --body "Still broken — see [run #${{ github.run_id }}]($RUN_URL)."
+          else
+            echo "Creating new issue"
+            gh issue create \
+              --title "$ISSUE_TITLE" \
+              --label "$ISSUE_LABEL" \
+              --body-file "$LINKCHECK_REPORT_MD"
+          fi
+
+      - name: Close resolved issue
+        if: steps.linkcheck.outcome == 'success' && steps.existing.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUMBER: ${{ steps.existing.outputs.number }}
+        working-directory: javai-ch
+        run: |
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          gh issue comment "$NUMBER" \
+            --body "All links now reachable — closing. See [run #${{ github.run_id }}]($RUN_URL)."
+          gh issue close "$NUMBER"
+
+      - name: Fail job if links were broken
+        if: steps.linkcheck.outcome == 'failure'
+        run: |
+          echo "Link checker reported failures — failing the job."
+          exit 1

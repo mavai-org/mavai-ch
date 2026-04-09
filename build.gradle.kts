@@ -1,6 +1,7 @@
 plugins {
     java
     application
+    kotlin("jvm") version "2.1.20"
 }
 
 group = "org.javai"
@@ -12,8 +13,30 @@ java {
     }
 }
 
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
+    }
+}
+
 repositories {
     mavenCentral()
+}
+
+// ── Source set for standalone scripts (link checker, etc.) ──────────────
+// Kept separate from `main` so script code does not leak into the app jar.
+sourceSets {
+    create("scripts") {
+        kotlin.srcDir("src/scripts/kotlin")
+        compileClasspath += sourceSets["main"].output
+        runtimeClasspath += sourceSets["main"].output
+    }
+}
+
+// Align the scripts Java compile target with the Kotlin target to avoid the
+// JVM-target consistency check (Kotlin 2.1.x caps out below JVM 25).
+tasks.named<JavaCompile>("compileScriptsJava") {
+    options.release.set(21)
 }
 
 dependencies {
@@ -23,6 +46,7 @@ dependencies {
     testImplementation(platform("org.junit:junit-bom:5.12.2"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    "scriptsImplementation"(kotlin("stdlib"))
 }
 
 application {
@@ -203,4 +227,24 @@ tasks.register("generateAllFeeds") {
     dependsOn("validateTags")
     dependsOn("generateFeed")
     dependsOn(sectors.map { "generateFeed-${it.id}" })
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Link checker — validate every URL that ends up in published content
+// ═══════════════════════════════════════════════════════════════════════════
+
+tasks.register<JavaExec>("checkLinks") {
+    description = "Validate that URLs in published content are reachable"
+    group = "verification"
+    dependsOn("scriptsClasses")
+    mainClass = "org.javai.ch.linkcheck.LinkCheckKt"
+    classpath = sourceSets["scripts"].runtimeClasspath
+    workingDir = rootProject.projectDir
+    systemProperty("linkcheck.root", rootProject.projectDir.absolutePath)
+    // Explicitly forward the markdown-report path env var. This is more
+    // reliable than relying on JavaExec's inherited environment because
+    // the Gradle daemon may have been started before the env var was set.
+    environment("LINKCHECK_REPORT_MD", System.getenv("LINKCHECK_REPORT_MD") ?: "")
+    if (project.hasProperty("strict")) args("--strict")
+    if (project.hasProperty("listOnly")) args("--list")
 }

@@ -1,0 +1,24 @@
+# .linkcheck-ignore — URL substrings that the link checker should skip.
+#
+# One substring per line. A URL is skipped if any line is `contains`-matched.
+# Blank lines and lines starting with `#` are ignored.
+#
+# Only list hosts here that are known to produce *false positives* — i.e.
+# hosts that are reachable in a real browser but block non-browser clients
+# at the WAF layer. Investigated on 2026-04-09; see the commit that
+# introduced this file for per-host evidence.
+
+# --- Hosts that block all programmatic checking ---
+linkedin.com                 # returns HTTP 999 to all non-browser clients
+www.coe.int                  # 403 to programmatic clients even with browser UA
+
+# --- Hosts that serve 4xx to unfamiliar User-Agents ---
+www.finma.ch                 # 400 to custom UAs; browser-verified reachable
+nvlpubs.nist.gov             # 404 to non-browser UAs; browser-verified reachable
+www.congress.gov             # 403 to non-browser UAs
+media.defense.gov            # 403 to non-browser UAs
+www.fiercebiotech.com        # 403 on RSS to non-browser UAs
+www.ema.europa.eu            # aggressive rate limiting (429)
+
+# --- Endpoints that are not GET-addressable pages ---
+formspree.io/f/              # contact form POST endpoint — 400 on GET is correct
