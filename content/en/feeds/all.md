@@ -6,6 +6,6 @@ feed_path: ""
 css_modifier: all
 featured:
   - title: "NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0)"
-    url: "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+    url: "https://doi.org/10.6028/NIST.AI.100-1"
     summary: "The U.S. national framework for managing AI risks, providing structured guidance on governance, risk identification, and mitigation applicable across sectors."
 ---

@@ -200,7 +200,7 @@
   featured: n
 
 - title: "NIST AI Risk Management Framework (AI RMF 1.0)"
-  url: "https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf"
+  url: "https://doi.org/10.6028/NIST.AI.100-1"
   date: "2023-01-26"
   source: "NIST"
   summary: "Framework for managing AI risks emphasising Govern, Map, Measure, and Manage functions. Unusually strong on measurement and ongoing risk monitoring, including thresholding, validation, and drift detection."

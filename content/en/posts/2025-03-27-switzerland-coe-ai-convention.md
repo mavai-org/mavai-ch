@@ -30,7 +30,7 @@ Two workstreams are under way:
 
 No draft bill has been published yet. Given the Swiss legislative process — consultation, parliamentary debate, potential referendum — the law is unlikely to enter into force before **2029 at the earliest**.
 
-In the meantime, existing law applies. In May 2025, the Federal Data Protection and Information Commissioner (FDPIC) [confirmed](https://www.edoeb.admin.ch/en/update-current-legislation-directly-applicable-ai) that the Federal Act on Data Protection (FADP), in force since September 2023, is **directly applicable to AI systems** processing personal data. Organisations cannot wait for new legislation to address transparency and data protection obligations — these already exist.
+In the meantime, existing law applies. The Federal Data Protection and Information Commissioner (FDPIC) [maintains](https://www.edoeb.admin.ch/en/ai-and-data-protection) that the Federal Act on Data Protection (FADP), in force since September 2023, is **directly applicable to AI systems** processing personal data. Organisations cannot wait for new legislation to address transparency and data protection obligations — these already exist.
 
 ## The EU is not waiting
 

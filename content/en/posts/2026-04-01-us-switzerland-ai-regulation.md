@@ -11,7 +11,7 @@ Switzerland and the United States have maintained strong economic ties since the
 
 In July 2025, the United States signalled that it would pursue an innovation-driven policy on AI — with an emphasis on enabling innovation. This direction was reinforced with the publication of the [White House AI Framework](https://www.whitehouse.gov/wp-content/uploads/2026/03/03.20.26-National-Policy-Framework-for-Artificial-Intelligence-Legislative-Recommendations.pdf) on 21 March 2026.
 
-The U.S. approach does not rely on a single, legally binding regulatory framework. Instead, governance is shaped by a combination of voluntary standards, institutional guidance, and sector-specific requirements. The [NIST AI Risk Management Framework (AI RMF 1.0)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf) is the most prominent example: a structured methodology for identifying, assessing, and managing AI-related risks that carries no legal obligation but has been widely adopted across industries and borders.
+The U.S. approach does not rely on a single, legally binding regulatory framework. Instead, governance is shaped by a combination of voluntary standards, institutional guidance, and sector-specific requirements. The [NIST AI Risk Management Framework (AI RMF 1.0)](https://doi.org/10.6028/NIST.AI.100-1) is the most prominent example: a structured methodology for identifying, assessing, and managing AI-related risks that carries no legal obligation but has been widely adopted across industries and borders.
 
 ## Non-binding does not mean irrelevant
 

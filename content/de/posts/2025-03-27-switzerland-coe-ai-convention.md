@@ -30,7 +30,7 @@ Zwei Arbeitsstränge sind im Gang:
 
 Ein Entwurf wurde noch nicht veröffentlicht. Angesichts des Schweizer Gesetzgebungsprozesses — Vernehmlassung, parlamentarische Debatte, mögliches Referendum — dürfte das Gesetz **frühestens 2029** in Kraft treten.
 
-In der Zwischenzeit gilt bestehendes Recht. Im Mai 2025 [bestätigte](https://www.edoeb.admin.ch/de/update-current-legislation-directly-applicable-ai) der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte (EDÖB), dass das Bundesgesetz über den Datenschutz (DSG), seit September 2023 in Kraft, **direkt auf KI-Systeme anwendbar** ist, die Personendaten verarbeiten. Organisationen können nicht auf neue Gesetzgebung warten, um Transparenz- und Datenschutzpflichten nachzukommen — diese bestehen bereits.
+In der Zwischenzeit gilt bestehendes Recht. Der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte (EDÖB) [vertritt die Auffassung](https://www.edoeb.admin.ch/de/ki-und-datenschutz), dass das Bundesgesetz über den Datenschutz (DSG), seit September 2023 in Kraft, **direkt auf KI-Systeme anwendbar** ist, die Personendaten verarbeiten. Organisationen können nicht auf neue Gesetzgebung warten, um Transparenz- und Datenschutzpflichten nachzukommen — diese bestehen bereits.
 
 ## Die EU wartet nicht
 

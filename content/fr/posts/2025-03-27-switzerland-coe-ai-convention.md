@@ -30,7 +30,7 @@ Deux chantiers sont en cours :
 
 Aucun projet n'a encore été publié. Compte tenu du processus législatif suisse — consultation, débat parlementaire, éventuel référendum — la loi ne devrait pas entrer en vigueur avant **2029 au plus tôt**.
 
-Dans l'intervalle, le droit existant s'applique. En mai 2025, le Préposé fédéral à la protection des données et à la transparence (PFPDT) [a confirmé](https://www.edoeb.admin.ch/fr/update-current-legislation-directly-applicable-ai) que la loi fédérale sur la protection des données (LPD), en vigueur depuis septembre 2023, est **directement applicable aux systèmes d'IA** traitant des données personnelles. Les organisations ne peuvent pas attendre une nouvelle législation pour satisfaire leurs obligations de transparence et de protection des données — celles-ci existent déjà.
+Dans l'intervalle, le droit existant s'applique. Le Préposé fédéral à la protection des données et à la transparence (PFPDT) [considère](https://www.edoeb.admin.ch/fr/ia-et-protection-des-donnees) que la loi fédérale sur la protection des données (LPD), en vigueur depuis septembre 2023, est **directement applicable aux systèmes d'IA** traitant des données personnelles. Les organisations ne peuvent pas attendre une nouvelle législation pour satisfaire leurs obligations de transparence et de protection des données — celles-ci existent déjà.
 
 ## L'UE n'attend pas
 
