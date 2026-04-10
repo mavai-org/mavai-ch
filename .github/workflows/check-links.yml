@@ -3,7 +3,7 @@ name: Check Links
 on:
   schedule:
     # Weekly — Monday at 05:30 UTC, before Curate News runs at 06:00.
-    - cron: '30 5 * * 1'
+    - cron: '30 5 * * 5'
   workflow_dispatch:
     inputs:
       strict:
