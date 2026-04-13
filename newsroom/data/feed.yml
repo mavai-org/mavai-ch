@@ -1,3 +1,16 @@
+# -- New candidates --------------------------------------------------------
+# WARNING: POTENTIAL DUPLICATE (see "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act" below)
+- title: "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act"
+  url: "https://www.edps.europa.eu/press-publications/press-news/news/2026/towards-trustworthy-ai-eu-public-administration-edps-compass-its-new-role-under-ai-act"
+  date: "2026-03-17"
+  source: "EDPS"
+  summary: "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act francesco Tue, 03/17/2026 - 09:06 Tue, 03/17/2026 - 12:00 Under the AI Act (Regulation (EU) 2024/1689), the European Data Protection Supervisor is now a market surveillance authority for AI ..."
+  tags: ["eu", "data-protection", "privacy"]
+  relevance: "The EDPS has new statutory duties under AI Act Articles 59–65 to conduct market surveillance of AI systems, which means developers and vendors deploying AI in EU public administration must now understand EDPS oversight, conformity assessment procedures, compliance documentation requirements, and enforcement authority — directly affecting how they design, test, and deploy AI systems."
+  accepted: n
+  featured: n
+
+
 # -- Published feed ---------------------------------------------------------
 - title: "FINMA survey: artificial intelligence gaining traction at Swiss financial institutions"
   url: "https://www.finma.ch/en/news/2025/04/20250424-mm-umfrage-ki/"
