@@ -264,6 +264,17 @@ A pull request implementing this requirement is complete when:
    source entry during development and confirm the abstraction
    supports it.
 
+## Change log
+
+- **2026-04-14** — `www.fda.gov` added to `.linkcheck-ignore`. The host
+  returns HTTP 404 to non-browser user agents (WAF / IP-reputation) while
+  remaining reachable in a real browser. This matches the precedent set
+  by `www.finma.ch`, `nvlpubs.nist.gov`, and other hosts already on the
+  list. The same WAF behaviour causes the Jsoup-based fetcher to return
+  0 items from `fda-press`; that fetcher-side workaround is out of scope
+  for this requirement (see "Out of scope") and should be raised as a
+  follow-up against `javai-newsroom`.
+
 ## Related documents
 
 - `README.md` — feed curation workflow, how a curator accepts items.
