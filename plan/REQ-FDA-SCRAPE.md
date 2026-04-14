@@ -93,20 +93,26 @@ consumer; it must not be the only one possible.
 
 ### FDA-specific configuration (in `javai-ch`)
 
-Three independent entries in `newsroom/config/sources.yml`, each
-targeting a different FDA surface:
+One entry in `newsroom/config/sources.yml`, targeting the only FDA
+surface that is scrapable with the current Jsoup-based HTML fetcher:
 
-| Source id            | FDA surface                                                 |
-|----------------------|-------------------------------------------------------------|
-| `fda-press`          | FDA Newsroom — Press Announcements                          |
-| `fda-guidance`       | FDA Guidance Documents (filtered for AI/software topics)    |
-| `fda-digital-health` | FDA Digital Health Center of Excellence — news / what's new |
+| Source id   | FDA surface                        | Status      |
+|-------------|------------------------------------|-------------|
+| `fda-press` | FDA Newsroom — Press Announcements | Implemented |
 
-Each entry uses the new `ScrapeStrategy` mechanism with:
-- selectors derived by inspecting the live page at implementation time;
-- the AI keyword pre-filter, so non-AI press releases and guidance
-  documents are discarded at fetch time;
-- a small set of structural litmus tests appropriate to that page;
+Two originally-planned surfaces were found to be **not viable** during
+live-page inspection and are deferred to a follow-up requirement:
+
+| Surface                       | Blocker                                                                     |
+|-------------------------------|-----------------------------------------------------------------------------|
+| FDA Guidance Documents        | Table body is JavaScript-rendered (Drupal DataTables). Jsoup gets no rows. Requires a headless browser fetcher or discovery of the underlying AJAX/JSON endpoint. |
+| FDA Digital Health CoE        | Static hub page with no dates, no summaries, and no chronological content. Not a news feed. |
+
+The implemented `fda-press` entry uses the new scrape-strategy fields:
+- selectors derived from live page inspection (Drupal Views listing);
+- the AI keyword pre-filter, so non-AI press releases are discarded at
+  fetch time;
+- three structural litmus tests that detect page restructures;
 - the existing LLM relevance filter applied to whatever survives the
   pre-filter (i.e. **no `bypassFilter` flag**).
 
@@ -162,12 +168,13 @@ question to a later requirement.)
    + litmus tests + issue-on-failure hook) to `../javai-newsroom` on a
    sibling `feature/fda-scrape` branch. Existing sources continue to
    work unchanged.
-2. Inspect the live FDA Press Announcements, Guidance Documents, and
-   Digital Health Center of Excellence pages and derive working
-   selectors and litmus tests for each.
-3. Add three entries — `fda-press`, `fda-guidance`,
-   `fda-digital-health` — to `newsroom/config/sources.yml` in
-   javai-ch, all configured as `ScrapeStrategy` consumers.
+2. Inspect the live FDA Press Announcements page and derive working
+   selectors and litmus tests. (Guidance Documents and Digital Health
+   CoE were inspected and found not viable — see deferred surfaces
+   table above.)
+3. Add `fda-press` to `newsroom/config/sources.yml` in javai-ch,
+   configured as a `ScrapeStrategy` consumer with keyword pre-filter
+   and structural checks.
 4. Confirm `data/sectors.json` already routes the `health` tag to the
    health sector feed; no schema change required.
 5. Run the local dry-run gates (`validateTags`, `fetchNews -Ptiers=2
@@ -203,7 +210,7 @@ A pull request implementing this requirement is complete when:
 1. `./gradlew validateTags` passes — all tags emitted by the new
    sources are already in use or already mapped to a sector.
 2. `./gradlew fetchNews -Ptiers=2 -PdryRun` completes without error
-   against all three new sources. Because the StateManager seeds on
+   against the new `fda-press` source. Because the StateManager seeds on
    first fetch, the run is **not** required to produce candidate
    items; it is required to complete cleanly and to log that each
    source's litmus tests passed.

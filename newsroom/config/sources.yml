@@ -228,6 +228,33 @@ sources:
 
   # === Tier 2 — Specialist reporting and analysis ===
 
+  - id: fda-press
+    name: "FDA Press Announcements"
+    tier: 2
+    type: html-scrape
+    url: "https://www.fda.gov/news-events/fda-newsroom/press-announcements"
+    selectors:
+      item: "div.view-press-announcements div.view-content li"
+      title: "span.field-content a"
+      link: "span.field-content a@href"
+      date: "time@datetime"
+    baseUrl: "https://www.fda.gov"
+    tags: ["us", "health", "ai", "regulatory", "fda"]
+    keywords:
+      - "artificial intelligence"
+      - "machine learning"
+      - "algorithm"
+      - "software as a medical device"
+      - "SaMD"
+      - "digital health"
+    structuralChecks:
+      - selector: "div.view-press-announcements"
+        minCount: 1
+      - selector: "div.view-press-announcements div.view-content li"
+        minCount: 5
+      - selector: "div.view-press-announcements time[datetime]"
+        minCount: 5
+
   - id: iapp
     name: "IAPP"
     tier: 2

@@ -23,10 +23,18 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  # Note: issue management uses ORG_REPO_TOKEN (below), not GITHUB_TOKEN,
+  # because the org restricts GITHUB_TOKEN to read-only. The issues: write
+  # scope is therefore not requested here — ORG_REPO_TOKEN carries it.
 
 concurrency:
   group: curate-news
   cancel-in-progress: false
+
+env:
+  STRUCTURAL_REPORT_MD: ${{ github.workspace }}/javai-ch/build/site/structural-check-report.md
+  ISSUE_TITLE: "Newsroom — scraper structural check failed"
+  ISSUE_LABEL: newsroom-scraper
 
 jobs:
   curate:
@@ -64,8 +72,14 @@ jobs:
             echo "tiers=1,2" >> "$GITHUB_OUTPUT"
           fi
 
+      # continue-on-error lets subsequent steps run (issue management,
+      # PR creation for sources that did succeed) when curate exits
+      # non-zero — exit 2 signals a structural check failure but the
+      # feed has still been written with whatever other sources produced.
       - name: Fetch and filter news
+        id: curate
         working-directory: javai-ch
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
@@ -78,6 +92,62 @@ jobs:
             ARGS="$ARGS -PdryRun"
           fi
           ./gradlew $ARGS
+
+      - name: Ensure newsroom-scraper label exists
+        if: always() && steps.curate.outcome != 'skipped'
+        env:
+          GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
+        working-directory: javai-ch
+        run: |
+          gh label create "$ISSUE_LABEL" \
+            --description "Automated reports from the newsroom curate workflow" \
+            --color b60205 \
+            --force
+
+      - name: Look up existing scraper-failure issue
+        id: existing_issue
+        if: always() && steps.curate.outcome != 'skipped'
+        env:
+          GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
+        working-directory: javai-ch
+        run: |
+          number=$(gh issue list \
+            --label "$ISSUE_LABEL" \
+            --state open \
+            --json number \
+            --jq '.[0].number // ""')
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+
+      - name: Create or update structural-failure issue
+        if: steps.curate.outcome == 'failure' && hashFiles(env.STRUCTURAL_REPORT_MD) != ''
+        env:
+          GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
+          NUMBER: ${{ steps.existing_issue.outputs.number }}
+        working-directory: javai-ch
+        run: |
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          if [ -n "$NUMBER" ]; then
+            gh issue edit "$NUMBER" --body-file "$STRUCTURAL_REPORT_MD"
+            gh issue comment "$NUMBER" \
+              --body "Still failing — see [run #${{ github.run_id }}]($RUN_URL)."
+          else
+            gh issue create \
+              --title "$ISSUE_TITLE" \
+              --label "$ISSUE_LABEL" \
+              --body-file "$STRUCTURAL_REPORT_MD"
+          fi
+
+      - name: Close resolved scraper-failure issue
+        if: steps.curate.outcome == 'success' && steps.existing_issue.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
+          NUMBER: ${{ steps.existing_issue.outputs.number }}
+        working-directory: javai-ch
+        run: |
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          gh issue comment "$NUMBER" \
+            --body "Structural checks now pass — closing. See [run #${{ github.run_id }}]($RUN_URL)."
+          gh issue close "$NUMBER"
 
       - name: Check for changes
         id: changes
