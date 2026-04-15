@@ -59,8 +59,8 @@
     "origin": "CN",
     "category": "regulatory",
     "summary": "China's regulation on deep synthesis (deepfakes) and algorithmic recommendation comes into force.",
-    "source": "http://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm",
-    "source_label": "View regulation →"
+    "source": "https://chinaregulatesai.alexmakosz.ca",
+    "source_label": "View summary →"
   },
   {
     "date_iso": "2022-11-30",
@@ -70,6 +70,15 @@
     "summary": "OpenAI launches ChatGPT, bringing LLM interaction to the general public.",
     "source": "https://openai.com/blog/chatgpt",
     "source_label": "Visit site →"
+  },
+  {
+    "date_iso": "2023-01-26",
+    "headline": "NIST AI Risk Management Framework published",
+    "origin": "USA",
+    "category": "regulatory",
+    "summary": "The US National Institute of Standards and Technology publishes the AI Risk Management Framework (AI RMF 1.0), providing voluntary guidance for managing risks in AI systems.",
+    "source": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+    "source_label": "View framework →"
   },
   {
     "date_iso": "2023-02-06",
@@ -140,8 +149,17 @@
     "origin": "CN",
     "category": "regulatory",
     "summary": "China's Interim Measures for the Management of Generative AI Services take effect.",
-    "source": "http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
-    "source_label": "View measures →"
+    "source": "https://chinaregulatesai.alexmakosz.ca",
+    "source_label": "View summary →"
+  },
+  {
+    "date_iso": "2023-09-01",
+    "headline": "Switzerland FADP fully effective",
+    "origin": "CH",
+    "category": "regulatory",
+    "summary": "Switzerland's revised Federal Act on Data Protection (nFADP) is fully in effect, with relevance to AI data processing.",
+    "source": "https://www.fedlex.admin.ch/eli/cc/2022/491/en",
+    "source_label": "View law →"
   },
   {
     "date_iso": "2023-09-26",
@@ -167,7 +185,7 @@
     "origin": "USA",
     "category": "regulatory",
     "summary": "President Biden signs Executive Order 14110 on safe, secure, and trustworthy AI.",
-    "source": "https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/",
+    "source": "https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence",
     "source_label": "View order →"
   },
   {
@@ -178,6 +196,15 @@
     "summary": "Google DeepMind releases Gemini, a natively multimodal model family.",
     "source": "https://deepmind.google/technologies/gemini/",
     "source_label": "Learn more →"
+  },
+  {
+    "date_iso": "2023-12-15",
+    "headline": "ISO 42001:2023 published",
+    "origin": "ISO",
+    "category": "regulatory",
+    "summary": "The International Organization for Standardization publishes ISO/IEC 42001:2023, the first international standard for AI management systems, providing a framework for responsible development and use of AI.",
+    "source": "https://www.iso.org/standard/42001",
+    "source_label": "View standard →"
   },
   {
     "date_iso": "2024-02-15",
@@ -268,15 +295,6 @@
     "summary": "The EU AI Act is published in the Official Journal and enters into force.",
     "source": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
     "source_label": "View text →"
-  },
-  {
-    "date_iso": "2024-09-01",
-    "headline": "Switzerland FADP fully effective",
-    "origin": "CH",
-    "category": "regulatory",
-    "summary": "Switzerland's revised Federal Act on Data Protection (nFADP) is fully in effect, with relevance to AI data processing.",
-    "source": "https://www.fedlex.admin.ch/eli/cc/2022/491/en",
-    "source_label": "View law →"
   },
   {
     "date_iso": "2024-09-12",
@@ -419,8 +437,8 @@
     "origin": "JP",
     "category": "regulatory",
     "summary": "Japan's Act on the Promotion of Research and Development and Utilisation of AI-Related Technologies takes effect.",
-    "source": "https://www.japaneselawtranslation.go.jp/",
-    "source_label": "View law →"
+    "source": "https://www.kojimalaw.jp/wp/wp-content/uploads/2025/09/Japan-AI-Promotion-Act-KOJIMA-LAW-OFFICES-jp-en-reference-translation.pdf",
+    "source_label": "View English translation →"
   },
   {
     "date_iso": "2025-06-25",
@@ -475,6 +493,15 @@
     "summary": "Mistral AI releases the Mistral 3 family: Large 3 frontier model plus nine dense open-weight models.",
     "source": "https://mistral.ai/news/mistral-3",
     "source_label": "View post →"
+  },
+  {
+    "date_iso": "2026-01-01",
+    "headline": "South Korea Framework Act on AI in force",
+    "origin": "KR",
+    "category": "regulatory",
+    "summary": "South Korea's Framework Act on the Development of Artificial Intelligence and the Creation of a Foundation for Trust enters into force, establishing a national governance framework for AI.",
+    "source": "https://elaw.klri.re.kr/eng_service/lawView.do?hseq=71019&lang=ENG",
+    "source_label": "View law →"
   },
   {
     "date_iso": "2026-02-05",
