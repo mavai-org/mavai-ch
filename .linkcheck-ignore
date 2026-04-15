@@ -19,7 +19,6 @@ www.congress.gov             # 403 to non-browser UAs
 media.defense.gov            # 403 to non-browser UAs
 www.fiercebiotech.com        # 403 on RSS to non-browser UAs
 www.ema.europa.eu            # aggressive rate limiting (429)
-www.fda.gov                  # 404 to non-browser UAs (WAF); browser-verified reachable
 
 # --- Endpoints that are not GET-addressable pages ---
 formspree.io/f/              # contact form POST endpoint — 400 on GET is correct
