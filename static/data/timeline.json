@@ -81,6 +81,15 @@
     "source_label": "View post →"
   },
   {
+    "date_iso": "2023-03-29",
+    "headline": "UK publishes pro-innovation AI regulation white paper",
+    "origin": "UK",
+    "category": "regulatory",
+    "summary": "The UK Department for Science, Innovation and Technology publishes its white paper setting out a principles-based, pro-innovation approach to AI regulation — distinct from the EU's prescriptive risk-based model.",
+    "source": "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper",
+    "source_label": "View white paper →"
+  },
+  {
     "date_iso": "2023-03-28",
     "headline": "\"Pause Giant AI Experiments\" open letter",
     "origin": "USA",
@@ -127,6 +136,15 @@
   },
   {
     "date_iso": "2023-10-30",
+    "headline": "G7 Hiroshima AI Process Code of Conduct adopted",
+    "origin": "G7",
+    "category": "regulatory",
+    "summary": "The G7 nations and the EU agree to the Hiroshima Process International Code of Conduct for organisations developing advanced AI systems, providing voluntary guidance on risk assessment, transparency, safety research, and systemic risk management.",
+    "source": "https://digital-strategy.ec.europa.eu/en/library/hiroshima-process-international-code-conduct-advanced-ai-systems",
+    "source_label": "View code of conduct →"
+  },
+  {
+    "date_iso": "2023-10-30",
     "headline": "US Executive Order on AI",
     "origin": "USA",
     "category": "regulatory",
@@ -160,6 +178,15 @@
     "summary": "Anthropic releases the Claude 3 model family (Haiku, Sonnet, Opus).",
     "source": "https://www.anthropic.com/news/claude-3-family",
     "source_label": "View post →"
+  },
+  {
+    "date_iso": "2024-03-21",
+    "headline": "UN General Assembly adopts first AI resolution",
+    "origin": "UN",
+    "category": "regulatory",
+    "summary": "The UN General Assembly unanimously adopts its first resolution on AI, calling for safe, secure and trustworthy AI systems for sustainable development and urging member states to develop regulatory and governance frameworks.",
+    "source": "https://news.un.org/en/story/2024/03/1147831",
+    "source_label": "View resolution →"
   },
   {
     "date_iso": "2024-03-13",
@@ -196,6 +223,15 @@
     "summary": "The EU AI Act is published in the Official Journal and enters into force.",
     "source": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
     "source_label": "View text →"
+  },
+  {
+    "date_iso": "2024-09-05",
+    "headline": "Council of Europe AI Convention opens for signature",
+    "origin": "CoE",
+    "category": "regulatory",
+    "summary": "The Council of Europe opens the Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law (CETS No. 225) for signature in Vilnius — the first binding international treaty on AI, open to both Council of Europe members and non-member states including the US, UK, and Canada.",
+    "source": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-ai",
+    "source_label": "View convention →"
   },
   {
     "date_iso": "2024-09-12",
@@ -267,7 +303,7 @@
     "category": "regulatory",
     "summary": "Switzerland signs the Council of Europe's Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law (CETS No. 225), the first binding international treaty on AI.",
     "source": "https://www.news.admin.ch/en/nsb?id=104646",
-    "source_label": "View announcement →"
+    "source_label": "View signatories →"
   },
   {
     "date_iso": "2025-04-05",
@@ -331,6 +367,15 @@
     "summary": "South Korea's Framework Act on the Development of Artificial Intelligence and the Creation of a Foundation for Trust enters into force, establishing a national governance framework for AI.",
     "source": "https://elaw.klri.re.kr/eng_service/lawView.do?hseq=71019&lang=ENG",
     "source_label": "View law →"
+  },
+  {
+    "date_iso": "2026-03-20",
+    "headline": "US National Policy Framework for AI published",
+    "origin": "USA",
+    "category": "regulatory",
+    "summary": "The White House publishes the National Policy Framework for Artificial Intelligence, setting out legislative recommendations for AI governance in the United States.",
+    "source": "https://www.whitehouse.gov/wp-content/uploads/2026/03/03.20.26-National-Policy-Framework-for-Artificial-Intelligence-Legislative-Recommendations.pdf",
+    "source_label": "View framework →"
   },
   {
     "date_iso": "2026-04-07",
