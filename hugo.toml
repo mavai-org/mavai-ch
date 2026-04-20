@@ -30,6 +30,12 @@ ignoreFiles = ['^drafts/']
 [markup.goldmark.renderer]
   unsafe = true
 
+[params.analytics]
+  # Full URL of the site-specific Plausible script. Empty string disables
+  # analytics. The URL embeds the site ID (public; visible in page source).
+  # Different per site: javai.org and javai.ch each have their own script URL.
+  plausibleScriptUrl = "https://plausible.io/js/pa-Tbyp2qTnw4Ap6G3NO0KQ4.js"
+
 # ── Languages ──
 
 [languages.en]

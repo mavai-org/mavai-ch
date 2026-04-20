@@ -35,3 +35,15 @@
 {{ end }}
 {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+{{/* Plausible analytics — production builds only; suppressed during `hugo server`. */}}
+{{ with .Site.Params.analytics.plausibleScriptUrl }}
+{{ if not hugo.IsServer }}
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="{{ . }}"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+{{ end }}
+{{ end }}
