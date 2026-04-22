@@ -17,7 +17,7 @@
   date: "2025-04-24"
   source: "FINMA"
   summary: "FINMA surveyed around 400 Swiss financial institutions on their use of AI. About half already use AI or have applications in development, 91% of those use generative AI, and roughly 50% have an explicit AI strategy. The survey highlights data quality, data protection, and explainability as top risk priorities."
-  tags: ["global", "swiss", "financial", "ai-governance"]
+  tags: ["swiss", "financial", "ai-governance"]
   relevance: "First comprehensive FINMA survey of AI adoption across Swiss financial institutions — establishes the baseline for supervisory expectations and industry practice."
   accepted: y
   featured: y
@@ -57,7 +57,7 @@
   date: "2025-11-01"
   source: "EBA"
   summary: "Maps the AI Act against banking-sector obligations and supervisory structures. Covers how banking-specific requirements interact with horizontal AI Act obligations."
-  tags: ["global", "eu", "financial", "ai-act"]
+  tags: ["eu", "financial", "ai-act"]
   relevance: "Maps AI Act obligations onto banking software — essential for developers serving financial institutions"
   accepted: y
   featured: y
@@ -77,7 +77,7 @@
   date: "2025-08-01"
   source: "EIOPA"
   summary: "Supervisory expectations for AI governance and risk management in the insurance sector. Applies a risk-based, proportionate approach."
-  tags: ["global", "eu", "insurance", "ai-governance", "risk-management"]
+  tags: ["eu", "financial", "insurance", "ai-governance", "risk-management"]
   relevance: "AI governance obligations specific to insurance — risk-based approach with sector-specific controls"
   accepted: y
   featured: n
