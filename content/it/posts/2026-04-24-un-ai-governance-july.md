@@ -1,9 +1,11 @@
 ---
-title: "Le riunioni dell'ONU di questa settimana hanno cristallizzato le tensioni che definiranno la governance globale dell'IA"
+title: "I Colloqui dell'ONU affrontano le tensioni centrali della governance dell'IA"
 date: 2026-04-24
 description: "Le riunioni della CNUCED a Ginevra hanno esposto le tensioni centrali – equità, filosofia di governance, implicazioni settoriali – che domineranno i vertici di governance dell'IA in luglio in Svizzera."
 summary: "Questa settimana, importanti riunioni delle Nazioni Unite sulla governance dell'IA si sono svolte a Ginevra, rivelando le linee di frattura centrali che modelleranno la regolamentazione globale dell'IA per gli anni a venire. La Commissione per la scienza e la tecnologia per lo sviluppo ha esposto una crisi di equità, una frattura filosofica della governance e implicazioni settoriali. Queste tensioni definiranno le conversazioni a luglio, quando due vertici maggiori convergeranno a Ginevra."
 ---
+
+## Le riunioni dell'ONU di questa settimana hanno cristallizzato le tensioni che definiranno la governance globale dell'IA
 
 Questa settimana, importanti riunioni delle Nazioni Unite sulla governance dell'IA si sono svolte a Ginevra. La [Commissione per la scienza e la tecnologia per lo sviluppo (CNUCED) ha tenuto la sua 29ª sessione](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) dal 20 al 24 aprile sul tema "Scienza, tecnologia e innovazione nell'era dell'IA," focalizzandosi su una preoccupazione centrale: l'adozione dell'IA sta crescendo due volte più velocemente nel Nord globale che nel Sud globale, ampliando i divari nelle opportunità economiche e nella sovranità digitale. Queste tensioni non saranno risolte questa settimana. Invece, si sono cristallizzate in discussioni fondamentali che modelleranno i vertici globali di governance dell'IA a luglio – e influenzeranno come l'IA viene regolamentata a livello mondiale per gli anni a venire.
 

@@ -1,9 +1,11 @@
 ---
-title: "This Week's UN Meetings Crystallised the Tensions That Will Define Global AI Governance"
+title: "UN Meetings address central tensions shaping AI Governance"
 date: 2026-04-24
 description: "Geneva's CSTD meetings exposed the core tensions—equity, governance philosophy, sector impacts—that will dominate July's AI governance summits in Switzerland."
 summary: "This week, Geneva hosted UN meetings on AI governance that revealed the central fault lines that will shape global AI regulation for years. The Commission on Science and Technology for Development exposed an equity crisis, a governance philosophy divide, and sector-specific implications. These tensions will define the conversations in July, when two major summits converge in Geneva."
 ---
+
+## This week's UN meetings crystallised the tensions that will define global AI governance
 
 This week, Geneva hosted important United Nations meetings on AI governance. The [Commission on Science and Technology for Development (CSTD) convened its 29th Session](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) from April 20–24 under the theme "Science, Technology and Innovation in the Age of AI," focusing on a central concern: AI adoption is growing twice as fast in the Global North as in the Global South, widening gaps in economic opportunity and digital sovereignty. These tensions won't be resolved this week. Instead, they've crystallised into the core discussions that will shape July's global summits on AI governance—and influence how AI is regulated worldwide for years to come.
 

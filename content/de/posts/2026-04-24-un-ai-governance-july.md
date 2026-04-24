@@ -1,9 +1,13 @@
 ---
-title: "Die UN-Treffen dieser Woche haben die Spannungen offenbart, die die globale KI-Governance prägen"
+title: "UN-Treffen befassen sich mit zentralen Spannungen der KI-Governance"
 date: 2026-04-24
 description: "Genfs CSTD-Tagungen legten die zentralen Spannungen offen – Chancengleichheit, Governance-Philosophie, sektorale Auswirkungen –, die die KI-Governance-Gipfel im Juli in der Schweiz dominieren werden."
 summary: "Diese Woche fanden in Genf wichtige UN-Treffen zur KI-Governance statt, die die zentralen Bruchlinien offenbarten, welche die globale KI-Regulierung in den kommenden Jahren prägen werden. Die Kommission für Wissenschaft und Technologie für Entwicklung legte eine Chancengleichheitskrise offen, eine Governance-Philosophie-Kluft und sektorale Auswirkungen. Diese Spannungen werden die Diskussionen im Juli bestimmen, wenn zwei grosse Gipfeltreffen in Genf zusammenkommen."
 ---
+
+## Diese Woche's UN-Treffen haben die Spannungen kristallisiert, die die globale KI-Governance prägen
+
+Diese Woche fanden in Genf wichtige Vereinte-Nationen-Treffen zur KI-Governance statt. Die [Kommission für Wissenschaft und Technologie für Entwicklung (CSTD) hielt ihre 29. Tagung ab](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) vom 20. bis 24. April unter dem Thema „Wissenschaft, Technologie und Innovation im Zeitalter der KI". Im Fokus stand eine zentrale Sorge: Die KI-Einführung wächst in der Globalen Nordregion doppelt so schnell wie in der Globalen Südregion und vergrössert damit die Lücken in wirtschaftlichen Chancen und digitaler Souveränität. Diese Spannungen werden diese Woche nicht gelöst. Stattdessen haben sie sich zu den zentralen Diskussionen kristallisiert, die im Juli die globalen Gipfeltreffen zur KI-Governance prägen werden – und werden beeinflussen, wie KI weltweit reguliert wird.
 
 ## Quellen
 
