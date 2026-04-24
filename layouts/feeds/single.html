@@ -108,6 +108,13 @@
         featuredSection.style.display = '';
       }
 
+      // Sort items by date (newest first)
+      regular.sort(function(a, b) {
+        var dateA = a.date ? new Date(a.date) : new Date(0);
+        var dateB = b.date ? new Date(b.date) : new Date(0);
+        return dateB - dateA;
+      });
+
       // Render feed items
       var html = '';
       regular.forEach(function(item) {
