@@ -38,3 +38,13 @@ Questi vertici offrono un'opportunità preziosa di impegnarsi direttamente su co
 - **Costruire reti** – Incontrate persone e organizzazioni che lavorano su questi problemi a livello globale.
 
 Ginevra è da lungo tempo il luogo dove si formano gli accordi globali fondamentali. Le istituzioni svizzere, la sua tradizione di mediazione neutrale e il suo impegno verso la costruzione del consenso la rendono un forum naturale per queste conversazioni. Le persone che partecipano avranno l'opportunità di influenzare lo sviluppo della conversazione.
+
+---
+
+## Fonti
+
+- [29ª sessione della CNUCED](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) — CNUCED
+- [Atti della sessione CNUCED](https://webtv.un.org/en/asset/k1z/k1zdnx65rt) — UN Web TV
+- [Geoffrey Hinton sulla governance dell'IA](https://soundcloud.com/unradio/godfather-of-ai-geoffrey) — UN Radio
+- [Dialogo globale delle Nazioni Unite sulla governance dell'IA](https://www.un.org/global-dialogue-ai-governance/en) — ONU.org
+- [Vertice mondiale AI for Good 2026](https://aiforgood.itu.int/summit26/) — ITU

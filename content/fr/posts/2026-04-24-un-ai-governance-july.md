@@ -38,3 +38,13 @@ Ces sommets offrent une occasion précieuse de s'engager directement dans la fa�
 - **Construire des réseaux** – Rencontrez les personnes et les organisations qui travaillent sur ces problèmes mondialement.
 
 Genève est depuis longtemps le lieu où se forment les accords mondiaux fondamentaux. Les institutions suisses, sa tradition de médiation neutre et son engagement envers la création de consensus en font un forum naturel pour ces conversations. Les personnes qui participent auront l'occasion d'influencer le développement de la conversation.
+
+---
+
+## Sources
+
+- [29e session de la CNUCED](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) — CNUCED
+- [Procédures de la session CNUCED](https://webtv.un.org/en/asset/k1z/k1zdnx65rt) — UN Web TV
+- [Geoffrey Hinton sur la gouvernance de l'IA](https://soundcloud.com/unradio/godfather-of-ai-geoffrey) — UN Radio
+- [Dialogue mondial de l'ONU sur la gouvernance de l'IA](https://www.un.org/global-dialogue-ai-governance/en) — ONU.org
+- [Sommet mondial IA for Good 2026](https://aiforgood.itu.int/summit26/) — UIT

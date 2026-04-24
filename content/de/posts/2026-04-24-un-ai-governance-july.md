@@ -2,7 +2,17 @@
 title: "Die UN-Treffen dieser Woche haben die Spannungen offenbart, die die globale KI-Governance prägen"
 date: 2026-04-24
 description: "Genfs CSTD-Tagungen legten die zentralen Spannungen offen – Chancengleichheit, Governance-Philosophie, sektorale Auswirkungen –, die die KI-Governance-Gipfel im Juli in der Schweiz dominieren werden."
-summary: "Diese Woche fanden in Genf wichtige UN-Treffen zur KI-Governance statt, die die zentralen Bruchlinien offenbarten, welche die globale KI-Regulierung in den kommenden Jahren prägen werden. Die Kommission für Wissenschaft und Technologie für Entwicklung legte eine Chancengleichheitskrise offen, eine Governance-Philosophie-Kluft und sektorale Auswirkungen. Diese Spannungen werden die Diskussionen im Juli bestimmen, wenn zwei grosse Gipfeltreffen in Genf zusammenkommen."
+summary: "Diese Woche fanden in Genf wichtige UN-Treffen zur KI-Governance statt, die die zentralen Bruchlinien offenbarten, welche die globale KI-Regulierung in den kommenden Jahren prägen werden. Die Kommission für Wissenschaft und Technologie für Entwicklung legte eine Chancengleichheitskrise offen, eine Governance-Philosophie-Kluft und sektorale Auswirkungen. Diese Spannungen werden die Diskussionen im Juli bestimmen, wenn zwei grosse Gipfeltreffen in Genf zusammenkommen.
+
+---
+
+## Quellen
+
+- [CSTD 29. Tagung](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) – UNCTAD
+- [CSTD-Tagungsprotokoll](https://webtv.un.org/en/asset/k1z/k1zdnx65rt) – UN Web TV
+- [Geoffrey Hinton zur KI-Governance](https://soundcloud.com/unradio/godfather-of-ai-geoffrey) – UN Radio
+- [UN Global Dialogue on AI Governance](https://www.un.org/global-dialogue-ai-governance/en) – UN.org
+- [AI for Good Global Summit 2026](https://aiforgood.itu.int/summit26/) – ITU"
 ---
 
 Diese Woche fanden in Genf wichtige Vereinte-Nationen-Treffen zur KI-Governance statt. Die [Kommission für Wissenschaft und Technologie für Entwicklung (CSTD) hielt ihre 29. Tagung ab](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) vom 20. bis 24. April unter dem Thema „Wissenschaft, Technologie und Innovation im Zeitalter der KI". Im Fokus stand eine zentrale Sorge: Die KI-Einführung wächst in der Globalen Nordregion doppelt so schnell wie in der Globalen Südregion und vergrössert damit die Lücken in wirtschaftlichen Chancen und digitaler Souveränität. Diese Spannungen werden diese Woche nicht gelöst. Stattdessen haben sie sich zu den zentralen Diskussionen kristallisiert, die im Juli die globalen Gipfeltreffen zur KI-Governance prägen werden – und beeinflussen werden, wie KI weltweit reguliert wird.
