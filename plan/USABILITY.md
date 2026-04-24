@@ -11,9 +11,9 @@ Current focus is smartphone UX — phones roughly 360–430 px wide. iPad and la
 | # | Item                                                            | Severity | Status                                                                                                    |
 |---|-----------------------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------|
 | 1 | Timeline card overlap on phones                                 | High     | **Fixed** — PR [#18](https://github.com/javai-org/javai-ch/pull/18), commit `18d88c8` (merged 2026-04-24) |
-| 2 | Navigation density on phone                                     | Medium   | Open                                                                                                      |
-| 3 | Single 768 px breakpoint treats phone and tablet identically    | Medium   | Open                                                                                                      |
-| 4 | Hero and section banners take excessive vertical space on phone | Low      | Open                                                                                                      |
+| 2 | Navigation density on phone                                     | Medium   | **Fixed** — PR [#20](https://github.com/javai-org/javai-ch/pull/20), commit `54d155d` (merged 2026-04-24) |
+| 3 | Single 768 px breakpoint treats phone and tablet identically    | Medium   | **Fixed** — PR [#20](https://github.com/javai-org/javai-ch/pull/20), commit `54d155d` (merged 2026-04-24) |
+| 4 | Hero and section banners take excessive vertical space on phone | Low      | **Fixed** — PR #21 (merged 2026-04-24)                                                                    |
 
 ## 1. Timeline card overlap — FIXED
 
@@ -29,27 +29,33 @@ Desktop layout is unchanged. The existing resize listener re-renders the timelin
 
 Post-fix measurement (first six events at 390 px): `40, 190, 321, 452, 583, 664` — each card fully clears the previous one.
 
-## 2. Navigation density on phone
+## 2. Navigation density on phone — FIXED
 
-**Problem.** At ≤480 px the top nav wraps onto three rows: primary nav spills across two rows, with the language switcher on a third. Every item fits and is clickable — this is a density / vertical-space complaint, not a clipping bug. The header eats a noticeable fraction of the first screenful before the reader sees any content, which matches the "cluttered" complaint in #17.
+**Problem.** At ≤480 px the top nav wrapped onto three rows: primary nav spilled across two rows, with the language switcher on a third. Every item fit and was clickable — this was a density / vertical-space complaint, not a clipping bug — but the header ate a noticeable fraction of the first screenful before the reader saw any content.
 
-**Candidate directions** (not yet decided; pick one before starting the PR):
+**Fix.** Compact-mode approach: no markup change, no JS. Inside the new ≤480 px block, shrink nav font-size (0.9rem → 0.75rem), tighten `gap` and `letter-spacing`, and compact the language switcher (font, gap, padding). Hamburger was considered and rejected as overkill for a five-item nav.
 
-- **Hamburger menu at ≤480 px.** Idiomatic for phones, collapses nav to a single icon. Costs a small amount of JS plus accessibility state (focus trap, `aria-expanded`, ESC-to-close).
-- **Horizontally scrollable nav strip.** Zero JS, nav remains visible in one row. Less familiar as a pattern but lighter to build and maintain.
-- **Shrink the language switcher.** A compact `EN ▾` dropdown recovers one row without restructuring the primary nav.
+Measured header heights at 390 px after the fix:
+- EN: 116 px (was ~140)
+- DE / FR / IT: 116 px each, primary nav fits in two rows with language switcher sharing the second row
+- DE at 360 px: 147 px (language switcher wraps, edge case — acceptable)
 
-## 3. Single 768 px breakpoint
+## 3. Single 768 px breakpoint — FIXED
 
-**Problem.** `assets/css/main.css:1505` has exactly one mobile breakpoint — `@media (max-width: 768px)` — so rules inside it are shared between iPad portrait (768 px) and iPhone SE (375 px). The rules were evidently authored at the tablet end of that range. Because iPad is reported as fine and phones are not, several of the downstream complaints collapse to "these rules never got a phone-specific version."
+**Problem.** `assets/css/main.css:1505` had exactly one mobile breakpoint — `@media (max-width: 768px)` — so rules inside it were shared between iPad portrait (768 px) and iPhone SE (375 px). The rules had been authored at the tablet end of that range, which is why several phone-specific complaints collapsed to "these rules never got a phone-specific version."
 
-**Fix direction.** Introduce a second breakpoint at `max-width: 480px` for phone-only overrides. Keep the 768 px block for the in-between sizes (small tablet, large phone landscape). Items #2 and #4 should land inside the new block.
+**Fix.** Added a second breakpoint at `max-width: 480px` below the existing 768 px block. The new block is reserved for phone-specific concessions only — structural changes shared with small tablets still belong in the 768 px block. Items §2 and §4 landed inside the new block.
 
-## 4. Hero and section banners take excessive vertical space on phone
+## 4. Hero and section banners take excessive vertical space on phone — FIXED
 
-**Problem.** On phones the hero sets `min-height: 400px` (`main.css:1508`) and section banners set `height: 180px` (`main.css:1527`). At 390 × 844 that is roughly a quarter to half of the first viewport before the reader sees body content. Not broken — the banner's heading and subtitle render correctly inside — but reinforces the "cluttered" feel from #17.
+**Problem.** On phones the hero was fixed at `min-height: 400px` (`main.css:1508`) and section banners at `height: 180px` (`main.css:1527`). At 390 × 844 the hero alone consumed nearly half the viewport before content, and long subtitles in German on section banners clipped below the 180 px fixed height.
 
-**Fix direction.** Under a phone-only breakpoint (see §3), reduce hero `min-height` to something like `280px` and convert section-banner `height: 180px` to a `min-height` + vertical padding, so it contracts around its text on phone rather than reserving a fixed height.
+**Fix.** Inside the ≤480 px block:
+- `.hero { min-height: 280px }` and container padding reduced from `--space-xxl` (7 rem) to `--space-md` (2 rem). Hero h1 from 2.25rem → 1.875rem, hero-sub from 1.05rem → 0.95rem.
+- `.section-banner { height: auto; min-height: 120px }` — converts a fixed height to a minimum, so the banner contracts around short titles ("About" → 141 px) and expands around long German subtitles rather than clipping them ("Alle Sektoren" feed page → 190 px, all content visible).
+- Section-banner h1 1.75rem → 1.5rem, subtitle 1.05rem → 0.95rem.
+
+Measured at 390 px: home hero 368 px (down from ~400), `/en/about/` banner 141 px (down from 180), `/en/feeds/all/` banner 165 px (down from 180), `/de/feeds/all/` banner 190 px (was clipping at 180). iPad and desktop measurements unchanged.
 
 ## Investigated and retracted
 

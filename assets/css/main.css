@@ -1651,4 +1651,23 @@ code {
     font-size: 0.7rem !important;
     padding: 0.15em 0.3em !important;
   }
+
+  .hero { min-height: 280px; }
+  .hero .container {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+  }
+  .hero h1 { font-size: 1.875rem; }
+  .hero-sub { font-size: 0.95rem; margin-bottom: var(--space-md); }
+
+  .section-banner {
+    height: auto;
+    min-height: 120px;
+  }
+  .section-banner .container {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+  }
+  .section-banner h1 { font-size: 1.5rem; }
+  .section-banner-sub { font-size: 0.95rem; }
 }
