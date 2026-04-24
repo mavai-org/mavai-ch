@@ -1618,3 +1618,37 @@ code {
     height: calc(100vh - 180px - 120px);
   }
 }
+
+/* ---- Phone-only overrides ---- */
+/* The 768px block above is shared between iPad portrait and phones; rules in
+   this block are for phones specifically, where the 768px rules don't tighten
+   enough. Keep this block for phone-specific concessions only (smaller text,
+   tighter spacing, stacked controls) — structural changes shared with small
+   tablets belong in the 768px block above. */
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+
+  .site-header .container {
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+    gap: 0;
+  }
+
+  .site-nav {
+    gap: var(--space-xs) 0.75rem;
+    row-gap: var(--space-xs);
+  }
+  .site-nav a {
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    padding: 0.15rem 0;
+  }
+
+  .lang-switcher {
+    gap: 0.25rem;
+  }
+  .lang-switcher a {
+    font-size: 0.7rem !important;
+    padding: 0.15em 0.3em !important;
+  }
+}
