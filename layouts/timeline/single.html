@@ -54,6 +54,13 @@
       const cardSpacing = 80;       // px between cards on same side
       const gapThreshold = 180;     // days — gaps larger than this get a break marker
       const gapMarkerHeight = 50;   // px for the dotted break section
+      // On narrow viewports the CSS collapses both columns onto the left spine,
+      // so cards cannot alternate sides to avoid collisions. Fall back to a
+      // single-column flow and measure actual card heights (headlines wrap more
+      // aggressively at phone widths, so a fixed top-to-top spacing is unsafe).
+      const narrow = window.matchMedia('(max-width: 768px)').matches;
+      const narrowGap = 16;         // visual gap between stacked cards
+      let narrowNextY = 40;         // next Y a card can occupy in single-column mode
 
       container.style.position = 'relative';
 
@@ -117,7 +124,12 @@
         const side = event.category === 'regulatory' ? 'tl-right' : 'tl-left';
         let topPx = cursorY;
 
-        if (side === 'tl-left') {
+        if (narrow) {
+          // Single-column: each card must clear whichever card was placed last
+          topPx = Math.max(cursorY, narrowNextY);
+          lastLeftY = topPx;
+          lastRightY = topPx;
+        } else if (side === 'tl-left') {
           if (topPx < lastLeftY + cardSpacing) topPx = lastLeftY + cardSpacing;
           lastLeftY = topPx;
         } else {
@@ -203,7 +215,14 @@
         container.appendChild(eventEl);
 
         prevDate = eventDate;
-        cursorY = topPx + 20; // advance cursor past the dot
+        if (narrow) {
+          // Measure the card after insertion so wrapped headlines are accounted for
+          const cardHeight = cardEl.getBoundingClientRect().height;
+          narrowNextY = topPx + cardHeight + narrowGap;
+          cursorY = narrowNextY;
+        } else {
+          cursorY = topPx + 20; // advance cursor past the dot
+        }
       });
 
       // Insert today marker at end if not yet inserted
