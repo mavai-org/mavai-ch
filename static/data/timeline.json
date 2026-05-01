@@ -9,24 +9,6 @@
     "source_label": "Read paper →"
   },
   {
-    "date_iso": "2018-06-11",
-    "headline": "GPT-1 released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "OpenAI releases the first Generative Pre-trained Transformer model.",
-    "source": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
-    "source_label": "View paper →"
-  },
-  {
-    "date_iso": "2018-10-11",
-    "headline": "BERT released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "Google releases BERT, a bidirectional Transformer model that set new benchmarks across NLP tasks.",
-    "source": "https://arxiv.org/abs/1810.04805",
-    "source_label": "Read paper →"
-  },
-  {
     "date_iso": "2019-05-22",
     "headline": "OECD AI Principles adopted",
     "origin": "OECD",
@@ -37,7 +19,7 @@
   },
   {
     "date_iso": "2020-06-11",
-    "headline": "GPT-3 released",
+    "headline": "OpenAI releases GPT-3",
     "origin": "USA",
     "category": "technological",
     "summary": "OpenAI releases GPT-3 with 175 billion parameters, demonstrating strong few-shot learning.",
@@ -59,12 +41,12 @@
     "origin": "CN",
     "category": "regulatory",
     "summary": "China's regulation on deep synthesis (deepfakes) and algorithmic recommendation comes into force.",
-    "source": "http://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm",
-    "source_label": "View regulation →"
+    "source": "https://chinaregulatesai.alexmakosz.ca",
+    "source_label": "View summary →"
   },
   {
     "date_iso": "2022-11-30",
-    "headline": "ChatGPT launched",
+    "headline": "OpenAI launches ChatGPT",
     "origin": "USA",
     "category": "technological",
     "summary": "OpenAI launches ChatGPT, bringing LLM interaction to the general public.",
@@ -72,26 +54,17 @@
     "source_label": "Visit site →"
   },
   {
-    "date_iso": "2023-02-06",
-    "headline": "Google Bard announced",
+    "date_iso": "2023-01-26",
+    "headline": "NIST AI Risk Management Framework published",
     "origin": "USA",
-    "category": "technological",
-    "summary": "Google announces Bard, its conversational AI service powered by LaMDA.",
-    "source": "https://blog.google/technology/ai/bard-google-ai-search-updates/",
-    "source_label": "View post →"
-  },
-  {
-    "date_iso": "2023-02-24",
-    "headline": "Llama 1 released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "Meta releases LLaMA, its first open-weight large language model, initially for researchers.",
-    "source": "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
-    "source_label": "View post →"
+    "category": "regulatory",
+    "summary": "The US National Institute of Standards and Technology publishes the AI Risk Management Framework (AI RMF 1.0), providing voluntary guidance for managing risks in AI systems.",
+    "source": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+    "source_label": "View framework →"
   },
   {
     "date_iso": "2023-03-14",
-    "headline": "GPT-4 released",
+    "headline": "OpenAI releases GPT-4",
     "origin": "USA",
     "category": "technological",
     "summary": "OpenAI releases GPT-4, a multimodal large language model.",
@@ -100,12 +73,21 @@
   },
   {
     "date_iso": "2023-03-14",
-    "headline": "Claude 1 released",
+    "headline": "Anthropic releases Claude 1",
     "origin": "USA",
     "category": "technological",
     "summary": "Anthropic releases Claude 1, its first publicly available large language model.",
     "source": "https://www.anthropic.com/news/introducing-claude",
     "source_label": "View post →"
+  },
+  {
+    "date_iso": "2023-03-29",
+    "headline": "UK publishes pro-innovation AI regulation white paper",
+    "origin": "UK",
+    "category": "regulatory",
+    "summary": "The UK Department for Science, Innovation and Technology publishes its white paper setting out a principles-based, pro-innovation approach to AI regulation — distinct from the EU's prescriptive risk-based model.",
+    "source": "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach/white-paper",
+    "source_label": "View white paper →"
   },
   {
     "date_iso": "2023-03-28",
@@ -117,17 +99,8 @@
     "source_label": "Read letter →"
   },
   {
-    "date_iso": "2023-07-11",
-    "headline": "Claude 2 released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "Anthropic releases Claude 2 with improved coding, math, and reasoning capabilities.",
-    "source": "https://www.anthropic.com/news/claude-2",
-    "source_label": "View post →"
-  },
-  {
     "date_iso": "2023-07-18",
-    "headline": "Llama 2 released",
+    "headline": "Meta releases Llama 2",
     "origin": "USA",
     "category": "technological",
     "summary": "Meta releases Llama 2, an open-weight large language model family available for commercial use.",
@@ -140,8 +113,17 @@
     "origin": "CN",
     "category": "regulatory",
     "summary": "China's Interim Measures for the Management of Generative AI Services take effect.",
-    "source": "http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
-    "source_label": "View measures →"
+    "source": "https://chinaregulatesai.alexmakosz.ca",
+    "source_label": "View summary →"
+  },
+  {
+    "date_iso": "2023-09-01",
+    "headline": "Switzerland FADP fully effective",
+    "origin": "CH",
+    "category": "regulatory",
+    "summary": "Switzerland's revised Federal Act on Data Protection (nFADP) is fully in effect, with relevance to AI data processing.",
+    "source": "https://www.fedlex.admin.ch/eli/cc/2022/491/en",
+    "source_label": "View law →"
   },
   {
     "date_iso": "2023-09-26",
@@ -153,13 +135,13 @@
     "source_label": "View post →"
   },
   {
-    "date_iso": "2023-09-27",
-    "headline": "Mistral 7B released",
-    "origin": "FR",
-    "category": "technological",
-    "summary": "Mistral AI releases its first model, a 7-billion-parameter open-weight model that outperforms Llama 2 13B on all benchmarks.",
-    "source": "https://mistral.ai/news/announcing-mistral-7b/",
-    "source_label": "View post →"
+    "date_iso": "2023-10-30",
+    "headline": "G7 Hiroshima AI Process Code of Conduct adopted",
+    "origin": "G7",
+    "category": "regulatory",
+    "summary": "The G7 nations and the EU agree to the Hiroshima Process International Code of Conduct for organisations developing advanced AI systems, providing voluntary guidance on risk assessment, transparency, safety research, and systemic risk management.",
+    "source": "https://digital-strategy.ec.europa.eu/en/library/hiroshima-process-international-code-conduct-advanced-ai-systems",
+    "source_label": "View code of conduct →"
   },
   {
     "date_iso": "2023-10-30",
@@ -167,12 +149,12 @@
     "origin": "USA",
     "category": "regulatory",
     "summary": "President Biden signs Executive Order 14110 on safe, secure, and trustworthy AI.",
-    "source": "https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/",
+    "source": "https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence",
     "source_label": "View order →"
   },
   {
     "date_iso": "2023-12-06",
-    "headline": "Gemini 1.0 released",
+    "headline": "Google DeepMind releases Gemini 1.0",
     "origin": "USA",
     "category": "technological",
     "summary": "Google DeepMind releases Gemini, a natively multimodal model family.",
@@ -180,40 +162,31 @@
     "source_label": "Learn more →"
   },
   {
-    "date_iso": "2024-02-15",
-    "headline": "Sora announced",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "OpenAI announces Sora, a text-to-video generative model.",
-    "source": "https://openai.com/sora",
-    "source_label": "View site →"
-  },
-  {
-    "date_iso": "2024-02-21",
-    "headline": "Gemini 1.5 Pro released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "Google DeepMind releases Gemini 1.5 Pro with a 1-million-token context window.",
-    "source": "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
-    "source_label": "View post →"
-  },
-  {
-    "date_iso": "2024-02-26",
-    "headline": "Mistral Large released",
-    "origin": "FR",
-    "category": "technological",
-    "summary": "Mistral AI releases its first frontier-class model, competitive with GPT-4.",
-    "source": "https://mistral.ai/news/mistral-large/",
-    "source_label": "View post →"
+    "date_iso": "2023-12-15",
+    "headline": "ISO 42001:2023 published",
+    "origin": "ISO",
+    "category": "regulatory",
+    "summary": "The International Organization for Standardization publishes ISO/IEC 42001:2023, the first international standard for AI management systems, providing a framework for responsible development and use of AI.",
+    "source": "https://www.iso.org/standard/42001",
+    "source_label": "View standard →"
   },
   {
     "date_iso": "2024-03-04",
-    "headline": "Claude 3 released",
+    "headline": "Anthropic releases Claude 3",
     "origin": "USA",
     "category": "technological",
     "summary": "Anthropic releases the Claude 3 model family (Haiku, Sonnet, Opus).",
     "source": "https://www.anthropic.com/news/claude-3-family",
     "source_label": "View post →"
+  },
+  {
+    "date_iso": "2024-03-21",
+    "headline": "UN General Assembly adopts first AI resolution",
+    "origin": "UN",
+    "category": "regulatory",
+    "summary": "The UN General Assembly unanimously adopts its first resolution on AI, calling for safe, secure and trustworthy AI systems for sustainable development and urging member states to develop regulatory and governance frameworks.",
+    "source": "https://news.un.org/en/story/2024/03/1147831",
+    "source_label": "View resolution →"
   },
   {
     "date_iso": "2024-03-13",
@@ -226,7 +199,7 @@
   },
   {
     "date_iso": "2024-04-18",
-    "headline": "Llama 3 released",
+    "headline": "Meta releases Llama 3",
     "origin": "USA",
     "category": "technological",
     "summary": "Meta releases Llama 3 in 8B and 70B parameter variants.",
@@ -235,29 +208,11 @@
   },
   {
     "date_iso": "2024-05-13",
-    "headline": "GPT-4o released",
+    "headline": "OpenAI releases GPT-4o",
     "origin": "USA",
     "category": "technological",
     "summary": "OpenAI releases GPT-4o (\"omni\"), a natively multimodal model with voice, vision, and text.",
     "source": "https://openai.com/index/hello-gpt-4o/",
-    "source_label": "View post →"
-  },
-  {
-    "date_iso": "2024-06-20",
-    "headline": "Claude 3.5 Sonnet released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "Anthropic releases Claude 3.5 Sonnet, outperforming Claude 3 Opus at lower cost.",
-    "source": "https://www.anthropic.com/news/claude-3-5-sonnet",
-    "source_label": "View post →"
-  },
-  {
-    "date_iso": "2024-07-23",
-    "headline": "Llama 3.1 405B released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "Meta releases Llama 3.1 with a 405-billion-parameter open-weight model.",
-    "source": "https://ai.meta.com/blog/meta-llama-3-1/",
     "source_label": "View post →"
   },
   {
@@ -270,17 +225,17 @@
     "source_label": "View text →"
   },
   {
-    "date_iso": "2024-09-01",
-    "headline": "Switzerland FADP fully effective",
-    "origin": "CH",
+    "date_iso": "2024-09-05",
+    "headline": "Council of Europe AI Convention opens for signature",
+    "origin": "CoE",
     "category": "regulatory",
-    "summary": "Switzerland's revised Federal Act on Data Protection (nFADP) is fully in effect, with relevance to AI data processing.",
-    "source": "https://www.fedlex.admin.ch/eli/cc/2022/491/en",
-    "source_label": "View law →"
+    "summary": "The Council of Europe opens the Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law (CETS No. 225) for signature in Vilnius — the first binding international treaty on AI, open to both Council of Europe members and non-member states including the US, UK, and Canada.",
+    "source": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-ai",
+    "source_label": "View convention →"
   },
   {
     "date_iso": "2024-09-12",
-    "headline": "OpenAI o1-preview released",
+    "headline": "OpenAI releases o1-preview (thinking model)",
     "origin": "USA",
     "category": "technological",
     "summary": "OpenAI releases o1-preview, a model trained with reinforcement learning to perform complex reasoning.",
@@ -297,17 +252,8 @@
     "source_label": "View post →"
   },
   {
-    "date_iso": "2024-12-05",
-    "headline": "Gemini 2.0 Flash released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "Google DeepMind releases Gemini 2.0 Flash with agentic capabilities.",
-    "source": "https://deepmind.google/technologies/gemini/flash/",
-    "source_label": "Learn more →"
-  },
-  {
     "date_iso": "2024-12-11",
-    "headline": "Apple integrates ChatGPT into its operating systems",
+    "headline": "Apple integrates ChatGPT into iOS and macOS",
     "origin": "USA",
     "category": "technological",
     "summary": "Apple ships iOS 18.2 and macOS 15.2 with ChatGPT integration, allowing Siri to hand off queries to OpenAI's model and enabling ChatGPT in system-wide Writing Tools.",
@@ -316,7 +262,7 @@
   },
   {
     "date_iso": "2024-12-20",
-    "headline": "OpenAI o3 announced",
+    "headline": "OpenAI releases o3 (reasoning model)",
     "origin": "USA",
     "category": "technological",
     "summary": "OpenAI announces o3, a next-generation reasoning model, initially available to researchers.",
@@ -325,7 +271,7 @@
   },
   {
     "date_iso": "2025-01-20",
-    "headline": "DeepSeek-R1 released",
+    "headline": "DeepSeek releases DeepSeek-R1",
     "origin": "CN",
     "category": "technological",
     "summary": "DeepSeek releases R1, an open-weight reasoning model competitive with leading Western models.",
@@ -334,7 +280,7 @@
   },
   {
     "date_iso": "2025-01-23",
-    "headline": "OpenAI launches Operator",
+    "headline": "OpenAI releases Operator (autonomous agent)",
     "origin": "USA",
     "category": "technological",
     "summary": "OpenAI releases Operator, an AI agent that can browse the web and perform tasks autonomously — marking the shift from conversational AI to agentic AI.",
@@ -351,44 +297,17 @@
     "source_label": "View article →"
   },
   {
-    "date_iso": "2025-02-24",
-    "headline": "Grok 3 released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "xAI releases Grok 3, claiming state-of-the-art reasoning benchmarks.",
-    "source": "https://x.ai/blog/grok-3",
-    "source_label": "View post →"
-  },
-  {
-    "date_iso": "2025-03-04",
-    "headline": "Claude 3.7 Sonnet released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "Anthropic releases Claude 3.7 Sonnet with extended thinking capability.",
-    "source": "https://www.anthropic.com/news/claude-3-7-sonnet",
-    "source_label": "View post →"
-  },
-  {
-    "date_iso": "2025-03-06",
-    "headline": "Manus AI launches",
-    "origin": "CN",
-    "category": "technological",
-    "summary": "Manus debuts as a general-purpose autonomous AI agent capable of handling complex multi-step tasks, attracting over 2 million waitlist sign-ups within a week.",
-    "source": "https://manus.im/",
-    "source_label": "Visit site →"
-  },
-  {
-    "date_iso": "2025-03-25",
-    "headline": "Gemini 2.5 Pro released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "Google DeepMind releases Gemini 2.5 Pro, a thinking model with strong reasoning and coding.",
-    "source": "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/",
-    "source_label": "View post →"
+    "date_iso": "2025-03-26",
+    "headline": "Switzerland signs Council of Europe AI Convention",
+    "origin": "CH",
+    "category": "regulatory",
+    "summary": "Switzerland signs the Council of Europe's Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law (CETS No. 225), the first binding international treaty on AI.",
+    "source": "https://www.news.admin.ch/en/nsb?id=104646",
+    "source_label": "View signatories →"
   },
   {
     "date_iso": "2025-04-05",
-    "headline": "Llama 4 Scout and Maverick released",
+    "headline": "Meta releases Llama 4",
     "origin": "USA",
     "category": "technological",
     "summary": "Meta releases Llama 4 Scout and Maverick, the first open-weight natively multimodal MoE models.",
@@ -396,17 +315,8 @@
     "source_label": "View post →"
   },
   {
-    "date_iso": "2025-04-16",
-    "headline": "OpenAI o4-mini released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "OpenAI releases o4-mini, a compact but powerful reasoning model in the o-series.",
-    "source": "https://openai.com/index/introducing-o3-and-o4-mini/",
-    "source_label": "View post →"
-  },
-  {
     "date_iso": "2025-05-22",
-    "headline": "Claude 4 Opus and Sonnet released",
+    "headline": "Anthropic releases Claude 4",
     "origin": "USA",
     "category": "technological",
     "summary": "Anthropic releases Claude 4 Opus and Claude 4 Sonnet with major capability gains.",
@@ -419,17 +329,8 @@
     "origin": "JP",
     "category": "regulatory",
     "summary": "Japan's Act on the Promotion of Research and Development and Utilisation of AI-Related Technologies takes effect.",
-    "source": "https://www.japaneselawtranslation.go.jp/",
-    "source_label": "View law →"
-  },
-  {
-    "date_iso": "2025-06-25",
-    "headline": "Mistral Magistral released",
-    "origin": "FR",
-    "category": "technological",
-    "summary": "Mistral AI releases Magistral Small (open-source) and Medium, its first reasoning models with chain-of-thought capabilities.",
-    "source": "https://mistral.ai/news/magistral/",
-    "source_label": "View post →"
+    "source": "https://www.kojimalaw.jp/wp/wp-content/uploads/2025/09/Japan-AI-Promotion-Act-KOJIMA-LAW-OFFICES-jp-en-reference-translation.pdf",
+    "source_label": "View English translation →"
   },
   {
     "date_iso": "2025-08-02",
@@ -442,7 +343,7 @@
   },
   {
     "date_iso": "2025-08-07",
-    "headline": "GPT-5 released",
+    "headline": "OpenAI releases GPT-5",
     "origin": "USA",
     "category": "technological",
     "summary": "OpenAI releases GPT-5, a major leap in intelligence across coding, math, writing, and vision.",
@@ -450,26 +351,8 @@
     "source_label": "View post →"
   },
   {
-    "date_iso": "2025-10-15",
-    "headline": "Claude Haiku 4.5 released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "Anthropic releases Claude Haiku 4.5, a fast and cost-efficient model.",
-    "source": "https://www.anthropic.com/news/claude-haiku-4-5",
-    "source_label": "View post →"
-  },
-  {
-    "date_iso": "2025-11-24",
-    "headline": "Claude Sonnet 4.5 and Opus 4.5 released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "Anthropic releases Claude 4.5 Sonnet and Opus with further capability improvements.",
-    "source": "https://www.anthropic.com/news/claude-4-5",
-    "source_label": "View post →"
-  },
-  {
     "date_iso": "2025-12-02",
-    "headline": "Mistral 3 family released",
+    "headline": "Mistral AI releases Mistral 3 family",
     "origin": "FR",
     "category": "technological",
     "summary": "Mistral AI releases the Mistral 3 family: Large 3 frontier model plus nine dense open-weight models.",
@@ -477,40 +360,31 @@
     "source_label": "View post →"
   },
   {
-    "date_iso": "2026-02-05",
-    "headline": "Claude Opus 4.6 released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "Anthropic releases Claude Opus 4.6.",
-    "source": "https://www.anthropic.com/news/claude-4-6",
-    "source_label": "View post →"
+    "date_iso": "2026-01-01",
+    "headline": "South Korea Framework Act on AI in force",
+    "origin": "KR",
+    "category": "regulatory",
+    "summary": "South Korea's Framework Act on the Development of Artificial Intelligence and the Creation of a Foundation for Trust enters into force, establishing a national governance framework for AI.",
+    "source": "https://elaw.klri.re.kr/eng_service/lawView.do?hseq=71019&lang=ENG",
+    "source_label": "View law →"
   },
   {
-    "date_iso": "2026-02-17",
-    "headline": "Claude Sonnet 4.6 released",
+    "date_iso": "2026-03-20",
+    "headline": "US National Policy Framework for AI published",
     "origin": "USA",
-    "category": "technological",
-    "summary": "Anthropic releases Claude Sonnet 4.6 with improved agentic search and lower token consumption.",
-    "source": "https://www.anthropic.com/news/claude-sonnet-4-6",
-    "source_label": "View post →"
+    "category": "regulatory",
+    "summary": "The White House publishes the National Policy Framework for Artificial Intelligence, setting out legislative recommendations for AI governance in the United States.",
+    "source": "https://www.whitehouse.gov/wp-content/uploads/2026/03/03.20.26-National-Policy-Framework-for-Artificial-Intelligence-Legislative-Recommendations.pdf",
+    "source_label": "View framework →"
   },
   {
-    "date_iso": "2026-02-19",
-    "headline": "Gemini 3.1 Pro released",
+    "date_iso": "2026-04-07",
+    "headline": "Anthropic releases Claude Mythos Preview",
     "origin": "USA",
     "category": "technological",
-    "summary": "Google DeepMind releases Gemini 3.1 Pro with significantly improved reasoning.",
-    "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
-    "source_label": "View post →"
-  },
-  {
-    "date_iso": "2026-03-17",
-    "headline": "GPT-5.4 Mini and Nano released",
-    "origin": "USA",
-    "category": "technological",
-    "summary": "OpenAI releases GPT-5.4 Mini and Nano, cost-efficient versions of their flagship model.",
-    "source": "https://openai.com/index/gpt-5-4-mini-nano/",
-    "source_label": "View post →"
+    "summary": "Anthropic announces Claude Mythos Preview, a frontier model with advanced cybersecurity capabilities, through Project Glasswing — a coordinated partnership with AWS, Apple, Google, Microsoft, and others. The model excels at identifying and exploiting software vulnerabilities but is restricted to vetted organizations for defensive security work due to its offensive potential.",
+    "source": "https://red.anthropic.com/2026/mythos-preview/",
+    "source_label": "View announcement →"
   },
   {
     "date_iso": "2026-08-02",
