@@ -1,45 +1,52 @@
 ---
-title: "Les réunions de l'ONU abordent les tensions centrales de la gouvernance de l'IA"
+title: "Les réunions de l'ONU exposent les tensions qui pourraient façonner la gouvernance mondiale de l'IA"
 date: 2026-05-01
-description: "Les réunions de la CNUCED à Genève ont exposé les tensions centrales – équité, philosophie de gouvernance, implications sectorielles – qui domineront les sommets de gouvernance de l'IA en juillet en Suisse."
-summary: "Des réunions des Nations unies sur la gouvernance de l'IA se sont tenues à Genève, mettant en lumière les principales lignes de fracture qui façonneront la réglementation mondiale en matière d'IA pour les années à venir. La Commission de la science et de la technologie au service du développement a souligné une crise d'équité, un clivage philosophique sur la gouvernance et des implications spécifiques à certains secteurs. Ces tensions orienteront les discussions en juillet, lorsque deux sommets majeurs se tiendront simultanément à Genève."
+description: "Les réunions de la CNUCED à Genève ont exposé les lignes de fracture – équité, philosophie de gouvernance, impacts sectoriels – qui pourraient dominer les sommets de gouvernance de l'IA en juillet."
+summary: "Les réunions de l'ONU en avril ont exposé quatre tensions de la gouvernance de l'IA : qui dispose de l'infrastructure et de la capacité à développer l'IA, comment les données doivent être gouvernées à travers les frontières, si les pays en développement peuvent accéder et transférer la technologie, et si la régulation dirige ou limite l'innovation. Ces questions domineront les sommets mondiaux de l'IA en juillet – et les réponses pourraient façonner la politique internationale de l'IA pendant des années."
+author: "Helena Mannion"
 ---
 
-La semaine dernière, des réunions importantes des Nations Unies sur la gouvernance de l'IA se sont tenues à Genève. La [Commission pour la science et la technologie au service du développement (CNUCED) a tenu sa 29e session](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) du 20 au 24 avril sur le thème « Science, technologie et innovation à l'ère de l'IA ». Au cœur des préoccupations se trouvait une question centrale : l'adoption de l'IA croît deux fois plus vite au Nord qu'au Sud, élargissant ainsi les écarts en matière de possibilités économiques et de « souveraineté numérique ». Ces tensions ne seront pas résolues cette semaine. Au lieu de cela, elles se sont cristallisées en débats fondamentaux qui façonneront les sommets mondiaux de gouvernance de l'IA en juillet – et influenceront la façon dont l'IA est régulée mondialement pour les années à venir.
+Des réunions de l'ONU à Genève du 20 au 24 avril ont exposé plusieurs tensions – fossés d'équité, gouvernance des données, concentration d'infrastructure, disparités de capacité – qui pourraient façonner la régulation mondiale de l'IA pendant des années.
 
-Plusieurs sujets clés ont émergé des réunions de l'ONU : les disparités dans l'adoption de l'IA, ses implications directes pour le développement économique, la souveraineté et la réalisation des objectifs de développement durable des Nations Unies. [Doreen Bogdan-Martin](https://en.wikipedia.org/wiki/Doreen_Bogdan-Martin), une haute fonctionnaire de l'ONU, a défini clairement le défi : « L'IA devrait être un moteur qui accélère le développement durable et inclusif pour tous, partout. » Mais la trajectoire actuelle fait l'inverse – elle concentre les avantages de l'IA dans les régions riches tandis que les autres restent à la traîne. Cette tension sera au cœur des conversations en juillet.
+La [Commission pour la science et la technologie au service du développement (CNUCED) a tenu sa 29e session](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) sous le thème « Science, technologie et innovation à l'ère de l'IA ». L'ordre du jour couvrait les cadres de gouvernance des données, les engagements en matière de transfert technologique, le renforcement des capacités et le suivi de 20 ans du Sommet mondial sur la société de l'information. Mais les discussions ont été guidées par une question fondamentale : alors que l'IA remodèle le développement, qui peut construire et gouverner l'IA – et qui en est exclu ?
 
-## Philosophie de gouvernance : la régulation comme volant, non frein
+## Les tensions fondamentales
 
-Une métaphore dominante façonne la réflexion politique actuelle : la régulation est le « frein » sur une voiture l'IA qui accélère. Cette formulation suggère que le développement de l'IA est inévitable et que la gouvernance est réactive. Geoffrey Hinton, chercheur en IA de premier plan, remet en question cette réflexion, en proposant de penser la régulation comme un volant – un instrument actif pour orienter le développement de l'IA. Cela importe car cela pose la question : acceptons-nous que le développement de l'IA soit inévitable ? Ou façonnons-nous activement sa direction ?
+Quatre problèmes interconnectés ont émergé des discussions de la CNUCED.
 
-Ce clivage dans la philosophie de gouvernance de l'IA, entre une approche qui ressemble à une maîtrise passive et une autre qui s'efforce d'une direction plus active, sera l'une des principales tensions dans les débats de juillet, et il façonnera certainement les cadres de gouvernance qui émergeront.
+**Le fossé de l'adoption de l'IA.** L'adoption de l'IA dans le Nord mondial croît près de deux fois plus vite que dans le Sud mondial. La Secrétaire générale de l'UIT a souligné des disparités flagrantes : seuls 33 pays ont une capacité de calcul d'IA de grade inférence, seuls 24 ont une capacité de grade entraînement, et le Sud mondial – qui abrite la moitié des utilisateurs d'Internet mondiaux – détient moins de 10 % de la capacité mondiale des centres de données.[1] Un seul pays héberge dix fois plus de centres de données que tout autre ; une seule entreprise fabrique presque tous les puces d'IA de pointe.[1] Cette concentration pourrait déterminer qui a la capacité à développer l'IA – et qui reste dépendant des décisions d'autres.
 
-## Juillet 2026 : où ces débats se déploieront
+**Gouvernance des données et IA responsable.** La réunion a accordé une attention significative aux données en tant que fondation de l'IA. Sans cadres clairs de gouvernance des données – comment les données circulent à travers les frontières, qui en est propriétaire, comment elles sont protégées – le déploiement responsable de l'IA devient difficile. Les pays en développement en particulier pourraient avoir du mal à façonner ces cadres s'ils ne sont pas inclus dans la conversation.
 
-[Les réunions de la CNUCED](https://webtv.un.org/en/asset/k1z/k1zdnx65rt) ont été l'ouverture pour ce qui s'en vient. Les conversations approfondies se feront en juillet, quand deux grands sommets de gouvernance de l'IA convergeront à Genève :
+**Transfert technologique et renforcement des capacités.** Les ministres des pays en développement ont régulièrement soulevé un défi central : l'accès aux technologies avancées reste limité, et les partenariats ne construisent souvent pas une capacité institutionnelle durable. La formation, l'infrastructure et les ressources dont les pays ont besoin pour participer significativement à l'économie de l'IA restent concentrées dans les régions riches.
 
-- **6–7 juillet :** [UN Global Dialogue on AI Governance](https://www.un.org/global-dialogue-ai-governance/en) – Les États membres, le monde universitaire, la société civile et le secteur privé se réuniront directement autour des tensions révélées cette semaine : Comment combler les fossés de l'IA ? À quoi ressemble vraiment une gouvernance de l'IA digne de confiance ? Comment protéger les droits humains dans un monde dirigé par l'IA ?
-- **7–10 juillet :** Le [AI for Good Global Summit](https://aiforgood.itu.int/summit26/) revient à Genève, poursuivant son engagement annuel envers la ville en tant que point focal mondial de la gouvernance de l'IA. Cet événement est ouvert au public.
+**Un clivage de philosophie de gouvernance.** La métaphore dominante façonnant la politique est que la régulation agit comme le « frein » sur l'innovation. À la [Conférence mondiale numérique (DWC) : IA pour le développement social](https://www.wdtacademy.org/DWC2026), Geoffrey Hinton a remis en question cela vivement : la régulation devrait fonctionner comme un volant – un instrument actif pour diriger comment l'IA se développe.[2] Cette distinction apparemment technique pourrait déterminer si les pays peuvent diriger l'IA vers leurs priorités, ou s'ils doivent simplement accepter les trajectoires définies ailleurs.
 
-Ces événements consécutifs sont les lieux où le fossé de l'équité, le débat sur la philosophie de gouvernance et les implications sectorielles pour les banques, la santé et le gouvernement seront discutés et pourraient éclairer les engagements contraignants qui façonnent la régulation mondiale de l'IA.
+## Deux sommets, un moment significatif
 
-## Ce que ces sommets signifient pour le paysage de la gouvernance de l'IA
+Les réunions de la CNUCED établissent l'ordre du jour pour ce qui vient ensuite. En juillet, deux grands événements convergent à Genève :
 
-Ces événements consécutifs ne sont pas des conversations en marge. Ils offrent une occasion rare de s'engager directement dans la façon dont la gouvernance de l'IA est comprise et façonnée mondialement, réunissant les États membres, les technologues, la société civile et le monde universitaire autour d'incertitudes communes.
+- **6–7 juillet :** [Dialogue mondial des Nations unies sur la gouvernance de l'IA](https://www.un.org/global-dialogue-ai-governance/en) – Les États membres, le monde universitaire, la société civile et le secteur privé affronteront directement ces tensions : Comment combler les fossés de l'IA ? À quoi ressemble vraiment une gouvernance de l'IA digne de confiance ? Comment protéger les droits humains dans un monde guidé par l'IA ?
+- **7–10 juillet :** Le [Sommet mondial IA for Good](https://aiforgood.itu.int/summit26/) revient à Genève, ouvert au public et poursuivant le rôle de la ville comme point focal mondial des conversations sur la gouvernance de l'IA.
 
-Pour ceux qui travaillent dans la gouvernance de l'IA ou en sont responsables, ces sommets importent à plusieurs niveaux. Ils offrent une fenêtre sur la façon dont différents pays, secteurs et organisations abordent le problème – une chance d'écouter directement les personnes qui façonnent les cadres qui guideront la régulation de l'IA pendant des années. Les débats eux-mêmes – le fossé de l'équité, la question de savoir si la régulation oriente ou freine simplement le développement, les implications sectorielles pour les banques, la santé et le gouvernement – sont ceux qui détermineront les contours de la politique mondiale de l'IA. Les comprendre maintenant, alors qu'ils se cristallisent, est essentiel pour quiconque élabore des programmes de conformité ou définit une stratégie d'IA.
+Ces événements successifs créent une fenêtre focalisée : les conversations fragmentées entre les communautés de politique, les entreprises technologiques et les groupes de la société civile pourraient venir en focus aigu dans un seul lieu.
 
-Ces forums offrent également la rare opportunité de contribuer des perspectives en dehors de l'appareil politique traditionnel. Que vous soyez technologue, régulateur, éthicien ou issu d'une communauté affectée, la diversité des expertises dans la salle renforce la conversation – et façonne les cadres qui émergent. Pour les organisations suisses observant l'évolution de la gouvernance mondiale, les réseaux construits lors de ces sommets deviennent souvent les canaux par lesquels les nouvelles normes et attentes atteignent d'abord le marché.
+## Ce que cela signifie
 
-Genève a long-temps été le site où se forment les accords mondiaux fondamentaux – et les événements de juillet ne feront pas exception. Les décisions qui émergent de ces forums détermineront qui a la capacité de développer, déployer et bénéficier de l'IA, et qui reste structurellement exclu. La gouvernance de l'IA n'est plus simplement une question technique ou réglementaire ; elle est de plus en plus une question de pouvoir mondial, et si la prochaine ère technologique approfondit les fossés existants ou a la capacité de les rééquilibrer.
+Les tensions identifiées à la CNUCED ne sont pas des débats politiques abstraits. Elles déterminent qui peut accéder à l'infrastructure pour développer l'IA, qui influence les cadres de gouvernance et qui peut participer à la fixation des règles.
+
+Pour les organisations suisses et les équipes de conformité, c'est immédiatement pertinent. Les normes de gouvernance des données, les attentes en matière de transfert technologique et les engagements de renforcement des capacités débattus à Genève deviendront probablement les normes techniques qui atteignent les marchés suisses en premier – par les banquiers, assureurs et entreprises technologiques intégrés dans les réseaux mondiaux.
+
+Plus fondamentalement : la communauté internationale fait face à un choix sur l'avenir de l'IA. Peut-elle construire à la fois le moteur et le volant ensemble – l'innovation en IA accélérant le développement, la gouvernance le dirigeant vers des priorités partagées ?
 
 ---
 
 ## Sources
 
+[1] [29e session de la CNUCED – Séance plénière d'ouverture et table ronde ministérielle](https://webtv.un.org/en/asset/k1z/k1zdnx65rt) – Discours de Doreen Bogdan-Martin, Secrétaire générale de l'UIT. 20–24 avril 2026.
+
+[2] [Geoffrey Hinton sur la gouvernance de l'IA](https://soundcloud.com/unradio/godfather-of-ai-geoffrey) – Discours à la Conférence mondiale numérique (DWC) : IA pour le développement social, co-organisée par l'UNRISD à Genève. UN Radio, 23 avril 2026.
+
 - [29e session de la CNUCED](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) — CNUCED
-- [Procédures de la session CNUCED](https://webtv.un.org/en/asset/k1z/k1zdnx65rt) — UN Web TV
-- [Geoffrey Hinton sur la gouvernance de l'IA](https://soundcloud.com/unradio/godfather-of-ai-geoffrey) — UN Radio
 - [Dialogue mondial de l'ONU sur la gouvernance de l'IA](https://www.un.org/global-dialogue-ai-governance/en) — ONU.org
 - [Sommet mondial IA for Good 2026](https://aiforgood.itu.int/summit26/) — UIT

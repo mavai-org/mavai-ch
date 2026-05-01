@@ -1,45 +1,52 @@
 ---
-title: "UN-Treffen befassen sich mit zentralen Spannungen der KI-Governance"
+title: "UN-Treffen legen zentrale Spannungen der KI-Governance offen"
 date: 2026-05-01
-description: "Genfs CSTD-Tagungen legten die zentralen Spannungen offen – Chancengleichheit, Governance-Philosophie, sektorale Auswirkungen –, die die KI-Governance-Gipfel im Juli in der Schweiz dominieren werden."
-summary: "In Genf fanden wichtige UN-Treffen zur KI-Governance statt, die die zentralen Bruchlinien offenbarten, welche die globale KI-Regulierung in den kommenden Jahren prägen werden. Die Kommission für Wissenschaft und Technologie für Entwicklung legte eine Chancengleichheitskrise offen, eine Governance-Philosophie-Kluft und sektorale Auswirkungen. Diese Spannungen werden die Diskussionen im Juli bestimmen, wenn zwei grosse Gipfeltreffen in Genf zusammenkommen."
+description: "Genfs CSTD-Tagungen legten Bruchlinien offen – Chancengleichheit, Governance-Philosophie, sektorale Auswirkungen – die KI-Gipfeltreffen im Juli prägen könnten."
+summary: "UN-Treffen im April legten vier Spannungen der KI-Governance offen: Wer hat die Infrastruktur und Kapazität, um KI zu entwickeln? Wie sollte Daten grenzübergreifend gesteuert werden? Können Entwicklungsländer auf Technologie zugreifen und diese übertragen? Und ob Regulierung KI lenkt oder einschränkt. Diese Fragen werden die globalen KI-Gipfel im Juli prägen – und die Antworten könnten internationale KI-Politik jahrelang gestalten."
+author: "Helena Mannion"
 ---
 
-Letzte Woche fanden in Genf wichtige Vereinte-Nationen-Treffen zur KI-Governance statt. Die [Kommission für Wissenschaft und Technologie für Entwicklung (CSTD) hielt ihre 29. Tagung ab](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) vom 20. bis 24. April unter dem Thema „Wissenschaft, Technologie und Innovation im Zeitalter der KI," fokusissiert auf eine zentrale Sorge: Die KI-Einführung wächst in der Globalen Nordregion doppelt so schnell wie in der Globalen Südregion und vergrössert damit die Lücken in wirtschaftlichen Chancen und digitaler Souveränität. Diese Spannungen werden diese Woche nicht gelöst. Stattdessen haben sie sich zu den zentralen Diskussionen kristallisiert, die im Juli die globalen Gipfeltreffen zur KI-Governance prägen werden – und beeinflussen, wie KI weltweit reguliert wird.
+UN-Treffen in Genf vom 20.–24. April legten mehrere Spannungen offen – Chancengleichheitslücken, Daten-Governance, Infrastruktur-Konzentration, Kapazitätsmängel – die die globale KI-Regulierung jahrelang gestalten könnten.
 
-Mehrere Schlüsselthemen entstanden aus den UN-Treffen: die Disparität in der KI-Einführung, ihre unmittelbaren Auswirkungen auf wirtschaftliche Entwicklung, Souveränität und die Verwirklichung der Nachhaltigkeitsziele der Vereinten Nationen. [Doreen Bogdan-Martin](https://en.wikipedia.org/wiki/Doreen_Bogdan-Martin), eine hochrangige UN-Beamtin, fasste die Herausforderung klar zusammen: „KI sollte ein Motor sein, der nachhaltige und inklusive Entwicklung für alle, überall beschleunigt." Die aktuelle Entwicklung führt jedoch das Gegenteil herbei – sie konzentriert KI-Vorteile in wohlhabenderen Regionen, während andere zurückgelassen werden. Diese Spannung wird im Zentrum der Gespräche im Juli stehen.
+Die [Kommission für Wissenschaft und Technologie für Entwicklung (CSTD) hielt ihre 29. Tagung](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) unter dem Thema „Wissenschaft, Technologie und Innovation im Zeitalter der KI" ab. Die Agenda umfasste Daten-Governance-Rahmen, Technologietransfer-Verpflichtungen, Kapazitätsaufbau und die 20-jährige Überprüfung des Weltkipfels zur Informationsgesellschaft. Aber durch alle Diskussionen zog sich eine grundlegende Frage: Während KI die Entwicklung umgestaltet, wer darf KI bauen und steuern – und wer ist ausgeschlossen?
 
-## Governance-Philosophie: Regulierung als Lenkrad, nicht Bremse
+## Die zentralen Spannungen
 
-Eine dominante Metapher prägt das aktuelle politische Denken: Regulierung ist die „Bremse" für ein beschleunigendes KI-Auto. Diese Rahmung legt nahe, dass KI-Entwicklung unvermeidlich ist und Governance reaktiv ist. Geoffrey Hinton, ein führender KI-Forscher, hinterfragte dieses Denken und schlägt vor, Regulierung sei viel eher wie das Lenkrad eines Autos – ein aktives Instrument zur Steuerung, wie sich KI entwickelt. Das ist wichtig, weil es die Frage stellt: Akzeptieren wir, dass KI-Entwicklung unstoppbar ist? Oder gestalten wir aktiv ihre Richtung?
+Vier miteinander verbundene Probleme entstanden aus den CSTD-Diskussionen.
 
-Diese Kluft in KI's Governance-Philosophie, zwischen einer, die passiver Eindämmung ähnelt, und einer anderen, die aktivere Richtung anstrebt, wird eine der Schlüsselspannungen in den Debatten im Juli sein, und sie wird sicherlich bestimmen, welche Governance-Rahmen in naher Zukunft entstehen.
+**Die KI-Einführungskluft.** Die KI-Einführung im Globalen Norden wächst fast doppelt so schnell wie im Globalen Süden. Die ITU-Generalsekretärin hob stark Disparitäten hervor: Nur 33 Länder haben Inferenz-Grade-KI-Rechenkapazität, nur 24 haben Training-Grade-Kapazität, und der Globale Süden – Heimat von der Hälfte der Internetnutzer weltweit – hält weniger als 10% der globalen Rechenzentrumskapazität.[1] Ein einziges Land betreibt zehnmal mehr Rechenzentren als jedes andere; ein einziges Unternehmen stellt beinahe jeden führenden KI-Chip her.[1] Diese Konzentration könnte bestimmen, wer KI-Entwicklungskapazität hat – und wer von den Entscheidungen anderer abhängig bleibt.
 
-## Juli 2026: wo diese Debatten diskutiert werden
+**Daten-Governance und verantwortungsvolle KI.** Das Treffen widmete erhebliche Aufmerksamkeit Daten als Grundlage für KI. Ohne klare Governance-Rahmen für Daten – wie Daten grenzübergreifend fliessen, wem sie gehören, wie sie schützt sind – wird verantwortungsvolle KI-Einführung schwierig. Entwicklungsländer könnten besonders Schwierigkeiten haben, diese Rahmenbedingungen zu gestalten, wenn sie nicht eingebunden sind.
 
-[Die CSTD-Tagungen](https://webtv.un.org/en/asset/k1z/k1zdnx65rt) waren der Auftakt für das, was kommt. Die tiefergehenden Diskussionen werden im Juli fortgesetzt, wenn zwei grosse KI-Governance-Gipfeltreffen in Genf zusammenkommen:
+**Technologietransfer und Kapazitätsaufbau.** Minister aus Entwicklungsländern hoben wiederholt eine zentrale Herausforderung hervor: Zugang zu fortgeschrittenen Technologien bleibt begrenzt, und Partnerschaften bauen oft keine bleibende institutionelle Kapazität auf. Training, Infrastruktur und Ressourcen, die Länder für sinnvolle Teilnahme an der KI-Wirtschaft benötigen, bleiben in wohlhabenderen Regionen konzentriert.
 
-- **6.–7. Juli:** [UN Global Dialogue on AI Governance](https://www.un.org/global-dialogue-ai-governance/en) – Mitgliedstaaten, Akademie, Zivilgesellschaft und private Sektor werden direkt um die diese Woche offenbarten Spannungen zusammenkommen: Wie überbrücken wir KI-Gräben? Wie sieht vertrauenswürdige KI-Governance wirklich aus? Wie schützen wir Menschenrechte in einer KI-getriebenen Welt?
-- **7.–10. Juli:** Der [AI for Good Global Summit](https://aiforgood.itu.int/summit26/) kehrt nach Genf zurück und setzt sein jährliches Engagement für die Stadt als globalen Drehpunkt der KI-Governance fort. Dieses Ereignis ist für die Öffentlichkeit offen.
+**Eine Governance-Philosophie-Kluft.** Die dominante Metapher, die die Politik prägt, ist dass Regulierung als „Bremse" auf Innovation fungiert. Auf der [Digital World Conference (DWC): AI for Social Development](https://www.wdtacademy.org/DWC2026) hinterfragte Geoffrey Hinton dies scharf: Regulierung sollte wie ein Lenkrad funktionieren – ein aktives Instrument für die Steuerung, wie sich KI entwickelt.[2] Diese scheinbar technische Unterscheidung könnte bestimmen, ob Länder KI zu ihren eigenen Prioritäten lenken können, oder ob sie einfach Trajektorien akzeptieren, die anderswo gesetzt werden.
 
-Diese aufeinanderfolgenden Ereignisse sind der Ort, wo die Chancengleichheitslücke, die Governance-Philosophie-Debatte und die sektoralen Auswirkungen für Bankwesen, Gesundheitswesen und Regierung diskutiert werden und möglicherweise verbindliche Zusagen informieren, die die globale KI-Regulierung prägen.
+## Zwei Gipfeltreffen, ein bedeutsamer Moment
 
-## Was diese Gipfeltreffen für die KI-Governance-Landschaft bedeuten
+Die CSTD-Tagungen setzen die Agenda für das, was kommt. Im Juli treffen sich zwei grosse KI-Governance-Ereignisse in Genf:
 
-Diese aufeinanderfolgenden Ereignisse sind nicht Randgespräche. Sie bieten eine seltene Gelegenheit, direkt einzugreifen, wie die KI-Governance global verstanden und gestaltet wird, und bringen Mitgliedstaaten, Technologen, Zivilgesellschaft und Akademiker um gemeinsame Unsicherheiten zusammen.
+- **6.–7. Juli:** [UN Global Dialogue on AI Governance](https://www.un.org/global-dialogue-ai-governance/en) – Mitgliedstaaten, Akademie, Zivilgesellschaft und Privatsektor werden diese Spannungen direkt confrontieren: Wie überbrücken wir KI-Gräben? Wie sieht vertrauenswürdige KI-Governance wirklich aus? Wie schützen wir Menschenrechte in einer KI-gesteuerten Welt?
+- **7.–10. Juli:** Der [AI for Good Global Summit](https://aiforgood.itu.int/summit26/) kehrt nach Genf zurück, offen für die Öffentlichkeit und setzt die Rolle der Stadt als globaler Drehpunkt der KI-Governance fort.
 
-Für diejenigen, die in KI-Governance arbeiten oder dafür verantwortlich sind, haben diese Gipfeltreffen vielfältige Bedeutung. Sie bieten einen Blick darauf, wie verschiedene Länder, Sektoren und Organisationen das Problem angehen – eine Chance, direkt von den Menschen zu hören, die die Rahmenbedingungen prägen, die die KI-Regulierung für Jahre kommen werden. Die Debatten selbst – die Chancengleichheitslücke, die Frage, ob Regulierung lenkt oder nur bremst, die sektoralen Auswirkungen für Bankwesen, Gesundheitswesen und Regierung – sind diejenigen, die die Konturen der globalen KI-Politik bestimmen werden. Sie jetzt zu verstehen, wenn sie sich kristallisieren, ist unerlässlich für jeden, der Compliance-Programme aufbaut oder KI-Strategie setzt.
+Diese Ereignisse, die sich unmittelbar folgen, schaffen ein fokussiertes Fenster: Die Diskussionen, die fragmentiert über Politik, Technologieunternehmen und Zivilgesellschaft verteilt waren, könnten an einem einzigen Ort scharf ins Visier kommen.
 
-Diese Foren bieten auch die seltene Chance, Perspektiven von ausserhalb des traditionellen Politikbetriebs beizutragen. Ob Sie ein Technologe, Regulierer, Ethiker oder aus einer betroffenen Gemeinschaft sind, die Vielfalt der Expertise im Raum stärkt das Gespräch – und prägt die Rahmenbedingungen, die entstehen. Für Schweizer Organisationen, die beobachten, wie sich globale Governance entwickelt, werden die auf diesen Gipfeltreffen aufgebauten Netzwerke oft zu den Kanälen, durch die neue Standards und Erwartungen zuerst den Markt erreichen.
+## Was das bedeutet
 
-Genf ist schon lange ein Ort, wo grundlegende globale Abkommen Gestalt annehmen – und die Ereignisse im Juli werden keine Ausnahme sein. Die Entscheidungen, die aus diesen Foren hervorgehen, werden bestimmen, wer die Kapazität hat, KI zu entwickeln, einzusetzen und davon zu profitieren, und wer strukturell ausgeschlossen bleibt. KI-Governance ist nicht mehr einfach eine technische oder regulatorische Frage; sie ist zunehmend eine Frage der globalen Macht, und ob die nächste technologische Ära bestehende Gräben vertieft oder die Fähigkeit hat, sie wieder auszugleichen.
+Die auf der CSTD identifizierten Spannungen sind nicht abstrakte politische Debatten. Sie bestimmen, wer auf die Infrastruktur zugreifen kann, um KI zu entwickeln, wer Governance-Rahmenbedingungen beeinflusst und wer an der Regelaufstellung partizipieren darf.
+
+Für Schweizer Organisationen und Compliance-Teams ist das unmittelbar relevant. Die Daten-Governance-Standards, Technologietransfer-Erwartungen und Kapazitätsaufbau-Verpflichtungen, die in Genf debattiert werden, werden wahrscheinlich zu technischen Normen, die Schweizer Märkte zuerst erreichen – über Banker, Versicherer und Tech-Unternehmen, die in globale Netzwerke eingebunden sind.
+
+Grundsätzlicher noch: Die internationale Gemeinschaft steht vor einer Wahl über die Zukunft der KI. Kann sie sowohl das Motor als auch das Lenkrad zusammen bauen – KI-Innovation beschleunigt die Entwicklung, Governance lenkt sie zu gemeinsamen Prioritäten?
 
 ---
 
 ## Quellen
 
+[1] [CSTD 29. Tagung – Eröffnungsplenum und Ministerielle Rundtischkonferenz](https://webtv.un.org/en/asset/k1z/k1zdnx65rt) – Reden von Doreen Bogdan-Martin, ITU-Generalsekretärin. 20.–24. April 2026.
+
+[2] [Geoffrey Hinton zur KI-Governance](https://soundcloud.com/unradio/godfather-of-ai-geoffrey) – Reden auf der Digital World Conference (DWC): AI for Social Development, gemeinsam organisiert von UNRISD in Genf. UN Radio, 23. April 2026.
+
 - [CSTD 29. Tagung](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) – UNCTAD
-- [CSTD-Tagungsprotokoll](https://webtv.un.org/en/asset/k1z/k1zdnx65rt) – UN Web TV
-- [Geoffrey Hinton zur KI-Governance](https://soundcloud.com/unradio/godfather-of-ai-geoffrey) – UN Radio
 - [UN Global Dialogue on AI Governance](https://www.un.org/global-dialogue-ai-governance/en) – UN.org
 - [AI for Good Global Summit 2026](https://aiforgood.itu.int/summit26/) – ITU
