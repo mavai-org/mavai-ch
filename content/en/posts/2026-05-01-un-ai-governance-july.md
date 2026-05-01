@@ -1,37 +1,42 @@
 ---
-title: "UN Meetings address central tensions shaping AI Governance"
+title: "UN Meetings Expose the Tensions That Will Shape Global AI Governance"
 date: 2026-05-01
-description: "Geneva's CSTD meetings exposed the core tensions—equity, governance philosophy, sector impacts—that will dominate July's AI governance summits in Switzerland."
-summary: "Geneva hosted UN meetings on AI governance that revealed the central fault lines that will shape global AI regulation for years. The Commission on Science and Technology for Development exposed an equity crisis, a governance philosophy divide, and sector-specific implications. These tensions will define the conversations in July, when two major summits converge in Geneva."
+description: "Geneva's CSTD meetings exposed the fault lines—equity, governance philosophy, sector impacts—that will dominate July's AI governance summits."
+summary: "UN meetings in Geneva revealed the core tensions that will shape global AI regulation for years: an equity crisis, a fundamental disagreement about how to govern AI, and critical sector-specific risks. These questions now define July's AI governance summits in the same city."
 ---
-Last week, Geneva hosted important United Nations meetings on AI governance. The [Commission on Science and Technology for Development (CSTD) convened its 29th Session](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) from April 20–24 under the theme "Science, Technology and Innovation in the Age of AI," focusing on a central concern: AI adoption is growing twice as fast in the Global North as in the Global South, widening gaps in economic opportunity and "digital sovereignty". These tensions won't be resolved within the week, however. Instead, they've crystallised into the core discussions that will shape July's global summits on AI governance—and influence how AI is regulated worldwide for years to come.
 
-Several key topics emerged from the UN meetings: the disparity in AI adoption, its direct implications for economic development, sovereignty, and the realisation of the UN's Sustainable Development Goals. Doreen Bogdan-Martin, a senior UN official, framed the challenge clearly: "AI should be an engine that accelerates inclusive, sustainable development for everyone, everywhere." But the current trajectory does the opposite—concentrating AI benefits in wealthier regions while leaving others behind. This tension will be front and center in July's conversations.
+Last week, Geneva hosted crucial United Nations meetings on AI governance. The [Commission on Science and Technology for Development (CSTD) convened its 29th Session](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) from April 20–24, putting a single issue at the center: AI adoption is growing twice as fast in the Global North as in the Global South, widening gaps in economic opportunity and digital sovereignty.
 
-## Governance philosophy: regulation as steering wheel, not brakes
+But this was just the opening act. The tensions exposed in those meetings have crystallised into the core questions that will dominate July's global AI governance summits—and likely shape international regulation for years to come.
 
-The dominant metaphor currently shaping policy thinking is the following: regulation is the "brakes" on an accelerating car. This framing suggests AI development is inevitable and governance is reactive. Geoffrey Hinton, a leading AI researcher, challenges this thinking, suggesting regulation is much more like the steering wheel of a car — an active instrument for directing how AI develops. This matters because it asks: Do we accept that AI development is unstoppable? Or do we actively shape its direction?
+## The core tensions
 
-This divide in AI's governance philosophy, between one that is more passive containment and the other a more active direction, will be one of the key tensions in July's debates, and it will certainly shape what governance frameworks emerge in the near future. 
+Three interconnected problems emerged from the CSTD discussions.
 
-## July 2026: where these debates will be discussed
+**The equity crisis.** AI benefits are concentrating in wealthier regions while leaving others behind. Doreen Bogdan-Martin, a senior UN official, framed the contradiction clearly: "AI should be an engine that accelerates inclusive, sustainable development for everyone, everywhere." The current trajectory does the opposite. This gap is not abstract—it directly affects economic development, digital sovereignty, and the likelihood that developing nations can realise the UN's Sustainable Development Goals.
 
-[The CSTD meetings](https://webtv.un.org/en/asset/k1z/k1zdnx65rt) have been the opening act for what's to come. The in-depth conversations will continue in July, when two major AI governance events converge in Geneva:
+**A governance philosophy divide.** The dominant metaphor shaping policy is that regulation acts as the "brakes" on innovation. This framing assumes AI development is inevitable and governance is reactive. Geoffrey Hinton, a leading AI researcher, challenges this sharply: regulation should work like a steering wheel—an active instrument for directing how AI develops. This seemingly technical distinction carries enormous weight. It asks whether we accept an accelerating AI trajectory and manage its downside, or whether we can actually shape which directions development takes.
 
-- **July 6–7:** [UN Global Dialogue on AI Governance](https://www.un.org/global-dialogue-ai-governance/en) — Member States, academia, civil society, and the private sector will convene directly around the tensions exposed this week: How do we bridge AI divides? What does trustworthy AI governance actually look like? How do we protect human rights in an AI-driven world?
-- **July 7–10:** [AI for Good Global Summit](https://aiforgood.itu.int/summit26/) returns to Geneva, continuing its yearly commitment to the city as the global focal point for AI governance. This event is open to the public. 
+**Sector-specific implications.** These tensions manifest differently across banking, healthcare, pharmaceuticals, and government. Each sector faces distinct vulnerabilities, yet they're rarely addressed in unified discussions.
 
-These back-to-back events are where the equity gap, the governance philosophy debate, and the sector-specific implications for banking, healthcare, and government will be discussed and potentially inform commitments that shape global AI regulation.
+## Two summits, one crucial moment
 
-## What these summits mean for the AI governance landscape
+The CSTD meetings set the agenda for what comes next. In July, two major events converge in Geneva:
 
-These back-to-back events are not sideline conversations. They offer a rare opportunity to engage directly with how AI governance is being understood and shaped globally, bringing together Member States, technologists, civil society, and academics around shared uncertainties.
+- **July 6–7:** [UN Global Dialogue on AI Governance](https://www.un.org/global-dialogue-ai-governance/en) — Member States, academia, civil society, and the private sector will directly confront these tensions: How do we bridge AI divides? What does trustworthy AI governance look like? How do we protect human rights in an AI-driven world?
+- **July 7–10:** [AI for Good Global Summit](https://aiforgood.itu.int/summit26/) returns to Geneva, open to the public and continuing the city's role as the global focal point for AI governance conversations.
 
-For those working in or responsible for AI governance, these summits matter on multiple fronts. They provide a window into how different countries, sectors, and organisations approach the problem — a chance to hear directly from the people shaping the frameworks that will guide AI regulation for years. The debates themselves — the equity gap, the question of whether regulation steers or merely brakes development, the sector-specific implications for banking, healthcare, and government — are the ones that will determine the contours of global AI policy. Understanding them now, as they crystallise, is essential for anyone building compliance programmes or setting AI strategy.
+Back-to-back, these events create a rare window: the conversations that have been fragmented across policy communities, technology companies, and civil society groups will come into sharp focus in a single place.
 
-These forums also offer the rare chance to contribute perspectives from outside the traditional policy apparatus. Whether you're a technologist, regulator, ethicist, or from an affected community, the diversity of expertise in the room strengthens the conversation — and shapes the frameworks that emerge. For Swiss organisations watching how global governance evolves, the networks built at these summits often become the channels through which new standards and expectations first reach the market. 
+## What's at stake
 
-Geneva has long been a site where global norms are negotiated — and July's events will be no exception. The decisions emerging from these forums will determine who has the capacity to develop, deploy, and benefit from AI, and who remains structurally excluded. AI governance is no longer just a technical or regulatory question; it is increasingly a question of global power, and whether the next technological era deepens existing divides or has the ability to rebalance them.
+These summits are not sideline conversations. They represent a crucial moment in how global AI governance takes shape—one that will ripple far beyond July.
+
+For Swiss organisations and compliance teams, the importance is direct. The frameworks debated in Geneva often become the technical standards and expectations that reach the market first through Swiss intermediaries—the bankers, insurers, and technology firms already embedded in global networks. The networks built at these summits frequently become the channels through which new governance norms travel.
+
+More broadly, these debates will determine who has capacity to develop and deploy AI, and who remains structurally excluded. That is a question of economic power. The decisions emerging from July's forums will shape whether the next technological era deepens existing divides or has the ability to rebalance them.
+
+Geneva has long been the place where global norms are negotiated. July's events will be no exception.
 
 ---
 
