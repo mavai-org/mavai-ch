@@ -19,7 +19,7 @@ Helena monitora gli sviluppi normativi della FINMA, del regolamento europeo sull
 
 Helena ha conseguito un Bachelor in storia e inglese presso l'Università di Basilea, Svizzera.
 
-[Connettiti con Helena su LinkedIn](https://www.linkedin.com/in/helena-mannion-764348261/)
+[Connettiti con Helena su LinkedIn](https://www.linkedin.com/in/helena-mannion-764348261/) | [helena@javai.ch](mailto:helena@javai.ch)
 
 ## Fondatore e contributore
 
@@ -29,7 +29,7 @@ Helena ha conseguito un Bachelor in storia e inglese presso l'Università di Bas
 
 Mike ha conseguito un Bachelor's degree with Honours in informatica presso la Brunel University, un dual Master in Business Administration dalle università di Berna, Svizzera e Rochester, NY, USA, e un Professional Certificate in Machine Learning and Artificial Intelligence dall'Imperial College London.
 
-[Connettiti con Mike su LinkedIn](https://www.linkedin.com/in/mike-franz-mannion/)
+[Connettiti con Mike su LinkedIn](https://www.linkedin.com/in/mike-franz-mannion/) | [michael@javai.ch](mailto:michael@javai.ch)
 
 ## Contattaci
 

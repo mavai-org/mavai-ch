@@ -19,7 +19,7 @@ Helena monitors regulatory developments across FINMA, the EU AI Act, ISO standar
 
 Helena holds a Bachelor's degree in History and English from the University of Basel, Switzerland.
 
-[Connect with Helena on LinkedIn](https://www.linkedin.com/in/helena-mannion-764348261/)
+[Connect with Helena on LinkedIn](https://www.linkedin.com/in/helena-mannion-764348261/) | [helena@javai.ch](mailto:helena@javai.ch)
 
 ## Founder and contributor
 
@@ -29,7 +29,7 @@ Helena holds a Bachelor's degree in History and English from the University of B
 
 Mike holds a Bachelor's degree with Honours in Computer Science from Brunel University, a dual Master's in Business Administration from the universities of Bern, Switzerland and Rochester, NY, USA, and a professional certificate in Machine Learning and Artificial Intelligence from Imperial College London.
 
-[Connect with Mike on LinkedIn](https://www.linkedin.com/in/mike-franz-mannion/)
+[Connect with Mike on LinkedIn](https://www.linkedin.com/in/mike-franz-mannion/) | [michael@javai.ch](mailto:michael@javai.ch)
 
 ## Get in touch
 
