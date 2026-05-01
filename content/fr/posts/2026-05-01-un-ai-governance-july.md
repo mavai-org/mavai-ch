@@ -1,6 +1,6 @@
 ---
 title: "Les réunions de l'ONU abordent les tensions centrales de la gouvernance de l'IA"
-date: 2026-04-24
+date: 2026-05-01
 description: "Les réunions de la CNUCED à Genève ont exposé les tensions centrales – équité, philosophie de gouvernance, implications sectorielles – qui domineront les sommets de gouvernance de l'IA en juillet en Suisse."
 summary: "Cette semaine, des réunions importantes de l'ONU sur la gouvernance de l'IA se sont tenues à Genève, révélant les lignes de faille centrales qui façonneront la régulation mondiale de l'IA pour les années à venir. La Commission pour la science et la technologie au service du développement a exposé une crise d'équité, un clivage philosophique de gouvernance et des implications sectorielles. Ces tensions définiront les conversations en juillet, lorsque deux sommets majeurs convergeront à Genève."
 ---

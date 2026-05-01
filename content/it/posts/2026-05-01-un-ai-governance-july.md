@@ -1,6 +1,6 @@
 ---
 title: "I Colloqui dell'ONU affrontano le tensioni centrali della governance dell'IA"
-date: 2026-04-24
+date: 2026-05-01
 description: "Le riunioni della CNUCED a Ginevra hanno esposto le tensioni centrali – equità, filosofia di governance, implicazioni settoriali – che domineranno i vertici di governance dell'IA in luglio in Svizzera."
 summary: "Questa settimana, importanti riunioni delle Nazioni Unite sulla governance dell'IA si sono svolte a Ginevra, rivelando le linee di frattura centrali che modelleranno la regolamentazione globale dell'IA per gli anni a venire. La Commissione per la scienza e la tecnologia per lo sviluppo ha esposto una crisi di equità, una frattura filosofica della governance e implicazioni settoriali. Queste tensioni definiranno le conversazioni a luglio, quando due vertici maggiori convergeranno a Ginevra."
 ---
