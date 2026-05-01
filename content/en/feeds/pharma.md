@@ -53,6 +53,15 @@ resources:
       - title: "EMA/HMA Network Data Steering Group Workplan 2026–2028 (PDF)"
         url: "https://www.ema.europa.eu/en/documents/other/network-data-steering-group-workplan-2026-2028-data-artificial-intelligence-medicines-regulation_en.pdf"
         summary: "How AI and data regulation in medicines will evolve over the next several years."
+  - heading: "International comparators"
+    open: false
+    items:
+      - title: "MHRA: AI Airlock — regulatory sandbox for AI as a medical device"
+        url: "https://www.gov.uk/government/collections/ai-airlock-the-regulatory-sandbox-for-aiamd"
+        summary: "UK sandbox programme exploring how AI as a medical device (AIaMD) should be regulated. Useful for tracking how non-EU regulators are approaching AI medical devices."
+      - title: "FDA: Artificial intelligence in drug development (CDER)"
+        url: "https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/artificial-intelligence-drug-development"
+        summary: "FDA-CDER gateway to AI-related material on drugs and biologics. Reference point when comparing transatlantic frameworks."
   - heading: "Swissmedic context"
     open: false
     items:

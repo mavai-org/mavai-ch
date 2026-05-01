@@ -53,6 +53,15 @@ resources:
       - title: "EMA/HMA Network Data Steering Group — Plan de travail 2026–2028 (PDF)"
         url: "https://www.ema.europa.eu/en/documents/other/network-data-steering-group-workplan-2026-2028-data-artificial-intelligence-medicines-regulation_en.pdf"
         summary: "Évolution de la réglementation des données et de l'IA dans le domaine pharmaceutique au cours des prochaines années."
+  - heading: "Comparateurs internationaux"
+    open: false
+    items:
+      - title: "MHRA : AI Airlock — bac à sable réglementaire pour l'IA en tant que dispositif médical"
+        url: "https://www.gov.uk/government/collections/ai-airlock-the-regulatory-sandbox-for-aiamd"
+        summary: "Programme britannique de bac à sable réglementaire explorant la régulation de l'IA en tant que dispositif médical (AIaMD). Utile pour suivre l'approche des régulateurs hors UE concernant les dispositifs médicaux à base d'IA."
+      - title: "FDA : Intelligence artificielle dans le développement de médicaments (CDER)"
+        url: "https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/artificial-intelligence-drug-development"
+        summary: "Page d'entrée FDA-CDER sur l'IA dans le domaine des médicaments et produits biologiques. Référence pour les comparaisons réglementaires transatlantiques."
   - heading: "Contexte Swissmedic"
     open: false
     items:
