@@ -2,11 +2,15 @@
 title: "UN Meetings address central tensions shaping AI Governance"
 date: 2026-05-01
 description: "Geneva's CSTD meetings exposed the core tensions—equity, governance philosophy, sector impacts—that will dominate July's AI governance summits in Switzerland."
-summary: "This week, Geneva hosted UN meetings on AI governance that revealed the central fault lines that will shape global AI regulation for years. The Commission on Science and Technology for Development exposed an equity crisis, a governance philosophy divide, and sector-specific implications. These tensions will define the conversations in July, when two major summits converge in Geneva."
+summary: "Last week, Geneva hosted UN meetings on AI governance that revealed the central fault lines that will shape global AI regulation for years. The Commission on Science and Technology for Development exposed an equity crisis, a governance philosophy divide, and sector-specific implications. These tensions will define the conversations in July, when two major summits converge in Geneva."
 ---
 Last week, Geneva hosted important United Nations meetings on AI governance. The [Commission on Science and Technology for Development (CSTD) convened its 29th Session](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) from April 20–24 under the theme "Science, Technology and Innovation in the Age of AI," focusing on a central concern: AI adoption is growing twice as fast in the Global North as in the Global South, widening gaps in economic opportunity and "digital sovereignty". These tensions won't be resolved within the week, however. Instead, they've crystallised into the core discussions that will shape July's global summits on AI governance—and influence how AI is regulated worldwide for years to come.
 
+## The equity crisis: AI adoption divides are widening
+
 Several key topics emerged from the UN meetings: the disparity in AI adoption, its direct implications for economic development, sovereignty, and the realisation of the UN's Sustainable Development Goals. Doreen Bogdan-Martin, a senior UN official, framed the challenge clearly: "AI should be an engine that accelerates inclusive, sustainable development for everyone, everywhere." But the current trajectory does the opposite—concentrating AI benefits in wealthier regions while leaving others behind. This tension will be front and center in July's conversations.
+
+## Governance philosophy: regulation as steering wheel, not brakes
 
 The dominant metaphor currently shaping policy thinking is the following: regulation is the "brakes" on an accelerating car. This framing suggests AI development is inevitable and governance is reactive. Geoffrey Hinton, a leading AI researcher, challenges this thinking, suggesting regulation is much more like the steering wheel of a car — an active instrument for directing how AI develops. This matters because it asks: Do we accept that AI development is unstoppable? Or do we actively shape its direction?
 

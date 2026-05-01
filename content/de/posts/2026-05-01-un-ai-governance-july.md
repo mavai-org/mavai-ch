@@ -7,7 +7,11 @@ summary: "Diese Woche fanden in Genf wichtige UN-Treffen zur KI-Governance statt
 
 Letzte Woche fanden in Genf wichtige Vereinte-Nationen-Treffen zur KI-Governance statt. Die [Kommission für Wissenschaft und Technologie für Entwicklung (CSTD) hielt ihre 29. Tagung ab](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) vom 20. bis 24. April unter dem Thema „Wissenschaft, Technologie und Innovation im Zeitalter der KI," fokusissiert auf eine zentrale Sorge: Die KI-Einführung wächst in der Globalen Nordregion doppelt so schnell wie in der Globalen Südregion und vergrössert damit die Lücken in wirtschaftlichen Chancen und digitaler Souveränität. Diese Spannungen werden diese Woche nicht gelöst. Stattdessen haben sie sich zu den zentralen Diskussionen kristallisiert, die im Juli die globalen Gipfeltreffen zur KI-Governance prägen werden – und beeinflussen, wie KI weltweit reguliert wird.
 
+## Die Chancengleichheitskrise: KI-Adoptionsgräben werden breiter
+
 Mehrere Schlüsselthemen entstanden aus den UN-Treffen: die Disparität in der KI-Einführung, ihre unmittelbaren Auswirkungen auf wirtschaftliche Entwicklung, Souveränität und die Verwirklichung der Nachhaltigkeitsziele der Vereinten Nationen. [Doreen Bogdan-Martin](https://en.wikipedia.org/wiki/Doreen_Bogdan-Martin), eine hochrangige UN-Beamtin, fasste die Herausforderung klar zusammen: „KI sollte ein Motor sein, der nachhaltige und inklusive Entwicklung für alle, überall beschleunigt." Die aktuelle Entwicklung führt jedoch das Gegenteil herbei – sie konzentriert KI-Vorteile in wohlhabenderen Regionen, während andere zurückgelassen werden. Diese Spannung wird im Zentrum der Gespräche im Juli stehen.
+
+## Governance-Philosophie: Regulierung als Lenkrad, nicht Bremse
 
 Eine dominante Metapher prägt das aktuelle politische Denken: Regulierung ist die „Bremse" für ein beschleunigendes KI-Auto. Diese Rahmung legt nahe, dass KI-Entwicklung unvermeidlich ist und Governance reaktiv ist. Geoffrey Hinton, ein führender KI-Forscher, hinterfragte dieses Denken und schlägt vor, Regulierung sei viel eher wie das Lenkrad eines Autos – ein aktives Instrument zur Steuerung, wie sich KI entwickelt. Das ist wichtig, weil es die Frage stellt: Akzeptieren wir, dass KI-Entwicklung unstoppbar ist? Oder gestalten wir aktiv ihre Richtung?
 

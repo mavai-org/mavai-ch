@@ -7,7 +7,11 @@ summary: "Questa settimana, importanti riunioni delle Nazioni Unite sulla govern
 
 La scorsa settimana, importanti riunioni delle Nazioni Unite sulla governance dell'IA si sono svolte a Ginevra. La [Commissione per la scienza e la tecnologia per lo sviluppo (CNUCED) ha tenuto la sua 29ª sessione](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) dal 20 al 24 aprile sul tema "Scienza, tecnologia e innovazione nell'era dell'IA," concentrandosi su una preoccupazione centrale: l'adozione dell'IA sta crescendo il doppio più velocemente nel Nord globale che nel Sud globale, ampliando i divari nelle opportunità economiche e nella "sovranità digitale". Queste tensioni non saranno risolte questa settimana. Invece, si sono cristallizzate in discussioni fondamentali che modelleranno i vertici globali di governance dell'IA a luglio – e influenzeranno come l'IA viene regolamentata a livello mondiale per gli anni a venire.
 
+## La crisi dell'equità: i divari nell'adozione dell'IA si allargano
+
 Diversi temi chiave hanno emerso dalle riunioni dell'ONU: il divario nell'adozione dell'IA, le sue implicazioni dirette per lo sviluppo economico, la sovranità e il raggiungimento degli Obiettivi di sviluppo sostenibile delle Nazioni Unite. [Doreen Bogdan-Martin](https://en.wikipedia.org/wiki/Doreen_Bogdan-Martin), un alto funzionario delle Nazioni Unite, ha inquadrato chiaramente la sfida: "L'IA dovrebbe essere un motore che accelera lo sviluppo sostenibile e inclusivo per tutti, ovunque." Ma la traiettoria attuale fa l'opposto – concentra i vantaggi dell'IA nelle regioni ricche mentre lascia altre indietro. Questa tensione sarà al centro delle conversazioni a luglio.
+
+## Filosofia della governance: la regolamentazione come volante, non freno
 
 Una metafora dominante modella il pensiero politico attuale: la regolamentazione è il "freno" su un'auto dell'IA che accelera. Questo inquadramento suggerisce che lo sviluppo dell'IA è inevitabile e che la governance è reattiva. Geoffrey Hinton, un ricercatore leader dell'IA, mette in discussione questo pensiero, proponendo invece di pensare la regolamentazione come un volante – uno strumento attivo per dirigere come l'IA si sviluppa. Questo è importante perché pone la domanda: accettiamo che lo sviluppo dell'IA sia inevitabile? O stiamo attivamente plasmando la sua direzione?
 
