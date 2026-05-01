@@ -5,7 +5,7 @@ description: "Geneva's CSTD meetings exposed the fault lines—equity, governanc
 summary: "UN meetings in Geneva revealed the core tensions that will shape global AI regulation for years: an equity crisis, a fundamental disagreement about how to govern AI, and critical sector-specific risks. These questions now define July's AI governance summits in the same city."
 ---
 
-Last week, Geneva hosted crucial United Nations meetings on AI governance. The [Commission on Science and Technology for Development (CSTD) convened its 29th Session](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) from April 20–24, putting a single issue at the center: AI adoption is growing twice as fast in the Global North as in the Global South, widening gaps in economic opportunity and digital sovereignty.
+Geneva has hosted crucial United Nations meetings on AI governance. The [Commission on Science and Technology for Development (CSTD) convened its 29th Session](https://unctad.org/meeting/commission-science-and-technology-development-29th-session) from April 20–24, putting a single issue at the center: AI adoption is growing twice as fast in the Global North as in the Global South, widening gaps in economic opportunity and digital sovereignty.
 
 But this was just the opening act. The tensions exposed in those meetings have crystallised into the core questions that will dominate July's global AI governance summits—and likely shape international regulation for years to come.
 
