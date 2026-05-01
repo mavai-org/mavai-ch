@@ -29,6 +29,18 @@ Examples:
 
 This applies to all German text: content files, i18n strings, commit messages, and any other German prose in this repository.
 
+## Content guidelines
+
+### Avoid relative dates in insights and posts
+
+Use **absolute dates** (specific dates or months/years) instead of relative references like "last week", "recently", "two months ago", or "earlier this year". Relative dates quickly become outdated and undermine journalistic credibility as content ages.
+
+**Bad:** "Last week, the EU announced new AI compliance requirements..."
+
+**Good:** "In April 2026, the EU announced new AI compliance requirements..."
+
+This ensures content remains accurate and contextual regardless of when it is read.
+
 ## Content directory structure
 
 ```
