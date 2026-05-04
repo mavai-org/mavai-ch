@@ -1,6 +1,6 @@
 ---
 title: "I colloqui dell'ONU espongono le tensioni che potrebbero plasmare la governance globale dell'IA"
-date: 2026-05-01
+date: 2026-05-04
 description: "Le riunioni della CNUCED a Ginevra hanno esposto le linee di frattura – equità, filosofia di governance, impatti settoriali – che potrebbero dominare i vertici di governance dell'IA a luglio."
 summary: "Le riunioni delle Nazioni Unite in aprile hanno esposto quattro tensioni della governance dell'IA: chi ha l'infrastruttura e la capacità di sviluppare l'IA, come i dati dovrebbero essere governati oltre i confini, se i paesi in via di sviluppo possono accedere e trasferire la tecnologia, e se la regolamentazione dirige o limita l'innovazione. Queste domande domineranno i vertici globali dell'IA a luglio – e le risposte potrebbero plasmare la politica dell'IA internazionale per anni."
 author: "Helena Mannion"
@@ -20,7 +20,7 @@ Quattro problemi interconnessi sono emersi dai dibattiti della CNUCED.
 
 **Trasferimento tecnologico e rafforzamento delle capacità.** I ministri dei paesi in via di sviluppo hanno sollevato costantemente una sfida centrale: l'accesso alle tecnologie avanzate rimane limitato, e le partnership spesso non costruiscono capacità istituzionale duratura. La formazione, l'infrastruttura e le risorse di cui i paesi hanno bisogno per partecipare significativamente all'economia dell'IA rimangono concentrate nelle regioni ricche.
 
-**Un divario di filosofia della governance.** La metafora dominante che plasma la politica è che la regolamentazione agisce come il "freno" sull'innovazione. Alla [Conferenza mondiale digitale (DWC): IA per lo sviluppo sociale](https://www.wdtacademy.org/DWC2026), Geoffrey Hinton ha messo in discussione questo aspramente: la regolamentazione dovrebbe funzionare come un volante – uno strumento attivo per dirigere come l'IA si sviluppa.[2] Questa distinzione apparentemente tecnica potrebbe determinare se i paesi possono dirigere l'IA verso le loro priorità, o se devono semplicemente accettare traiettorie stabilite altrove.
+**Un divario di filosofia della governance.** La metafora dominante che plasma la politica è che la regolamentazione agisce come il "freno" sull'innovazione. Alla [Conferenza mondiale digitale (DWC): IA per lo sviluppo sociale](https://www.wdtacademy.org/DWC2026), [Geoffrey Hinton](https://www.nobelprize.org/events/nobel-prize-dialogue/tokyo-2025/panellists/geoffrey-hinton/) ha messo in discussione questo aspramente: la regolamentazione dovrebbe funzionare come un volante – uno strumento attivo per dirigere come l'IA si sviluppa.[2] Questa distinzione apparentemente tecnica potrebbe determinare se i paesi possono dirigere l'IA verso le loro priorità, o se devono semplicemente accettare traiettorie stabilite altrove.
 
 ## Due vertici, un momento significativo
 

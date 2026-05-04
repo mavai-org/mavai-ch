@@ -1,6 +1,6 @@
 ---
 title: "UN Meetings Expose the Tensions That Could Shape Global AI Governance"
-date: 2026-05-01
+date: 2026-05-04
 description: "Geneva's CSTD meetings exposed the fault lines—equity, governance philosophy, sector impacts—that could dominate July's AI governance summits."
 summary: "UN meetings in April exposed four tensions shaping AI governance: who has the infrastructure and capacity to develop AI, how data should be governed across borders, whether developing countries can access and transfer technology, and whether regulation steers or constrains innovation. These questions will dominate July's global AI summits—and the answers could shape international AI policy for years."
 ---
@@ -19,7 +19,7 @@ Four interconnected problems emerged from the CSTD discussions.
 
 **Technology transfer and capacity building.** Ministers from developing countries consistently raised a core challenge: access to advanced technologies remains limited, and partnerships often don't build lasting institutional capacity. Training, infrastructure, and resources needed for countries to participate meaningfully in the AI economy remain concentrated in wealthy regions.
 
-**A governance philosophy divide.** The dominant metaphor shaping policy is that regulation acts as the "brakes" on innovation. At the [Digital World Conference (DWC): AI for Social Development](https://www.wdtacademy.org/DWC2026), Geoffrey Hinton challenged this sharply: regulation should work like a steering wheel—an active instrument for directing how AI develops.[2] This seemingly technical distinction may shape whether countries can steer AI toward their own priorities, or whether they simply accept trajectories set elsewhere.
+**A governance philosophy divide.** The dominant metaphor shaping policy is that regulation acts as the "brakes" on innovation. At the [Digital World Conference (DWC): AI for Social Development](https://www.wdtacademy.org/DWC2026), [Geoffrey Hinton](https://www.nobelprize.org/events/nobel-prize-dialogue/tokyo-2025/panellists/geoffrey-hinton/) challenged this sharply: regulation should work like a steering wheel—an active instrument for directing how AI develops.[2] This seemingly technical distinction may shape whether countries can steer AI toward their own priorities, or whether they simply accept trajectories set elsewhere.
 
 ## Two summits, one significant moment
 

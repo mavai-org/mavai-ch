@@ -1,6 +1,6 @@
 ---
 title: "UN-Treffen legen zentrale Spannungen der KI-Governance offen"
-date: 2026-05-01
+date: 2026-05-04
 description: "Genfs CSTD-Tagungen legten Bruchlinien offen – Chancengleichheit, Governance-Philosophie, sektorale Auswirkungen – die KI-Gipfeltreffen im Juli prägen könnten."
 summary: "UN-Treffen im April legten vier Spannungen der KI-Governance offen: Wer hat die Infrastruktur und Kapazität, um KI zu entwickeln? Wie sollte Daten grenzübergreifend gesteuert werden? Können Entwicklungsländer auf Technologie zugreifen und diese übertragen? Und ob Regulierung KI lenkt oder einschränkt. Diese Fragen werden die globalen KI-Gipfel im Juli prägen – und die Antworten könnten internationale KI-Politik jahrelang gestalten."
 author: "Helena Mannion"
@@ -20,7 +20,7 @@ Vier miteinander verbundene Probleme entstanden aus den CSTD-Diskussionen.
 
 **Technologietransfer und Kapazitätsaufbau.** Minister aus Entwicklungsländern hoben wiederholt eine zentrale Herausforderung hervor: Zugang zu fortgeschrittenen Technologien bleibt begrenzt, und Partnerschaften bauen oft keine bleibende institutionelle Kapazität auf. Training, Infrastruktur und Ressourcen, die Länder für sinnvolle Teilnahme an der KI-Wirtschaft benötigen, bleiben in wohlhabenderen Regionen konzentriert.
 
-**Eine Governance-Philosophie-Kluft.** Die dominante Metapher, die die Politik prägt, ist dass Regulierung als „Bremse" auf Innovation fungiert. Auf der [Digital World Conference (DWC): AI for Social Development](https://www.wdtacademy.org/DWC2026) hinterfragte Geoffrey Hinton dies scharf: Regulierung sollte wie ein Lenkrad funktionieren – ein aktives Instrument für die Steuerung, wie sich KI entwickelt.[2] Diese scheinbar technische Unterscheidung könnte bestimmen, ob Länder KI zu ihren eigenen Prioritäten lenken können, oder ob sie einfach Trajektorien akzeptieren, die anderswo gesetzt werden.
+**Eine Governance-Philosophie-Kluft.** Die dominante Metapher, die die Politik prägt, ist dass Regulierung als „Bremse" auf Innovation fungiert. Auf der [Digital World Conference (DWC): AI for Social Development](https://www.wdtacademy.org/DWC2026) hinterfragte [Geoffrey Hinton](https://www.nobelprize.org/events/nobel-prize-dialogue/tokyo-2025/panellists/geoffrey-hinton/) dies scharf: Regulierung sollte wie ein Lenkrad funktionieren – ein aktives Instrument für die Steuerung, wie sich KI entwickelt.[2] Diese scheinbar technische Unterscheidung könnte bestimmen, ob Länder KI zu ihren eigenen Prioritäten lenken können, oder ob sie einfach Trajektorien akzeptieren, die anderswo gesetzt werden.
 
 ## Zwei Gipfeltreffen, ein bedeutsamer Moment
 

@@ -1,6 +1,6 @@
 ---
 title: "Les réunions de l'ONU exposent les tensions qui pourraient façonner la gouvernance mondiale de l'IA"
-date: 2026-05-01
+date: 2026-05-04
 description: "Les réunions de la CNUCED à Genève ont exposé les lignes de fracture – équité, philosophie de gouvernance, impacts sectoriels – qui pourraient dominer les sommets de gouvernance de l'IA en juillet."
 summary: "Les réunions de l'ONU en avril ont exposé quatre tensions de la gouvernance de l'IA : qui dispose de l'infrastructure et de la capacité à développer l'IA, comment les données doivent être gouvernées à travers les frontières, si les pays en développement peuvent accéder et transférer la technologie, et si la régulation dirige ou limite l'innovation. Ces questions domineront les sommets mondiaux de l'IA en juillet – et les réponses pourraient façonner la politique internationale de l'IA pendant des années."
 author: "Helena Mannion"
@@ -20,7 +20,7 @@ Quatre problèmes interconnectés ont émergé des discussions de la CNUCED.
 
 **Transfert technologique et renforcement des capacités.** Les ministres des pays en développement ont régulièrement soulevé un défi central : l'accès aux technologies avancées reste limité, et les partenariats ne construisent souvent pas une capacité institutionnelle durable. La formation, l'infrastructure et les ressources dont les pays ont besoin pour participer significativement à l'économie de l'IA restent concentrées dans les régions riches.
 
-**Un clivage de philosophie de gouvernance.** La métaphore dominante façonnant la politique est que la régulation agit comme le « frein » sur l'innovation. À la [Conférence mondiale numérique (DWC) : IA pour le développement social](https://www.wdtacademy.org/DWC2026), Geoffrey Hinton a remis en question cela vivement : la régulation devrait fonctionner comme un volant – un instrument actif pour diriger comment l'IA se développe.[2] Cette distinction apparemment technique pourrait déterminer si les pays peuvent diriger l'IA vers leurs priorités, ou s'ils doivent simplement accepter les trajectoires définies ailleurs.
+**Un clivage de philosophie de gouvernance.** La métaphore dominante façonnant la politique est que la régulation agit comme le « frein » sur l'innovation. À la [Conférence mondiale numérique (DWC) : IA pour le développement social](https://www.wdtacademy.org/DWC2026), [Geoffrey Hinton](https://www.nobelprize.org/events/nobel-prize-dialogue/tokyo-2025/panellists/geoffrey-hinton/) a remis en question cela vivement : la régulation devrait fonctionner comme un volant – un instrument actif pour diriger comment l'IA se développe.[2] Cette distinction apparemment technique pourrait déterminer si les pays peuvent diriger l'IA vers leurs priorités, ou s'ils doivent simplement accepter les trajectoires définies ailleurs.
 
 ## Deux sommets, un moment significatif
 
