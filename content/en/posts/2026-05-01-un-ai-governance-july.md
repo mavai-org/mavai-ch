@@ -3,6 +3,7 @@ title: "UN Meetings Expose the Tensions That Could Shape Global AI Governance"
 date: 2026-05-04
 description: "Geneva's CSTD meetings exposed the fault lines—equity, governance philosophy, sector impacts—that could dominate July's AI governance summits."
 summary: "UN meetings in April exposed four tensions shaping AI governance: who has the infrastructure and capacity to develop AI, how data should be governed across borders, whether developing countries can access and transfer technology, and whether regulation steers or constrains innovation. These questions will dominate July's global AI summits—and the answers could shape international AI policy for years."
+author: "Helena Mannion"
 ---
 
 UN meetings in Geneva from April 20–24 exposed multiple tensions—equity gaps, data governance, infrastructure concentration, capacity disparities—that could shape global AI regulation for years.
@@ -13,7 +14,7 @@ The [Commission on Science and Technology for Development (CSTD) convened its 29
 
 Four interconnected problems emerged from the CSTD discussions.
 
-**The AI adoption divide.** AI adoption in the Global North is growing nearly twice as fast as in the Global South. The ITU Secretary highlighted stark disparities: only 33 countries have inference-grade AI compute capacity, only 24 have training-grade compute, and the Global South—home to half the world's internet users—holds less than 10% of global data center capacity.A single country hosts ten times more data centers than any other; a single company manufactures nearly every leading AI chip.[1] This concentration may shape who has capacity to develop AI—and who remains dependent on others' decisions.
+**The AI adoption divide.** AI adoption in the Global North is growing nearly twice as fast as in the Global South. The ITU Secretary highlighted stark disparities: only 33 countries have inference-grade AI compute capacity, only 24 have training-grade compute, and the Global South—home to half the world's internet users—holds less than 10% of global data center capacity. A single country hosts ten times more data centers than any other; a single company manufactures nearly every leading AI chip.[1] This concentration may shape who has capacity to develop AI—and who remains dependent on others' decisions.
 
 **Data governance and responsible AI.** The meeting devoted significant attention to data as the foundation for AI. Without clear governance frameworks for data—how it flows across borders, who owns it, how it's protected—responsible AI deployment becomes difficult. Developing countries in particular may struggle to shape these frameworks if not included in the conversation.
 
