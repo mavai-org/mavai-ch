@@ -9,6 +9,7 @@
         method="POST"
         class="contact-form"
       >
+        <input type="hidden" name="_next" value="{{ .Site.Home.Permalink }}">
         <!-- Honeypot field — hidden from real users, catches bots -->
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 

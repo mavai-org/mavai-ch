@@ -29,6 +29,45 @@ Examples:
 
 This applies to all German text: content files, i18n strings, commit messages, and any other German prose in this repository.
 
+## Content guidelines
+
+### ⚠️ NO RELATIVE DATES — use absolute dates only
+
+**All content must use absolute dates (specific dates or months/years).** Never use relative references like "last week", "recently", "two months ago", "earlier this year", "currently", or "now". This applies to **all text**: opening sentences, summaries, body copy, and everywhere else. Relative dates become outdated quickly and damage journalistic credibility as content ages.
+
+**Relative dates to avoid:** last week, last month, recently, a few years ago, currently, now, soon, earlier this year, two months ago, this April, this month
+
+**Bad:** "Last week, the EU announced new AI compliance requirements..." or "In April meetings, UN officials exposed..."
+
+**Good:** "In April 2026, the EU announced new AI compliance requirements..." or "At meetings from April 20–24, UN officials exposed..."
+
+This ensures content remains accurate and contextual regardless of when it is read.
+
+### Journalistic tone: hedge claims and avoid loaded adjectives
+
+Write in a journalistic voice—reporting observations, not asserting conclusions. Use hedging language to maintain professional distance and credibility.
+
+**Avoid unhedged claims:** "will determine," "will shape," "will prove," "has crystallised"
+
+**Use hedging instead:**
+- "will" → "could," "may," or "appears to"
+- "determines" → "could influence," "may affect"
+- "crucial," "enormous," "rare" → "significant," "notable," "focused"
+
+**Examples:**
+
+**Bad (assertive, opinion-sounding):**
+- "This will shape global regulation for years"
+- "A crucial moment in AI governance"
+- "These debates will determine who benefits from AI"
+
+**Good (journalistic, hedged):**
+- "This could shape global regulation for years"
+- "A significant moment in AI governance"
+- "These debates could influence who benefits from AI"
+
+This applies to **all content**: titles, descriptions, summaries, opening sentences, body text, and conclusions. Hedging maintains the credibility that comes from reporting facts rather than predicting outcomes.
+
 ## Content directory structure
 
 ```
