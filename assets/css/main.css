@@ -330,9 +330,9 @@ code {
 }
 
 /* Banner colour variants — Swiss red tint over alps image */
-.section-banner--red::after { background: #c8102e; }
+.section-banner--red::after { background: #a00d24; }
 .section-banner--darkred::after { background: #a00d24; }
-.section-banner--slate::after { background: #c8102e; }
+.section-banner--slate::after { background: #a00d24; }
 
 /* ---- Intro ---- */
 /* ---- News bulletin ---- */
