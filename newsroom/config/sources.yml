@@ -226,6 +226,45 @@ sources:
     url: "https://www.ema.europa.eu/en/news.xml"
     tags: ["eu", "pharma", "medicine", "health", "regulatory"]
 
+  - id: european-council-press
+    name: "European Council Press Releases"
+    tier: 2
+    type: html-scrape
+    url: "https://www.consilium.europa.eu/en/press/press-releases/"
+    selectors:
+      item: "article, .news-item, .listing__item"
+      title: "h2, h3, .listing__title"
+      link: "a@href"
+      date: "time@datetime, .date"
+    baseUrl: "https://www.consilium.europa.eu"
+    tags: ["global", "eu", "policy"]
+
+  - id: ec-press-releases
+    name: "European Commission Press Releases"
+    tier: 2
+    type: html-scrape
+    url: "https://ec.europa.eu/commission/presscorner/home/en"
+    selectors:
+      item: "article, .news-item, .listing__item, .news-list-item"
+      title: "h2, h3, .listing__title"
+      link: "a@href"
+      date: "time@datetime, .date"
+    baseUrl: "https://ec.europa.eu"
+    tags: ["global", "eu", "policy"]
+
+  - id: eurohpc-ju
+    name: "EuroHPC JU Press Releases"
+    tier: 3
+    type: html-scrape
+    url: "https://www.eurohpc-ju.europa.eu/media-events/press-releases_en"
+    selectors:
+      item: "article, .news-item, .listing__item"
+      title: "h2, h3, .listing__title"
+      link: "a@href"
+      date: "time@datetime, .date"
+    baseUrl: "https://www.eurohpc-ju.europa.eu"
+    tags: ["global", "eu", "computing", "infrastructure"]
+
   # === Tier 2 — Specialist reporting and analysis ===
 
   - id: fda-press
