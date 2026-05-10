@@ -9,15 +9,8 @@
   {
     "id": "pharma",
     "feed_path": "pharma",
-    "tags": ["pharma", "biotech", "medicine"],
+    "tags": ["pharma", "biotech", "medicine", "health"],
     "css_modifier": "pharma",
-    "weight": 2
-  },
-  {
-    "id": "health",
-    "feed_path": "health",
-    "tags": ["health"],
-    "css_modifier": "health",
     "weight": 2
   },
   {

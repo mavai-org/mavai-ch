@@ -1,5 +1,5 @@
 ---
-title: "Pharmaceuticals"
+title: "Pharma & Gesundheit"
 type: feeds
 sector_id: pharma
 feed_path: pharma
