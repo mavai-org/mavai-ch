@@ -108,15 +108,9 @@ val sectors = listOf(
     ),
     Sector(
         "pharma",
-        "javai.ch — Pharmaceuticals",
-        "AI regulation news for pharmaceutical and life sciences",
-        listOf("pharma", "biotech", "medicine")
-    ),
-    Sector(
-        "health",
-        "javai.ch — Health",
-        "AI regulation news for the Swiss health sector",
-        listOf("health")
+        "javai.ch — Pharma & Healthcare",
+        "AI regulation news for pharmaceutical, biotech, and healthcare sectors",
+        listOf("pharma", "biotech", "medicine", "health")
     ),
     Sector(
         "federal-government",
