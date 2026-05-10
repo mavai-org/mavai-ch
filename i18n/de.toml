@@ -139,6 +139,9 @@ other = "Sektor vorschlagen"
 [contact_cat_improvement]
 other = "Verbesserung der Website"
 
+[contact_cat_clarification]
+other = "Klärung anfordern"
+
 [contact_cat_other]
 other = "Sonstiges"
 
