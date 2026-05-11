@@ -41,10 +41,10 @@ other = "Banche & Finanza"
 other = "Notizie sulla regolamentazione IA per il settore bancario e finanziario svizzero — circolari FINMA, gestione del rischio dei modelli e aspettative di vigilanza."
 
 [sector_pharma]
-other = "Industria farmaceutica"
+other = "Farmaceutica & Sanità"
 
 [sector_pharma_desc]
-other = "Notizie sulla regolamentazione IA per l'industria farmaceutica — validazione clinica dell'IA, conformità GxP e linee guida delle autorità sanitarie."
+other = "Notizie sulla regolamentazione IA per il settore farmaceutico e sanitario — validazione clinica dell'IA, vigilanza sui dispositivi medici, conformità GxP e linee guida delle autorità sanitarie."
 
 [sector_cantons]
 other = "Amministrazione cantonale"

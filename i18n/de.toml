@@ -41,10 +41,10 @@ other = "Banken & Finanzen"
 other = "KI-Regulierungsnachrichten für das Schweizer Bankwesen und Finanzdienstleistungen — FINMA-Rundschreiben, Modellrisikomanagement und aufsichtsrechtliche Erwartungen."
 
 [sector_pharma]
-other = "Pharma & Life Sciences"
+other = "Pharma & Gesundheitswesen"
 
 [sector_pharma_desc]
-other = "KI-Regulierungsnachrichten für die Pharmaindustrie — klinische KI-Validierung, GxP-Compliance und Leitlinien der Gesundheitsbehörden."
+other = "KI-Regulierungsnachrichten für Pharma und Gesundheitswesen — klinische KI-Validierung, Aufsicht über Medizinprodukte, GxP-Compliance und Leitlinien der Gesundheitsbehörden."
 
 [sector_cantons]
 other = "Kantonale Verwaltung"

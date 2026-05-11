@@ -41,10 +41,10 @@ other = "Banque & Finance"
 other = "Actualités réglementaires IA pour le secteur bancaire et financier suisse — circulaires FINMA, gestion des risques de modèles et attentes prudentielles."
 
 [sector_pharma]
-other = "Industrie pharmaceutique"
+other = "Pharma & Soins de santé"
 
 [sector_pharma_desc]
-other = "Actualités réglementaires IA pour l'industrie pharmaceutique — validation clinique de l'IA, conformité GxP et directives des autorités sanitaires."
+other = "Actualités réglementaires IA pour la pharma et les soins de santé — validation clinique de l'IA, surveillance des dispositifs médicaux, conformité GxP et directives des autorités sanitaires."
 
 [sector_cantons]
 other = "Administration cantonale"
