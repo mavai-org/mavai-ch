@@ -93,8 +93,13 @@ jobs:
           fi
           ./gradlew $ARGS
 
+      # Issue/label management runs via ORG_REPO_TOKEN and is best-effort:
+      # the scraper-health issue is a convenience, not the workflow's
+      # deliverable. If the token lacks Issues:write (HTTP 403), log and
+      # continue so curation and the feed PR still complete.
       - name: Ensure newsroom-scraper label exists
         if: always() && steps.curate.outcome != 'skipped'
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
         working-directory: javai-ch
@@ -107,6 +112,7 @@ jobs:
       - name: Look up existing scraper-failure issue
         id: existing_issue
         if: always() && steps.curate.outcome != 'skipped'
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
         working-directory: javai-ch
@@ -120,6 +126,7 @@ jobs:
 
       - name: Create or update structural-failure issue
         if: steps.curate.outcome == 'failure' && hashFiles(env.STRUCTURAL_REPORT_MD) != ''
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
           NUMBER: ${{ steps.existing_issue.outputs.number }}
@@ -139,6 +146,7 @@ jobs:
 
       - name: Close resolved scraper-failure issue
         if: steps.curate.outcome == 'success' && steps.existing_issue.outputs.number != ''
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
           NUMBER: ${{ steps.existing_issue.outputs.number }}
