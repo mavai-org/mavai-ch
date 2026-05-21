@@ -4,7 +4,11 @@
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", " }}{{ else }}{{ delimit .Site.Params.keywords ", " }}{{ end }}">
 <meta name="author" content="{{ .Site.Params.author }}">
+{{ with .Site.Params.googleSiteVerification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
+{{ with .Site.Params.bingSiteVerification }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
 
+{{/* Per-page Open Graph image wins; otherwise the site default. */}}
+{{ $ogImage := or .Params.image .Site.Params.ogImage }}
 <!-- Open Graph -->
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
@@ -12,7 +16,9 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="Javai Schweiz">
 <meta property="og:locale" content="{{ .Lang }}">
-{{ with .Site.Params.ogImage }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+{{ with $ogImage }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+{{ if and .IsPage (not .Date.IsZero) }}<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+{{ with .Lastmod }}{{ if and $.IsPage (not $.Date.IsZero) }}<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}{{ end }}
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
@@ -33,6 +39,52 @@
 {{ with .OutputFormats.Get "RSS" }}
   <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
 {{ end }}
+{{/* ---- Structured data (JSON-LD) ---------------------------------------- */}}
+{{/* Organization + WebSite on every page; Article on dated posts (Insights,
+     and regulations should they carry dates). Each block carries the page's
+     own `inLanguage` so engines index the right localised variant. The
+     Organization `sameAs` cross-links the GitHub org, LinkedIn, and the sister
+     site javai.org so the two sites are understood as one entity. */}}
+{{ $org := dict
+  "@context" "https://schema.org"
+  "@type" "Organization"
+  "name" "Javai"
+  "url" .Site.BaseURL
+  "logo" ($ogImage | absURL)
+  "description" .Site.Params.description
+  "inLanguage" .Lang
+}}
+{{ with .Site.Params.sameAs }}{{ $org = merge $org (dict "sameAs" .) }}{{ end }}
+<script type="application/ld+json">{{ $org | jsonify | safeJS }}</script>
+{{ if .IsHome }}
+{{ $website := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "name" .Site.Title
+  "url" .Site.BaseURL
+  "description" .Site.Params.description
+  "inLanguage" .Lang
+}}
+<script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
+{{ end }}
+{{ if and .IsPage (not .Date.IsZero) (in (slice "posts" "regulations") .Section) }}
+{{ $article := dict
+  "@context" "https://schema.org"
+  "@type" "Article"
+  "headline" .Title
+  "description" (or .Description .Params.summary)
+  "datePublished" (.Date.Format "2006-01-02")
+  "url" .Permalink
+  "mainEntityOfPage" .Permalink
+  "inLanguage" .Lang
+  "publisher" (dict "@type" "Organization" "name" "Javai" "url" .Site.BaseURL "logo" (dict "@type" "ImageObject" "url" ($ogImage | absURL)))
+}}
+{{ with .Lastmod }}{{ $article = merge $article (dict "dateModified" (.Format "2006-01-02")) }}{{ end }}
+{{ with .Params.author }}{{ $article = merge $article (dict "author" (dict "@type" "Person" "name" .)) }}{{ end }}
+{{ with $ogImage }}{{ $article = merge $article (dict "image" (. | absURL)) }}{{ end }}
+<script type="application/ld+json">{{ $article | jsonify | safeJS }}</script>
+{{ end }}
+
 {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 

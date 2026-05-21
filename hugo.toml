@@ -11,6 +11,23 @@ defaultContentLanguageInSubdir = true
 [params]
   author = "Javai"
   ogImage = "images/hero.jpg"
+  # Search engine ownership verification. Paste javai.ch's OWN tokens — do not
+  # reuse javai.org's. Google Search Console (Settings → Ownership verification
+  # → HTML tag) and Bing Webmaster Tools give a content value; paste that value
+  # only, not the full meta tag. Empty = no tag emitted.
+  # Note: javai.ch is a separate Search Console property with its own DNS TXT
+  # record. The DNS/Domain method is preferred — the full
+  # `google-site-verification=…` token as a TXT record at the apex (a truncated
+  # or fragment value will not verify).
+  googleSiteVerification = ""
+  bingSiteVerification = ""
+  # Profiles linked from the Organization JSON-LD `sameAs`. Cross-links javai.org
+  # so search engines treat the two sites as one entity.
+  sameAs = [
+    "https://github.com/javai-org",
+    "https://javai.org",
+    "https://www.linkedin.com/in/mike-franz-mannion/",
+  ]
   keywords = [
     "AI regulation Switzerland",
     "FINMA AI",
@@ -49,6 +66,10 @@ ignoreFiles = ['^drafts/']
     tagline = "Regulation. Compliance. Confidence."
 
   [[languages.en.menus.main]]
+    name = 'AI Regulation in Switzerland'
+    pageRef = '/ai-regulation-switzerland'
+    weight = 5
+  [[languages.en.menus.main]]
     name = 'Regulation News'
     pageRef = '/regulations'
     weight = 10
@@ -79,6 +100,10 @@ ignoreFiles = ['^drafts/']
     description = "KI-Regulierung in der Schweiz — was sich ändert, was es bedeutet und was zu tun ist."
     tagline = "Regulierung. Compliance. Vertrauen."
 
+  [[languages.de.menus.main]]
+    name = 'KI-Regulierung in der Schweiz'
+    pageRef = '/ai-regulation-switzerland'
+    weight = 5
   [[languages.de.menus.main]]
     name = 'Regulierungsnachrichten'
     pageRef = '/regulations'
@@ -111,6 +136,10 @@ ignoreFiles = ['^drafts/']
     tagline = "Réglementation. Conformité. Confiance."
 
   [[languages.fr.menus.main]]
+    name = "Réglementation de l'IA en Suisse"
+    pageRef = '/ai-regulation-switzerland'
+    weight = 5
+  [[languages.fr.menus.main]]
     name = 'Actualités réglementaires'
     pageRef = '/regulations'
     weight = 10
@@ -141,6 +170,10 @@ ignoreFiles = ['^drafts/']
     description = "Regolamentazione dell'IA in Svizzera — cosa cambia, cosa significa e come agire."
     tagline = "Regolamentazione. Conformità. Fiducia."
 
+  [[languages.it.menus.main]]
+    name = "Regolamentazione dell'IA in Svizzera"
+    pageRef = '/ai-regulation-switzerland'
+    weight = 5
   [[languages.it.menus.main]]
     name = 'Notizie normative'
     pageRef = '/regulations'
