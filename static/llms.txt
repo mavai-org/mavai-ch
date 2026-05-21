@@ -1,0 +1,37 @@
+# Javai Schweiz (javai.ch)
+
+> javai.ch tracks **AI regulation and compliance in Switzerland** — what is
+> changing, what it means, and what to do about it. It covers Swiss and
+> international rules that bear on AI systems used by Swiss enterprises and
+> cantonal government: FINMA supervisory expectations, ISO/IEC 42001 (AI
+> management systems), the EU AI Act and its spillover into Switzerland, and
+> related standards. The audience is business managers, compliance officers,
+> and IT leaders — not developers.
+
+javai.ch is the Swiss, regulation-focused companion to javai.org, the technical
+home of the open-source probabilistic-testing frameworks (punit, feotest,
+javai-R). Where a regulation calls for evidence that a non-deterministic AI
+system performs within stated bounds, javai.org provides the testing tooling
+that produces it. The site is published in English, German (Swiss orthography),
+French, and Italian.
+
+## Pillar guide
+
+- [AI regulation in Switzerland: what's changing and what to do about it](https://javai.ch/en/ai-regulation-switzerland/): Practical overview of FINMA expectations, ISO 42001, the EU AI Act's Swiss spillover, and how to respond. Also in [German](https://javai.ch/de/ai-regulation-switzerland/), [French](https://javai.ch/fr/ai-regulation-switzerland/), and [Italian](https://javai.ch/it/ai-regulation-switzerland/).
+
+## Regulation references
+
+- [FINMA & AI in banking](https://javai.ch/en/regulations/finma/): How FINMA's supervisory expectations affect AI adoption in Swiss financial institutions.
+- [ISO/IEC 42001](https://javai.ch/en/regulations/iso-42001/): The international standard for AI management systems and what it requires.
+
+## Sections
+
+- Regulation News: https://javai.ch/en/regulations/
+- Insights (analysis and commentary): https://javai.ch/en/posts/
+- Timeline: https://javai.ch/en/timeline/
+- About: https://javai.ch/en/about/
+- Contact: https://javai.ch/en/contact/
+
+## Related
+
+- javai.org — the technical project family and probabilistic-testing tooling: https://javai.org/
