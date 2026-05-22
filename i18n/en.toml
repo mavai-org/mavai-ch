@@ -41,10 +41,10 @@ other = "Banking & Finance"
 other = "AI regulation news for Swiss banking and financial services — FINMA circulars, model risk management, and supervisory expectations."
 
 [sector_pharma]
-other = "Pharmaceuticals"
+other = "Pharma & Healthcare"
 
 [sector_pharma_desc]
-other = "AI regulation news for pharmaceutical and life sciences — clinical AI validation, GxP compliance, and health authority guidance."
+other = "AI regulation news for pharmaceuticals and healthcare — clinical AI validation, medical device oversight, GxP compliance, and health authority guidance."
 
 [sector_cantons]
 other = "Cantonal Government"
