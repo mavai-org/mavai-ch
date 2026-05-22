@@ -66,10 +66,6 @@ ignoreFiles = ['^drafts/']
     tagline = "Regulation. Compliance. Confidence."
 
   [[languages.en.menus.main]]
-    name = 'AI Regulation in Switzerland'
-    pageRef = '/ai-regulation-switzerland'
-    weight = 5
-  [[languages.en.menus.main]]
     name = 'Regulation News'
     pageRef = '/regulations'
     weight = 10
@@ -100,10 +96,6 @@ ignoreFiles = ['^drafts/']
     description = "KI-Regulierung in der Schweiz — was sich ändert, was es bedeutet und was zu tun ist."
     tagline = "Regulierung. Compliance. Vertrauen."
 
-  [[languages.de.menus.main]]
-    name = 'KI-Regulierung in der Schweiz'
-    pageRef = '/ai-regulation-switzerland'
-    weight = 5
   [[languages.de.menus.main]]
     name = 'Regulierungsnachrichten'
     pageRef = '/regulations'
@@ -136,10 +128,6 @@ ignoreFiles = ['^drafts/']
     tagline = "Réglementation. Conformité. Confiance."
 
   [[languages.fr.menus.main]]
-    name = "Réglementation de l'IA en Suisse"
-    pageRef = '/ai-regulation-switzerland'
-    weight = 5
-  [[languages.fr.menus.main]]
     name = 'Actualités réglementaires'
     pageRef = '/regulations'
     weight = 10
@@ -170,10 +158,6 @@ ignoreFiles = ['^drafts/']
     description = "Regolamentazione dell'IA in Svizzera — cosa cambia, cosa significa e come agire."
     tagline = "Regolamentazione. Conformità. Fiducia."
 
-  [[languages.it.menus.main]]
-    name = "Regolamentazione dell'IA in Svizzera"
-    pageRef = '/ai-regulation-switzerland'
-    weight = 5
   [[languages.it.menus.main]]
     name = 'Notizie normative'
     pageRef = '/regulations'
