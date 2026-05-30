@@ -36,7 +36,7 @@ The regulatory direction is clear: organisations must demonstrate, with evidence
 
 If the question is "how often does this work?", the method must be statistical. Probabilistic testing runs a test many times, measures the success rate, and applies statistical inference to determine whether the observed rate meets a defined threshold at a given confidence level. It transforms compliance from a subjective judgement into a measurable, auditable claim.
 
-The [punit](https://github.com/javai-org/punit) framework implements this approach for Java applications. For technical details and getting-started guides, visit [javai.org](https://javai.org).
+The [punit](https://github.com/mavai-org/punit) framework implements this approach for Java applications. For technical details and getting-started guides, visit [mavai.org](https://mavai.org).
 
 If one thing is certain, it's that it is time to take uncertainty seriously.
 

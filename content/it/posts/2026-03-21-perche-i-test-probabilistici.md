@@ -31,4 +31,4 @@ I test probabilistici producono evidenze strutturate e quantitative: tassi di su
 
 Trasformano la conformità dell'IA da un giudizio soggettivo («pensiamo che funzioni») in un'affermazione misurabile e verificabile («abbiamo dimostrato, con il 95% di confidenza, che il tasso di successo di questo sistema supera il 99,5%»).
 
-Per i dettagli tecnici sull'implementazione, visitate [javai.org](https://javai.org).
+Per i dettagli tecnici sull'implementazione, visitate [mavai.org](https://mavai.org).

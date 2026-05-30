@@ -102,9 +102,9 @@ prüfbare Aussage — genau die Form von Nachweis, nach der die obigen Regelwerk
 greifen.
 
 Die Open-Source-Werkzeuge dafür finden sich auf unserer technischen
-Schwesterseite [javai.org](https://javai.org/) — darunter
-[punit](https://javai.org/projects/punit/) für Java und
-[feotest](https://javai.org/projects/feotest/) für Rust, validiert gegen ein
+Schwesterseite [mavai.org](https://mavai.org/) — darunter
+[punit](https://mavai.org/projects/punit/) für Java und
+[feotest](https://mavai.org/projects/feotest/) für Rust, validiert gegen ein
 gemeinsames statistisches Orakel. Die Regulierung schafft die Pflicht;
 probabilistisches Testen ist ein praktischer Weg, den Nachweis zu erbringen.
 

@@ -31,4 +31,4 @@ Probabilistisches Testen produziert strukturierte, quantitative Nachweise: Erfol
 
 Es transformiert KI-Compliance von einem subjektiven Urteil («wir denken, es funktioniert») in eine messbare, prüfbare Aussage («wir haben mit 95% Konfidenz nachgewiesen, dass die Erfolgsrate dieses Systems 99,5% übersteigt»).
 
-Für technische Implementierungsdetails besuchen Sie [javai.org](https://javai.org).
+Für technische Implementierungsdetails besuchen Sie [mavai.org](https://mavai.org).

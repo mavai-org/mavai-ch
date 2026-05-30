@@ -36,7 +36,7 @@ La direzione normativa è chiara: le organizzazioni devono dimostrare, con prove
 
 Se la domanda è «quanto spesso funziona?», il metodo deve essere statistico. I test probabilistici eseguono un test molte volte, misurano il tasso di successo e applicano l'inferenza statistica per determinare se il tasso osservato raggiunge una soglia definita a un dato livello di confidenza. Trasformano la conformità da un giudizio soggettivo a un'affermazione misurabile e verificabile.
 
-Il framework [punit](https://github.com/javai-org/punit) implementa questo approccio per le applicazioni Java. Per dettagli tecnici e guide introduttive, visitate [javai.org](https://javai.org).
+Il framework [punit](https://github.com/mavai-org/punit) implementa questo approccio per le applicazioni Java. Per dettagli tecnici e guide introduttive, visitate [mavai.org](https://mavai.org).
 
 Se c'è una cosa certa, è che è ora di prendere l'incertezza sul serio.
 

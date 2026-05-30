@@ -36,7 +36,7 @@ Die regulatorische Richtung ist klar: Organisationen müssen mit Belegen nachwei
 
 Wenn die Frage «Wie oft funktioniert das?» lautet, muss die Methode statistisch sein. Probabilistisches Testen führt einen Test viele Male durch, misst die Erfolgsrate und wendet statistische Inferenz an, um festzustellen, ob die beobachtete Rate einen definierten Schwellenwert bei einem gegebenen Konfidenzniveau erreicht. Es verwandelt Compliance von einer subjektiven Beurteilung in eine messbare, überprüfbare Aussage.
 
-Das [punit](https://github.com/javai-org/punit)-Framework implementiert diesen Ansatz für Java-Anwendungen. Technische Details und Einstiegshilfen finden Sie auf [javai.org](https://javai.org).
+Das [punit](https://github.com/mavai-org/punit)-Framework implementiert diesen Ansatz für Java-Anwendungen. Technische Details und Einstiegshilfen finden Sie auf [mavai.org](https://mavai.org).
 
 Wenn eines sicher ist, dann dass es Zeit ist, Unsicherheit ernst zu nehmen.
 

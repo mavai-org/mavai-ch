@@ -23,4 +23,4 @@ L'aspettativa della FINMA di validazione continua dei modelli e monitoraggio del
 
 ## Per approfondire
 
-Per gli strumenti tecnici che implementano i test probabilistici, visitate [javai.org](https://javai.org).
+Per gli strumenti tecnici che implementano i test probabilistici, visitate [mavai.org](https://mavai.org).

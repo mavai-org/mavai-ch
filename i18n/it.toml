@@ -1,8 +1,8 @@
 [explore_regulations]
 other = "Scopri le normative"
 
-[visit_javai_org]
-other = "Visita javai.org"
+[visit_mavai_org]
+other = "Visita mavai.org"
 
 [key_topics]
 other = "Temi principali"
@@ -155,7 +155,7 @@ other = "Invia messaggio"
 other = "Cercate gli strumenti?"
 
 [cta_body]
-other = "Javai sviluppa framework open source per i test probabilistici. Visitate javai.org per la documentazione tecnica, il codice sorgente e le guide introduttive."
+other = "Mavai sviluppa framework open source per i test probabilistici. Visitate mavai.org per la documentazione tecnica, il codice sorgente e le guide introduttive."
 
 [timeline_title]
 other = "Cronologia dell'IA"

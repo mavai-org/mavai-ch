@@ -23,4 +23,4 @@ Die Erwartung der FINMA an laufende Modellvalidierung und Leistungsüberwachung 
 
 ## Weiterführende Informationen
 
-Für technische Werkzeuge zur Implementierung probabilistischer Tests besuchen Sie [javai.org](https://javai.org).
+Für technische Werkzeuge zur Implementierung probabilistischer Tests besuchen Sie [mavai.org](https://mavai.org).

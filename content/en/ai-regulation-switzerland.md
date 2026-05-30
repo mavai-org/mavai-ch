@@ -90,9 +90,9 @@ turns "the model seems fine" into a quantified, repeatable, auditable claim —
 exactly the form of evidence the regimes above are reaching for.
 
 The open-source tooling for this lives at our technical sister site,
-[javai.org](https://javai.org/) — including
-[punit](https://javai.org/projects/punit/) for Java and
-[feotest](https://javai.org/projects/feotest/) for Rust, validated against a
+[mavai.org](https://mavai.org/) — including
+[punit](https://mavai.org/projects/punit/) for Java and
+[feotest](https://mavai.org/projects/feotest/) for Rust, validated against a
 shared statistical oracle. The regulation creates the obligation; probabilistic
 testing is a practical way to produce the evidence.
 

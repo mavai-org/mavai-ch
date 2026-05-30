@@ -101,9 +101,9 @@ un'affermazione quantificata, ripetibile e verificabile — esattamente la forma
 di prova verso cui tendono i regimi sopra descritti.
 
 Gli strumenti open source per farlo si trovano sul nostro sito tecnico gemello,
-[javai.org](https://javai.org/) — tra cui
-[punit](https://javai.org/projects/punit/) per Java e
-[feotest](https://javai.org/projects/feotest/) per Rust, convalidati rispetto a
+[mavai.org](https://mavai.org/) — tra cui
+[punit](https://mavai.org/projects/punit/) per Java e
+[feotest](https://mavai.org/projects/feotest/) per Rust, convalidati rispetto a
 un oracolo statistico condiviso. La regolamentazione crea l'obbligo; il test
 probabilistico è un modo pratico per produrre la prova.
 

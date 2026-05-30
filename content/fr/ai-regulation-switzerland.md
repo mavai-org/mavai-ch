@@ -102,9 +102,9 @@ quantifiée, reproductible et auditable — précisément la forme de preuve ver
 laquelle tendent les régimes ci-dessus.
 
 Les outils open source pour cela se trouvent sur notre site technique frère,
-[javai.org](https://javai.org/) — notamment
-[punit](https://javai.org/projects/punit/) pour Java et
-[feotest](https://javai.org/projects/feotest/) pour Rust, validés par rapport à
+[mavai.org](https://mavai.org/) — notamment
+[punit](https://mavai.org/projects/punit/) pour Java et
+[feotest](https://mavai.org/projects/feotest/) pour Rust, validés par rapport à
 un oracle statistique commun. La réglementation crée l'obligation ; le test
 probabiliste est un moyen pratique de produire la preuve.
 

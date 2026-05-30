@@ -36,7 +36,7 @@ La direction réglementaire est claire&nbsp;: les organisations doivent démontr
 
 Si la question est «&nbsp;à quelle fréquence est-ce que ça marche&nbsp;?&nbsp;», la méthode doit être statistique. Les tests probabilistes exécutent un test de nombreuses fois, mesurent le taux de réussite et appliquent l'inférence statistique pour déterminer si le taux observé atteint un seuil défini à un niveau de confiance donné. Cela transforme la conformité d'un jugement subjectif en une affirmation mesurable et vérifiable.
 
-Le framework [punit](https://github.com/javai-org/punit) implémente cette approche pour les applications Java. Pour les détails techniques et les guides de démarrage, visitez [javai.org](https://javai.org).
+Le framework [punit](https://github.com/mavai-org/punit) implémente cette approche pour les applications Java. Pour les détails techniques et les guides de démarrage, visitez [mavai.org](https://mavai.org).
 
 S'il y a une certitude, c'est qu'il est temps de prendre l'incertitude au sérieux.
 

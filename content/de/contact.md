@@ -1,6 +1,6 @@
 ---
 title: "Kontakt"
-description: "Helfen Sie uns, javai.ch zu verbessern"
+description: "Helfen Sie uns, mavai.ch zu verbessern"
 type: contact
 ---
 

@@ -23,4 +23,4 @@ L'attente de la FINMA en matière de validation continue des modèles et de surv
 
 ## Pour aller plus loin
 
-Pour les outils techniques implémentant les tests probabilistes, visitez [javai.org](https://javai.org).
+Pour les outils techniques implémentant les tests probabilistes, visitez [mavai.org](https://mavai.org).

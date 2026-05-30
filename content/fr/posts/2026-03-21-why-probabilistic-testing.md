@@ -31,4 +31,4 @@ Les tests probabilistes produisent des preuves structurées et quantitatives : t
 
 Cela transforme la conformité de l'IA d'un jugement subjectif (« nous pensons qu'il fonctionne ») en une affirmation mesurable et vérifiable (« nous avons démontré, avec 95 % de confiance, que le taux de réussite de ce système dépasse 99,5 % »).
 
-Pour les détails techniques de mise en œuvre, visitez [javai.org](https://javai.org).
+Pour les détails techniques de mise en œuvre, visitez [mavai.org](https://mavai.org).

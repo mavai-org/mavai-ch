@@ -31,4 +31,4 @@ Probabilistic testing produces structured, quantitative evidence: success rates,
 
 It transforms AI compliance from a subjective judgement ("we think it works") into a measurable, auditable claim ("we have demonstrated, with 95% confidence, that this system's success rate exceeds 99.5%").
 
-For technical implementation details, visit [javai.org](https://javai.org).
+For technical implementation details, visit [mavai.org](https://mavai.org).

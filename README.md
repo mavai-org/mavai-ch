@@ -1,6 +1,6 @@
-# javai.ch
+# mavai.ch
 
-The source for [javai.ch](https://javai.ch/) — a multilingual static website covering AI regulation and compliance in Switzerland. It is the Swiss-focused companion to [javai.org](https://javai.org/), which hosts the technical open-source projects.
+The source for [mavai.ch](https://mavai.ch/) — a multilingual static website covering AI regulation and compliance in Switzerland. It is the Swiss-focused companion to [mavai.org](https://mavai.org/), which hosts the technical open-source projects.
 
 The site serves as an information hub for parties interested in the latest AI regulation news of particular relevance to Switzerland. Sources include Swiss regulatory authorities and watchdogs (e.g. FINMA), EU regulators, international regulators where relevant for Switzerland, and international standards such as ISO 42001.
 
@@ -16,8 +16,8 @@ The site is published in four languages: English, German (Swiss orthography), Fr
 Clone the repository and run the local development server:
 
 ```sh
-git clone https://github.com/javai-org/javai-ch.git
-cd javai-ch
+git clone https://github.com/mavai-org/mavai-ch.git
+cd mavai-ch
 hugo server
 ```
 
@@ -118,4 +118,4 @@ The site is built and deployed to GitHub Pages via a [GitHub Actions workflow](.
 1. Hugo builds the site with `--minify`
 2. The built output is deployed to GitHub Pages
 
-The site is served at [javai.ch](https://javai.ch/) with HTTPS enforced.
+The site is served at [mavai.ch](https://mavai.ch/) with HTTPS enforced.

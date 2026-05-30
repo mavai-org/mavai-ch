@@ -23,4 +23,4 @@ FINMA's expectation of ongoing model validation and performance monitoring align
 
 ## Further reading
 
-For technical tools that implement probabilistic testing, visit [javai.org](https://javai.org).
+For technical tools that implement probabilistic testing, visit [mavai.org](https://mavai.org).

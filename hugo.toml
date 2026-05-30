@@ -1,5 +1,5 @@
-baseURL = 'https://javai.ch/'
-title = 'Javai Schweiz'
+baseURL = 'https://mavai.ch/'
+title = 'Mavai Schweiz'
 enableRobotsTXT = true
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
@@ -9,23 +9,23 @@ defaultContentLanguageInSubdir = true
   section = ['HTML', 'RSS']
 
 [params]
-  author = "Javai"
+  author = "Mavai"
   ogImage = "images/hero.jpg"
-  # Search engine ownership verification. Paste javai.ch's OWN tokens — do not
-  # reuse javai.org's. Google Search Console (Settings → Ownership verification
+  # Search engine ownership verification. Paste mavai.ch's OWN tokens — do not
+  # reuse mavai.org's. Google Search Console (Settings → Ownership verification
   # → HTML tag) and Bing Webmaster Tools give a content value; paste that value
   # only, not the full meta tag. Empty = no tag emitted.
-  # Note: javai.ch is a separate Search Console property with its own DNS TXT
+  # Note: mavai.ch is a separate Search Console property with its own DNS TXT
   # record. The DNS/Domain method is preferred — the full
   # `google-site-verification=…` token as a TXT record at the apex (a truncated
   # or fragment value will not verify).
   googleSiteVerification = ""
   bingSiteVerification = ""
-  # Profiles linked from the Organization JSON-LD `sameAs`. Cross-links javai.org
+  # Profiles linked from the Organization JSON-LD `sameAs`. Cross-links mavai.org
   # so search engines treat the two sites as one entity.
   sameAs = [
-    "https://github.com/javai-org",
-    "https://javai.org",
+    "https://github.com/mavai-org",
+    "https://mavai.org",
     "https://www.linkedin.com/in/mike-franz-mannion/",
   ]
   keywords = [
@@ -50,7 +50,7 @@ ignoreFiles = ['^drafts/']
 [params.analytics]
   # Full URL of the site-specific Plausible script. Empty string disables
   # analytics. The URL embeds the site ID (public; visible in page source).
-  # Different per site: javai.org and javai.ch each have their own script URL.
+  # Different per site: mavai.org and mavai.ch each have their own script URL.
   plausibleScriptUrl = "https://plausible.io/js/pa-Tbyp2qTnw4Ap6G3NO0KQ4.js"
 
 # ── Languages ──
