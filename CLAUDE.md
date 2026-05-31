@@ -121,6 +121,34 @@ The pipeline is driven by the `.github/workflows/fetch-news.yml` scheduled GitHu
 | `newsroom/config/relevance-test-data.yml` | Labelled test data for probabilistic filter validation |
 | `newsroom/data/state.json` | Persistent fetch state (seen items, hashes, timestamps) |
 | `data/sectors.json` | Sector definitions and tag mappings |
+| `Newsroom_report.xlsx` | Curation planning spreadsheet (see below) |
+
+## Newsroom Report
+
+The **Newsroom_report.xlsx** Excel file is a curation planning tool and inventory of the news feed pipeline. It serves three functions:
+
+1. **Feed Architecture** (Sheet 1) — Overview of all feeds and their subsections (Swiss Governance, EU/UK Governance, etc.), with resource counts and tags.
+
+2. **Resource Links Catalog** (Sheet 2) — All curated resource links (manual links added to feed pages), organized by feed → subsection. Each row includes title, URL, summary, status, and last-checked date.
+
+3. **Sources → Feeds Mapping** (Sheet 3) — All news sources from `sources.yml` with their tier, type, tags, and which feed(s) they feed into. Tier 1 sources are highlighted in green (daily fetch), Tier 2 in yellow (weekly), Tier 3 in red (monthly), Tier 4 in gray (manual/infrequent).
+
+### Keeping the report in sync
+
+**When updating `sources.yml`:**
+- Add new sources to Sheet 3 with their tier, type, tags, and target feed(s)
+- Update the "Primary Tags" column to reflect any tag changes
+- Update feed counts in Sheet 1 if tier/feed assignments change
+
+**When adding resource links to feed pages** (`content/*/feeds/*.md`):
+- Add corresponding rows to Sheet 2 with the feed, subsection, title, URL, summary, and today's date in "Last Checked"
+- Update resource counts in Sheet 1
+
+**Maintenance:**
+- Review "Last Checked" dates periodically to identify links needing re-verification
+- Update dates when links are verified/tested
+
+The report is the single source of truth for curation planning. Update it before submitting changes, so the next curator has a complete inventory.
 
 ## Gradle tasks
 
