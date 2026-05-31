@@ -101,7 +101,7 @@ The pipeline is driven by the `.github/workflows/fetch-news.yml` scheduled GitHu
 
 2. **Deduplicate** — `StateManager` checks each item against `state.json` (persisted on the `data` git branch) using SHA-256 hashes of title+url+date. Only new/modified items proceed.
 
-3. **Filter** — `RelevanceFilter` sends each new item to Claude (Haiku) with a strict relevance prompt (`newsroom/config/relevance-prompt.txt`). The prompt is narrowly scoped to concrete software developer obligations, technical standards, and AI-specific regulation — not general AI news. Items classified as `RELEVANT` get a reason attached; others are discarded. Filter accuracy is validated with probabilistic tests using punit (`src/test/java/org/javai/ch/RelevanceClassificationTest.java`).
+3. **Filter** — `RelevanceFilter` sends each new item to Claude (Haiku) with a strict relevance prompt (`newsroom/config/relevance-prompt.txt`). The prompt is narrowly scoped to concrete software developer obligations, technical standards, and AI-specific regulation — not general AI news. Items classified as `RELEVANT` get a reason attached; others are discarded. Filter accuracy is validated with probabilistic tests using punit (`src/test/java/org/mavai/ch/RelevanceClassificationTest.java`).
 
 4. **Merge seed items** — Pre-curated foundational documents (EU AI Act, FINMA guidance, ISO standards, etc. in `newsroom/config/seed-items.yml`) bypass the LLM filter entirely.
 

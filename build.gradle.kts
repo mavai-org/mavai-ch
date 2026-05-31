@@ -4,7 +4,7 @@ plugins {
     kotlin("jvm") version "2.1.20"
 }
 
-group = "org.javai"
+group = "org.mavai"
 version = "0.1.0-SNAPSHOT"
 
 java {
@@ -40,8 +40,8 @@ tasks.named<JavaCompile>("compileScriptsJava") {
 }
 
 dependencies {
-    implementation("org.javai:javai-newsroom:0.1.0-SNAPSHOT")
-    testImplementation(testFixtures("org.javai:javai-newsroom:0.1.0-SNAPSHOT"))
+    implementation("org.mavai:mavai-newsroom:0.1.0-SNAPSHOT")
+    testImplementation(testFixtures("org.mavai:mavai-newsroom:0.1.0-SNAPSHOT"))
     testImplementation("org.javai:punit-junit5:0.4.0")
     testImplementation(platform("org.junit:junit-bom:5.12.2"))
     testImplementation("org.junit.jupiter:junit-jupiter")

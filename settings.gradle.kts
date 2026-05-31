@@ -4,7 +4,7 @@ val newsroomDir = file("../mavai-newsroom")
 if (newsroomDir.isDirectory) {
     includeBuild(newsroomDir) {
         dependencySubstitution {
-            substitute(module("org.javai:javai-newsroom")).using(project(":"))
+            substitute(module("org.mavai:mavai-newsroom")).using(project(":"))
         }
     }
 }

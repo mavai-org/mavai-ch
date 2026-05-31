@@ -28,7 +28,7 @@ jobs:
         with:
           repository: mavai-org/mavai-newsroom
           ref: main
-          path: javai-newsroom
+          path: mavai-newsroom
           token: ${{ secrets.ORG_REPO_TOKEN }}
 
       # Hugo site

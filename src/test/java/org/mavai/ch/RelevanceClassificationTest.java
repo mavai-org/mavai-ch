@@ -1,8 +1,8 @@
-package org.javai.ch;
+package org.mavai.ch;
 
-import org.javai.newsroom.filter.RelevanceClassificationUseCase;
-import org.javai.newsroom.filter.RelevanceClassificationUseCase.LabelledItem;
-import org.javai.newsroom.filter.experiments.RelevanceFilterTestData;
+import org.mavai.newsroom.filter.RelevanceClassificationUseCase;
+import org.mavai.newsroom.filter.RelevanceClassificationUseCase.LabelledItem;
+import org.mavai.newsroom.filter.experiments.RelevanceFilterTestData;
 import org.javai.punit.api.InputSource;
 import org.javai.punit.api.ProbabilisticTest;
 import org.javai.punit.api.UseCaseProvider;
