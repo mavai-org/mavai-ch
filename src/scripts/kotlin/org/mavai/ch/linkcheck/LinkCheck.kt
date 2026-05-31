@@ -1,4 +1,4 @@
-package org.javai.ch.linkcheck
+package org.mavai.ch.linkcheck
 
 import java.net.URI
 import java.net.http.HttpClient

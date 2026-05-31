@@ -35,13 +35,13 @@ jobs:
         with:
           path: javai-ch
 
-      # javai-newsroom is required by the Gradle composite build; the link
+      # mavai-newsroom is required by the Gradle composite build; the link
       # checker's source set pulls it in transitively via sourceSets["main"].
       - uses: actions/checkout@v4
         with:
           repository: mavai-org/mavai-newsroom
           ref: main
-          path: javai-newsroom
+          path: mavai-newsroom
           token: ${{ secrets.ORG_REPO_TOKEN }}
 
       - uses: actions/setup-java@v4

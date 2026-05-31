@@ -1,4 +1,4 @@
-package org.javai.ch;
+package org.mavai.ch;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -6,11 +6,11 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
-import org.javai.newsroom.CurationResult;
-import org.javai.newsroom.Newsroom;
-import org.javai.newsroom.NewsroomConfig;
-import org.javai.newsroom.feed.FeedMetadata;
-import org.javai.newsroom.schedule.TierFilter;
+import org.mavai.newsroom.CurationResult;
+import org.mavai.newsroom.Newsroom;
+import org.mavai.newsroom.NewsroomConfig;
+import org.mavai.newsroom.feed.FeedMetadata;
+import org.mavai.newsroom.schedule.TierFilter;
 
 public class Main {
 
