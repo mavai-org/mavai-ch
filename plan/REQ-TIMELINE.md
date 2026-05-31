@@ -2,7 +2,7 @@
 
 ## Overview
 
-Build a self-contained, single-page HTML prototype for a new "Timeline" tab on javai.ch. The page displays a vertical chronological timeline of AI-related events — both **regulatory** and **technological** — on a single scrollable axis. Today's date is centred on initial load.
+Build a self-contained, single-page HTML prototype for a new "Timeline" tab on mavai.ch. The page displays a vertical chronological timeline of AI-related events — both **regulatory** and **technological** — on a single scrollable axis. Today's date is centred on initial load.
 
 ## Technology
 

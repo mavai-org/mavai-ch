@@ -86,8 +86,8 @@ The site aggregates AI regulation news through an automated fetch-filter-publish
 
 ## Architecture
 
-- **javai-newsroom** is a shared Java library (not a standalone service), included via Gradle composite build from the sibling `../javai-newsroom` directory.
-- **javai-ch** is the consuming project. It provides all configuration (sources, relevance prompt, seed items, sector definitions) and defines the GitHub Actions workflows. The library provides the fetching, filtering, state management, and feed generation machinery.
+- **mavai-newsroom** is a shared Java library (not a standalone service), included via Gradle composite build from the sibling `../mavai-newsroom` directory.
+- **mavai-ch** is the consuming project. It provides all configuration (sources, relevance prompt, seed items, sector definitions) and defines the GitHub Actions workflows. The library provides the fetching, filtering, state management, and feed generation machinery.
 
 ## End-to-end flow
 

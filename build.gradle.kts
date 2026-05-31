@@ -50,7 +50,7 @@ dependencies {
 }
 
 application {
-    mainClass = "org.javai.ch.Main"
+    mainClass = "org.mavai.ch.Main"
 }
 
 tasks.test {
@@ -94,7 +94,7 @@ tasks.register<Test>("probabilisticTest") {
 val feedFile = rootProject.file("newsroom/data/feed.yml").absolutePath
 val configDir = rootProject.file("newsroom/config").absolutePath
 val siteDir = layout.buildDirectory.dir("site").get().asFile.absolutePath
-val siteUrl = "https://javai.ch/"
+val siteUrl = "https://mavai.ch/"
 
 // Sector definitions — add new sectors here
 data class Sector(val id: String, val title: String, val description: String, val tags: List<String>)
@@ -102,19 +102,19 @@ data class Sector(val id: String, val title: String, val description: String, va
 val sectors = listOf(
     Sector(
         "banking",
-        "javai.ch — Banking & Finance",
+        "mavai.ch — Banking & Finance",
         "AI regulation news for Swiss banking and financial services",
         listOf("financial")
     ),
     Sector(
         "pharma",
-        "javai.ch — Pharma & Healthcare",
+        "mavai.ch — Pharma & Healthcare",
         "AI regulation news for pharmaceutical, biotech, and healthcare sectors",
         listOf("pharma", "biotech", "medicine", "health")
     ),
     Sector(
         "federal-government",
-        "javai.ch — Federal Government",
+        "mavai.ch — Federal Government",
         "AI regulation news from Swiss federal authorities",
         listOf("swiss", "policy", "federal")
     ),
@@ -167,7 +167,7 @@ tasks.register<JavaExec>("curateNews") {
     description = "Fetch news and write candidates to feed.yml for curation"
     group = "newsroom"
     dependsOn("classes")
-    mainClass = "org.javai.ch.Main"
+    mainClass = "org.mavai.ch.Main"
     classpath = sourceSets["main"].runtimeClasspath
     args = mutableListOf("curate", "--config=$configDir", "--feed=$feedFile")
     if (project.hasProperty("tiers")) {
@@ -184,7 +184,7 @@ tasks.register<JavaExec>("generateFeed") {
     description = "Generate consolidated feed (all accepted items)"
     group = "newsroom"
     dependsOn("classes")
-    mainClass = "org.javai.ch.Main"
+    mainClass = "org.mavai.ch.Main"
     classpath = sourceSets["main"].runtimeClasspath
     args = listOf(
         "generate",
@@ -200,7 +200,7 @@ sectors.forEach { sector ->
         description = "Generate ${sector.title} feed (tags: ${sector.tags})"
         group = "newsroom"
         dependsOn("classes")
-        mainClass = "org.javai.ch.Main"
+        mainClass = "org.mavai.ch.Main"
         classpath = sourceSets["main"].runtimeClasspath
         args = listOf(
             "generate",
@@ -231,7 +231,7 @@ tasks.register<JavaExec>("checkLinks") {
     description = "Validate that URLs in published content are reachable"
     group = "verification"
     dependsOn("scriptsClasses")
-    mainClass = "org.javai.ch.linkcheck.LinkCheckKt"
+    mainClass = "org.mavai.ch.linkcheck.LinkCheckKt"
     classpath = sourceSets["scripts"].runtimeClasspath
     workingDir = rootProject.projectDir
     systemProperty("linkcheck.root", rootProject.projectDir.absolutePath)
