@@ -1,13 +1,13 @@
 # Purpose
 
-This repository contains the source for [javai.ch](https://javai.ch/), a multilingual Hugo static website focused on AI regulation and compliance in Switzerland. It is the Swiss-focused companion to [javai.org](https://javai.org/), which hosts the technical open-source projects.
+This repository contains the source for [mavai.ch](https://mavai.ch/), a multilingual Hugo static website focused on AI regulation and compliance in Switzerland. It is the Swiss-focused companion to [mavai.org](https://mavai.org/), which hosts the technical open-source projects.
 
-javai.ch covers standards and regulations that demand probabilistic testing of AI systems, with emphasis on:
+mavai.ch covers standards and regulations that demand probabilistic testing of AI systems, with emphasis on:
 - **FINMA** — Swiss financial market supervision and AI governance
 - **ISO 42001** — international standard for AI management systems
 - Other Swiss and international regulations as they emerge
 
-The target audience is business managers, compliance officers, and IT leaders in Swiss enterprises and cantonal government — not developers. Content explains statistical and testing concepts in accessible, non-technical terms. Visitors seeking technical tools are directed to javai.org.
+The target audience is business managers, compliance officers, and IT leaders in Swiss enterprises and cantonal government — not developers. Content explains statistical and testing concepts in accessible, non-technical terms. Visitors seeking technical tools are directed to mavai.org.
 
 ##Languages
 
