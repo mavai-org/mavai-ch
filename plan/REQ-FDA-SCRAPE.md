@@ -3,7 +3,7 @@
 ## Overview
 
 Add coverage of the U.S. Food and Drug Administration (FDA) to the
-javai-ch newsroom pipeline. The FDA does not publish a dedicated
+mavai-ch newsroom pipeline. The FDA does not publish a dedicated
 AI-focused feed, so coverage must be obtained by scraping a small set
 of FDA HTML surfaces and filtering each for AI relevance.
 
@@ -12,7 +12,7 @@ the same scraping pattern is expected to apply to other regulators and
 sectors in future (for example, the UK National Health Service). The
 implementation must therefore be **modular and reusable**, with
 FDA-specific configuration plugging into a generic mechanism that lives
-in the shared `../javai-newsroom` library.
+in the shared `../mavai-newsroom` library.
 
 ## Background
 
@@ -28,7 +28,7 @@ Enabled Medical Devices* list. That approach was rejected during scope
 review: it produces hundreds of per-device clearance records, none of
 which are interesting to a Swiss compliance officer who wants to know
 when the FDA changes its policy stance on AI in healthcare. The
-javai.ch reader cares about **stipulations and announcements that
+mavai.ch reader cares about **stipulations and announcements that
 affect categories of devices or applications of AI** — not individual
 510(k) clearances.
 
@@ -56,7 +56,7 @@ Provide a small set of FDA scrape sources that:
 The implementation has two halves: a generic mechanism in the shared
 library, and FDA-specific configuration in this repository.
 
-### Generic mechanism (in `../javai-newsroom`)
+### Generic mechanism (in `../mavai-newsroom`)
 
 Add a `ScrapeStrategy` abstraction that extends the existing
 `html-scrape` fetcher with three orthogonal capabilities:
@@ -79,7 +79,7 @@ Add a `ScrapeStrategy` abstraction that extends the existing
    workflow.
 
 When a litmus test fails the GitHub Actions workflow opens an issue
-in the consuming repository (here, javai-ch), mirroring the pattern
+in the consuming repository (here, mavai-ch), mirroring the pattern
 used by the link checker. The issue title names the source; the body
 quotes the failed assertion and links to the live page so a human can
 inspect the change. **The remaining sources continue to fetch
@@ -91,7 +91,7 @@ SwissMedic — declares its own selectors, keywords, and litmus tests in
 `sources.yml` without any code change in the library. FDA is the first
 consumer; it must not be the only one possible.
 
-### FDA-specific configuration (in `javai-ch`)
+### FDA-specific configuration (in `mavai-ch`)
 
 One entry in `newsroom/config/sources.yml`, targeting the only FDA
 surface that is scrapable with the current Jsoup-based HTML fetcher:
@@ -165,14 +165,14 @@ question to a later requirement.)
 **In scope**
 
 1. Add the `ScrapeStrategy` abstraction (selectors + keyword pre-filter
-   + litmus tests + issue-on-failure hook) to `../javai-newsroom` on a
+   + litmus tests + issue-on-failure hook) to `../mavai-newsroom` on a
    sibling `feature/fda-scrape` branch. Existing sources continue to
    work unchanged.
 2. Inspect the live FDA Press Announcements page and derive working
    selectors and litmus tests. (Guidance Documents and Digital Health
    CoE were inspected and found not viable — see deferred surfaces
    table above.)
-3. Add `fda-press` to `newsroom/config/sources.yml` in javai-ch,
+3. Add `fda-press` to `newsroom/config/sources.yml` in mavai-ch,
    configured as a `ScrapeStrategy` consumer with keyword pre-filter
    and structural checks.
 4. Confirm `data/sectors.json` already routes the `health` tag to the
@@ -218,7 +218,7 @@ A pull request implementing this requirement is complete when:
    FDA host blocks the link checker from CI (IP-reputation WAF), the
    host is added to `.linkcheck-ignore` with a comment explaining why
    and the decision is noted in the change log of this document.
-4. The `ScrapeStrategy` abstraction in `../javai-newsroom` carries
+4. The `ScrapeStrategy` abstraction in `../mavai-newsroom` carries
    unit tests covering: keyword pre-filter pass/fail, litmus-test
    pass/fail, and that an existing `html-scrape` source without any
    strategy fields continues to behave as it does today.
@@ -268,5 +268,5 @@ A pull request implementing this requirement is complete when:
 
 - `README.md` — feed curation workflow, how a curator accepts items.
 - `CLAUDE.md` — pipeline architecture, relevance filter overview.
-- `../javai-newsroom/README.md` — fetcher implementations, including
+- `../mavai-newsroom/README.md` — fetcher implementations, including
   the Jsoup-based HTML scrape fetcher that `ScrapeStrategy` extends.

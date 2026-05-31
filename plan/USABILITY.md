@@ -1,6 +1,6 @@
 # Usability
 
-Tracks usability issues on javai.ch, prompted by [issue #17](https://github.com/javai-org/javai-ch/issues/17).
+Tracks usability issues on mavai.ch, prompted by [issue #17](https://github.com/mavai-org/mavai-ch/issues/17).
 
 Current focus is smartphone UX — phones roughly 360–430 px wide. iPad and larger are out of scope; they already render acceptably. The target is a first-class experience on iPhone and narrow Android.
 
@@ -10,9 +10,9 @@ Current focus is smartphone UX — phones roughly 360–430 px wide. iPad and la
 
 | # | Item                                                            | Severity | Status                                                                                                    |
 |---|-----------------------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------|
-| 1 | Timeline card overlap on phones                                 | High     | **Fixed** — PR [#18](https://github.com/javai-org/javai-ch/pull/18), commit `18d88c8` (merged 2026-04-24) |
-| 2 | Navigation density on phone                                     | Medium   | **Fixed** — PR [#20](https://github.com/javai-org/javai-ch/pull/20), commit `54d155d` (merged 2026-04-24) |
-| 3 | Single 768 px breakpoint treats phone and tablet identically    | Medium   | **Fixed** — PR [#20](https://github.com/javai-org/javai-ch/pull/20), commit `54d155d` (merged 2026-04-24) |
+| 1 | Timeline card overlap on phones                                 | High     | **Fixed** — PR [#18](https://github.com/mavai-org/mavai-ch/pull/18), commit `18d88c8` (merged 2026-04-24) |
+| 2 | Navigation density on phone                                     | Medium   | **Fixed** — PR [#20](https://github.com/mavai-org/mavai-ch/pull/20), commit `54d155d` (merged 2026-04-24) |
+| 3 | Single 768 px breakpoint treats phone and tablet identically    | Medium   | **Fixed** — PR [#20](https://github.com/mavai-org/mavai-ch/pull/20), commit `54d155d` (merged 2026-04-24) |
 | 4 | Hero and section banners take excessive vertical space on phone | Low      | **Fixed** — PR #21 (merged 2026-04-24)                                                                    |
 
 ## 1. Timeline card overlap — FIXED

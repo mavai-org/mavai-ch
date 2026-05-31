@@ -1,12 +1,12 @@
-# Curator's guide to the javai.ch news feed
+# Curator's guide to the mavai.ch news feed
 
 This guide explains how to review, approve, and manage news items for the
-javai.ch regulation feeds. It is written for curators who are not software
+mavai.ch regulation feeds. It is written for curators who are not software
 developers but are comfortable learning a few tools.
 
 ## What you are doing
 
-The javai.ch website publishes feeds of AI regulation news, organised by sector
+The mavai.ch website publishes feeds of AI regulation news, organised by sector
 (banking, pharma, health, federal government). An automated pipeline scans
 regulatory sources and proposes new items. Your job is to decide which items
 reach the public.
@@ -31,7 +31,7 @@ The whole review typically takes a few minutes.
 You only need to understand a handful of concepts to do this work.
 
 **Repository** — A repository (or "repo") is a project stored on GitHub. The
-javai.ch repository contains everything that makes up the website: pages,
+mavai.ch repository contains everything that makes up the website: pages,
 templates, configuration, and the feed data you will be curating.
 
 **Branch** — A branch is a parallel version of the repository. The main branch
@@ -53,7 +53,7 @@ the main branch. Once you merge, the website rebuilds with your approved items.
 ## Getting set up
 
 You need a GitHub account with access to the
-[javai-org/javai-ch](https://github.com/javai-org/javai-ch) repository. Ask a
+[mavai-org/mavai-ch](https://github.com/mavai-org/mavai-ch) repository. Ask a
 project administrator to add you if you do not already have access.
 
 ### Notifications
@@ -61,7 +61,7 @@ project administrator to add you if you do not already have access.
 To be alerted when new candidates are ready for review, configure GitHub
 notifications:
 
-1. Go to the [javai-ch repository](https://github.com/javai-org/javai-ch) on
+1. Go to the [mavai-ch repository](https://github.com/mavai-org/mavai-ch) on
    GitHub.
 2. Click the **Watch** button near the top right.
 3. Select **Custom** and tick **Pull requests**.
@@ -75,7 +75,7 @@ new PR is opened or an existing one is updated with new candidates.
 ### On your Mac or iPad (web browser)
 
 1. Open the notification email or go directly to the
-   [pull requests page](https://github.com/javai-org/javai-ch/pulls).
+   [pull requests page](https://github.com/mavai-org/mavai-ch/pulls).
 
 2. Open the PR titled **"Feed candidates for review"**.
 
@@ -105,7 +105,7 @@ The website will rebuild and deploy automatically within a few minutes.
 
 ### On the GitHub mobile app (iOS)
 
-1. Open the GitHub app and navigate to the **javai-org/javai-ch** repository.
+1. Open the GitHub app and navigate to the **mavai-org/mavai-ch** repository.
 
 2. Tap **Pull requests** and open **"Feed candidates for review"**.
 
@@ -249,7 +249,7 @@ rather than creating a new PR. You will not end up with multiple open PRs.
   `accepted: n`. The website will rebuild and the item will disappear.
 
 - **The website does not update after merging** — Check the
-  [Actions tab](https://github.com/javai-org/javai-ch/actions) in the
+  [Actions tab](https://github.com/mavai-org/mavai-ch/actions) in the
   repository. The "Build and Deploy" workflow should be running or recently
   completed. If it failed, contact a project administrator.
 
