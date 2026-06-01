@@ -1,6 +1,6 @@
 # Directive: SEO improvements for mavai.ch
 
-**Status:** open
+**Status:** implemented — external GSC follow-up pending (javai.org Change of Address; see Operational notes)
 **Created:** 2026-05-21
 **Target repo:** mavai-org/mavai-ch (this repo)
 **Specification (not template):** the equivalent mavai.org work — mavai-org/mavai-org.github.io PR #6, commit `32d7251` ("Add SEO structured data, pillar page, and crawler hints"). Use it as a statement of *what* to achieve; adapt *how* to mavai.ch's multilingual, regulation-focused structure.
@@ -94,6 +94,46 @@ mavai.org's testing tooling as the practical answer.
 mavai.ch's `head.html` only emits the site-wide `ogImage`. Add per-page
 override (`.Params.image` wins, else site default) as mavai.org does, and add
 the `article:published_time` / `article:modified_time` OG tags on dated pages.
+
+## Operational notes
+
+### 2026-06-01 — Search Console "Change of Address" for the old domains
+
+Post-migration, the old domains 301-redirect to the new ones (verified live):
+`javai.ch` + `www.javai.ch` → `mavai.ch`, `javai.org` → `mavai.org`. Both old
+zones are fronted by the same Cloudflare account (nameservers
+`sam`/`rosemary.ns.cloudflare.com`), serve an identical managed robots.txt
+(Googlebot allowed for search; only `Google-Extended` / AI-training crawlers
+disallowed), and 301 cleanly over IPv4 **and** IPv6, including under the
+Googlebot user-agent. The destinations (`mavai.org`, `mavai.ch`) are on GitHub
+Pages (`185.199.108–111.153`, IPv4 only).
+
+- **`javai.ch` Change of Address: succeeded.**
+- **`javai.org` Change of Address: failed** with *"Couldn't fetch the page
+  http://javai.org/"*.
+
+Diagnosis: this is a **fetch failure, not a redirect failure** — the redirect
+and DNS for `javai.org` were checked at every layer Googlebot could use (http,
+https, IPv6, Googlebot UA, robots.txt) and are byte-for-byte identical to the
+`javai.ch` setup that succeeded. There is no live-infrastructure difference, so
+the failure is almost certainly **transient** (a momentary Cloudflare challenge
+or fetch timeout when Google tried) rather than a misconfiguration.
+
+Remedy, in order:
+1. **Retry** the Change of Address for `javai.org` after a day — usually clears
+   when the redirect is demonstrably good.
+2. Confirm GSC parity with the working `.ch` move: the destination `mavai.org`
+   is a **verified, Owner-level** property in the same account; the old
+   `javai.org` property is still verified and Owner-level; and old/new property
+   **types match** (Domain → Domain, as used for `.ch`).
+3. Check Cloudflare **Bot Fight Mode** on the `javai.org` zone (Security → Bots):
+   ensure verified search bots are allowed, so Googlebot is not intermittently
+   challenged.
+
+Reassurance: even if Change of Address never goes through, the **301 redirects
+are what pass link equity and rankings** — those are solid and permanent. The
+tool is an accelerant/signal to Google, not a prerequisite; the
+`javai.org` → `mavai.org` migration is already doing its job.
 
 ## Out of scope
 
