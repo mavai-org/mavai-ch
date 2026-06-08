@@ -31,3 +31,6 @@ node_modules/
 /.claude/settings.local.json
 
 /leleWorkspace
+
+# Agent-local guidance — not tracked in this public repo.
+CLAUDE.md
