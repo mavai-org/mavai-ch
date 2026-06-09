@@ -387,21 +387,66 @@
     "source_label": "View announcement →"
   },
   {
-    "date_iso": "2026-08-02",
-    "headline": "EU AI Act — high-risk system rules apply",
+    "date_iso": "2025-11-19",
+    "headline": "EU AI Act omnibus agreement proposed — postpones high-risk deadlines",
     "origin": "EU",
     "category": "regulatory",
-    "summary": "Obligations for high-risk AI systems (Annex III) and transparency rules under the EU AI Act become applicable.",
-    "source": "https://artificialintelligenceact.eu/article/6/",
-    "source_label": "View article →"
+    "summary": "European Commission proposes omnibus amendment to the EU AI Act. Postponements: Annex III standalone high-risk systems from August 2, 2026 to December 2, 2027; Annex I safety components from August 2, 2027 to August 2, 2028; regulatory sandboxes from August 2, 2026 to August 2, 2027.",
+    "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0837",
+    "source_label": "View Commission proposal →"
+  },
+  {
+    "date_iso": "2026-08-02",
+    "headline": "EU AI Act — watermarking obligations apply",
+    "origin": "EU",
+    "category": "regulatory",
+    "summary": "Watermarking obligations for generative AI systems become applicable (Art. 50). A grace period extends compliance to December 2, 2026.",
+    "source": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "source_label": "View EU AI Act →"
+  },
+  {
+    "date_iso": "2026-12-02",
+    "headline": "EU AI Act — prohibited practices deadline",
+    "origin": "EU",
+    "category": "regulatory",
+    "summary": "Providers of AI systems for generating intimate images and deepfake video/audio must comply with the prohibition on non-consensual intimate content (Art. 5).",
+    "source": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "source_label": "View EU AI Act →"
   },
   {
     "date_iso": "2027-08-02",
-    "headline": "EU AI Act — full enforcement",
+    "headline": "EU AI Act — regulatory sandboxes deadline (postponed)",
     "origin": "EU",
     "category": "regulatory",
-    "summary": "Full roll-out of the EU AI Act, including obligations for high-risk AI systems under existing harmonisation legislation.",
-    "source": "https://artificialintelligenceact.eu/implementation-timeline/",
-    "source_label": "View timeline →"
+    "summary": "Each Member State must establish at least one regulatory sandbox for AI testing (originally August 2, 2026, postponed via EU omnibus agreement). Commission clarifies sectoral exclusions (Art. 2(2)) and publishes guidance on transparency for AI-generated content.",
+    "source": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "source_label": "View EU AI Act →"
+  },
+  {
+    "date_iso": "2027-09-02",
+    "headline": "EU AI Act — post-market monitoring guidance",
+    "origin": "EU",
+    "category": "regulatory",
+    "summary": "Commission publishes guidance and template for post-market monitoring of AI systems.",
+    "source": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "source_label": "View EU AI Act →"
+  },
+  {
+    "date_iso": "2027-12-02",
+    "headline": "EU AI Act — Annex III high-risk systems deadline (postponed)",
+    "origin": "EU",
+    "category": "regulatory",
+    "summary": "Standalone high-risk AI systems listed in Annex III must achieve full compliance with all EU AI Act obligations (Chapter III). Originally scheduled for August 2, 2026, postponed via EU omnibus agreement.",
+    "source": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/",
+    "source_label": "View Gibson Dunn alert →"
+  },
+  {
+    "date_iso": "2028-08-02",
+    "headline": "EU AI Act — safety components in regulated products deadline (postponed)",
+    "origin": "EU",
+    "category": "regulatory",
+    "summary": "AI systems embedded as safety components in products regulated under sectoral harmonisation legislation must achieve full compliance (Annex I, Chapter III). Originally scheduled for August 2, 2027, postponed via EU omnibus agreement.",
+    "source": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/",
+    "source_label": "View Gibson Dunn alert →"
   }
 ]
