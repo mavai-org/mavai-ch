@@ -169,11 +169,18 @@ jobs:
             echo "New candidates found in feed.yml."
           fi
 
+      # PR creation uses ORG_REPO_TOKEN, not GITHUB_TOKEN: the org blocks
+      # GitHub Actions from creating/approving PRs ("GitHub Actions is not
+      # permitted to create or approve pull requests"), so gh pr create with
+      # the default token fails. The PAT carries the pull-requests scope and
+      # bypasses that restriction — same reasoning as the issue steps above.
+      # (The git push still works under the checkout's default GITHUB_TOKEN
+      # via contents: write; only PR creation needs the PAT.)
       - name: Create or update PR
         if: steps.changes.outputs.changed == 'true'
         working-directory: javai-ch
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
         run: |
           BRANCH="newsroom/curate"
           git config user.name "github-actions[bot]"
