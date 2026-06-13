@@ -387,6 +387,15 @@
     "source_label": "View announcement →"
   },
   {
+    "date_iso": "2026-06-09",
+    "headline": "Anthropic releases Claude Fable 5 and Mythos 5",
+    "origin": "USA",
+    "category": "technological",
+    "summary": "Anthropic releases Claude Fable 5 — which it describes as its most capable generally available model and its first Mythos-class model offered for broad public use — alongside Claude Mythos 5, the same underlying model with cybersecurity safeguards lifted, available to a small group of vetted cyberdefenders through Project Glasswing. Mythos 5 succeeds the April 2026 Claude Mythos Preview. Anthropic says Fable 5 redirects requests touching cybersecurity, biology, and chemistry to Claude Opus 4.8, and reports these safeguards trigger in under 5% of sessions.",
+    "source": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "source_label": "View announcement →"
+  },
+  {
     "date_iso": "2025-11-19",
     "headline": "EU AI Act omnibus agreement proposed — postpones high-risk deadlines",
     "origin": "EU",
