@@ -1,3 +1,65 @@
+# -- New candidates --------------------------------------------------------
+- title: "MHRA landmark report reveals public views on AI in healthcare"
+  url: "https://www.gov.uk/government/news/mhra-landmark-report-reveals-public-views-on-ai-in-healthcare"
+  date: "2026-06-11"
+  source: "MHRA"
+  summary: "The MHRA is publishing the results of an extensive public consultation which will inform the recommendations of the AI Commission and future regulations."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "This directly concerns AI governance and regulatory development in healthcare. MHRA's public consultation on AI in healthcare will inform future AI regulations and compliance obligations for medical device manufacturers and healthcare providers deploying AI systems in the UK/EU regulatory sphere, which affects Swiss healthcare organizations and vendors subject to harmonised standards or mutual recognition agreements."
+  accepted: n
+  featured: n
+
+- title: "Regulation of AI in Healthcare"
+  url: "https://www.gov.uk/government/calls-for-evidence/regulation-of-ai-in-healthcare"
+  date: "2026-06-11"
+  source: "MHRA"
+  summary: "The MHRA is seeking evidence on the regulation of AI in healthcare to inform the recommendations of the National Commission into the Regulation of AI in Healthcare."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "UK healthcare regulator is actively gathering evidence to develop AI-specific regulatory recommendations for healthcare—directly affecting how AI systems in medical devices and clinical applications will be governed, which is essential for healthcare compliance officers and medical device managers in Swiss organisations planning cross-border or internationally aligned AI deployments."
+  accepted: n
+  featured: n
+
+- title: "Research: National Commission into the Regulation of AI in Healthcare: research, engagement and call for evidence findings"
+  url: "https://www.gov.uk/government/publications/national-commission-into-the-regulation-of-ai-in-healthcare-research-engagement-and-call-for-evidence-findings"
+  date: "2026-06-11"
+  source: "MHRA"
+  summary: "Findings from the National Commission into the Regulation of AI in Healthcare's call for evidence and wider research and engagement activities."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "This addresses sector-specific AI regulation in healthcare, directly relevant to healthcare project managers, compliance officers, and medical device vendors who need to understand emerging AI governance frameworks, regulatory obligations, and approval processes specific to AI systems in the healthcare sector."
+  accepted: n
+  featured: n
+
+- title: "Pioneering AI health innovations regulatory sandbox launched"
+  url: "https://www.gov.uk/government/news/pioneering-ai-health-innovations-regulatory-sandbox-launched"
+  date: "2026-06-10"
+  source: "MHRA"
+  summary: "The London sandbox is a secure environment designed to safely test AI-enabled devices in a real-world environment so patients can benefit more quickly."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "This describes a regulatory sandbox for testing AI-enabled medical devices in real-world conditions. Healthcare compliance officers, medical device project managers, and AI vendors in the healthcare sector need to understand how regulatory authorities are creating pathways for AI medical device validation and approval — this directly affects their development, testing, and market authorization strategies."
+  accepted: n
+  featured: n
+
+- title: "MHRA launches AI sandbox to accelerate medicines development and improve safety"
+  url: "https://www.gov.uk/government/news/mhra-launches-ai-sandbox-to-accelerate-medicines-development-and-improve-safety"
+  date: "2026-06-09"
+  source: "MHRA"
+  summary: "New AI sandbox will help make medicines safer, speed up development, and reduce reliance on animal testing."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "This concerns AI-specific regulatory governance in the pharmaceutical/medical device sector. The MHRA (UK Medicines and Healthcare products Regulatory Agency) sandbox represents sector-specific AI regulation and approval processes for AI systems used in medicines development and safety assessment — directly affecting how pharmaceutical companies and AI vendors must structure AI validation, testing, and compliance for regulatory submission in this sector."
+  accepted: n
+  featured: n
+
+- title: "Guidance: AI Airlock Sandbox Phase 2 Programme Report"
+  url: "https://www.gov.uk/government/publications/ai-airlock-sandbox-phase-2-programme-report"
+  date: "2026-06-09"
+  source: "MHRA"
+  summary: "The MHRA’s AI Airlock second phase ran between April 2025 and May 2026. This report does not constitute formal MHRA guidance."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "This report documents the MHRA's second phase of its AI Airlock sandbox programme, a regulatory pathway for AI/ML medical device developers to test compliance with UK AI and medical device regulations in a controlled environment. Healthcare and medical device compliance officers, product managers, and AI vendors deploying AI systems in the UK medical device sector need to understand sandbox outcomes, regulatory expectations, and conformity pathways that the MHRA is validating through this programme."
+  accepted: n
+  featured: n
+
+
 # -- Published feed ---------------------------------------------------------
 - title: "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act"
   url: "https://www.edps.europa.eu/press-publications/press-news/news/2026/towards-trustworthy-ai-eu-public-administration-edps-compass-its-new-role-under-ai-act"
