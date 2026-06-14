@@ -457,5 +457,86 @@
     "summary": "AI systems embedded as safety components in products regulated under sectoral harmonisation legislation must achieve full compliance (Annex I, Chapter III). Originally scheduled for August 2, 2027, postponed via EU omnibus agreement.",
     "source": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/",
     "source_label": "View Gibson Dunn alert →"
+  },
+  {
+    "date_iso": "1943-12-01",
+    "headline": "McCulloch & Pitts model the artificial neuron",
+    "origin": "USA",
+    "category": "technological",
+    "summary": "Warren McCulloch and Walter Pitts publish \"A Logical Calculus of the Ideas Immanent in Nervous Activity\", the first mathematical model of a neuron and the idea that thought could be computation. (Dated to the month of publication.)",
+    "source": "https://doi.org/10.1007/BF02478259",
+    "source_label": "Read paper →"
+  },
+  {
+    "date_iso": "1950-10-01",
+    "headline": "Turing proposes the \"imitation game\" (the Turing test)",
+    "origin": "UK",
+    "category": "technological",
+    "summary": "Alan Turing publishes \"Computing Machinery and Intelligence\" in Mind, reframing \"can machines think?\" as an operational test. (Dated to the month of publication.)",
+    "source": "https://doi.org/10.1093/mind/LIX.236.433",
+    "source_label": "Read paper →"
+  },
+  {
+    "date_iso": "1956-08-31",
+    "headline": "Dartmouth Workshop coins \"artificial intelligence\"",
+    "origin": "USA",
+    "category": "technological",
+    "summary": "The Dartmouth Summer Research Project, convened by John McCarthy and others, names the field and launches AI as a discipline. (Dated to the close of the summer workshop.)",
+    "source": "http://jmc.stanford.edu/articles/dartmouth/dartmouth.pdf",
+    "source_label": "View proposal →"
+  },
+  {
+    "date_iso": "1958-11-01",
+    "headline": "Rosenblatt introduces the Perceptron",
+    "origin": "USA",
+    "category": "technological",
+    "summary": "Frank Rosenblatt publishes \"The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain\", the first trainable neural network and the lineage modern systems descend from. (Dated to the month of publication.)",
+    "source": "https://doi.org/10.1037/h0042519",
+    "source_label": "Read paper →"
+  },
+  {
+    "date_iso": "1969-01-01",
+    "headline": "Minsky & Papert expose the perceptron's limits",
+    "origin": "USA",
+    "category": "technological",
+    "summary": "\"Perceptrons\" proves single-layer networks cannot learn simple functions such as XOR, a result widely credited with triggering the first \"AI winter\". (Dated to the year of publication.)",
+    "source": "https://mitpress.mit.edu/9780262630221/perceptrons/",
+    "source_label": "View book →"
+  },
+  {
+    "date_iso": "1986-10-09",
+    "headline": "Backpropagation revives neural networks",
+    "origin": "USA",
+    "category": "technological",
+    "summary": "David Rumelhart, Geoffrey Hinton and Ronald Williams publish \"Learning representations by back-propagating errors\" in Nature, giving multi-layer networks a practical way to learn and answering the Minsky-Papert critique.",
+    "source": "https://www.nature.com/articles/323533a0",
+    "source_label": "Read paper →"
+  },
+  {
+    "date_iso": "1997-05-11",
+    "headline": "Deep Blue defeats world chess champion Kasparov",
+    "origin": "USA",
+    "category": "technological",
+    "summary": "IBM's Deep Blue beats reigning world champion Garry Kasparov in a six-game match, the first time a computer defeats a world champion under tournament conditions.",
+    "source": "https://www.ibm.com/history/deep-blue",
+    "source_label": "Read more →"
+  },
+  {
+    "date_iso": "2012-09-30",
+    "headline": "AlexNet wins ImageNet, igniting the deep-learning era",
+    "origin": "Canada",
+    "category": "technological",
+    "summary": "Alex Krizhevsky, Ilya Sutskever and Geoffrey Hinton win the ImageNet competition by a wide margin with a deep convolutional network, the moment deep learning began working at scale.",
+    "source": "https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+    "source_label": "Read paper →"
+  },
+  {
+    "date_iso": "2016-03-15",
+    "headline": "AlphaGo defeats Go champion Lee Sedol",
+    "origin": "UK",
+    "category": "technological",
+    "summary": "DeepMind's AlphaGo wins its match against world Go champion Lee Sedol 4–1, mastering a game long considered out of reach for computers. (Dated to the final game of the match.)",
+    "source": "https://deepmind.google/research/breakthroughs/alphago/",
+    "source_label": "Read more →"
   }
 ]
