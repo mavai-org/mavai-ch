@@ -336,6 +336,21 @@
     renderTimeline();
     renderMinimap();
 
+    // On first load, anchor the viewport on the Today marker so the visitor
+    // lands on "now" — upcoming deadlines a short scroll up, recent events just
+    // below — instead of the oldest (2017) event at the top. The resize handler
+    // re-renders the timeline but deliberately does NOT call this, so resizing
+    // never yanks the reader back to Today.
+    (function scrollToToday() {
+      const mainPane = document.getElementById('tlMainPane');
+      const marker = document.querySelector('.tl-today-marker');
+      if (!mainPane || !marker) return;
+      const paneRect = mainPane.getBoundingClientRect();
+      const markerRect = marker.getBoundingClientRect();
+      const delta = (markerRect.top - paneRect.top) - mainPane.clientHeight / 2 + markerRect.height / 2;
+      mainPane.scrollTop += delta;
+    })();
+
     // Click on dimmed area or overlay to collapse expanded card
     function collapseExpanded() {
       const expanded = document.querySelector('.tl-expanded');
