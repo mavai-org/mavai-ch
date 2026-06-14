@@ -51,13 +51,17 @@
       const container = document.getElementById('tlEventsContainer');
       const mainPane = document.getElementById('tlMainPane');
 
-      const cardSpacing = 80;       // px between cards on same side
+      const minSameSideGap = 22;    // min vertical gap between two cards on the same side
+      const cursorStep = 28;        // base flow advance per card (opposite sides interleave)
       const gapThreshold = 180;     // days — gaps larger than this get a break marker
-      const gapMarkerHeight = 50;   // px for the dotted break section
-      // On narrow viewports the CSS collapses both columns onto the left spine,
-      // so cards cannot alternate sides to avoid collisions. Fall back to a
-      // single-column flow and measure actual card heights (headlines wrap more
-      // aggressively at phone widths, so a fixed top-to-top spacing is unsafe).
+      const gapMarkerHeight = 50;   // px for the dotted break section (matches CSS)
+      const gapBreathing = 22;      // extra whitespace on each side of a time-gap break
+      // Card heights are measured after insertion in BOTH layouts: headlines wrap
+      // to two lines (and, on narrow viewports, more), so any fixed top-to-top
+      // spacing eventually overlaps. We track the measured bottom of the last card
+      // on each side and never let the next same-side card start above it + a gap.
+      // On narrow viewports the CSS collapses both columns onto the left spine, so
+      // every card shares one column and clears the single previous card.
       const narrow = window.matchMedia('(max-width: 768px)').matches;
       const narrowGap = 16;         // visual gap between stacked cards
       let narrowNextY = 40;         // next Y a card can occupy in single-column mode
@@ -69,8 +73,8 @@
       if (staticLine) staticLine.style.display = 'none';
 
       let cursorY = 40; // current vertical position
-      let lastLeftY = -Infinity;
-      let lastRightY = -Infinity;
+      let lastLeftBottom = -Infinity;  // measured bottom of last card on the left side
+      let lastRightBottom = -Infinity; // measured bottom of last card on the right side
       let todayMarkerY = null;
       let prevDate = null;
       let lineSegments = []; // track solid line segments
@@ -85,17 +89,19 @@
 
         // Check if today marker should appear before this event
         if (!todayInserted && todayISO < event.date_iso) {
-          // Advance cursor past the previous card
-          cursorY = Math.max(cursorY, lastLeftY + cardSpacing, lastRightY + cardSpacing);
+          // Advance cursor clear of the previous card on either side
+          cursorY = Math.max(cursorY, lastLeftBottom + minSameSideGap, lastRightBottom + minSameSideGap);
 
-          // Insert gap break before today if needed
+          // Insert gap break before today if needed, with breathing room each side
           if (prevDate) {
             const daysSincePrev = (today - prevDate) / (1000 * 60 * 60 * 24);
             if (daysSincePrev > gapThreshold) {
+              cursorY += gapBreathing;
               lineSegments.push({ top: segmentStart, bottom: cursorY });
               addGapMarker(container, cursorY);
               cursorY += gapMarkerHeight;
               segmentStart = cursorY;
+              cursorY += gapBreathing;
             }
           }
           todayMarkerY = cursorY;
@@ -104,37 +110,40 @@
           todayEl.style.top = todayMarkerY + 'px';
           todayEl.innerHTML = '<div class="tl-today-dot"></div><div class="tl-today-label">{{ i18n "timeline_today" }} · ' + today.toLocaleDateString('{{ .Site.LanguageCode }}', { year: 'numeric', month: 'long', day: 'numeric' }) + '</div>';
           container.appendChild(todayEl);
-          cursorY += cardSpacing;
+          cursorY += 64;
+          // The today marker spans the central spine; next card on either side clears it
+          lastLeftBottom = lastRightBottom = cursorY;
           prevDate = today;
           todayInserted = true;
         }
 
-        // Check for time gap — insert dotted break
+        // Check for time gap — insert dotted break with breathing room each side
         if (prevDate) {
           const daysSincePrev = (eventDate - prevDate) / (1000 * 60 * 60 * 24);
           if (daysSincePrev > gapThreshold) {
+            cursorY = Math.max(cursorY, lastLeftBottom + minSameSideGap, lastRightBottom + minSameSideGap);
+            cursorY += gapBreathing;
             lineSegments.push({ top: segmentStart, bottom: cursorY });
             addGapMarker(container, cursorY);
             cursorY += gapMarkerHeight;
             segmentStart = cursorY;
+            cursorY += gapBreathing;
+            lastLeftBottom = lastRightBottom = cursorY;
           }
         }
 
-        // Determine side and enforce per-side spacing
+        // Determine side and enforce per-side spacing against the measured bottom
+        // of the last card on that side (set after insertion, below).
         const side = event.category === 'regulatory' ? 'tl-right' : 'tl-left';
         let topPx = cursorY;
 
         if (narrow) {
-          // Single-column: each card must clear whichever card was placed last
+          // Single-column: clear whichever card was placed last
           topPx = Math.max(cursorY, narrowNextY);
-          lastLeftY = topPx;
-          lastRightY = topPx;
         } else if (side === 'tl-left') {
-          if (topPx < lastLeftY + cardSpacing) topPx = lastLeftY + cardSpacing;
-          lastLeftY = topPx;
+          if (topPx < lastLeftBottom + minSameSideGap) topPx = lastLeftBottom + minSameSideGap;
         } else {
-          if (topPx < lastRightY + cardSpacing) topPx = lastRightY + cardSpacing;
-          lastRightY = topPx;
+          if (topPx < lastRightBottom + minSameSideGap) topPx = lastRightBottom + minSameSideGap;
         }
 
         cursorY = Math.max(cursorY, topPx);
@@ -215,25 +224,34 @@
         container.appendChild(eventEl);
 
         prevDate = eventDate;
+        // Measure the card after insertion so wrapped (2-line) headlines are
+        // accounted for in both layouts — a fixed step overlaps otherwise.
+        const cardHeight = cardEl.getBoundingClientRect().height;
         if (narrow) {
-          // Measure the card after insertion so wrapped headlines are accounted for
-          const cardHeight = cardEl.getBoundingClientRect().height;
           narrowNextY = topPx + cardHeight + narrowGap;
+          lastLeftBottom = lastRightBottom = topPx + cardHeight;
           cursorY = narrowNextY;
         } else {
-          cursorY = topPx + 20; // advance cursor past the dot
+          const cardBottom = topPx + cardHeight;
+          if (side === 'tl-left') lastLeftBottom = cardBottom; else lastRightBottom = cardBottom;
+          // Opposite-side cards may interleave, so advance only a short step; the
+          // same-side gap check above prevents collisions within a column.
+          cursorY = topPx + cursorStep;
         }
       });
 
       // Insert today marker at end if not yet inserted
       if (!todayInserted) {
+        cursorY = Math.max(cursorY, lastLeftBottom + minSameSideGap, lastRightBottom + minSameSideGap);
         if (prevDate) {
           const daysSincePrev = (today - prevDate) / (1000 * 60 * 60 * 24);
           if (daysSincePrev > gapThreshold) {
+            cursorY += gapBreathing;
             lineSegments.push({ top: segmentStart, bottom: cursorY });
             addGapMarker(container, cursorY);
             cursorY += gapMarkerHeight;
             segmentStart = cursorY;
+            cursorY += gapBreathing;
           }
         }
         todayMarkerY = cursorY;
@@ -242,7 +260,7 @@
         todayEl.style.top = todayMarkerY + 'px';
         todayEl.innerHTML = '<div class="tl-today-dot"></div><div class="tl-today-label">{{ i18n "timeline_today" }} · ' + today.toLocaleDateString('{{ .Site.LanguageCode }}', { year: 'numeric', month: 'long', day: 'numeric' }) + '</div>';
         container.appendChild(todayEl);
-        cursorY += 40;
+        cursorY += 64;
       }
 
       // Close final line segment
