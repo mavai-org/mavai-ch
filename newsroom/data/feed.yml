@@ -1,5 +1,46 @@
 # -- New candidates --------------------------------------------------------
-# WARNING: POTENTIAL DUPLICATE (see "Artificial Intelligence: Council and Parliament agree to simplify and streamline rules - consilium.europa.eu" below)
+- title: "Regulamento Inteligência Artificial: Conselho e Parlamento alcançam acordo sobre as primeiras regras em matéria de IA no mundo - consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPN0ZXSjEtdHdwdWdEZnQzZ0ZYMnRjWXRsbEJRUTBQNVk2Mk45eDFvdk12ek9xQVFtamc2TUo5LTBLb2xTaEV6eHZ2WmFRaEgwUWQ2UHR1Y09VQ3hXMUNleklfbG5XQlNLN2FlRng2R0hWcjVzUWhzcnVOTW5pS1docUoxYXZRT0gybUxpUmwwSUlFYTIyOG1VV19NUHh6bjJJLXZaUzAxZ2hiTlU5T3lsUEJNM01aN0xGOUlVLXk5aWc1Qmg1LTBMMW82VTlQNmhMTjVrZkViUkZtRzBYTkE4NHBZM2llNzQ4ZDJPWmhnUkJyYnhIMU5vdW56OTM?oc=5"
+  date: "2023-12-09"
+  source: "European Council Press Releases"
+  summary: "Regulamento Inteligência Artificial: Conselho e Parlamento alcançam acordo sobre as primeiras regras em matéria de IA no mundo&nbsp;&nbsp;consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This reports the political agreement between EU Council and Parliament on the AI Act, the world's first comprehensive AI regulation. Software developers, AI vendors, and compliance officers in Swiss enterprises need to understand these rules, as they will affect AI systems deployed in or to EU markets, and Switzerland typically aligns with EU regulatory frameworks. This is a concrete milestone in the legislative process establishing binding obligations on AI providers and deployers."
+  accepted: n
+  featured: n
+
+- title: "Independent Commission led by NHS doctors sets out blueprint to accelerate safe AI adoption in healthcare"
+  url: "https://www.gov.uk/government/news/independent-commission-led-by-nhs-doctors-sets-out-blueprint-to-accelerate-safe-ai-adoption-in-healthcare"
+  date: "2026-09-10"
+  source: "MHRA"
+  summary: "New recommendations based on extensive public engagement set out how the NHS could give patients faster access to AI advances with proportionate safeguards to protect patient safety and maintain high levels of trust."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "Healthcare organisations and medical device compliance officers need to understand how the NHS framework for AI governance, patient safety safeguards, and proportionate oversight of AI systems in clinical settings may influence or align with emerging sector-specific AI regulation and best practices that could affect deployment of AI-enabled medical devices and clinical decision support systems in their organisations."
+  accepted: n
+  featured: n
+
+- title: "Research: National Commission into the Regulation of AI in Healthcare: Recommendations for a future regulatory framework"
+  url: "https://www.gov.uk/government/publications/national-commission-into-the-regulation-of-ai-in-healthcare-recommendations-for-a-future-regulatory-framework"
+  date: "2026-09-09"
+  source: "MHRA"
+  summary: "Recommendations from the National Commission into the Regulation of AI in Healthcare, which was established to advise government on a future regulatory framework for AI in healthcare."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "This item directly concerns sector-specific AI regulation in healthcare. It provides recommendations for a future regulatory framework governing AI systems in healthcare, which is essential reading for healthcare compliance officers, medical device managers, and government officials responsible for AI governance in this regulated sector. The framework recommendations would inform concrete obligations for AI system providers and deployers in healthcare settings."
+  accepted: n
+  featured: n
+
+- title: "ETSI launches new framework to measure data quality, a key enabler for trustworthy AI"
+  url: "https://www.etsi.org/newsroom/press-releases/etsi-launches-new-framework-to-measure-data-quality-a-key-enabler-for-trustworthy-ai/"
+  date: "2026-09-15"
+  source: "ETSI Newsroom"
+  summary: "Press Release 3 September 2026 ETSI launches new framework to measure data quality, a key enabler for trustworthy AI New Technical Report defines 18 standardised metrics to assess data quality, with Proof of Concept demonstrating how they can be applied to real-world datasets Read more ETSI launc..."
+  tags: ["global", "eu", "standard", "conformity"]
+  relevance: "ETSI's new framework defining 18 standardised metrics to assess data quality directly supports compliance with AI Act requirements for high-quality training data and conformity assessment procedures. Software developers and AI system providers need these standardised metrics to demonstrate data quality assurance, a concrete obligation under EU AI regulation and related harmonised standards development (CEN-CENELEC JTC 21). This is actionable technical guidance for implementing trustworthy AI systems."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Artificial Intelligence: Council and Parliament agree to simplify and streamline rules - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOcC0wYi0yOE9RRTNMbVl4RDFDN2xDenV6bVF6VXVBSm5pS0xiMVZwS0ZGTEhPQ3RvcXItd2VyQkxDdWNRQnNvN3RJSkVxUFUzSUpMVFFrQmZobVZuMzBHNWpIZjlmUGVUa05zWFVZWnNpbEpnd243TE1paE1QdmtLU2ZGZlAtM0tkUWg2SUI4RUZrU3QzdC1kMDRyQlB5cTJQelRMUFNaQk5DcExPa2l5NEFNanpvM1A3cURWdkRjOW9GdGJ5OXV1eW45MDZvN21JQlI4cUlSb2xLVGwxT2Y4bzhCaFE5bDZR?oc=5"
   date: "2026-05-07"
@@ -20,8 +61,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Daily News 31 / 07 / 2026"
   url: "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1715"
   date: "2026-07-31"
