@@ -7,7 +7,7 @@ description: "Chi cura mavai.ch e perché questo sito esiste."
 
 **mavai.ch** segue gli sviluppi in materia di regolamentazione e conformità dell'IA che hanno un impatto sulla Svizzera — che abbiano origine a livello nazionale, europeo o internazionale. Il sito si rivolge a dirigenti aziendali, responsabili della conformità e responsabili IT nelle imprese svizzere e nelle amministrazioni cantonali.
 
-Il sito fa parte della famiglia di progetti [Mavai](https://mavai.org), che sviluppa strumenti open source per testare sistemi di IA non deterministici.
+Il sito fa parte della famiglia di progetti [Mavai™](https://mavai.org), che sviluppa strumenti open source per testare sistemi di IA non deterministici.
 
 ## Contributrice e curatrice
 

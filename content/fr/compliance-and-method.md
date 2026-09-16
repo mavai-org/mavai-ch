@@ -8,7 +8,7 @@ summary: "mavai.ch suit ce que les régulateurs exigent. mavai.org documente la 
 mavai.ch suit le paysage réglementaire de l'IA en Suisse : ce que la FINMA
 attend, ce que certifie ISO/IEC 42001 et jusqu'où l'AI Act européen s'étend
 au-delà de la frontière. [mavai.org](https://mavai.org/) documente la méthode
-que Mavai emploie pour répondre à ces attentes. Cette page relie les deux.
+que Mavai™ emploie pour répondre à ces attentes. Cette page relie les deux.
 
 ## L'obligation
 

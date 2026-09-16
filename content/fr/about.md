@@ -7,7 +7,7 @@ description: "Qui est derrière mavai.ch et pourquoi ce site existe."
 
 **mavai.ch** suit les évolutions en matière de réglementation et de conformité de l'IA qui affectent la Suisse — qu'elles soient d'origine nationale, européenne ou internationale. Le site s'adresse aux dirigeants, aux responsables de la conformité et aux responsables informatiques des entreprises suisses et des administrations cantonales.
 
-Le site fait partie de la famille de projets [Mavai](https://mavai.org), qui développe des outils open source pour tester les systèmes d'IA non déterministes.
+Le site fait partie de la famille de projets [Mavai™](https://mavai.org), qui développe des outils open source pour tester les systèmes d'IA non déterministes.
 
 ## Contributrice et curatrice
 

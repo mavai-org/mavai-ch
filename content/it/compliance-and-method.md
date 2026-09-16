@@ -7,7 +7,7 @@ summary: "mavai.ch segue ciò che le autorità richiedono. mavai.org documenta l
 
 mavai.ch segue il panorama normativo dell'IA in Svizzera: cosa si aspetta la
 FINMA, cosa certifica ISO/IEC 42001 e fin dove l'AI Act europeo si estende oltre
-il confine. [mavai.org](https://mavai.org/) documenta il metodo con cui Mavai
+il confine. [mavai.org](https://mavai.org/) documenta il metodo con cui Mavai™
 risponde a queste aspettative. Questa pagina collega le due cose.
 
 ## L'obbligo

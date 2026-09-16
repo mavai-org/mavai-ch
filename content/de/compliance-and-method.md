@@ -8,7 +8,7 @@ summary: "mavai.ch verfolgt, was Aufsichtsbehörden verlangen. mavai.org dokumen
 mavai.ch beobachtet die regulatorische Landschaft für KI in der Schweiz: was die
 FINMA erwartet, was ISO/IEC 42001 zertifiziert und wo das EU-KI-Gesetz über die
 Grenze hinaus wirkt. [mavai.org](https://mavai.org/) dokumentiert die Methode,
-mit der Mavai diese Erwartungen erfüllt. Diese Seite verbindet beides.
+mit der Mavai™ diese Erwartungen erfüllt. Diese Seite verbindet beides.
 
 ## Die Pflicht
 

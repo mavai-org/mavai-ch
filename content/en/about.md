@@ -7,7 +7,7 @@ description: "Who curates mavai.ch and why this site exists."
 
 **mavai.ch** tracks AI regulation and compliance developments that affect Switzerland — whether they originate domestically, in the EU, or internationally. The site serves business managers, compliance officers, and IT leaders in Swiss enterprises and cantonal government.
 
-The site is part of the [Mavai](https://mavai.org) project family, which develops open-source tools for testing non-deterministic AI systems.
+The site is part of the [Mavai™](https://mavai.org) project family, which develops open-source tools for testing non-deterministic AI systems.
 
 ## Contributor and curator
 

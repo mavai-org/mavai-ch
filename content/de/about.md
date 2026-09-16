@@ -7,7 +7,7 @@ description: "Wer mavai.ch kuratiert und warum diese Website existiert."
 
 **mavai.ch** verfolgt Entwicklungen in der KI-Regulierung und Compliance, die sich auf die Schweiz auswirken — ob sie im Inland, in der EU oder international ihren Ursprung haben. Die Website richtet sich an Geschäftsführer, Compliance-Beauftragte und IT-Verantwortliche in Schweizer Unternehmen und kantonalen Verwaltungen.
 
-Die Website ist Teil der [Mavai](https://mavai.org)-Projektfamilie, die Open-Source-Werkzeuge zum Testen nicht-deterministischer KI-Systeme entwickelt.
+Die Website ist Teil der [Mavai™](https://mavai.org)-Projektfamilie, die Open-Source-Werkzeuge zum Testen nicht-deterministischer KI-Systeme entwickelt.
 
 ## Mitwirkende und Kuratorin
 
