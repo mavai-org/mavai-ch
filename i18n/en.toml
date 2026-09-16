@@ -152,10 +152,13 @@ other = "Message"
 other = "Send message"
 
 [cta_heading]
-other = "Looking for the tools?"
+other = "Baseline. Monitor. Comply."
+
+[cta_button]
+other = "See how Mavai helps"
 
 [cta_body]
-other = "Mavai develops open-source frameworks for probabilistic testing. Visit mavai.org for technical documentation, source code, and getting started guides."
+other = "Regulation sets the obligation. Mavai's methodology meets it: a statistical baseline for each AI service, continuous monitoring against that baseline, and a contract the service is held to. The open-source tools and the full method are on mavai.org."
 
 [timeline_title]
 other = "AI Timeline"

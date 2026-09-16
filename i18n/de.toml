@@ -152,10 +152,13 @@ other = "Nachricht"
 other = "Nachricht senden"
 
 [cta_heading]
-other = "Suchen Sie die Werkzeuge?"
+other = "Baseline. Monitor. Comply."
+
+[cta_button]
+other = "So hilft Mavai"
 
 [cta_body]
-other = "Mavai entwickelt Open-Source-Frameworks für probabilistisches Testen. Besuchen Sie mavai.org für technische Dokumentation, Quellcode und Einstiegsanleitungen."
+other = "Die Regulierung schafft die Pflicht. Die Mavai-Methodik erfüllt sie: eine statistische Baseline für jeden KI-Dienst, laufende Überwachung gegen diese Baseline und ein Vertrag, an dem der Dienst gemessen wird. Die Open-Source-Werkzeuge und die vollständige Methode finden Sie auf mavai.org."
 
 [timeline_title]
 other = "KI-Zeitstrahl"
