@@ -2,7 +2,7 @@
 title: "Compliance und die Mavai-Methode"
 description: "Wie die auf mavai.ch verfolgten Pflichten durch die auf mavai.org dokumentierte Methode erfüllt werden: Baseline · Monitor · Comply."
 keywords: ["KI-Compliance Schweiz", "FINMA KI Nachweis", "ISO 42001 Nachweis", "EU KI-Gesetz Marktüberwachung", "KI-Baseline", "probabilistisches Testen Compliance"]
-summary: "mavai.ch verfolgt, was Aufsichtsbehörden verlangen. mavai.org dokumentiert, wie Mavai darauf antwortet. Diese Seite verbindet beides: auf der einen Seite die Pflicht, auf der anderen der Schritt der Methode, der den Nachweis liefert."
+summary: "mavai.ch verfolgt, was die Regelwerke verlangen. mavai.org dokumentiert, wie Mavai darauf antwortet. Diese Seite verbindet beides: auf der einen Seite die Pflicht, auf der anderen der Schritt der Methode, der den Nachweis liefert."
 ---
 
 mavai.ch beobachtet die regulatorische Landschaft für KI in der Schweiz: was die

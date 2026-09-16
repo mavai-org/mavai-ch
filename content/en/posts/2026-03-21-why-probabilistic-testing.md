@@ -15,7 +15,7 @@ AI doesn't work this way.
 
 AI systems — particularly those built on large language models or statistical learning — are inherently non-deterministic. Ask the same question twice and you may get different answers. This isn't a bug; it's a fundamental characteristic of how these systems operate.
 
-This creates a problem for compliance. FINMA expects model validation. ISO 42001 demands performance measurement. Auditors want evidence. But evidence of *what*, exactly, when the system's output varies by design?
+This creates a problem for compliance. FINMA expects model validation. ISO 42001 demands performance measurement. Each of them turns on evidence. But evidence of *what*, exactly, when the system's output varies by design?
 
 ## From pass/fail to pass rates
 

@@ -15,7 +15,7 @@ KI funktioniert anders.
 
 KI-Systeme – besonders solche auf Basis grosser Sprachmodelle oder statistischem Lernen – sind grundsätzlich nicht deterministisch. Stellt man zweimal die gleiche Frage, kann man unterschiedliche Antworten erhalten. Dies ist kein Bug; es ist eine fundamentale Eigenschaft dieser Systeme.
 
-Dies schafft ein Compliance-Problem. FINMA erwartet Modellvalidierung. ISO 42001 fordert Leistungsmessung. Prüfer wollen Nachweise. Aber Nachweise für *was* genau, wenn sich die Ausgabe des Systems konstruktionsbedingt unterscheidet?
+Dies schafft ein Compliance-Problem. FINMA erwartet Modellvalidierung. ISO 42001 fordert Leistungsmessung. Alle drei laufen auf Nachweise hinaus. Aber Nachweise für *was* genau, wenn sich die Ausgabe des Systems konstruktionsbedingt unterscheidet?
 
 ## Von Ja/Nein zu Erfolgsquoten
 

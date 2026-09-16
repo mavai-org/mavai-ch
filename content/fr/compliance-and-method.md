@@ -2,7 +2,7 @@
 title: "Conformité et la méthode Mavai"
 description: "Comment les obligations suivies sur mavai.ch sont satisfaites par la méthode documentée sur mavai.org : Baseline · Monitor · Comply."
 keywords: ["conformité IA Suisse", "FINMA IA preuves", "ISO 42001 preuves", "AI Act surveillance après commercialisation", "baseline IA", "tests probabilistes conformité"]
-summary: "mavai.ch suit ce que les régulateurs exigent. mavai.org documente la réponse de Mavai. Cette page relie les deux : d'un côté l'obligation, de l'autre l'étape de la méthode qui en produit la preuve."
+summary: "mavai.ch suit ce que la réglementation exige. mavai.org documente la réponse de Mavai. Cette page relie les deux : d'un côté l'obligation, de l'autre l'étape de la méthode qui en produit la preuve."
 ---
 
 mavai.ch suit le paysage réglementaire de l'IA en Suisse : ce que la FINMA

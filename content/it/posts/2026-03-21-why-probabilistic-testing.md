@@ -15,7 +15,7 @@ L'IA non funziona così.
 
 I sistemi di IA — in particolare quelli basati su grandi modelli di linguaggio o apprendimento statistico — sono intrinsecamente non-deterministici. Poni la stessa domanda due volte e potresti ottenere risposte diverse. Non è un bug; è una caratteristica fondamentale di come questi sistemi operano.
 
-Questo crea un problema di conformità. FINMA si aspetta la convalida del modello. ISO 42001 richiede la misurazione delle prestazioni. I revisori desiderano prove. Ma prove di *cosa*, esattamente, quando l'output del sistema varia per design?
+Questo crea un problema di conformità. FINMA si aspetta la convalida del modello. ISO 42001 richiede la misurazione delle prestazioni. Tutti si fondano sulle prove. Ma prove di *cosa*, esattamente, quando l'output del sistema varia per design?
 
 ## Dal sì/no ai tassi di successo
 

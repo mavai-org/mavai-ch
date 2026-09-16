@@ -2,7 +2,7 @@
 title: "Compliance and the Mavai Method"
 description: "How the obligations tracked on mavai.ch are met by the method documented on mavai.org: Baseline · Monitor · Comply."
 keywords: ["AI compliance Switzerland", "FINMA AI evidence", "ISO 42001 evidence", "EU AI Act post-market monitoring", "AI baseline", "probabilistic testing compliance"]
-summary: "mavai.ch tracks what regulators ask for. mavai.org documents how Mavai answers. This page joins the two: each obligation on one side, the step of the method that produces its evidence on the other."
+summary: "mavai.ch tracks what the regulations require. mavai.org documents how Mavai answers. This page joins the two: each obligation on one side, the step of the method that produces its evidence on the other."
 ---
 
 mavai.ch follows the regulatory landscape for AI in Switzerland: what FINMA
@@ -53,7 +53,7 @@ is the evidence.
 
 ## Obligation to evidence
 
-| The regime asks for | The method provides |
+| The regime requires | The method provides |
 |---|---|
 | FINMA: inventory and control of AI risk | One baseline per service, which is the inventory and the control |
 | ISO/IEC 42001: performance evaluation, continual improvement | Baselines and monitoring records as management-system evidence |
