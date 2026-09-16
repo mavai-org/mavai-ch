@@ -40,10 +40,14 @@ every release, every model or prompt change, and on a schedule in between.
 Drift beyond the agreed bounds is flagged, at the confidence the baseline was
 set at, before it reaches production, let alone a supervisor.
 
-**Comply.** The service is held to a contract: what a good response is, and the
-rate at which it must be delivered. Every verdict says whether the service
-complies, at the stated confidence. Where a regulator sets the bar, the same
-contract carries it.
+**Comply.** Regulators ask for three things: a record of what was measured,
+evidence that the service is still being watched, and a method that others can
+inspect. The baseline is the record. Monitoring is the evidence. And the method
+is already documented in public: the
+[Statistical Companion](https://r.mavai.org/statistical-companion.pdf) sets out
+the statistics, and the [open-source frameworks](https://mavai.org/projects/)
+implement it line by line. That is the technical documentation the EU AI Act
+asks for, and what any supervisor, auditor or standard can read.
 
 Every measurement and every verdict is a structured record that states what was
 measured, how many times, against what bar and at what confidence. That record
@@ -57,7 +61,7 @@ is the evidence.
 | ISO/IEC 42001: performance evaluation, continual improvement | Baselines and monitoring records as management-system evidence |
 | EU AI Act Art. 9: lifecycle risk management with defined metrics | Baselines with stated thresholds and confidence; testing at every change |
 | EU AI Act Art. 72: post-market monitoring | Scheduled monitoring against the baseline, with drift flagged |
-| EU AI Act Annex IV: documented testing procedures and results | The persisted measurement and verdict records |
+| EU AI Act Art. 11 and Annex IV: technical documentation of the method, its testing and results | The Statistical Companion and open-source frameworks document the method; the persisted records hold the testing and results |
 
 The names differ. The evidence is the same evidence, and it is the evidence a
 team would want anyway. Regulation is the reason more teams are asking for it

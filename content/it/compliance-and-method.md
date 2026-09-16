@@ -45,10 +45,15 @@ e, nel frattempo, secondo un calendario. Ogni deriva oltre i limiti concordati
 viene segnalata, al livello di confidenza della baseline, prima che raggiunga la
 produzione, e a maggior ragione un'autorità di vigilanza.
 
-**Comply.** Il servizio è tenuto a un contratto: che cos'è una buona risposta e
-con quale tasso deve essere fornita. Ogni verdetto dice se il servizio rispetta
-il contratto, al livello di confidenza dichiarato. Dove un'autorità fissa
-l'asticella, lo stesso contratto la porta.
+**Comply.** Le autorità chiedono tre cose: una registrazione di ciò che è stato
+misurato, l'evidenza che il servizio è ancora sorvegliato e un metodo che altri
+possano esaminare. La baseline è la registrazione. Il monitoraggio è
+l'evidenza. E il metodo è già documentato pubblicamente: lo
+[Statistical Companion](https://r.mavai.org/statistical-companion.pdf) espone
+la statistica e i [framework open source](https://mavai.org/projects/) la
+implementano riga per riga. Questa è la documentazione tecnica richiesta
+dall'AI Act europeo, e ciò che qualsiasi autorità, revisore o standard può
+leggere.
 
 Ogni misurazione e ogni verdetto sono una registrazione strutturata che indica
 che cosa è stato misurato, quante volte, contro quale asticella e a quale livello
@@ -62,7 +67,7 @@ di confidenza. Quella registrazione è l'evidenza.
 | ISO/IEC 42001: valutazione delle prestazioni, miglioramento continuo | Baseline e registrazioni di monitoraggio come evidenze del sistema di gestione |
 | AI Act art. 9: gestione dei rischi lungo il ciclo di vita con metriche definite | Baseline con soglie e confidenza dichiarate; test a ogni modifica |
 | AI Act art. 72: monitoraggio post-commercializzazione | Monitoraggio pianificato rispetto alla baseline, con segnalazione delle derive |
-| AI Act allegato IV: procedure di test e risultati documentati | Le registrazioni di misurazioni e verdetti conservate |
+| AI Act art. 11 e allegato IV: documentazione tecnica del metodo, dei suoi test e dei risultati | Lo Statistical Companion e i framework open source documentano il metodo; le registrazioni conservate contengono test e risultati |
 
 I nomi cambiano. L'evidenza è la stessa evidenza, ed è quella che un team
 vorrebbe comunque. La regolamentazione è il motivo per cui oggi più team la

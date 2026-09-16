@@ -44,10 +44,15 @@ prompt, et selon un calendrier entre-temps. Toute dérive au-delà des limites
 convenues est signalée, au niveau de confiance de la baseline, avant
 d'atteindre la production, et a fortiori un superviseur.
 
-**Comply.** Le service est tenu à un contrat : ce qu'est une bonne réponse et le
-taux auquel elle doit être fournie. Chaque verdict dit si le service respecte le
-contrat, au niveau de confiance déclaré. Là où un régulateur fixe la barre, le
-même contrat la porte.
+**Comply.** Les régulateurs demandent trois choses : un enregistrement de ce qui
+a été mesuré, la preuve que le service est toujours surveillé, et une méthode
+que d'autres peuvent examiner. La baseline est l'enregistrement. La
+surveillance en est la preuve. Et la méthode est déjà documentée publiquement :
+le [Statistical Companion](https://r.mavai.org/statistical-companion.pdf)
+expose les statistiques, et les
+[frameworks open source](https://mavai.org/projects/) les mettent en œuvre
+ligne par ligne. C'est la documentation technique qu'exige l'AI Act européen,
+et ce que tout superviseur, auditeur ou standard peut lire.
 
 Chaque mesure et chaque verdict constituent un enregistrement structuré qui
 indique ce qui a été mesuré, combien de fois, contre quelle barre et à quel
@@ -61,7 +66,7 @@ niveau de confiance. Cet enregistrement est la preuve.
 | ISO/IEC 42001 : évaluation des performances, amélioration continue | Baselines et enregistrements de surveillance comme preuves du système de management |
 | AI Act art. 9 : gestion des risques sur le cycle de vie avec des métriques définies | Baselines avec seuils et confiance déclarés ; tests à chaque changement |
 | AI Act art. 72 : surveillance après commercialisation | Surveillance planifiée par rapport à la baseline, avec signalement des dérives |
-| AI Act annexe IV : procédures de test et résultats documentés | Les enregistrements de mesures et de verdicts conservés |
+| AI Act art. 11 et annexe IV : documentation technique de la méthode, de ses tests et de ses résultats | Le Statistical Companion et les frameworks open source documentent la méthode ; les enregistrements conservés contiennent les tests et les résultats |
 
 Les noms diffèrent. La preuve est la même preuve, et c'est celle qu'une équipe
 voudrait de toute façon. La réglementation est la raison pour laquelle davantage

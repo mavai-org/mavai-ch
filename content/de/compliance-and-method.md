@@ -45,10 +45,16 @@ zwischendurch nach Zeitplan. Abweichungen über die vereinbarten Grenzen hinaus
 werden mit der Konfidenz der Baseline gemeldet, bevor sie die Produktion
 erreichen, geschweige denn eine Aufsichtsbehörde.
 
-**Comply.** Der Dienst wird an einem Vertrag gemessen: was eine gute Antwort
-ist und mit welcher Rate sie geliefert werden muss. Jedes Urteil sagt, ob der
-Dienst den Vertrag erfüllt, mit der angegebenen Konfidenz. Wo eine
-Aufsichtsbehörde die Messlatte setzt, trägt derselbe Vertrag sie.
+**Comply.** Aufsichtsbehörden verlangen drei Dinge: einen Datensatz dessen,
+was gemessen wurde, Nachweise, dass der Dienst weiterhin beobachtet wird, und
+eine Methode, die andere prüfen können. Die Baseline ist der Datensatz. Das
+Monitoring ist der Nachweis. Und die Methode ist bereits öffentlich
+dokumentiert: der
+[Statistical Companion](https://r.mavai.org/statistical-companion.pdf) legt die
+Statistik dar, und die
+[Open-Source-Frameworks](https://mavai.org/projects/) setzen sie Zeile für Zeile
+um. Das ist die technische Dokumentation, die das EU-KI-Gesetz verlangt, und
+das, was jede Aufsichtsbehörde, jeder Prüfer und jeder Standard lesen kann.
 
 Jede Messung und jedes Urteil ist ein strukturierter Datensatz, der festhält,
 was gemessen wurde, wie oft, gegen welche Messlatte und mit welcher Konfidenz.
@@ -62,7 +68,7 @@ Dieser Datensatz ist der Nachweis.
 | ISO/IEC 42001: Leistungsbewertung, fortlaufende Verbesserung | Baselines und Monitoring-Datensätze als Nachweise für das Managementsystem |
 | EU-KI-Gesetz Art. 9: Risikomanagement über den Lebenszyklus mit definierten Metriken | Baselines mit festgelegten Schwellen und Konfidenz; Tests bei jeder Änderung |
 | EU-KI-Gesetz Art. 72: Beobachtung nach dem Inverkehrbringen | Planmässiges Monitoring gegen die Baseline mit Meldung von Abweichungen |
-| EU-KI-Gesetz Anhang IV: dokumentierte Testverfahren und Ergebnisse | Die gespeicherten Mess- und Urteilsdatensätze |
+| EU-KI-Gesetz Art. 11 und Anhang IV: technische Dokumentation der Methode, ihrer Tests und Ergebnisse | Statistical Companion und Open-Source-Frameworks dokumentieren die Methode; die gespeicherten Datensätze enthalten Tests und Ergebnisse |
 
 Die Namen unterscheiden sich. Der Nachweis ist derselbe Nachweis, und es ist der
 Nachweis, den ein Team ohnehin haben wollte. Die Regulierung ist der Grund,
