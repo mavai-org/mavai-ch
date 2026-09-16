@@ -16,7 +16,7 @@
   summary: "Recommendations from the National Commission into the Regulation of AI in Healthcare, which was established to advise government on a future regulatory framework for AI in healthcare."
   tags: ["uk", "pharma", "medicine", "health", "regulatory"]
   relevance: "This addresses sector-specific AI regulation for healthcare. A healthcare/medical device project manager or compliance officer would need to understand recommendations for future regulatory frameworks governing AI systems in clinical and healthcare contexts, which directly affect how AI systems are developed, validated, deployed, and overseen in that sector."
-  accepted: n
+  accepted: y
   featured: n
 
 - title: "MHRA and Manchester NHS partner on health innovation sandbox"
@@ -26,8 +26,8 @@
   summary: "New partnership to create health innovation sandbox that will test promising new technologies and build evidence to accelerate the safe adoption of technologies, including AI, in the NHS."
   tags: ["uk", "pharma", "medicine", "health", "regulatory"]
   relevance: "This concerns a sector-specific AI governance initiative in healthcare. The partnership creates a regulatory sandbox framework for testing AI and other technologies in the NHS, which directly affects how AI systems are validated, approved, and deployed in UK health services. Healthcare compliance officers and AI vendors serving the NHS need to understand sandbox eligibility criteria, evidence requirements, and the pathway this creates for AI system adoption in clinical settings."
-  accepted: n
-  featured: n
+  accepted: y
+  featured: y
 
 - title: "ETSI launches new framework to measure data quality, a key enabler for trustworthy AI"
   url: "https://www.etsi.org/newsroom/press-releases/etsi-launches-new-framework-to-measure-data-quality-a-key-enabler-for-trustworthy-ai/"
@@ -36,8 +36,8 @@
   summary: "Press Release 3 September 2026 ETSI launches new framework to measure data quality, a key enabler for trustworthy AI New Technical Report defines 18 standardised metrics to assess data quality, with Proof of Concept demonstrating how they can be applied to real-world datasets Read more ETSI launc..."
   tags: ["global", "eu", "standard", "conformity"]
   relevance: "ETSI's new data quality measurement framework with 18 standardised metrics directly supports AI system developers and organisations in meeting technical standards and governance requirements for trustworthy AI. Data quality assessment is a foundational component of AI conformity, model validation, and lifecycle assurance that vendors and deployers must implement to comply with EU AI Act obligations and emerging harmonised standards for AI systems."
-  accepted: n
-  featured: n
+  accepted: y
+  featured: y
 
 
 # -- Published feed ---------------------------------------------------------
