@@ -44,15 +44,13 @@ prompt, et selon un calendrier entre-temps. Toute dérive au-delà des limites
 convenues est signalée, au niveau de confiance de la baseline, avant
 d'atteindre la production, et a fortiori un superviseur.
 
-**Comply.** Les régulateurs demandent trois choses : un enregistrement de ce qui
-a été mesuré, la preuve que le service est toujours surveillé, et une méthode
-que d'autres peuvent examiner. La baseline est l'enregistrement. La
-surveillance en est la preuve. Et la méthode est déjà documentée publiquement :
-le [Statistical Companion](https://r.mavai.org/statistical-companion.pdf)
-expose les statistiques, et les
-[frameworks open source](https://mavai.org/projects/) les mettent en œuvre
-ligne par ligne. C'est la documentation technique qu'exige l'AI Act européen,
-et ce que tout superviseur, auditeur ou standard peut lire.
+**Comply.** La baseline est l'enregistrement, la surveillance en est la preuve,
+et la méthode est documentée publiquement : le
+[Statistical Companion](https://r.mavai.org/statistical-companion.pdf) expose
+les statistiques et les [frameworks open source](https://mavai.org/projects/)
+les mettent en œuvre ligne par ligne. Ensemble, ils constituent la
+documentation technique qu'exige l'AI Act européen, et ce que tout
+superviseur, auditeur ou standard peut lire.
 
 Chaque mesure et chaque verdict constituent un enregistrement structuré qui
 indique ce qui a été mesuré, combien de fois, contre quelle barre et à quel

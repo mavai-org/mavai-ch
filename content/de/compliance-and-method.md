@@ -45,16 +45,14 @@ zwischendurch nach Zeitplan. Abweichungen über die vereinbarten Grenzen hinaus
 werden mit der Konfidenz der Baseline gemeldet, bevor sie die Produktion
 erreichen, geschweige denn eine Aufsichtsbehörde.
 
-**Comply.** Aufsichtsbehörden verlangen drei Dinge: einen Datensatz dessen,
-was gemessen wurde, Nachweise, dass der Dienst weiterhin beobachtet wird, und
-eine Methode, die andere prüfen können. Die Baseline ist der Datensatz. Das
-Monitoring ist der Nachweis. Und die Methode ist bereits öffentlich
-dokumentiert: der
+**Comply.** Die Baseline ist der Datensatz, das Monitoring ist der Nachweis,
+und die Methode ist öffentlich dokumentiert: der
 [Statistical Companion](https://r.mavai.org/statistical-companion.pdf) legt die
 Statistik dar, und die
 [Open-Source-Frameworks](https://mavai.org/projects/) setzen sie Zeile für Zeile
-um. Das ist die technische Dokumentation, die das EU-KI-Gesetz verlangt, und
-das, was jede Aufsichtsbehörde, jeder Prüfer und jeder Standard lesen kann.
+um. Zusammen sind sie die technische Dokumentation, die das EU-KI-Gesetz
+verlangt, und das, was jede Aufsichtsbehörde, jeder Prüfer und jeder Standard
+lesen kann.
 
 Jede Messung und jedes Urteil ist ein strukturierter Datensatz, der festhält,
 was gemessen wurde, wie oft, gegen welche Messlatte und mit welcher Konfidenz.

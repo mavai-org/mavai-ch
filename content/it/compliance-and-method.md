@@ -45,15 +45,13 @@ e, nel frattempo, secondo un calendario. Ogni deriva oltre i limiti concordati
 viene segnalata, al livello di confidenza della baseline, prima che raggiunga la
 produzione, e a maggior ragione un'autorità di vigilanza.
 
-**Comply.** Le autorità chiedono tre cose: una registrazione di ciò che è stato
-misurato, l'evidenza che il servizio è ancora sorvegliato e un metodo che altri
-possano esaminare. La baseline è la registrazione. Il monitoraggio è
-l'evidenza. E il metodo è già documentato pubblicamente: lo
+**Comply.** La baseline è la registrazione, il monitoraggio è l'evidenza e il
+metodo è documentato pubblicamente: lo
 [Statistical Companion](https://r.mavai.org/statistical-companion.pdf) espone
 la statistica e i [framework open source](https://mavai.org/projects/) la
-implementano riga per riga. Questa è la documentazione tecnica richiesta
-dall'AI Act europeo, e ciò che qualsiasi autorità, revisore o standard può
-leggere.
+implementano riga per riga. Insieme costituiscono la documentazione tecnica
+richiesta dall'AI Act europeo, e ciò che qualsiasi autorità, revisore o
+standard può leggere.
 
 Ogni misurazione e ogni verdetto sono una registrazione strutturata che indica
 che cosa è stato misurato, quante volte, contro quale asticella e a quale livello

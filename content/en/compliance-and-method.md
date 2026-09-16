@@ -40,14 +40,12 @@ every release, every model or prompt change, and on a schedule in between.
 Drift beyond the agreed bounds is flagged, at the confidence the baseline was
 set at, before it reaches production, let alone a supervisor.
 
-**Comply.** Regulators ask for three things: a record of what was measured,
-evidence that the service is still being watched, and a method that others can
-inspect. The baseline is the record. Monitoring is the evidence. And the method
-is already documented in public: the
+**Comply.** The baseline is the record, monitoring is the evidence, and the
+method is documented in public: the
 [Statistical Companion](https://r.mavai.org/statistical-companion.pdf) sets out
-the statistics, and the [open-source frameworks](https://mavai.org/projects/)
-implement it line by line. That is the technical documentation the EU AI Act
-asks for, and what any supervisor, auditor or standard can read.
+the statistics and the [open-source frameworks](https://mavai.org/projects/)
+implement it line by line. Together they are the technical documentation the
+EU AI Act asks for, and what any supervisor, auditor or standard can read.
 
 Every measurement and every verdict is a structured record that states what was
 measured, how many times, against what bar and at what confidence. That record
