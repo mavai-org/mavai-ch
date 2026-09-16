@@ -35,15 +35,12 @@ erfüllen. Jede verlangt Nachweise, die fortlaufend entstehen.
 
 **Baseline.** Jeder einzelne Aufruf eines KI-Dienstes lässt sich als richtig
 oder falsch beurteilen. Was niemand im Voraus weiss, ist, wie oft der Dienst
-richtig liegt. Eine Baseline misst diese Rate mit einer angegebenen Konfidenz
-und hält sie zusammen mit dem Modell, den Prompts und den Umständen der Messung
+richtig liegt. Eine Baseline misst diese Rate über eine angegebene Zahl von Aufrufen und hält sie zusammen mit dem Modell, den Prompts und den Umständen der Messung
 fest.
 
 **Monitor.** Der laufende Dienst wird an seiner Baseline gemessen, so lange er
 in Betrieb ist: bei jedem Release, jeder Änderung an Modell oder Prompts und
-zwischendurch nach Zeitplan. Abweichungen über die vereinbarten Grenzen hinaus
-werden mit der Konfidenz der Baseline gemeldet, bevor sie die Produktion
-erreichen, geschweige denn eine Aufsichtsbehörde.
+zwischendurch nach Zeitplan. Jede Prüfung zieht eine neue Stichprobe des laufenden Dienstes und vergleicht deren Erfolgsrate mit der Schranke, die die Baseline für eine Stichprobe dieser Grösse vorgibt. Eine Rate unterhalb der Schranke wird als Verschlechterung gemeldet, mit angegebener Konfidenz, typischerweise 95 %, bevor sie die Produktion erreicht, geschweige denn eine Aufsichtsbehörde.
 
 **Comply.** Die Baseline ist der Datensatz, das Monitoring ist der Nachweis,
 und die Methode ist öffentlich dokumentiert: der
@@ -54,8 +51,7 @@ um. Zusammen sind sie die technische Dokumentation, die das EU-KI-Gesetz
 verlangt, und das, was jede Aufsichtsbehörde, jeder Prüfer und jeder Standard
 lesen kann.
 
-Jede Messung und jedes Urteil ist ein strukturierter Datensatz, der festhält,
-was gemessen wurde, wie oft, gegen welche Messlatte und mit welcher Konfidenz.
+Jede Messung und jedes Urteil ist ein strukturierter Datensatz, der festhält, was gemessen wurde und wie oft, und für jedes Urteil die Schranke, an der es gemessen wurde, und die Konfidenz der Aussage.
 Dieser Datensatz ist der Nachweis.
 
 ## Von der Pflicht zum Nachweis
@@ -64,7 +60,7 @@ Dieser Datensatz ist der Nachweis.
 |---|---|
 | FINMA: Inventar und Kontrolle der KI-Risiken | Eine Baseline pro Dienst, die zugleich Inventar und Kontrolle ist |
 | ISO/IEC 42001: Leistungsbewertung, fortlaufende Verbesserung | Baselines und Monitoring-Datensätze als Nachweise für das Managementsystem |
-| EU-KI-Gesetz Art. 9: Risikomanagement über den Lebenszyklus mit definierten Metriken | Baselines mit festgelegten Schwellen und Konfidenz; Tests bei jeder Änderung |
+| EU-KI-Gesetz Art. 9: Risikomanagement über den Lebenszyklus mit definierten Metriken | Baselines über eine angegebene Zahl von Aufrufen; Tests dagegen mit angegebener Konfidenz, bei jeder Änderung |
 | EU-KI-Gesetz Art. 72: Beobachtung nach dem Inverkehrbringen | Planmässiges Monitoring gegen die Baseline mit Meldung von Abweichungen |
 | EU-KI-Gesetz Art. 11 und Anhang IV: technische Dokumentation der Methode, ihrer Tests und Ergebnisse | Statistical Companion und Open-Source-Frameworks dokumentieren die Methode; die gespeicherten Datensätze enthalten Tests und Ergebnisse |
 

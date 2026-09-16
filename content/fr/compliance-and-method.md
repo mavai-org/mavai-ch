@@ -35,14 +35,11 @@ service. Chacune exige des preuves produites en continu.
 
 **Baseline.** Tout appel isolé à un service d'IA peut être jugé correct ou
 incorrect. Ce que personne ne sait à l'avance, c'est à quelle fréquence le
-service a raison. Une baseline mesure ce taux à un niveau de confiance déclaré
-et l'enregistre avec le modèle, les prompts et les circonstances de la mesure.
+service a raison. Une baseline mesure ce taux sur un nombre déclaré d'appels et l'enregistre avec le modèle, les prompts et les circonstances de la mesure.
 
 **Monitor.** Le service en production est tenu à sa baseline aussi longtemps
 qu'il fonctionne : à chaque version, à chaque changement de modèle ou de
-prompt, et selon un calendrier entre-temps. Toute dérive au-delà des limites
-convenues est signalée, au niveau de confiance de la baseline, avant
-d'atteindre la production, et a fortiori un superviseur.
+prompt, et selon un calendrier entre-temps. Chaque contrôle prélève un nouvel échantillon du service en production et compare son taux de réussite à la borne que la baseline implique pour un échantillon de cette taille. Un taux inférieur à la borne est signalé comme une dégradation, avec un niveau de confiance déclaré, typiquement 95 %, avant d'atteindre la production, et a fortiori un superviseur.
 
 **Comply.** La baseline est l'enregistrement, la surveillance en est la preuve,
 et la méthode est documentée publiquement : le
@@ -52,9 +49,7 @@ les mettent en œuvre ligne par ligne. Ensemble, ils constituent la
 documentation technique qu'exige l'AI Act européen, et ce que tout
 superviseur, auditeur ou standard peut lire.
 
-Chaque mesure et chaque verdict constituent un enregistrement structuré qui
-indique ce qui a été mesuré, combien de fois, contre quelle barre et à quel
-niveau de confiance. Cet enregistrement est la preuve.
+Chaque mesure et chaque verdict constituent un enregistrement structuré qui indique ce qui a été mesuré et combien de fois, et, pour chaque verdict, la borne retenue et le niveau de confiance de l'affirmation. Cet enregistrement est la preuve.
 
 ## De l'obligation à la preuve
 
@@ -62,7 +57,7 @@ niveau de confiance. Cet enregistrement est la preuve.
 |---|---|
 | FINMA : inventaire et contrôle des risques liés à l'IA | Une baseline par service, qui constitue à la fois l'inventaire et le contrôle |
 | ISO/IEC 42001 : évaluation des performances, amélioration continue | Baselines et enregistrements de surveillance comme preuves du système de management |
-| AI Act art. 9 : gestion des risques sur le cycle de vie avec des métriques définies | Baselines avec seuils et confiance déclarés ; tests à chaque changement |
+| AI Act art. 9 : gestion des risques sur le cycle de vie avec des métriques définies | Baselines sur un nombre déclaré d'appels ; tests contre celles-ci à un niveau de confiance déclaré, à chaque changement |
 | AI Act art. 72 : surveillance après commercialisation | Surveillance planifiée par rapport à la baseline, avec signalement des dérives |
 | AI Act art. 11 et annexe IV : documentation technique de la méthode, de ses tests et de ses résultats | Le Statistical Companion et les frameworks open source documentent la méthode ; les enregistrements conservés contiennent les tests et les résultats |
 

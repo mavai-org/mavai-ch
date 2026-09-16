@@ -35,15 +35,12 @@ in esercizio. Ciascuno richiede evidenze prodotte in continuo.
 
 **Baseline.** Ogni singola chiamata a un servizio di IA può essere giudicata
 giusta o sbagliata. Ciò che nessuno sa in anticipo è quanto spesso il servizio
-risponde correttamente. Una baseline misura quel tasso a un livello di confidenza
-dichiarato e lo registra insieme al modello, ai prompt e alle circostanze della
+risponde correttamente. Una baseline misura quel tasso su un numero dichiarato di chiamate e lo registra insieme al modello, ai prompt e alle circostanze della
 misurazione.
 
 **Monitor.** Il servizio in esercizio è tenuto alla sua baseline per tutto il
 tempo in cui funziona: a ogni rilascio, a ogni modifica del modello o dei prompt
-e, nel frattempo, secondo un calendario. Ogni deriva oltre i limiti concordati
-viene segnalata, al livello di confidenza della baseline, prima che raggiunga la
-produzione, e a maggior ragione un'autorità di vigilanza.
+e, nel frattempo, secondo un calendario. Ogni controllo preleva un nuovo campione del servizio in esercizio e ne confronta il tasso di successo con il limite che la baseline implica per un campione di quella dimensione. Un tasso inferiore al limite viene segnalato come degrado, con un livello di confidenza dichiarato, tipicamente il 95 %, prima che raggiunga la produzione, e a maggior ragione un'autorità di vigilanza.
 
 **Comply.** La baseline è la registrazione, il monitoraggio è l'evidenza e il
 metodo è documentato pubblicamente: lo
@@ -53,9 +50,7 @@ implementano riga per riga. Insieme costituiscono la documentazione tecnica
 richiesta dall'AI Act europeo, e ciò che qualsiasi autorità, revisore o
 standard può leggere.
 
-Ogni misurazione e ogni verdetto sono una registrazione strutturata che indica
-che cosa è stato misurato, quante volte, contro quale asticella e a quale livello
-di confidenza. Quella registrazione è l'evidenza.
+Ogni misurazione e ogni verdetto sono una registrazione strutturata che indica che cosa è stato misurato e quante volte, e, per ogni verdetto, il limite adottato e il livello di confidenza dell'affermazione. Quella registrazione è l'evidenza.
 
 ## Dall'obbligo all'evidenza
 
@@ -63,7 +58,7 @@ di confidenza. Quella registrazione è l'evidenza.
 |---|---|
 | FINMA: inventario e controllo dei rischi dell'IA | Una baseline per servizio, che è al tempo stesso inventario e controllo |
 | ISO/IEC 42001: valutazione delle prestazioni, miglioramento continuo | Baseline e registrazioni di monitoraggio come evidenze del sistema di gestione |
-| AI Act art. 9: gestione dei rischi lungo il ciclo di vita con metriche definite | Baseline con soglie e confidenza dichiarate; test a ogni modifica |
+| AI Act art. 9: gestione dei rischi lungo il ciclo di vita con metriche definite | Baseline su un numero dichiarato di chiamate; test contro di esse a un livello di confidenza dichiarato, a ogni modifica |
 | AI Act art. 72: monitoraggio post-commercializzazione | Monitoraggio pianificato rispetto alla baseline, con segnalazione delle derive |
 | AI Act art. 11 e allegato IV: documentazione tecnica del metodo, dei suoi test e dei risultati | Lo Statistical Companion e i framework open source documentano il metodo; le registrazioni conservate contengono test e risultati |
 

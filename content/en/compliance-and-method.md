@@ -31,14 +31,12 @@ evidence that keeps being produced.
 ## The method: Baseline · Monitor · Comply
 
 **Baseline.** Any one call to an AI service can be judged right or wrong. What
-nobody knows in advance is how often the service gets it right. A baseline
-measures that rate at a stated confidence and records it together with the
+nobody knows in advance is how often the service gets it right. A baseline measures that rate over a stated number of runs and records it together with the
 model, the prompts, and the circumstances it was measured under.
 
 **Monitor.** The live service is held to its baseline for as long as it runs:
 every release, every model or prompt change, and on a schedule in between.
-Drift beyond the agreed bounds is flagged, at the confidence the baseline was
-set at, before it reaches production, let alone a supervisor.
+Each check takes a fresh sample of the live service and compares its success rate with the bound the baseline implies for a sample of that size. A rate below the bound is flagged as degradation, with a stated confidence, typically 95%, before it reaches production, let alone a supervisor.
 
 **Comply.** The baseline is the record, monitoring is the evidence, and the
 method is documented in public: the
@@ -47,8 +45,7 @@ the statistics and the [open-source frameworks](https://mavai.org/projects/)
 implement it line by line. Together they are the technical documentation the
 EU AI Act asks for, and what any supervisor, auditor or standard can read.
 
-Every measurement and every verdict is a structured record that states what was
-measured, how many times, against what bar and at what confidence. That record
+Every measurement and every verdict is a structured record that states what was measured and how many times, and, for every verdict, the bound it was judged against and the confidence of the claim. That record
 is the evidence.
 
 ## Obligation to evidence
@@ -57,7 +54,7 @@ is the evidence.
 |---|---|
 | FINMA: inventory and control of AI risk | One baseline per service, which is the inventory and the control |
 | ISO/IEC 42001: performance evaluation, continual improvement | Baselines and monitoring records as management-system evidence |
-| EU AI Act Art. 9: lifecycle risk management with defined metrics | Baselines with stated thresholds and confidence; testing at every change |
+| EU AI Act Art. 9: lifecycle risk management with defined metrics | Baselines over a stated number of runs; tests against them at a stated confidence, at every change |
 | EU AI Act Art. 72: post-market monitoring | Scheduled monitoring against the baseline, with drift flagged |
 | EU AI Act Art. 11 and Annex IV: technical documentation of the method, its testing and results | The Statistical Companion and open-source frameworks document the method; the persisted records hold the testing and results |
 
