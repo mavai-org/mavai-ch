@@ -70,6 +70,10 @@ ignoreFiles = ['^drafts/']
     pageRef = '/regulations'
     weight = 10
   [[languages.en.menus.main]]
+    name = 'Mavai Method'
+    pageRef = '/compliance-and-method'
+    weight = 15
+  [[languages.en.menus.main]]
     name = 'Insights'
     pageRef = '/posts'
     weight = 20
@@ -97,9 +101,13 @@ ignoreFiles = ['^drafts/']
     tagline = "Regulierung. Compliance. Vertrauen."
 
   [[languages.de.menus.main]]
-    name = 'Regulierungsnachrichten'
+    name = 'Regulierung'
     pageRef = '/regulations'
     weight = 10
+  [[languages.de.menus.main]]
+    name = 'Mavai-Methode'
+    pageRef = '/compliance-and-method'
+    weight = 15
   [[languages.de.menus.main]]
     name = 'Einblicke'
     pageRef = '/posts'
@@ -128,9 +136,13 @@ ignoreFiles = ['^drafts/']
     tagline = "Réglementation. Conformité. Confiance."
 
   [[languages.fr.menus.main]]
-    name = 'Actualités réglementaires'
+    name = 'Réglementation'
     pageRef = '/regulations'
     weight = 10
+  [[languages.fr.menus.main]]
+    name = 'Méthode Mavai'
+    pageRef = '/compliance-and-method'
+    weight = 15
   [[languages.fr.menus.main]]
     name = 'Perspectives'
     pageRef = '/posts'
@@ -162,6 +174,10 @@ ignoreFiles = ['^drafts/']
     name = 'Notizie normative'
     pageRef = '/regulations'
     weight = 10
+  [[languages.it.menus.main]]
+    name = 'Metodo Mavai'
+    pageRef = '/compliance-and-method'
+    weight = 15
   [[languages.it.menus.main]]
     name = 'Approfondimenti'
     pageRef = '/posts'
