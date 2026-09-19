@@ -1,4 +1,16 @@
 # -- New candidates --------------------------------------------------------
+- title: "Software Testing event at ETSI: AI Inside Out"
+  url: "https://www.etsi.org/newsroom/news/software-testing-event-at-etsi-ai-inside-out/"
+  date: "2026-09-19"
+  source: "ETSI Newsroom"
+  summary: "News 16 September 2026 Software Testing event at ETSI: AI Inside Out ETSI was pleased to welcome 140 participants to the Software Testing Evening at its Sophia Antipolis premises. Read more Software Testing event at ETSI: AI Inside Out"
+  tags: ["global", "eu", "standard", "conformity"]
+  relevance: "This event at ETSI (European Telecommunications Standards Institute) on software testing with focus on \"AI Inside Out\" directly concerns technical standards and testing practices for AI systems. ETSI is a key standards-development organisation for AI harmonised standards under the EU AI Act, and a software testing event focused on AI is directly relevant to developers and compliance officers needing to understand testing, validation, and quality assurance requirements for AI systems they build or deploy."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Regulamento Inteligência Artificial: Conselho e Parlamento alcançam acordo sobre as primeiras regras em matéria de IA no mundo - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPN0ZXSjEtdHdwdWdEZnQzZ0ZYMnRjWXRsbEJRUTBQNVk2Mk45eDFvdk12ek9xQVFtamc2TUo5LTBLb2xTaEV6eHZ2WmFRaEgwUWQ2UHR1Y09VQ3hXMUNleklfbG5XQlNLN2FlRng2R0hWcjVzUWhzcnVOTW5pS1docUoxYXZRT0gybUxpUmwwSUlFYTIyOG1VV19NUHh6bjJJLXZaUzAxZ2hiTlU5T3lsUEJNM01aN0xGOUlVLXk5aWc1Qmg1LTBMMW82VTlQNmhMTjVrZkViUkZtRzBYTkE4NHBZM2llNzQ4ZDJPWmhnUkJyYnhIMU5vdW56OTM?oc=5"
   date: "2023-12-09"
@@ -39,8 +51,6 @@
   accepted: y
   featured: y
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Artificial Intelligence: Council and Parliament agree to simplify and streamline rules - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOcC0wYi0yOE9RRTNMbVl4RDFDN2xDenV6bVF6VXVBSm5pS0xiMVZwS0ZGTEhPQ3RvcXItd2VyQkxDdWNRQnNvN3RJSkVxUFUzSUpMVFFrQmZobVZuMzBHNWpIZjlmUGVUa05zWFVZWnNpbEpnd243TE1paE1QdmtLU2ZGZlAtM0tkUWg2SUI4RUZrU3QzdC1kMDRyQlB5cTJQelRMUFNaQk5DcExPa2l5NEFNanpvM1A3cURWdkRjOW9GdGJ5OXV1eW45MDZvN21JQlI4cUlSb2xLVGwxT2Y4bzhCaFE5bDZR?oc=5"
   date: "2026-05-07"
