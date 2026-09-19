@@ -60,7 +60,7 @@ The convention's principles — transparency, accountability, protection against
 
 The Swiss Federal Office of Cybersecurity (BACS) documented a **nearly fivefold increase** in deepfake-enabled investment fraud in the first half of 2025 — from 729 to 3,485 reported cases. Deepfake videos of prominent public figures, including Federal President Karin Keller-Sutter, were used to lure victims to fraudulent platforms. Across all forms of online investment fraud, approximately **CHF 250 million was stolen in Switzerland in 2025**.
 
-In January 2026, an entrepreneur in the canton of Schwyz [lost several million Swiss francs](https://www.ncsc.admin.ch/ncsc/en/home/aktuell/im-fokus/2026/wochenrueckblick_4.html) to attackers who cloned a business partner's voice using AI — a fraud sustained over two weeks of phone calls. The Swiss Bankers Association has acknowledged that fraud has entered [a new era defined by AI-driven attacks](/en/posts/2026-03-25-deepfakes-banking/).
+In January 2026, an entrepreneur in the canton of Schwyz [lost several million Swiss francs](https://www.bacs.admin.ch/en/26w4-en) to attackers who cloned a business partner's voice using AI — a fraud sustained over two weeks of phone calls. The Swiss Bankers Association has acknowledged that fraud has entered [a new era defined by AI-driven attacks](/en/posts/2026-03-25-deepfakes-banking/).
 
 These are not edge cases. They are the operational reality that the convention's principles are meant to address. The gap between the treaty's ambitions and the pace of domestic implementation is widening, and it is being filled by criminals who face no such delays.
 
@@ -71,6 +71,6 @@ The next twelve months will be decisive:
 - **End of 2026:** The FDJP's draft bill is due. Its scope and ambition will reveal how seriously Switzerland intends to translate the convention's principles into enforceable law.
 - **August 2026:** The EU AI Act's high-risk and transparency obligations take full effect — a de facto compliance deadline for any Swiss organisation with EU exposure.
 - **July 2026:** The first session of the UN Global Dialogue on AI Governance convenes in Geneva, giving Switzerland a hosting role on the international stage.
-- **December 2025 report:** The Federal Council's [assessment](https://www.ncsc.admin.ch/ncsc/en/home/aktuell/im-fokus/2025/po233861.html) that AI amplifies existing cyber threats but does not fundamentally change the landscape will be tested by events.
+- **December 2025 report:** The Federal Council's [assessment](https://www.bacs.admin.ch/en/25-po233861-en) that AI amplifies existing cyber threats but does not fundamentally change the landscape will be tested by events.
 
 Switzerland's signing of the convention a year ago was a clear statement of intent. The question now is whether intent will translate into action at a pace that matches the threat.
