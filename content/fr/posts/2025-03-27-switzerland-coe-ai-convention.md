@@ -60,7 +60,7 @@ Les principes de la convention — transparence, responsabilité, protection con
 
 L'Office fédéral de la cybersécurité (OFCS) a documenté une augmentation de **près de cinq fois** de la fraude à l'investissement par deepfake au premier semestre 2025 — de 729 à 3'485 cas signalés. Des vidéos deepfake de personnalités publiques, dont la présidente de la Confédération Karin Keller-Sutter, ont été utilisées pour attirer les victimes vers des plateformes frauduleuses. Toutes formes d'escroquerie à l'investissement en ligne confondues, environ **CHF 250 millions ont été volés en Suisse en 2025**.
 
-En janvier 2026, un entrepreneur du canton de Schwyz a [perdu plusieurs millions de francs suisses](https://www.ncsc.admin.ch/ncsc/fr/home/aktuell/im-fokus/2026/wochenrueckblick_4.html) au profit d'attaquants qui avaient cloné la voix d'un partenaire commercial grâce à l'IA — une fraude maintenue pendant deux semaines d'appels téléphoniques. L'Association suisse des banquiers a reconnu que la fraude est entrée dans [une nouvelle ère définie par les attaques pilotées par l'IA](/fr/posts/2026-03-25-deepfakes-banking/).
+En janvier 2026, un entrepreneur du canton de Schwyz a [perdu plusieurs millions de francs suisses](https://www.bacs.admin.ch/fr/26w4-fr) au profit d'attaquants qui avaient cloné la voix d'un partenaire commercial grâce à l'IA — une fraude maintenue pendant deux semaines d'appels téléphoniques. L'Association suisse des banquiers a reconnu que la fraude est entrée dans [une nouvelle ère définie par les attaques pilotées par l'IA](/fr/posts/2026-03-25-deepfakes-banking/).
 
 Ce ne sont pas des cas isolés. C'est la réalité opérationnelle que les principes de la convention sont censés traiter. L'écart entre les ambitions du traité et le rythme de la mise en œuvre nationale se creuse — et il est comblé par des criminels qui ne connaissent pas de tels délais.
 
@@ -71,6 +71,6 @@ Les douze prochains mois seront décisifs :
 - **Fin 2026 :** Le projet de loi du DFJP est attendu. Son ampleur et son ambition révéleront dans quelle mesure la Suisse entend traduire les principes de la convention en droit exécutoire.
 - **Août 2026 :** Les obligations de l'UE en matière d'IA à haut risque et de transparence entrent pleinement en vigueur — une échéance de conformité de facto pour toute organisation suisse exposée au marché européen.
 - **Juillet 2026 :** La première session du Dialogue mondial des Nations Unies sur la gouvernance de l'IA se tient à Genève, offrant à la Suisse un rôle d'hôte sur la scène internationale.
-- **Rapport de décembre 2025 :** L'[évaluation](https://www.ncsc.admin.ch/ncsc/fr/home/aktuell/im-fokus/2025/po233861.html) du Conseil fédéral selon laquelle l'IA amplifie les cybermenaces existantes sans changer fondamentalement le paysage sera mise à l'épreuve des faits.
+- **Rapport de décembre 2025 :** L'[évaluation](https://www.bacs.admin.ch/fr/25-po233861-fr) du Conseil fédéral selon laquelle l'IA amplifie les cybermenaces existantes sans changer fondamentalement le paysage sera mise à l'épreuve des faits.
 
 La signature de la convention par la Suisse il y a un an était une déclaration d'intention claire. La question est désormais de savoir si l'intention se traduira en action à un rythme qui corresponde à la menace.

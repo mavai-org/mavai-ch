@@ -60,7 +60,7 @@ Die Grundsätze der Konvention — Transparenz, Rechenschaftspflicht, Schutz vor
 
 Das Bundesamt für Cybersicherheit (BACS) dokumentierte im ersten Halbjahr 2025 eine **nahezu Verfünffachung** des Deepfake-gestützten Anlagebetrugs — von 729 auf 3'485 gemeldete Fälle. Deepfake-Videos prominenter Persönlichkeiten, darunter Bundespräsidentin Karin Keller-Sutter, wurden eingesetzt, um Opfer auf betrügerische Plattformen zu locken. Über alle Formen des Online-Anlagebetrugs hinweg wurden 2025 in der Schweiz rund **CHF 250 Millionen gestohlen**.
 
-Im Januar 2026 verlor ein Unternehmer im Kanton Schwyz [mehrere Millionen Schweizer Franken](https://www.ncsc.admin.ch/ncsc/de/home/aktuell/im-fokus/2026/wochenrueckblick_4.html) an Angreifer, die mit KI die Stimme eines Geschäftspartners geklont hatten — ein Betrug, der über zwei Wochen telefonisch aufrechterhalten wurde. Die Schweizerische Bankiervereinigung hat anerkannt, dass Betrug in [eine neue Ära KI-gesteuerter Angriffe](/de/posts/2026-03-25-deepfakes-banking/) eingetreten ist.
+Im Januar 2026 verlor ein Unternehmer im Kanton Schwyz [mehrere Millionen Schweizer Franken](https://www.bacs.admin.ch/de/26w4-de) an Angreifer, die mit KI die Stimme eines Geschäftspartners geklont hatten — ein Betrug, der über zwei Wochen telefonisch aufrechterhalten wurde. Die Schweizerische Bankiervereinigung hat anerkannt, dass Betrug in [eine neue Ära KI-gesteuerter Angriffe](/de/posts/2026-03-25-deepfakes-banking/) eingetreten ist.
 
 Dies sind keine Einzelfälle. Es ist die operationelle Realität, die die Grundsätze der Konvention adressieren sollen. Die Kluft zwischen den Ambitionen des Vertrags und dem Tempo der inländischen Umsetzung wächst — und sie wird von Kriminellen gefüllt, die solche Verzögerungen nicht kennen.
 
@@ -71,6 +71,6 @@ Die nächsten zwölf Monate werden entscheidend:
 - **Ende 2026:** Der Gesetzesentwurf des EJPD ist fällig. Sein Umfang und Ehrgeiz werden zeigen, wie ernsthaft die Schweiz die Grundsätze der Konvention in durchsetzbares Recht umsetzen will.
 - **August 2026:** Die Hochrisiko- und Transparenzpflichten des EU AI Act treten vollständig in Kraft — eine faktische Compliance-Frist für jede Schweizer Organisation mit EU-Exposition.
 - **Juli 2026:** Die erste Sitzung des UN-Globaldialogs zur KI-Governance findet in Genf statt und gibt der Schweiz eine Gastgeberrolle auf der internationalen Bühne.
-- **Dezember 2025:** Die [Einschätzung](https://www.ncsc.admin.ch/ncsc/de/home/aktuell/im-fokus/2025/po233861.html) des Bundesrats, dass KI bestehende Cyberbedrohungen verstärkt, aber die Landschaft nicht grundlegend verändert, wird von den Ereignissen auf die Probe gestellt.
+- **Dezember 2025:** Die [Einschätzung](https://www.bacs.admin.ch/de/25-po233861-de) des Bundesrats, dass KI bestehende Cyberbedrohungen verstärkt, aber die Landschaft nicht grundlegend verändert, wird von den Ereignissen auf die Probe gestellt.
 
 Die Unterzeichnung der Konvention durch die Schweiz vor einem Jahr war eine klare Absichtserklärung. Die Frage ist nun, ob sich Absicht in Handlung umsetzen lässt — in einem Tempo, das mit der Bedrohung Schritt hält.

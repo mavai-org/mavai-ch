@@ -60,7 +60,7 @@ I principi della convenzione — trasparenza, responsabilità, protezione contro
 
 L'Ufficio federale della cibersicurezza (UFCS) ha documentato un aumento di **quasi cinque volte** delle frodi d'investimento tramite deepfake nel primo semestre 2025 — da 729 a 3'485 casi segnalati. Video deepfake di personalità pubbliche, tra cui la presidente della Confederazione Karin Keller-Sutter, sono stati utilizzati per attirare le vittime su piattaforme fraudolente. Considerando tutte le forme di frode d'investimento online, nel 2025 in Svizzera sono stati rubati circa **CHF 250 milioni**.
 
-Nel gennaio 2026, un imprenditore nel Canton Svitto ha [perso diversi milioni di franchi svizzeri](https://www.ncsc.admin.ch/ncsc/it/home/aktuell/im-fokus/2026/wochenrueckblick_4.html) a causa di aggressori che avevano clonato la voce di un partner commerciale con l'IA — una frode mantenuta per due settimane di telefonate. L'Associazione svizzera dei banchieri ha riconosciuto che la frode è entrata in [una nuova era definita dagli attacchi guidati dall'IA](/it/posts/2026-03-25-deepfakes-banking/).
+Nel gennaio 2026, un imprenditore nel Canton Svitto ha [perso diversi milioni di franchi svizzeri](https://www.bacs.admin.ch/it/26w4-it) a causa di aggressori che avevano clonato la voce di un partner commerciale con l'IA — una frode mantenuta per due settimane di telefonate. L'Associazione svizzera dei banchieri ha riconosciuto che la frode è entrata in [una nuova era definita dagli attacchi guidati dall'IA](/it/posts/2026-03-25-deepfakes-banking/).
 
 Non si tratta di casi isolati. È la realtà operativa che i principi della convenzione dovrebbero affrontare. Il divario tra le ambizioni del trattato e il ritmo dell'attuazione nazionale si allarga — e viene colmato da criminali che non conoscono tali ritardi.
 
@@ -71,6 +71,6 @@ I prossimi dodici mesi saranno decisivi:
 - **Fine 2026:** Il disegno di legge del DFGP è atteso. La sua portata e ambizione riveleranno quanto seriamente la Svizzera intenda tradurre i principi della convenzione in diritto applicabile.
 - **Agosto 2026:** Gli obblighi dell'UE per l'IA ad alto rischio e la trasparenza entrano pienamente in vigore — una scadenza di conformità de facto per qualsiasi organizzazione svizzera con esposizione al mercato europeo.
 - **Luglio 2026:** La prima sessione del Dialogo globale delle Nazioni Unite sulla governance dell'IA si tiene a Ginevra, assegnando alla Svizzera un ruolo di ospite sulla scena internazionale.
-- **Rapporto di dicembre 2025:** La [valutazione](https://www.ncsc.admin.ch/ncsc/it/home/aktuell/im-fokus/2025/po233861.html) del Consiglio federale secondo cui l'IA amplifica le minacce informatiche esistenti senza cambiare fondamentalmente il panorama sarà messa alla prova dagli eventi.
+- **Rapporto di dicembre 2025:** La [valutazione](https://www.bacs.admin.ch/it/25-po233861-it) del Consiglio federale secondo cui l'IA amplifica le minacce informatiche esistenti senza cambiare fondamentalmente il panorama sarà messa alla prova dagli eventi.
 
 La firma della convenzione da parte della Svizzera un anno fa è stata una chiara dichiarazione d'intenti. La domanda ora è se l'intenzione si tradurrà in azione a un ritmo che corrisponda alla minaccia.
