@@ -1,12 +1,12 @@
 ---
 title: "Compliance and the Mavai Method"
-description: "How AI system monitoring requirements are met through the Mavai™ method: Baseline · Monitor · Comply."
+description: "How AI system monitoring requirements are met through the Mavai® method: Baseline · Monitor · Comply."
 keywords: ["AI compliance Switzerland", "FINMA AI evidence", "ISO 42001 evidence", "EU AI Act post-market monitoring", "AI baseline", "probabilistic testing compliance"]
 ---
 
 Mavai.ch follows the regulatory landscape in AI Governance and its impact on Switzerland: what FINMA
 expects, what ISO/IEC 42001 certifies, and where the EU AI Act reaches across
-the border. [mavai.org](https://mavai.org/) documents the method Mavai™ uses to
+the border. [mavai.org](https://mavai.org/) documents the method Mavai® uses to
 meet those expectations. This page connects the two.
 
 ## The Requirements
@@ -26,7 +26,7 @@ as it runs?**
 
 While requirements may differ regarding their enforcement, focus and reach, each asks for continuous evidence on system performance.
 
-## The Mavai™ method: Baseline · Monitor · Comply
+## The Mavai® method: Baseline · Monitor · Comply
 
 Mavai uses a statistical baseline for each AI service you deploy, continuous monitoring against it, and a method documented in public — with the tools and the know-how to build it into your delivery pipeline.
 
@@ -130,7 +130,7 @@ The Mavai Method can provide the evidence to the requirements above and more.
 ### In summary
 
 Put simply, Mavai.ch and Mavai.org 
-[can help you](https://mavai.org/how-we-help/) manage new requirements and provide you with the tools to produce the evidence you need to fulfill these requirements. In addition, the open-source tools by Mavai™ that
+[can help you](https://mavai.org/how-we-help/) manage new requirements and provide you with the tools to produce the evidence you need to fulfill these requirements. In addition, the open-source tools by Mavai® that
 implement it are [punit](https://mavai.org/projects/punit/) for Java,
 [feotest](https://mavai.org/projects/feotest/) for Rust and
 [baseltest](https://mavai.org/projects/baseltest/) for Python.

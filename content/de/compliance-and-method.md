@@ -1,6 +1,6 @@
 ---
 title: "Compliance und die Mavai-Methode"
-description: "Wie Anforderungen an die Überwachung von KI-Systemen durch die Mavai™-Methode erfüllt werden: Baseline · Monitor · Comply."
+description: "Wie Anforderungen an die Überwachung von KI-Systemen durch die Mavai®-Methode erfüllt werden: Baseline · Monitor · Comply."
 keywords: ["KI-Compliance Schweiz", "FINMA KI Nachweis", "ISO 42001 Nachweis", "EU KI-Gesetz Marktüberwachung", "KI-Baseline", "probabilistisches Testen Compliance"]
 summary: "mavai.ch verfolgt, was die Regelwerke verlangen. mavai.org dokumentiert, wie Mavai darauf antwortet. Diese Seite verbindet beides: auf der einen Seite die Pflicht, auf der anderen der Schritt der Methode, der den Nachweis liefert."
 ---
@@ -8,7 +8,7 @@ summary: "mavai.ch verfolgt, was die Regelwerke verlangen. mavai.org dokumentier
 mavai.ch beobachtet die regulatorische Landschaft in KI-Governance und deren Auswirkungen auf die Schweiz: was die
 FINMA erwartet, was ISO/IEC 42001 zertifiziert und wo das EU-KI-Gesetz über die
 Grenze hinaus wirkt. [mavai.org](https://mavai.org/) dokumentiert die Methode,
-mit der Mavai™ diese Erwartungen erfüllt. Diese Seite verbindet beides.
+mit der Mavai® diese Erwartungen erfüllt. Diese Seite verbindet beides.
 
 ## Die Anforderungen
 
@@ -30,7 +30,7 @@ nicht einmal, sondern so lange es läuft?**
 
 Obwohl sich Anforderungen in ihrer Durchsetzung, ihrem Fokus und ihrer Reichweite unterscheiden, verlangen alle kontinuierliche Nachweise zur Leistung des Systems.
 
-## Die Mavai™-Methode: Baseline · Monitor · Comply
+## Die Mavai®-Methode: Baseline · Monitor · Comply
 
 Mavai nutzt für jeden KI-Dienst, den Sie bereitstellen, eine statistische Baseline, kontinuierliche Überwachung dagegen und eine öffentlich dokumentierte Methode – mit den Werkzeugen und dem Know-how, um sie in Ihre Delivery-Pipeline zu integrieren.
 
@@ -134,6 +134,6 @@ Die Mavai-Methode kann die Nachweise für die oben genannten Anforderungen und m
 
 ### Zusammenfassung
 
-Einfach gesagt: Mavai.ch und Mavai.org [können Ihnen helfen](https://mavai.org/how-we-help/), neue Anforderungen zu verwalten und Ihnen die Werkzeuge zur Verfügung zu stellen, um die Nachweise zu produzieren, die Sie benötigen, um diese Anforderungen zu erfüllen. Darüber hinaus implementieren die Open-Source-Werkzeuge von Mavai™ diese: [punit](https://mavai.org/projects/punit/) für Java, [feotest](https://mavai.org/projects/feotest/) für Rust und [baseltest](https://mavai.org/projects/baseltest/) für Python.
+Einfach gesagt: Mavai.ch und Mavai.org [können Ihnen helfen](https://mavai.org/how-we-help/), neue Anforderungen zu verwalten und Ihnen die Werkzeuge zur Verfügung zu stellen, um die Nachweise zu produzieren, die Sie benötigen, um diese Anforderungen zu erfüllen. Darüber hinaus implementieren die Open-Source-Werkzeuge von Mavai® diese: [punit](https://mavai.org/projects/punit/) für Java, [feotest](https://mavai.org/projects/feotest/) für Rust und [baseltest](https://mavai.org/projects/baseltest/) für Python.
 
 Wenn Sie einen KI-Dienst entwickeln oder bereits bereitstellen und sicherstellen möchten, dass Sie die oben genannten Anforderungen erfüllen können, deckt ein erstes Gespräch ab, wo Ihr Projekt heute steht und wie sich sein Testen ändern muss. [Kontaktieren Sie uns](/de/contact/) oder [sprechen Sie direkt mit Mavai](https://mavai.org/contact/).
