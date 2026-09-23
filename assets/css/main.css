@@ -1252,19 +1252,18 @@ code {
 /* Connector line from dot to card */
 .tl-connector {
   position: absolute;
-  top: 24px;
+  top: 27px;
   height: 2px;
   background: var(--color-border);
 }
 
 .tl-event.tl-left .tl-connector {
-  right: 50%;
-  left: calc(50% - 40px);
+  right: calc(50% + 9px);
   width: 40px;
 }
 
 .tl-event.tl-right .tl-connector {
-  left: calc(50% + 8px);
+  left: calc(50% + 9px);
   width: 40px;
 }
 
