@@ -1,13 +1,13 @@
 ---
 title: "Conformità e il metodo Mavai"
-description: "Come i requisiti di monitoraggio dei sistemi di IA sono soddisfatti attraverso il metodo Mavai™: Baseline · Monitor · Comply."
+description: "Come i requisiti di monitoraggio dei sistemi di IA sono soddisfatti attraverso il metodo Mavai®: Baseline · Monitor · Comply."
 keywords: ["conformità IA Svizzera", "FINMA IA evidenze", "ISO 42001 evidenze", "AI Act monitoraggio post-commercializzazione", "baseline IA", "test probabilistici conformità"]
 summary: "mavai.ch segue ciò che la regolamentazione richiede. mavai.org documenta la risposta di Mavai. Questa pagina collega le due cose: da un lato l'obbligo, dall'altro il passo del metodo che ne produce l'evidenza."
 ---
 
 mavai.ch segue il panorama normativo nella governance dell'IA e il suo impatto sulla Svizzera: cosa si aspetta la
 FINMA, cosa certifica ISO/IEC 42001 e fin dove l'AI Act europeo si estende oltre
-il confine. [mavai.org](https://mavai.org/) documenta il metodo con cui Mavai™
+il confine. [mavai.org](https://mavai.org/) documenta il metodo con cui Mavai®
 risponde a queste aspettative. Questa pagina collega le due cose.
 
 ## Gli Obblighi
@@ -30,7 +30,7 @@ volta sola, ma per tutto il tempo in cui è in esercizio?**
 
 Sebbene i requisiti differiscono nel loro rispetto, nella loro portata e nella loro ampiezza, ciascuno richiede evidenze continue sulla performance del sistema.
 
-## Il metodo Mavai™: Baseline · Monitor · Comply
+## Il metodo Mavai®: Baseline · Monitor · Comply
 
 Mavai utilizza una baseline statistica per ogni servizio di IA che distribuire, il monitoraggio continuo rispetto ad essa e un metodo documentato pubblicamente — con gli strumenti e il know-how per incorporarlo nella vostra pipeline di distribuzione.
 
@@ -133,6 +133,6 @@ Il Metodo Mavai può fornire l'evidenza per i requisiti di cui sopra e oltre.
 
 ### In sintesi
 
-Semplicemente detto, Mavai.ch e Mavai.org [possono aiutarvi](https://mavai.org/how-we-help/) a gestire i nuovi requisiti e fornirvi gli strumenti per produrre l'evidenza di cui avete bisogno per adempiere a questi requisiti. Inoltre, gli strumenti open source di Mavai™ che li implementano sono [punit](https://mavai.org/projects/punit/) per Java, [feotest](https://mavai.org/projects/feotest/) per Rust e [baseltest](https://mavai.org/projects/baseltest/) per Python.
+Semplicemente detto, Mavai.ch e Mavai.org [possono aiutarvi](https://mavai.org/how-we-help/) a gestire i nuovi requisiti e fornirvi gli strumenti per produrre l'evidenza di cui avete bisogno per adempiere a questi requisiti. Inoltre, gli strumenti open source di Mavai® che li implementano sono [punit](https://mavai.org/projects/punit/) per Java, [feotest](https://mavai.org/projects/feotest/) per Rust e [baseltest](https://mavai.org/projects/baseltest/) per Python.
 
 Se state sviluppando o state già distribuendo un servizio di IA e volete assicurarvi di poter rispettare i requisiti di cui sopra, una prima conversazione copre dove si trova oggi il vostro progetto e come i suoi test devono cambiare. [Contattateci](/it/contact/) o [parlate direttamente con Mavai](https://mavai.org/contact/).

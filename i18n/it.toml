@@ -158,7 +158,7 @@ other = "Baseline · Monitor · Comply"
 other = "Come Mavai può aiutare"
 
 [cta_body]
-other = "La regolamentazione crea l'obbligo. La metodologia Mavai™ lo soddisfa: una baseline statistica per ogni servizio di IA, un monitoraggio continuo rispetto a tale baseline e un metodo documentato pubblicamente. Gli strumenti open source e il metodo completo sono su mavai.org."
+other = "La regolamentazione crea l'obbligo. La metodologia Mavai® lo soddisfa: una baseline statistica per ogni servizio di IA, un monitoraggio continuo rispetto a tale baseline e un metodo documentato pubblicamente. Gli strumenti open source e il metodo completo sono su mavai.org."
 
 [timeline_title]
 other = "Cronologia dell'IA"
@@ -183,3 +183,6 @@ other = "Visualizza fonte →"
 
 [timeline_load_error]
 other = "Impossibile caricare i dati della cronologia. Riprova più tardi."
+
+[footer_trademark]
+other = 'Mavai® è un <a href="https://mavai.org/trademarks/">marchio registrato</a> in Svizzera a nome di Michael Mannion (n. 856092).'
