@@ -1,4 +1,16 @@
 # -- New candidates --------------------------------------------------------
+- title: "Beyond ADMET: AI for medicines safety - survey"
+  url: "https://www.gov.uk/government/calls-for-evidence/beyond-admet-ai-for-medicines-safety-survey"
+  date: "2026-09-22"
+  source: "MHRA"
+  summary: "The MHRA and the Regulatory Innovation Office (RIO) invite organisations to share their views on the use of artificial intelligence (AI) in medicines development."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "This concerns sector-specific AI regulation in pharmaceuticals. The MHRA's consultation on AI in medicines development directly affects pharmaceutical companies and developers deploying AI systems in drug safety assessment and regulatory pathways, requiring them to understand emerging AI governance obligations and standards in the medicines approval process."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Software Testing event at ETSI: AI Inside Out"
   url: "https://www.etsi.org/newsroom/news/software-testing-event-at-etsi-ai-inside-out/"
   date: "2026-09-19"
@@ -9,8 +21,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Regulamento Inteligência Artificial: Conselho e Parlamento alcançam acordo sobre as primeiras regras em matéria de IA no mundo - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPN0ZXSjEtdHdwdWdEZnQzZ0ZYMnRjWXRsbEJRUTBQNVk2Mk45eDFvdk12ek9xQVFtamc2TUo5LTBLb2xTaEV6eHZ2WmFRaEgwUWQ2UHR1Y09VQ3hXMUNleklfbG5XQlNLN2FlRng2R0hWcjVzUWhzcnVOTW5pS1docUoxYXZRT0gybUxpUmwwSUlFYTIyOG1VV19NUHh6bjJJLXZaUzAxZ2hiTlU5T3lsUEJNM01aN0xGOUlVLXk5aWc1Qmg1LTBMMW82VTlQNmhMTjVrZkViUkZtRzBYTkE4NHBZM2llNzQ4ZDJPWmhnUkJyYnhIMU5vdW56OTM?oc=5"
   date: "2023-12-09"
