@@ -4,8 +4,14 @@ title: "Mavai Schweiz"
 
 ## The Regulatory Challenge
 
-Artificial intelligence is transforming Swiss financial services, healthcare, and public administration. But with adoption comes accountability. Regulators — from FINMA to cantonal authorities — are asking organisations to demonstrate that their AI systems perform reliably, consistently, and within defined bounds.
+Artificial intelligence is playing an increasing role in financial services, healthcare, and public administration. Regulators in those sectors are asking organisations to provide evidence that their AI systems perform reliably and consistently, and that performance is continuously monitored.
 
-Mavai.ch explores the regulatory landscape for AI in Switzerland and explains — in practical, non-technical terms — what organisations need to know. Read more about [why probabilistic testing matters for Swiss regulation](/en/posts/2026-03-21-why-probabilistic-testing/) or explore [AI Regulation in Switzerland](/en/ai-regulation-switzerland/).
+## How Mavai® Can Help
+
+If your organisation uses non-deterministic AI in a context where you need to demonstrate how reliably it performs, detect performance changes, or provide evidence to risk, quality, audit or regulatory functions, Mavai may be relevant to you.
+
+Mavai.ch is the sister website of the [Mavai®](https://mavai.org) project family, and it tracks developments in AI governance and the expectations of regulators and standards bodies such as the EU AI Act, ISO/IEC 42001, FINMA, and the FDA. Mavai.ch supports you by keeping up with the requirements, while [mavai.org](https://mavai.org) holds the methodologies that help you address them.
+
+See [how the Mavai methodology supports specific requirements](/en/compliance-and-method/#what-the-method-provides) and the [probabilistic testing methodology](https://mavai.org/probabilistic-testing/) behind it.
 
 Any questions? [Contact us](/en/contact).
