@@ -49,7 +49,6 @@
     // Render main timeline
     function renderTimeline() {
       const container = document.getElementById('tlEventsContainer');
-      const mainPane = document.getElementById('tlMainPane');
 
       const minSameSideGap = 22;    // min vertical gap between two cards on the same side
       const cursorStep = 28;        // base flow advance per card (opposite sides interleave)
@@ -277,10 +276,6 @@
 
       const totalHeight = cursorY + 40;
       container.style.height = totalHeight + 'px';
-
-      // Setup scroll tracking
-      updateViewportIndicator(mainPane, totalHeight);
-      mainPane.addEventListener('scroll', () => updateViewportIndicator(mainPane, totalHeight));
     }
 
     function addGapMarker(container, topPx) {
@@ -335,31 +330,102 @@
       });
     }
 
-    function updateViewportIndicator(mainPane, totalHeight) {
-      const indicator = document.getElementById('tlViewportIndicator');
-      if (!indicator) return;
+    // The minimap spaces items evenly, but the main timeline does not (card
+    // heights vary, gap breaks add space), so a linear scrollTop → minimap scale
+    // drifts: the frame can sit away from dots that are actually on screen.
+    // Instead, map through anchor pairs (each dot's centre in the main pane's
+    // scroll coordinates ↔ its minimap dot's centre) and interpolate between them.
+    let viewportAnchors = null;
 
-      const scrollTop = mainPane.scrollTop;
-      const viewportHeight = mainPane.clientHeight;
-      const minimapContainer = document.getElementById('tlMinimapContainer');
-      const minimapHeight = minimapContainer.clientHeight - 40;
+    function buildViewportAnchors(mainPane) {
+      const minimapEvents = document.getElementById('tlMinimapEvents');
+      const paneTop = mainPane.getBoundingClientRect().top - mainPane.scrollTop;
+      const centreY = el => { const r = el.getBoundingClientRect(); return r.top - paneTop + r.height / 2; };
+      const anchors = [];
 
-      const indicatorTop = (scrollTop / totalHeight) * minimapHeight;
-      const indicatorHeight = (viewportHeight / totalHeight) * minimapHeight;
+      minimapEvents.querySelectorAll('.tl-minimap-event').forEach(mini => {
+        const dot = document.querySelector(`.tl-event[data-event-index="${mini.dataset.eventIndex}"] .tl-event-dot`);
+        if (dot) anchors.push({ main: centreY(dot), mini: mini.offsetTop + mini.offsetHeight / 2 });
+      });
+      const miniToday = minimapEvents.querySelector('.tl-minimap-today');
+      const todayDot = document.querySelector('.tl-today-dot');
+      if (miniToday && todayDot) anchors.push({ main: centreY(todayDot), mini: miniToday.offsetTop + miniToday.offsetHeight / 2 });
 
-      indicator.style.top = indicatorTop + 'px';
-      indicator.style.height = Math.max(indicatorHeight, 20) + 'px';
+      if (anchors.length === 0) return null;
+      // Same-side spacing can push a card below a later opposite-side card, so
+      // order by main-pane position and keep the minimap side monotonic.
+      anchors.sort((a, b) => a.main - b.main);
+      for (let i = 1; i < anchors.length; i++) anchors[i].mini = Math.max(anchors[i].mini, anchors[i - 1].mini);
+      // Pin the ends: top of content ↔ top of minimap, bottom ↔ just past the last dot.
+      anchors.unshift({ main: 0, mini: 0 });
+      anchors.push({ main: mainPane.scrollHeight, mini: anchors[anchors.length - 1].mini + 10 });
+      return anchors;
     }
 
+    function mainToMinimap(y, anchors) {
+      if (y <= anchors[0].main) return anchors[0].mini;
+      for (let i = 1; i < anchors.length; i++) {
+        const a = anchors[i - 1], b = anchors[i];
+        if (y <= b.main) {
+          const span = b.main - a.main;
+          return span > 0 ? a.mini + (y - a.main) / span * (b.mini - a.mini) : b.mini;
+        }
+      }
+      return anchors[anchors.length - 1].mini;
+    }
+
+    function updateViewportIndicator(mainPane) {
+      const indicator = document.getElementById('tlViewportIndicator');
+      if (!indicator) return;
+      if (!viewportAnchors) viewportAnchors = buildViewportAnchors(mainPane);
+      if (!viewportAnchors) return;
+
+      // Frame only the part of the pane actually on screen: when the header and
+      // banner render taller than the height calc assumes (e.g. Safari, or page
+      // zoom), the pane's lower part falls below the window fold.
+      const paneRect = mainPane.getBoundingClientRect();
+      const visibleTop = Math.max(paneRect.top, 0) - paneRect.top;
+      const visibleBottom = Math.min(paneRect.bottom, window.innerHeight) - paneRect.top;
+      let top = mainToMinimap(mainPane.scrollTop + visibleTop, viewportAnchors);
+      let bottom = mainToMinimap(mainPane.scrollTop + Math.max(visibleBottom, visibleTop), viewportAnchors);
+      const minHeight = 20;
+      if (bottom - top < minHeight) {
+        const mid = (top + bottom) / 2;
+        top = mid - minHeight / 2;
+        bottom = mid + minHeight / 2;
+      }
+
+      indicator.style.top = top + 'px';
+      indicator.style.height = (bottom - top) + 'px';
+    }
+
+    // Size the pane to end exactly at the bottom of the window. The CSS calc
+    // assumes fixed header + banner heights, which differ across browsers, zoom
+    // levels and languages; measuring the pane's actual start is exact.
+    // The CSS min-height still applies on very short windows.
+    function fitMainPane() {
+      const pane = document.getElementById('tlMainPane');
+      const paneTop = pane.getBoundingClientRect().top + window.scrollY;
+      pane.style.height = (window.innerHeight - paneTop) + 'px';
+    }
+
+    fitMainPane();
     renderTimeline();
     renderMinimap();
+
+    // Viewport frame tracking — anchors are built lazily from the rendered DOM
+    // and discarded whenever either pane is re-rendered.
+    const tlMainPane = document.getElementById('tlMainPane');
+    tlMainPane.addEventListener('scroll', () => updateViewportIndicator(tlMainPane));
+    // Page scroll changes how much of the pane is on screen, so the frame follows it too
+    window.addEventListener('scroll', () => updateViewportIndicator(tlMainPane), { passive: true });
 
     // On first load, anchor the viewport on the Today marker so the visitor
     // lands on "now" — upcoming deadlines a short scroll up, recent events just
     // below — instead of the oldest (2017) event at the top. The resize handler
     // re-renders the timeline but deliberately does NOT call this, so resizing
     // never yanks the reader back to Today.
-    (function scrollToToday() {
+    function scrollToToday() {
       const mainPane = document.getElementById('tlMainPane');
       const marker = document.querySelector('.tl-today-marker');
       if (!mainPane || !marker) return;
@@ -367,7 +433,23 @@
       const markerRect = marker.getBoundingClientRect();
       const delta = (markerRect.top - paneRect.top) - mainPane.clientHeight / 2 + markerRect.height / 2;
       mainPane.scrollTop += delta;
-    })();
+    }
+    scrollToToday();
+    updateViewportIndicator(tlMainPane);
+
+    // If web fonts were still loading, the banner may change height once they
+    // arrive (the subtitle can re-wrap). Re-fit the pane and minimap, and
+    // re-anchor on Today — this lands within moments of load, before reading.
+    if (document.fonts && document.fonts.status !== 'loaded') {
+      document.fonts.ready.then(() => {
+        fitMainPane();
+        document.getElementById('tlMinimapEvents').innerHTML = '';
+        renderMinimap();
+        viewportAnchors = null;
+        scrollToToday();
+        updateViewportIndicator(tlMainPane);
+      });
+    }
 
     // Click on dimmed area or overlay to collapse expanded card
     function collapseExpanded() {
@@ -390,8 +472,11 @@
     window.addEventListener('resize', () => {
       document.getElementById('tlEventsContainer').innerHTML = '';
       document.getElementById('tlMinimapEvents').innerHTML = '';
+      fitMainPane();
       renderTimeline();
       renderMinimap();
+      viewportAnchors = null;
+      updateViewportIndicator(tlMainPane);
     });
   }
 </script>
