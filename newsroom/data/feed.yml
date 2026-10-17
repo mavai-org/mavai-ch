@@ -1,4 +1,36 @@
 # -- New candidates --------------------------------------------------------
+- title: "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling"
+  url: "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+  date: "2026-10-08"
+  source: "EDPB"
+  summary: "Background informationCross-border caseController: Uber B.VLegal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject)Decision: Administrative fineKey words: Automate..."
+  tags: ["eu", "data-protection", "privacy", "gdpr"]
+  relevance: "This case directly demonstrates GDPR Article 22 enforcement against automated decision-making in AI systems (driver and rider profiling/deactivation algorithms). It shows concrete compliance obligations for AI system deployers regarding transparency, consent, and human review rights that Swiss enterprises deploying similar algorithmic systems must understand. The enforcement action clarifies what regulators expect from companies using automated profiling and decision-making at scale."
+  accepted: n
+  featured: n
+
+- title: "Timeline - Artificial intelligence - Consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYUVTeHU3RzJMaEJSNjZDOTdvOTVyM1VZeG90NTNJdUdJalhNWmhLTjJaTjlOSFRMY1VrLUpfNUs0MEQzTDVib0t4Y0QzSjFMVnJ6bnhYRUJMaHJoZl9PdzAtQ0xTNFdCSkR6d0lkMUxFd2s0ck42eWJ0b2dGbzZrOGQzUXBOcUlDVmV2bHVibzMyYjgtRXAzaVF6RVlIUDZCZ01wRHBNSlk?oc=5"
+  date: "2023-12-09"
+  source: "European Council Press Releases"
+  summary: "Timeline - Artificial intelligence&nbsp;&nbsp;Consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This timeline from the European Council documents the regulatory and policy milestones for AI governance in the EU, including AI Act adoption and implementation phases. Software developers, compliance officers, and AI system vendors in Switzerland and EU member states need to understand this timeline to track concrete obligations, conformity assessment deadlines, and enforcement dates that will affect their AI systems and compliance planning."
+  accepted: n
+  featured: n
+
+- title: "MHRA 2030 Strategy to modernise patient-centred regulation for the era of AI and personalised medicines"
+  url: "https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines"
+  date: "2026-10-14"
+  source: "MHRA"
+  summary: "The Medicines and Healthcare products Regulatory Agency (MHRA) has set out ambitious plans to translate cutting-edge scientific and technological innovation into better health outcomes for patients across all four nations of the UK, in its 2030 Strategy published today."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "The MHRA's 2030 Strategy directly addresses regulatory modernisation for AI and personalised medicines, which affects healthcare compliance officers, medical device project managers, and pharmaceutical regulators in Switzerland and internationally who need to understand how a major regulatory body is adapting approval processes, governance frameworks, and oversight requirements for AI-enabled medical products and automated decision-making in healthcare."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Software Testing event at ETSI: AI Inside Out"
   url: "https://www.etsi.org/newsroom/news/software-testing-event-at-etsi-ai-inside-out/"
   date: "2026-09-19"
@@ -9,8 +41,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Regulamento Inteligência Artificial: Conselho e Parlamento alcançam acordo sobre as primeiras regras em matéria de IA no mundo - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPN0ZXSjEtdHdwdWdEZnQzZ0ZYMnRjWXRsbEJRUTBQNVk2Mk45eDFvdk12ek9xQVFtamc2TUo5LTBLb2xTaEV6eHZ2WmFRaEgwUWQ2UHR1Y09VQ3hXMUNleklfbG5XQlNLN2FlRng2R0hWcjVzUWhzcnVOTW5pS1docUoxYXZRT0gybUxpUmwwSUlFYTIyOG1VV19NUHh6bjJJLXZaUzAxZ2hiTlU5T3lsUEJNM01aN0xGOUlVLXk5aWc1Qmg1LTBMMW82VTlQNmhMTjVrZkViUkZtRzBYTkE4NHBZM2llNzQ4ZDJPWmhnUkJyYnhIMU5vdW56OTM?oc=5"
   date: "2023-12-09"
