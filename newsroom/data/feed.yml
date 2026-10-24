@@ -1,4 +1,26 @@
 # -- New candidates --------------------------------------------------------
+- title: "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling"
+  url: "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+  date: "2026-10-08"
+  source: "EDPB"
+  summary: "Background informationCross-border caseController: Uber B.VLegal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject)Decision: Administrative fineKey words: Automate..."
+  tags: ["eu", "data-protection", "privacy", "gdpr"]
+  relevance: "This enforcement action directly concerns automated decision-making under GDPR Article 22 applied to an AI system (Uber's algorithmic profiling and decision-making). While the source is a data protection authority, the case specifically addresses obligations on AI system deployers regarding transparency, consent, and lawfulness of automated processing—directly relevant to compliance officers and AI vendors understanding how regulatory authorities enforce GDPR requirements for algorithmic systems affecting individual rights. The substantial fine (EUR"
+  accepted: n
+  featured: n
+
+- title: "UK regulator brings new AI and MedTech agenda to AdvaMed"
+  url: "https://www.gov.uk/government/news/uk-regulator-brings-new-ai-and-medtech-agenda-to-advamed"
+  date: "2026-10-19"
+  source: "MHRA"
+  summary: "UK’s Medicines and Healthcare products Regulatory Agency (MHRA) sets out its next phase of MedTech and AI regulation to US industry leaders at AdvaMed 2026."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "This directly concerns sector-specific AI regulation in medical devices and healthcare. The MHRA's regulatory agenda for AI in MedTech will set approval processes, validation requirements, and compliance obligations that affect AI system providers and medical device manufacturers. The announcement of regulatory direction is material for healthcare compliance officers, medical device project managers, and AI vendors operating in or planning to enter the UK/EU MedTech space, including those in Switzerland with cross-border operations."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Software Testing event at ETSI: AI Inside Out"
   url: "https://www.etsi.org/newsroom/news/software-testing-event-at-etsi-ai-inside-out/"
   date: "2026-09-19"
@@ -9,8 +31,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Regulamento Inteligência Artificial: Conselho e Parlamento alcançam acordo sobre as primeiras regras em matéria de IA no mundo - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPN0ZXSjEtdHdwdWdEZnQzZ0ZYMnRjWXRsbEJRUTBQNVk2Mk45eDFvdk12ek9xQVFtamc2TUo5LTBLb2xTaEV6eHZ2WmFRaEgwUWQ2UHR1Y09VQ3hXMUNleklfbG5XQlNLN2FlRng2R0hWcjVzUWhzcnVOTW5pS1docUoxYXZRT0gybUxpUmwwSUlFYTIyOG1VV19NUHh6bjJJLXZaUzAxZ2hiTlU5T3lsUEJNM01aN0xGOUlVLXk5aWc1Qmg1LTBMMW82VTlQNmhMTjVrZkViUkZtRzBYTkE4NHBZM2llNzQ4ZDJPWmhnUkJyYnhIMU5vdW56OTM?oc=5"
   date: "2023-12-09"
