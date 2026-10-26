@@ -13,6 +13,7 @@ linkedin.com                 # returns HTTP 999 to all non-browser clients
 www.coe.int                  # 403 to programmatic clients even with browser UA
 www.news.admin.ch            # 403 even with browser UA; browser-verified reachable (2026-06-19)
 www.fedlex.admin.ch          # TLS handshake termination to programmatic clients; browser-verified 200 (2026-06-19)
+www.ti.ch                    # connect timeout from GitHub-hosted runners; curl-verified 200 locally (2026-10-26)
 
 # --- Hosts that serve 4xx to unfamiliar User-Agents ---
 www.finma.ch                 # 400 to custom UAs; browser-verified reachable
