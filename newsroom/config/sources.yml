@@ -64,7 +64,7 @@ sources:
     name: "FSVO / BLV — Press Releases"
     tier: 1
     type: html-scrape
-    url: "https://www.blv.admin.ch/blv/en/home/dokumentation/nsb-news-list.nsb.html"
+    url: "https://www.blv.admin.ch/en/media"
     selectors:
       item: ".news-item, article, .mod-teaser"
       title: "h3, .mod-teaser__title"
