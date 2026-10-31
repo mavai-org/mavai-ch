@@ -1,4 +1,46 @@
 # -- New candidates --------------------------------------------------------
+- title: "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling"
+  url: "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+  date: "2026-10-08"
+  source: "EDPB"
+  summary: "Background informationCross-border caseController: Uber B.VLegal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject)Decision: Administrative fineKey words: Automate..."
+  tags: ["eu", "data-protection", "privacy", "gdpr"]
+  relevance: "This enforcement action directly concerns automated decision-making under GDPR Article 22 and profiling obligations—core AI regulation compliance issues. Software vendors and organisations deploying automated systems (especially gig economy platforms) need to understand DPA enforcement expectations regarding transparency, consent, and individual rights in algorithmic decision-making. The precedent is material to AI governance frameworks and compliance obligations in employment/contractor classification contexts across EU/Swiss markets."
+  accepted: n
+  featured: n
+
+- title: "Gender bias in artificial intelligence - Council, European Union"
+  url: "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVmFmeHRobjJ5XzlUX1V1TDBoOUNzZGlFc0F2YVpoLTFCNFBUTFA3eGNENzEyNjB6Qlk3V3ZiRktleG9KclJ2Nkt1SWZrRVN2d2RfbUt3aFFLdUN3OWJCTnpTYnJ2QjllM2p6eDFpQ3VhbnZwOGRGRUlTekZEcEVIcFgtSUt3OGFtRzBHbGw5bDZzbHltWHVhbG1GYlpFMTcybk1jZUpZN3NRMXhNSzhj?oc=5"
+  date: "2026-10-26"
+  source: "European Council Press Releases"
+  summary: "Gender bias in artificial intelligence&nbsp;&nbsp;Council, European Union"
+  tags: ["global", "eu", "policy"]
+  relevance: "This item directly concerns bias in AI systems, which is a core compliance obligation under the EU AI Act (Articles 10, 15 on data quality and bias mitigation) and relates to technical standards and governance requirements for AI developers and deployers assessing fairness and non-discrimination in their systems. AI vendors and compliance officers need to understand gender bias requirements and testing procedures mandated by EU AI regulation."
+  accepted: n
+  featured: n
+
+- title: "Timeline - Artificial intelligence - Consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYUVTeHU3RzJMaEJSNjZDOTdvOTVyM1VZeG90NTNJdUdJalhNWmhLTjJaTjlOSFRMY1VrLUpfNUs0MEQzTDVib0t4Y0QzSjFMVnJ6bnhYRUJMaHJoZl9PdzAtQ0xTNFdCSkR6d0lkMUxFd2s0ck42eWJ0b2dGbzZrOGQzUXBOcUlDVmV2bHVibzMyYjgtRXAzaVF6RVlIUDZCZ01wRHBNSlk?oc=5"
+  date: "2023-12-09"
+  source: "European Council Press Releases"
+  summary: "Timeline - Artificial intelligence&nbsp;&nbsp;Consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This timeline from the European Council documents the legislative and political process for AI regulation in the EU, including key dates for the AI Act's adoption, implementation phases, and conformity assessment deadlines. Software developers, vendors, compliance officers, and Swiss enterprises need to understand the EU AI Act's timeline to plan their regulatory compliance obligations and technical implementations, particularly given Switzerland's close regulatory alignment with EU standards."
+  accepted: n
+  featured: n
+
+- title: "ETSI unveils new standard to reduce production of harmful deepfakes"
+  url: "https://www.etsi.org/newsroom/press-releases/etsi-unveils-new-standard-to-reduce-production-of-harmful-deepfakes/"
+  date: "2026-10-31"
+  source: "ETSI Newsroom"
+  summary: "Press Release 29 October 2026 ETSI unveils new standard to reduce production of harmful deepfakes ETSI has released a new Technical Specification that aims to reduce the risk of generative AI systems producing harmful deepfakes. Developed by ETSI's Technical Committee... Read more ETSI unveils ne..."
+  tags: ["global", "eu", "standard", "conformity"]
+  relevance: "ETSI technical specification for generative AI systems directly establishes testable requirements for deepfake risk mitigation that AI vendors and deployers must implement to comply with EU AI Act obligations on high-risk generative AI systems; developers building or deploying generative AI need to understand and implement these harmonised standards for conformity assessment and risk management."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Software Testing event at ETSI: AI Inside Out"
   url: "https://www.etsi.org/newsroom/news/software-testing-event-at-etsi-ai-inside-out/"
   date: "2026-09-19"
@@ -9,8 +51,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Regulamento Inteligência Artificial: Conselho e Parlamento alcançam acordo sobre as primeiras regras em matéria de IA no mundo - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPN0ZXSjEtdHdwdWdEZnQzZ0ZYMnRjWXRsbEJRUTBQNVk2Mk45eDFvdk12ek9xQVFtamc2TUo5LTBLb2xTaEV6eHZ2WmFRaEgwUWQ2UHR1Y09VQ3hXMUNleklfbG5XQlNLN2FlRng2R0hWcjVzUWhzcnVOTW5pS1docUoxYXZRT0gybUxpUmwwSUlFYTIyOG1VV19NUHh6bjJJLXZaUzAxZ2hiTlU5T3lsUEJNM01aN0xGOUlVLXk5aWc1Qmg1LTBMMW82VTlQNmhMTjVrZkViUkZtRzBYTkE4NHBZM2llNzQ4ZDJPWmhnUkJyYnhIMU5vdW56OTM?oc=5"
   date: "2023-12-09"
