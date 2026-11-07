@@ -1,4 +1,36 @@
 # -- New candidates --------------------------------------------------------
+- title: "ETSI, TTC and TTA Explore New Global Partnership for Standardisation in Artificial Intelligence"
+  url: "https://www.etsi.org/newsroom/press-releases/etsi-ttc-and-tta-explore-new-global-partnership-for-standardisation-in-artificial-intelligence/"
+  date: "2026-11-07"
+  source: "ETSI Newsroom"
+  summary: "Press Release 2 November 2026 ETSI, TTC and TTA Explore New Global Partnership for Standardisation in Artificial Intelligence The world's leading artificial intelligence companies are increasingly calling for common global standards to help ensure that rapidly advancing AI remains safe, interoper..."
+  tags: ["global", "eu", "standard", "conformity"]
+  relevance: "This directly concerns harmonised standardisation for AI systems at the global level involving ETSI (the European standards body mandated for EU AI Act compliance), which is a concrete development affecting how software vendors and deployers will implement technical standards and conformity assessment procedures required under AI regulation."
+  accepted: n
+  featured: n
+
+- title: "ETSI unveils new standard to reduce production of harmful deepfakes"
+  url: "https://www.etsi.org/newsroom/press-releases/etsi-unveils-new-standard-to-reduce-production-of-harmful-deepfakes/"
+  date: "2026-11-07"
+  source: "ETSI Newsroom"
+  summary: "Press Release 29 October 2026 ETSI unveils new standard to reduce production of harmful deepfakes ETSI has released a new Technical Specification that aims to reduce the risk of generative AI systems producing harmful deepfakes. Read more ETSI unveils new standard to reduce production of harmful ..."
+  tags: ["global", "eu", "standard", "conformity"]
+  relevance: "ETSI has released a Technical Specification addressing generative AI systems and deepfake risks. This is a harmonised or sector-specific standard directly applicable to AI system developers and deployers building generative AI products, and relevant to compliance officers and vendors needing to understand technical requirements for responsible AI deployment."
+  accepted: n
+  featured: n
+
+- title: "ETSI’s new committee starts building next generation of AI-native networks"
+  url: "https://www.etsi.org/newsroom/press-releases/etsis-new-committee-starts-building-next-generation-of-ai-native-networks/"
+  date: "2026-11-07"
+  source: "ETSI Newsroom"
+  summary: "Press Release 13 October 2026 ETSI’s new committee starts building next generation of AI-native networks The ETSI Technical Committee on Federated Network, Edge, Cloud and AI Technologies (TC NET) held its kick-off meeting from 7 to 9 October 2026 at... Read more ETSI’s new committee starts build..."
+  tags: ["global", "eu", "standard", "conformity"]
+  relevance: "ETSI Technical Committee on AI Technologies is developing standards for AI-native networks. This directly affects software developers and vendors building AI systems, as ETSI standards are harmonised standards under the EU AI Act and equivalent frameworks, creating concrete technical obligations for AI system design, deployment, and conformity assessment in network and edge computing contexts."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Software Testing event at ETSI: AI Inside Out"
   url: "https://www.etsi.org/newsroom/news/software-testing-event-at-etsi-ai-inside-out/"
   date: "2026-09-19"
@@ -9,8 +41,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Regulamento Inteligência Artificial: Conselho e Parlamento alcançam acordo sobre as primeiras regras em matéria de IA no mundo - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPN0ZXSjEtdHdwdWdEZnQzZ0ZYMnRjWXRsbEJRUTBQNVk2Mk45eDFvdk12ek9xQVFtamc2TUo5LTBLb2xTaEV6eHZ2WmFRaEgwUWQ2UHR1Y09VQ3hXMUNleklfbG5XQlNLN2FlRng2R0hWcjVzUWhzcnVOTW5pS1docUoxYXZRT0gybUxpUmwwSUlFYTIyOG1VV19NUHh6bjJJLXZaUzAxZ2hiTlU5T3lsUEJNM01aN0xGOUlVLXk5aWc1Qmg1LTBMMW82VTlQNmhMTjVrZkViUkZtRzBYTkE4NHBZM2llNzQ4ZDJPWmhnUkJyYnhIMU5vdW56OTM?oc=5"
   date: "2023-12-09"
