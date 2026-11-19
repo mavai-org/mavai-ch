@@ -1,80 +1,164 @@
 {{ define "main" }}
-{{ $hero := resources.Get "images/hero.jpg" }}
-{{ $heroWebp := $hero.Resize "1920x webp q80" }}
-{{ $heroSmall := $hero.Resize "960x webp q75" }}
 <section class="hero">
-  <picture class="hero-bg">
-    <source media="(max-width: 768px)" srcset="{{ $heroSmall.RelPermalink }}">
-    <source srcset="{{ $heroWebp.RelPermalink }}">
-    <img src="{{ $heroWebp.RelPermalink }}" alt="" loading="eager">
-  </picture>
   <div class="container">
-    <h1>{{ .Site.Params.tagline }}</h1>
-    <p class="hero-sub">{{ .Site.Params.description }}</p>
-    <div class="hero-cta">
-      <a href="/{{ .Lang }}/regulations/" class="btn btn-primary">{{ i18n "explore_regulations" }}</a>
-      <a href="https://mavai.org" class="btn btn-secondary">{{ i18n "visit_mavai_org" }}</a>
+    <div class="hero-text">
+      <p class="eyebrow">{{ .Site.Title }}</p>
+      <h1>{{ .Site.Params.tagline }}</h1>
+      <p class="hero-sub">{{ .Site.Params.description }}</p>
+      <div class="hero-cta">
+        <a href="{{ "regulations/" | absLangURL }}" class="btn btn-primary">{{ i18n "explore_regulations" }} <span aria-hidden="true">→</span></a>
+        <a href="https://mavai.org" class="btn btn-secondary">{{ i18n "visit_mavai_org" }}</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg class="hero-grid" viewBox="0 0 340 340" role="img" aria-label="{{ i18n "hero_grid_alt" }}">
+        <g fill-opacity="0.65">
+          <rect style="--i:4" x="0" y="0" width="60" height="60" rx="6" fill="#4caf50"/>
+          <rect style="--i:5" x="70" y="0" width="60" height="60" rx="6" fill="#ff9800"/>
+          <rect style="--i:6" x="140" y="0" width="60" height="60" rx="6" fill="#e53935"/>
+          <rect style="--i:7" x="210" y="0" width="60" height="60" rx="6" fill="#e53935"/>
+          <rect style="--i:8" x="280" y="0" width="60" height="60" rx="6" fill="#e53935"/>
+          <rect style="--i:3" x="0" y="70" width="60" height="60" rx="6" fill="#4caf50"/>
+          <rect style="--i:4" x="70" y="70" width="60" height="60" rx="6" fill="#ffca28"/>
+          <rect style="--i:5" x="140" y="70" width="60" height="60" rx="6" fill="#ff9800"/>
+          <rect style="--i:6" x="210" y="70" width="60" height="60" rx="6" fill="#e53935"/>
+          <rect style="--i:7" x="280" y="70" width="60" height="60" rx="6" fill="#e53935"/>
+          <rect style="--i:2" x="0" y="140" width="60" height="60" rx="6" fill="#4caf50"/>
+          <rect style="--i:3" x="70" y="140" width="60" height="60" rx="6" fill="#8bc34a"/>
+          <rect style="--i:4" x="140" y="140" width="60" height="60" rx="6" fill="#ffca28"/>
+          <rect style="--i:5" x="210" y="140" width="60" height="60" rx="6" fill="#ff9800"/>
+          <rect style="--i:6" x="280" y="140" width="60" height="60" rx="6" fill="#e53935"/>
+          <rect style="--i:1" x="0" y="210" width="60" height="60" rx="6" fill="#4caf50"/>
+          <rect style="--i:2" x="70" y="210" width="60" height="60" rx="6" fill="#8bc34a"/>
+          <rect style="--i:3" x="140" y="210" width="60" height="60" rx="6" fill="#8bc34a"/>
+          <rect style="--i:4" x="210" y="210" width="60" height="60" rx="6" fill="#ffca28"/>
+          <rect style="--i:5" x="280" y="210" width="60" height="60" rx="6" fill="#ff9800"/>
+          <rect style="--i:0" x="0" y="280" width="60" height="60" rx="6" fill="#4caf50"/>
+          <rect style="--i:1" x="70" y="280" width="60" height="60" rx="6" fill="#4caf50"/>
+          <rect style="--i:2" x="140" y="280" width="60" height="60" rx="6" fill="#4caf50"/>
+          <rect style="--i:3" x="210" y="280" width="60" height="60" rx="6" fill="#8bc34a"/>
+          <rect style="--i:4" x="280" y="280" width="60" height="60" rx="6" fill="#ffca28"/>
+        </g>
+      </svg>
     </div>
   </div>
 </section>
 
 <section class="news-bulletin">
   <div class="container">
-    <span class="news-bulletin-label">{{ i18n "bulletin_label" }}</span>
-    <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714">{{ i18n "bulletin_ec_ai_act" }}</a>
+    <a class="news-bulletin-card" href="https://www.etsi.org/newsroom/press-releases/etsi-ttc-and-tta-explore-new-global-partnership-for-standardisation-in-artificial-intelligence/">
+      <span class="news-bulletin-label">{{ i18n "bulletin_label" }}</span>
+      <span class="news-bulletin-text">{{ i18n "bulletin_etsi_ai" }}</span>
+      <span class="news-bulletin-arrow" aria-hidden="true">→</span>
+    </a>
   </div>
 </section>
 
-<section class="intro">
+{{ with .Content }}
+<section class="home-about">
   <div class="container">
     <div class="intro-body">
-      {{ .Content }}
+      {{ . }}
     </div>
   </div>
 </section>
+{{ end }}
 
-<section class="topics">
+<section class="home-section" id="topics">
   <div class="container">
-    <h2>{{ i18n "key_topics" }}</h2>
-    <div class="topics-grid">
-      <div class="topic-item">
-        <h3>{{ i18n "topic_finma" }}</h3>
-        <p>{{ i18n "topic_finma_desc" }}</p>
-      </div>
-      <div class="topic-item">
-        <h3>{{ i18n "topic_iso" }}</h3>
-        <p>{{ i18n "topic_iso_desc" }}</p>
-      </div>
-      <div class="topic-item">
-        <h3>{{ i18n "topic_testing" }}</h3>
-        <p>{{ i18n "topic_testing_desc" }}</p>
+    <div class="section-head">
+      <div>
+        <h2>{{ i18n "key_topics" }}</h2>
       </div>
     </div>
+    <ul class="topic-cards topic-cards--three">
+      <li>
+        <a class="topic-card" href="{{ "regulations/" | absLangURL }}">
+          {{ partial "topic-icon.html" (dict "name" "regulation" "class" "topic-card-icon") }}
+          <h3>{{ i18n "topic_finma" }}</h3>
+          <p>{{ i18n "topic_finma_desc" }}</p>
+          <span class="topic-card-link">{{ i18n "explore" }} <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="topic-card" href="{{ "regulations/" | absLangURL }}">
+          {{ partial "topic-icon.html" (dict "name" "safety" "class" "topic-card-icon") }}
+          <h3>{{ i18n "topic_iso" }}</h3>
+          <p>{{ i18n "topic_iso_desc" }}</p>
+          <span class="topic-card-link">{{ i18n "explore" }} <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="topic-card" href="{{ "compliance-and-method/" | absLangURL }}">
+          {{ partial "topic-icon.html" (dict "name" "tech" "class" "topic-card-icon") }}
+          <h3>{{ i18n "topic_testing" }}</h3>
+          <p>{{ i18n "topic_testing_desc" }}</p>
+          <span class="topic-card-link">{{ i18n "explore" }} <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+    </ul>
   </div>
 </section>
 
 {{ with .Site.GetPage "/posts" }}
-  {{ if .Pages }}
-  <section class="recent-posts">
-    <div class="container">
-      <h2>{{ i18n "recent_posts" }}</h2>
-      {{ range first 3 .Pages.ByDate.Reverse }}
-        <article class="post-summary">
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
-          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-          <p>{{ .Summary }}</p>
-        </article>
-      {{ end }}
-    </div>
-  </section>
+  {{ $posts := .Pages.ByDate.Reverse }}
+  {{ if $posts }}
+    {{ $featured := index $posts 0 }}
+    <section class="featured">
+      <div class="container">
+        <div class="featured-item">
+          <div class="featured-panel" aria-hidden="true">
+            {{- $img := (resources.Get "images/featured-alps.jpg").Resize "1200x webp q75" | images.Filter images.Grayscale -}}
+            <img class="featured-panel-img" src="{{ $img.RelPermalink }}" alt="" width="{{ $img.Width }}" height="{{ $img.Height }}" loading="lazy">
+            <span class="featured-panel-meta"><time datetime="{{ $featured.Date.Format "2006-01-02" }}">{{ $featured.Date.Format "2 January 2006" }}</time> · {{ i18n "reading_time" (dict "Count" $featured.ReadingTime) }}</span>
+          </div>
+          <div class="featured-body">
+            <p class="eyebrow">{{ i18n "featured_label" }}</p>
+            <h2><a href="{{ $featured.Permalink }}">{{ $featured.Title }}</a></h2>
+            <p>{{ $featured.Summary | plainify | truncate 220 }}</p>
+            <a class="link-arrow" href="{{ $featured.Permalink }}">{{ i18n "read_article" }} <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{ $latest := first 4 (after 1 $posts) }}
+    {{ if $latest }}
+    <section class="home-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>{{ i18n "recent_posts" }}</h2>
+          </div>
+          <a class="link-arrow" href="{{ .Permalink }}">{{ i18n "view_all_articles" }} <span aria-hidden="true">→</span></a>
+        </div>
+        <ul class="learning-grid">
+          {{ range $latest }}
+          <li>
+            <a class="learning-card" href="{{ .Permalink }}">
+              <p class="learning-card-meta">{{ i18n "article_label" }} · {{ i18n "reading_time" (dict "Count" .ReadingTime) }}</p>
+              <h3>{{ .Title }}</h3>
+              <p>{{ .Summary | plainify | truncate 130 }}</p>
+              <span class="topic-card-link">{{ i18n "read_article" }} <span aria-hidden="true">→</span></span>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </section>
+    {{ end }}
   {{ end }}
 {{ end }}
 
-<section class="cta-banner">
+<section class="newsletter">
   <div class="container">
-    <h2>{{ i18n "cta_heading" }}</h2>
-    <p>{{ i18n "cta_body" }}</p>
-    <a href="https://mavai.org/how-we-help/" class="btn btn-primary">{{ i18n "cta_button" }}</a>
+    <div class="newsletter-band">
+      <div class="newsletter-text">
+        <h2>{{ i18n "cta_heading" }}</h2>
+        <p>{{ i18n "cta_body" }}</p>
+      </div>
+      <a href="https://mavai.org/how-we-help/" class="btn btn-primary">{{ i18n "cta_button" }}</a>
+    </div>
   </div>
 </section>
 {{ end }}

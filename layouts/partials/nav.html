@@ -1,9 +1,23 @@
 <header class="site-header">
   <div class="container">
-    <a href="{{ .Site.Home.Permalink }}" class="site-logo">Mavai<span class="logo-ch">.ch</span></a>
+    <a href="{{ .Site.Home.Permalink }}" class="site-logo" aria-label="Mavai">
+      <span class="logo-mark">Mavai</span>
+      <span class="logo-strapline">{{ i18n "brand_strapline" }}</span>
+    </a>
     <nav class="site-nav">
       {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a>
+        {{ if .HasChildren }}
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle{{ if $.HasMenuCurrent "main" . }} active{{ end }}" aria-expanded="false" aria-haspopup="true">{{ .Name }} <span class="nav-caret" aria-hidden="true"></span></button>
+            <ul class="nav-dropdown-menu">
+              {{ range .Children }}
+                <li><a href="{{ .URL }}" class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ else }}
+          <a href="{{ .URL }}" class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a>
+        {{ end }}
       {{ end }}
       <div class="lang-switcher">
         {{ range .Site.Languages }}
@@ -13,3 +27,19 @@
     </nav>
   </div>
 </header>
+<script>
+  // Dropdown: opens on click or keyboard; hover and focus are handled in CSS.
+  document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+    var btn = dd.querySelector('.nav-dropdown-toggle');
+    btn.addEventListener('click', function () {
+      var open = dd.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function (e) {
+      if (!dd.contains(e.target)) { dd.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+    });
+    dd.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { dd.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); btn.focus(); }
+    });
+  });
+</script>

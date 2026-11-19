@@ -107,7 +107,7 @@ other = "https://aboutfeeds.com"
 other = "Learn how to get started"
 
 [bulletin_label]
-other = "News"
+other = "Featured"
 
 [bulletin_coe_treaty]
 other = "One year since Switzerland signed the Council of Europe's global AI treaty — what has happened since?"
@@ -186,3 +186,144 @@ other = "Unable to load timeline data. Please try again later."
 
 [footer_trademark]
 other = 'Mavai® is a <a href="https://mavai.org/trademarks/">registered trademark</a> of Michael Mannion in Switzerland (No. 856092).'
+
+[hero_eyebrow]
+other = "The intersection of disciplines"
+
+[hero_title]
+other = "Understand today.<br>Build a better tomorrow."
+
+[hero_cta]
+other = "Explore our story"
+
+[hero_grid_alt]
+other = "Grid of coloured squares shifting from green to red, like a risk matrix"
+
+[discipline_technology]
+other = "Technology"
+
+[discipline_regulation]
+other = "Regulation"
+
+[discipline_safety]
+other = "Safety"
+
+[discipline_ethics]
+other = "Ethics"
+
+[discipline_society]
+other = "Society"
+
+[explore_by_topic]
+other = "Explore by topic"
+
+[explore_by_topic_desc]
+other = "Dive into our key areas to build your understanding of how technology, regulation and society connect."
+
+[explore]
+other = "Explore"
+
+[topic_tech_kicker]
+other = "Technical"
+
+[topic_tech_title]
+other = "How AI works"
+
+[topic_tech_desc]
+other = "From prompt engineering to probabilistic testing — the technology behind the headlines."
+
+[topic_reg_kicker]
+other = "Regulation & governance"
+
+[topic_reg_title]
+other = "Rules and systems"
+
+[topic_reg_desc]
+other = "What regulation is, why it exists, and how governance turns it into practice."
+
+[topic_safety_kicker]
+other = "Safety & ethics"
+
+[topic_safety_title]
+other = "Risks and responsibility"
+
+[topic_safety_desc]
+other = "Safety, ethical considerations and how they could shape real-world decisions."
+
+[topic_apps_kicker]
+other = "Real-world applications"
+
+[topic_apps_title]
+other = "AI in healthcare & pharma"
+
+[topic_apps_desc]
+other = "From drug discovery to patient care — how AI is used, and what it may mean for people and society."
+
+[topic_society_kicker]
+other = "Society & history"
+
+[topic_society_title]
+other = "The bigger picture"
+
+[topic_society_desc]
+other = "How AI may affect work, communities and our shared future."
+
+[featured_label]
+other = "Featured"
+
+[read_article]
+other = "Read article"
+
+[article_label]
+other = "Article"
+
+[latest_learning]
+other = "Latest learning"
+
+[latest_learning_desc]
+other = "In-depth articles and practical guides to help you go deeper."
+
+[view_all_articles]
+other = "View all articles"
+
+[newsletter_title]
+other = "Stay informed"
+
+[newsletter_desc]
+other = "Updates on regulatory timelines, key developments and new learning resources."
+
+[newsletter_placeholder]
+other = "Your email address"
+
+[sign_up]
+other = "Sign up"
+
+[newsletter_soon]
+other = "The newsletter is not open yet. Sign-up will be available soon."
+
+[brand_strapline]
+other = "AI regulation in Switzerland"
+
+[reading_time]
+other = "{{ .Count }} min read"
+
+[video_label]
+other = "Video"
+
+[video_title]
+other = "What is Mavai®?"
+
+[video_desc]
+other = "A short introduction to Mavai®: where it started, what it does, and how it brings together technology, regulation, safety, ethics and society."
+
+[video_mock]
+other = "Placeholder: the video is not yet produced."
+
+[video_alt]
+other = "Placeholder for an explainer video"
+
+[video_cta]
+other = "Watch the video"
+
+[bulletin_etsi_ai]
+other = "ETSI, TTC and TTA Explore New Global Partnership for Standardisation in Artificial Intelligence"

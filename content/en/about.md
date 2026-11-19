@@ -13,9 +13,9 @@ The site is part of the [Mavai®](https://mavai.org) project family, which devel
 
 {{< figure src="images/helena-mannion.jpg" alt="Helena Mannion" >}}
 
-**Helena Mannion** curates mavai.ch. She is a Master's student in Global Studies, specialising in AI safety and regulation. Her research focuses on how international regulatory frameworks translate into practical obligations for organisations deploying AI systems — particularly in Switzerland and the EU.
+**Helena Mannion** curates mavai.ch. She is a Master’s student in European Global Studies, which combines methods and theories of law, economics, history and the social sciences to examine Europe in its global context. Her research focuses on how international frameworks translate into practical, regulatory obligations, especially in the context of safe, compliant and ethical AI system deployment.
 
-Helena monitors regulatory developments across FINMA, the EU AI Act, ISO standards, and Swiss federal policy, and distils them into the analysis and news feeds published on this site.
+At Mavai.ch, Helena tracks regulatory developments across FINMA, the EU AI Act, ISO standards, and Swiss federal policy, and distils them into the analysis and news feeds published on this site.
 
 Helena holds a Bachelor's degree in History and English from the University of Basel, Switzerland.
 

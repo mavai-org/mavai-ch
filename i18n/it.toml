@@ -107,7 +107,7 @@ other = "https://aboutfeeds.com"
 other = "Come iniziare"
 
 [bulletin_label]
-other = "Attualità"
+other = "In evidenza"
 
 [bulletin_coe_treaty]
 other = "Un anno dalla firma svizzera del trattato globale del Consiglio d'Europa sull'IA — cosa è successo da allora?"
@@ -186,3 +186,144 @@ other = "Impossibile caricare i dati della cronologia. Riprova più tardi."
 
 [footer_trademark]
 other = 'Mavai® è un <a href="https://mavai.org/trademarks/">marchio registrato</a> in Svizzera a nome di Michael Mannion (n. 856092).'
+
+[hero_eyebrow]
+other = "Dove si incontrano le discipline"
+
+[hero_title]
+other = "Capire oggi.<br>Costruire un domani migliore."
+
+[hero_cta]
+other = "Scopri la nostra storia"
+
+[hero_grid_alt]
+other = "Griglia di quadrati colorati dal verde al rosso, simile a una matrice dei rischi"
+
+[discipline_technology]
+other = "Tecnologia"
+
+[discipline_regulation]
+other = "Regolamentazione"
+
+[discipline_safety]
+other = "Sicurezza"
+
+[discipline_ethics]
+other = "Etica"
+
+[discipline_society]
+other = "Società"
+
+[explore_by_topic]
+other = "Esplora per tema"
+
+[explore_by_topic_desc]
+other = "Approfondisci le nostre aree principali per capire meglio come si collegano tecnologia, regolamentazione e società."
+
+[explore]
+other = "Esplora"
+
+[topic_tech_kicker]
+other = "Tecnica"
+
+[topic_tech_title]
+other = "Come funziona l’IA"
+
+[topic_tech_desc]
+other = "Dal prompt engineering ai test probabilistici — la tecnologia dietro i titoli dei giornali."
+
+[topic_reg_kicker]
+other = "Regolamentazione e governance"
+
+[topic_reg_title]
+other = "Regole e sistemi"
+
+[topic_reg_desc]
+other = "Cos’è la regolamentazione, perché esiste e come la governance la traduce in pratica."
+
+[topic_safety_kicker]
+other = "Sicurezza ed etica"
+
+[topic_safety_title]
+other = "Rischi e responsabilità"
+
+[topic_safety_desc]
+other = "Sicurezza, considerazioni etiche e il modo in cui potrebbero influenzare le decisioni concrete."
+
+[topic_apps_kicker]
+other = "Applicazioni concrete"
+
+[topic_apps_title]
+other = "L’IA nella sanità e nel farmaceutico"
+
+[topic_apps_desc]
+other = "Dalla scoperta di farmaci all’assistenza ai pazienti — come viene usata l’IA e cosa potrebbe significare per le persone e la società."
+
+[topic_society_kicker]
+other = "Società e storia"
+
+[topic_society_title]
+other = "Il quadro generale"
+
+[topic_society_desc]
+other = "Come l’IA potrebbe influenzare il lavoro, le comunità e il nostro futuro comune."
+
+[featured_label]
+other = "In evidenza"
+
+[read_article]
+other = "Leggi l’articolo"
+
+[article_label]
+other = "Articolo"
+
+[latest_learning]
+other = "Ultimi contenuti"
+
+[latest_learning_desc]
+other = "Articoli di approfondimento e guide pratiche per andare più a fondo."
+
+[view_all_articles]
+other = "Vedi tutti gli articoli"
+
+[newsletter_title]
+other = "Resta informato"
+
+[newsletter_desc]
+other = "Aggiornamenti su scadenze normative, sviluppi principali e nuove risorse formative."
+
+[newsletter_placeholder]
+other = "Il tuo indirizzo e-mail"
+
+[sign_up]
+other = "Iscriviti"
+
+[newsletter_soon]
+other = "La newsletter non è ancora aperta. L’iscrizione sarà disponibile a breve."
+
+[brand_strapline]
+other = "Regolamentazione dell’IA in Svizzera"
+
+[reading_time]
+other = "{{ .Count }} min di lettura"
+
+[video_label]
+other = "Video"
+
+[video_title]
+other = "Che cos’è Mavai®?"
+
+[video_desc]
+other = "Una breve introduzione a Mavai®: come è nato, cosa fa e come mette in relazione tecnologia, regolamentazione, sicurezza, etica e società."
+
+[video_mock]
+other = "Segnaposto: il video non è ancora stato prodotto."
+
+[video_alt]
+other = "Segnaposto per un video esplicativo"
+
+[video_cta]
+other = "Guarda il video"
+
+[bulletin_etsi_ai]
+other = "ETSI, TTC e TTA esplorano una nuova partnership globale per la standardizzazione dell’intelligenza artificiale"

@@ -107,7 +107,7 @@ other = "https://aboutfeeds.com"
 other = "So funktioniert es"
 
 [bulletin_label]
-other = "Aktuell"
+other = "Im Fokus"
 
 [bulletin_coe_treaty]
 other = "Ein Jahr seit der Unterzeichnung des globalen KI-Abkommens des Europarats durch die Schweiz — was ist seither geschehen?"
@@ -186,3 +186,144 @@ other = "Zeitstrahldaten konnten nicht geladen werden. Bitte versuchen Sie es sp
 
 [footer_trademark]
 other = 'Mavai® ist eine in der Schweiz <a href="https://mavai.org/trademarks/">eingetragene Marke</a> von Michael Mannion (Nr. 856092).'
+
+[hero_eyebrow]
+other = "Wo sich die Disziplinen treffen"
+
+[hero_title]
+other = "Heute verstehen.<br>Morgen besser gestalten."
+
+[hero_cta]
+other = "Unsere Geschichte entdecken"
+
+[hero_grid_alt]
+other = "Raster aus farbigen Quadraten von Grün bis Rot, ähnlich einer Risikomatrix"
+
+[discipline_technology]
+other = "Technologie"
+
+[discipline_regulation]
+other = "Regulierung"
+
+[discipline_safety]
+other = "Sicherheit"
+
+[discipline_ethics]
+other = "Ethik"
+
+[discipline_society]
+other = "Gesellschaft"
+
+[explore_by_topic]
+other = "Nach Thema entdecken"
+
+[explore_by_topic_desc]
+other = "Tauchen Sie in unsere Schwerpunkte ein und verstehen Sie besser, wie Technologie, Regulierung und Gesellschaft zusammenhängen."
+
+[explore]
+other = "Entdecken"
+
+[topic_tech_kicker]
+other = "Technik"
+
+[topic_tech_title]
+other = "Wie KI funktioniert"
+
+[topic_tech_desc]
+other = "Von Prompt Engineering bis zu probabilistischem Testen – die Technologie hinter den Schlagzeilen."
+
+[topic_reg_kicker]
+other = "Regulierung & Governance"
+
+[topic_reg_title]
+other = "Regeln und Systeme"
+
+[topic_reg_desc]
+other = "Was Regulierung ist, warum es sie gibt und wie Governance sie in die Praxis überführt."
+
+[topic_safety_kicker]
+other = "Sicherheit & Ethik"
+
+[topic_safety_title]
+other = "Risiken und Verantwortung"
+
+[topic_safety_desc]
+other = "Sicherheit, ethische Überlegungen und wie sie reale Entscheidungen prägen könnten."
+
+[topic_apps_kicker]
+other = "Praxisanwendungen"
+
+[topic_apps_title]
+other = "KI in Gesundheit & Pharma"
+
+[topic_apps_desc]
+other = "Von der Wirkstoffforschung bis zur Patientenversorgung – wie KI eingesetzt wird und was das für Menschen und Gesellschaft bedeuten könnte."
+
+[topic_society_kicker]
+other = "Gesellschaft & Geschichte"
+
+[topic_society_title]
+other = "Das grosse Ganze"
+
+[topic_society_desc]
+other = "Wie KI Arbeit, Gemeinschaften und unsere gemeinsame Zukunft beeinflussen könnte."
+
+[featured_label]
+other = "Im Fokus"
+
+[read_article]
+other = "Artikel lesen"
+
+[article_label]
+other = "Artikel"
+
+[latest_learning]
+other = "Neu zum Lernen"
+
+[latest_learning_desc]
+other = "Vertiefende Artikel und praktische Leitfäden für den nächsten Schritt."
+
+[view_all_articles]
+other = "Alle Artikel anzeigen"
+
+[newsletter_title]
+other = "Bleiben Sie informiert"
+
+[newsletter_desc]
+other = "Neuigkeiten zu regulatorischen Zeitplänen, wichtigen Entwicklungen und neuen Lernangeboten."
+
+[newsletter_placeholder]
+other = "Ihre E-Mail-Adresse"
+
+[sign_up]
+other = "Anmelden"
+
+[newsletter_soon]
+other = "Der Newsletter ist noch nicht geöffnet. Die Anmeldung folgt in Kürze."
+
+[brand_strapline]
+other = "KI-Regulierung in der Schweiz"
+
+[reading_time]
+other = "{{ .Count }} Min. Lesezeit"
+
+[video_label]
+other = "Video"
+
+[video_title]
+other = "Was ist Mavai®?"
+
+[video_desc]
+other = "Eine kurze Einführung in Mavai®: wie alles begann, was es leistet und wie es Technologie, Regulierung, Sicherheit, Ethik und Gesellschaft zusammenbringt."
+
+[video_mock]
+other = "Platzhalter: Das Video ist noch nicht produziert."
+
+[video_alt]
+other = "Platzhalter für ein Erklärvideo"
+
+[video_cta]
+other = "Video ansehen"
+
+[bulletin_etsi_ai]
+other = "ETSI, TTC und TTA prüfen eine neue globale Partnerschaft für die Standardisierung der Künstlichen Intelligenz"
