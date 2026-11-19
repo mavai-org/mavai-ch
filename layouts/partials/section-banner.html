@@ -1,15 +1,11 @@
-{{- $alps := resources.Get "images/alps.jpg" -}}
-{{- $alpsWebp := $alps.Resize "1920x webp q75" -}}
-{{- $alpsSmall := $alps.Resize "960x webp q70" -}}
-{{- $color := .color | default "red" -}}
-<section class="section-banner section-banner--{{ $color }}">
-  <picture class="section-banner-bg">
-    <source media="(max-width: 768px)" srcset="{{ $alpsSmall.RelPermalink }}">
-    <source srcset="{{ $alpsWebp.RelPermalink }}">
-    <img src="{{ $alpsWebp.RelPermalink }}" alt="" loading="eager">
-  </picture>
+{{- /* Typographic page header shared by all subpages. Params: title, subtitle, eyebrow and icon (both optional). */ -}}
+<section class="page-header">
   <div class="container">
-    <h1>{{ .title }}</h1>
-    {{ with .subtitle }}<p class="section-banner-sub">{{ . }}</p>{{ end }}
+    <div class="page-header-text">
+      {{ with .eyebrow }}<p class="eyebrow">{{ . }}</p>{{ else }}<p class="eyebrow eyebrow--rule"></p>{{ end }}
+      <h1>{{ .title }}</h1>
+      {{ with .subtitle }}<p class="page-header-sub">{{ . }}</p>{{ end }}
+    </div>
+    {{ with .icon }}{{ partial "topic-icon.html" (dict "name" . "class" "page-header-icon") }}{{ end }}
   </div>
 </section>

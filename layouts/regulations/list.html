@@ -6,28 +6,25 @@
     <p class="feed-portal-intro">{{ i18n "feed_portal_intro" }}</p>
     <div class="feed-portal-grid">
 
+      {{ $icons := dict "banking" "regulation" "pharma" "safety" "federal-government" "society" "cantons" "society" "health" "safety" }}
       {{ range sort site.Data.sectors "weight" }}
         {{- $nameKey := printf "sector_%s" .id -}}
         {{- $descKey := printf "sector_%s_desc" .id -}}
         {{- $feedPage := printf "/feeds/%s" .id -}}
-        <a href="{{ ref $ $feedPage }}" class="feed-card feed-card--{{ .css_modifier }}">
-          <div class="feed-card-overlay"></div>
-          <div class="feed-card-content">
-            <h2>{{ i18n $nameKey }}</h2>
-            <p>{{ i18n $descKey }}</p>
-            <span class="feed-card-btn">{{ i18n "view_feed" }}</span>
-          </div>
+        <a href="{{ ref $ $feedPage }}" class="topic-card feed-card">
+          {{ partial "topic-icon.html" (dict "name" (index $icons .id | default "regulation") "class" "topic-card-icon") }}
+          <h2>{{ i18n $nameKey }}</h2>
+          <p>{{ i18n $descKey }}</p>
+          <span class="topic-card-link">{{ i18n "view_feed" }} <span aria-hidden="true">→</span></span>
         </a>
       {{ end }}
 
       {{/* All-content feed — spans full width */}}
-      <a href="{{ ref . "/feeds/all" }}" class="feed-card feed-card--all feed-card--full">
-        <div class="feed-card-overlay"></div>
-        <div class="feed-card-content">
-          <h2>{{ i18n "sector_all" }}</h2>
-          <p>{{ i18n "sector_all_desc" }}</p>
-          <span class="feed-card-btn">{{ i18n "view_feed" }}</span>
-        </div>
+      <a href="{{ ref . "/feeds/all" }}" class="topic-card feed-card feed-card--full">
+        {{ partial "topic-icon.html" (dict "name" "tech" "class" "topic-card-icon") }}
+        <h2>{{ i18n "sector_all" }}</h2>
+        <p>{{ i18n "sector_all_desc" }}</p>
+        <span class="topic-card-link">{{ i18n "view_feed" }} <span aria-hidden="true">→</span></span>
       </a>
 
     </div>

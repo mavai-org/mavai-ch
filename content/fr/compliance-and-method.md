@@ -54,48 +54,6 @@ Chaque mesure et chaque verdict constituent un enregistrement structuré qui ind
 
 ## Ce que la méthode fournit
 
-<style>
-  .obligation-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2rem 0;
-    background: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-radius: 6px;
-    overflow: hidden;
-  }
-  
-  .obligation-table thead {
-    background: #c8102e;
-    color: #ffffff;
-  }
-  
-  .obligation-table th {
-    padding: 1.25rem;
-    text-align: left;
-    font-weight: 600;
-    font-size: 1rem;
-    border: none;
-  }
-  
-  .obligation-table td {
-    padding: 1.25rem;
-    border-bottom: 1px solid #e0d5d5;
-  }
-  
-  .obligation-table tbody tr:nth-child(odd) {
-    background: #fdf2f2;
-  }
-  
-  .obligation-table tbody tr:hover {
-    background: #f9f5f5;
-  }
-  
-  .obligation-table tbody tr:last-child td {
-    border-bottom: none;
-  }
-</style>
-
 <table class="obligation-table">
   <thead>
     <tr>
