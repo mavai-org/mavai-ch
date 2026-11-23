@@ -1,0 +1,5 @@
+{{- /* Renders a date given as YYYY, YYYY-MM or YYYY-MM-DD, localised to the page language. */ -}}
+{{- $d := printf "%v" . -}}
+{{- if eq (len $d) 4 -}}<time datetime="{{ $d }}">{{ $d }}</time>
+{{- else if eq (len $d) 7 -}}<time datetime="{{ $d }}">{{ time.Format "January 2006" (time.AsTime (printf "%s-01" $d)) }}</time>
+{{- else -}}<time datetime="{{ $d }}">{{ time.Format ":date_long" (time.AsTime $d) }}</time>{{- end -}}

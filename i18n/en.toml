@@ -327,3 +327,89 @@ other = "Watch the video"
 
 [bulletin_etsi_ai]
 other = "ETSI, TTC and TTA Explore New Global Partnership for Standardisation in Artificial Intelligence"
+
+[cantons_card_title]
+other = "Cantonal AI Strategies"
+
+[cantons_card_desc]
+other = "Overview of all 26 cantons: dedicated AI strategies, digital strategies and guidance, with publication dates."
+
+[cantons_view]
+other = "View overview"
+
+[cantons_col_canton]
+other = "Canton"
+
+[cantons_col_document]
+other = "Document"
+
+[cantons_col_checked]
+other = "Last checked"
+
+[cantons_municipal]
+other = "municipal"
+
+[cantons_mock_notice]
+other = "Work in progress: this table is subject to updates and serves as an overview. Cantons without an entry have been researched, but no strategy was found."
+
+[cantons_col_articles]
+other = "Related articles"
+
+[cantons_tbd]
+other = "Not yet researched"
+
+[cantons_source]
+other = "Compiled by mavai.ch, based in part on the overview by the Berner Fachhochschule, published by %s (last updated November 2026), with own research and additions."
+
+[cantons_type_strategy]
+other = "Strategy"
+
+[cantons_type_directive]
+other = "Directive"
+
+[cantons_type_guidance]
+other = "Guidance"
+
+[cantons_type_report]
+other = "Report"
+
+[cantons_type_register]
+other = "Register"
+
+[cantons_articles_count]
+one = "1 related article"
+other = "{{ .Count }} related articles"
+
+[cantons_more_docs]
+one = "1 further document"
+other = "{{ .Count }} further documents"
+
+[cantons_none_found]
+other = "No dedicated AI document found"
+
+[cantons_ai_none]
+other = "No AI terms found in the document"
+
+[cantons_ai_brief]
+other = "AI mentioned only briefly"
+
+[cantons_type_digital]
+other = "Digital strategy"
+
+[cantons_type_overview]
+other = "Overview page"
+
+[cantons_band_eyebrow]
+other = "Cantons"
+
+[cantons_band_title]
+other = "AI strategies across the 26 cantons"
+
+[cantons_band_text]
+other = "Which cantons have published AI strategies, directives or guidance, and when? An overview with publication dates and related articles."
+
+[cantons_band_count]
+other = "Documents found for {{ .found }} of {{ .total }} cantons."
+
+[cantons_hosted]
+other = "PDF copy hosted on mavai.ch"

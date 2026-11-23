@@ -1,0 +1,218 @@
+# Source for the 'documents' entries: Digitale Verwaltung Schweiz / Berner Fachhochschule overview
+# (https://www.digitale-verwaltung-schweiz.ch/publikationen/umfragen/uebersicht-zu-ki-strategien-ki-leitfaeden-und-weiteren-ki-grundlagenpapieren,
+# last updated November 2026). Years are as listed there; they have NOT yet been checked against the documents.
+# Cantons without 'documents' are not yet researched.
+#
+# documents[].type: strategy | directive | guidance | report | register
+# documents[].published: 'YYYY', 'YYYY-MM' or 'YYYY-MM-DD'; omit if unknown
+# articles[]: related news/analysis, shown in a dropdown. Any article whose url already
+#   appears in documents[] is skipped automatically (no duplicates).
+# checked: ISO date the entry was last compared with its source
+
+- code: ZH
+  name: {en: Zurich, de: Zürich, fr: Zurich, it: Zurigo}
+  documents:
+  - {title: 'Richtlinie: Vorgehen beim Einsatz von KI bei öffentlichen Organen', url: 'https://docs.datenschutz.ch/u/d/publikationen/formulare-merkblaetter/Merkblatt-Vorgehen-beim-Einsatz-von-KI-in-oeffentlichen-Organen.pdf',
+    published: '2025', lang: de, type: directive}
+  - {title: Merkblatt zur Nutzung von Online-KI-Generatoren, url: 'https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/politik-staat/kanton/kantonale-verwaltung/compliance/20230830_Merkblatt_zur_Nutzung_von_Online_KI-Generatoren%20(barrierefrei).pdf',
+    published: '2023', lang: de, type: guidance}
+  - {title: 'Leitfaden: Einsatz Künstlicher Intelligenz in der Verwaltung: rechtliche und ethische Fragen', url: 'https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/politik-staat/kanton/digitale-verwaltung-und-e-government/projekte_digitale_transformation/ki_einsatz_in_der_verwaltung_2021.pdf',
+    published: '2021', lang: de, type: guidance}
+  checked: '2026-11-23'
+  articles:
+  - {title: Künstliche Intelligenz könnte das Produktivitätswachstum im Kanton Zürich verdoppeln, url: 'https://www.zh.ch/de/news-uebersicht/medienmitteilungen/2026/09/kuenstliche-intelligenz-koennte-das-produktivitaetswachstum-im-kanton-zuerich-verdoppeln.html',
+    published: '2026-09-22', source: 'Kanton Zürich, Medienmitteilung', lang: de}
+  - {title: 'Wirtschaftsmonitoring September 2026: KI-Effekte auf Arbeitsmarkt und Produktivität', url: 'https://www.zh.ch/de/wirtschaft-arbeit/zuercher-wirtschaftszahlen/wirtschaftsmonitoring/september-2026.html',
+    published: 2026-09, source: Kanton Zürich, lang: de}
+  municipal:
+  - name: Stadt Zürich
+    documents:
+    - {title: Richtlinie über die Nutzung von generativer künstlicher Intelligenz, url: 'https://www.stadt-zuerich.ch/content/dam/web/de/politik-verwaltung/politik-recht/stadtratsbeschluesse/2025/08/stzh-strb-2025-2281-beilage-1.pdf',
+      published: '2025', lang: de, type: directive}
+- code: BE
+  name: {en: Bern, de: Bern, fr: Berne, it: Berna}
+  documents:
+  - {title: 'Leitlinien «Künstliche Intelligenz»: Empfehlungen für den Umgang mit künstlicher Intelligenz in der Kantonsverwaltung Bern', url: 'https://www.sta.be.ch/de/start/themen/digitale-verwaltung/kuenstliche-intelligenz--ki-.html',
+    published: '2026', lang: de, type: directive}
+  - {title: 'Merkblatt: Wie nutze ich generative KI?', url: 'https://www.sta.be.ch/de/start/themen/digitale-verwaltung/kuenstliche-intelligenz--ki-.html', published: '2024-08-15', lang: de, type: guidance}
+  checked: '2026-11-23'
+  municipal:
+  - name: Stadt Bern
+    documents:
+    - {title: Merkblatt zur Verwendung von generativen KI-Werkzeugen in der Stadt Bern, url: 'https://www.bern.ch/themen/stadt-recht-und-politik/digitale-entwicklung/grundlagen/kuenstliche-intelligenz',
+      published: '2025-12-11', lang: de, type: guidance}
+- code: LU
+  name: {en: Lucerne, de: Luzern, fr: Lucerne, it: Lucerna}
+  documents:
+  - {title: 'Fachstrategie Künstliche Intelligenz für die Verwaltung, die Schulen und die Gerichte des Kantons Luzern', url: 'https://www.lu.ch/-/media/Kanton/Dokumente/FD/Projekte_und_Themen/FD_Fachstrategie_KI.pdf?rev=b5816b5709884efdbe8584e35c3d2bca&hash=9CA6C06C4EB5E5D4ED769F81ED1245AE',
+    published: '2025', lang: de, type: strategy}
+  checked: '2026-11-23'
+  articles:
+  - {title: Fachstrategie Künstliche Intelligenz (FD), url: 'https://www.lu.ch/-/media/Kanton/Dokumente/FD/Projekte_und_Themen/FD_Fachstrategie_KI.pdf?rev=b5816b5709884efdbe8584e35c3d2bca&hash=9CA6C06C4EB5E5D4ED769F81ED1245AE',
+    published: '2025', source: Kanton Luzern, lang: de}
+- code: UR
+  name: {en: Uri, de: Uri, fr: Uri, it: Uri}
+  documents:
+  - {title: Weisung über die Nutzung von künstlicher Intelligenz in der kantonalen Verwaltung, url: 'https://www.ur.ch/_docn/462211/Weisung_%C3%BCber_die_Nutzung_von_KI.pdf', published: '2026', lang: de,
+    type: directive}
+  checked: '2026-11-23'
+  articles:
+  - {title: Künstliche Intelligenz (KI), url: 'https://www.ur.ch/dienstleistungen/9361', published: null, source: Kanton Uri, lang: de}
+  - {title: Beilage zum Bericht des Regierungsrats (LA 2025-0106), url: 'https://www.ur.ch/_docn/456304/LA.2025-0106_II._Beilage_zu_Bericht_des_Regierungsrats.pdf', published: null, source: Kanton Uri,
+    lang: de}
+- code: SZ
+  name: {en: Schwyz, de: Schwyz, fr: Schwytz, it: Svitto}
+  researched: true
+  checked: '2026-11-23'
+  articles:
+  - {title: Merkblatt für den Umgang mit künstlicher Intelligenz (KI) in der Schule, url: 'https://www.sz.ch/public/upload/assets/73660/Merkblatt_fuer_den_Umgang_mit_kuenstlicher_Intelligenz_KI_in_der_Schule.pdf?fp=3',
+    published: '2024-02-19', source: 'Kanton Schwyz, Amt für Volksschulen und Sport', lang: de}
+- code: OW
+  name: {en: Obwalden, de: Obwalden, fr: Obwald, it: Obvaldo}
+  documents:
+  - {title: Digitalstrategie 2025–2028 (Kurzfassung), url: 'https://www.ow.ch/_docn/386581/Digitalstrategie_2025-2028.pdf', published: '2024-06-25', lang: de, type: digital, ai: none}
+  checked: '2026-11-23'
+- code: NW
+  name: {en: Nidwalden, de: Nidwalden, fr: Nidwald, it: Nidvaldo}
+  researched: true
+  checked: '2026-11-23'
+  articles:
+  - {title: Künstliche Intelligenz in der Verwaltung birgt Chancen und Risiken (Antwort auf Interpellation), url: 'https://www.nw.ch/_docn/384544/Medienmitteilung_Interpellation_Künstliche_Intelligenz.pdf',
+    published: 2024-06, source: 'Kanton Nidwalden, Medieninformation', lang: de}
+- code: GL
+  name: {en: Glarus, de: Glarus, fr: Glaris, it: Glarona}
+  researched: true
+  checked: '2026-11-23'
+  articles:
+  - {title: Umgang mit künstlicher Intelligenz in der Verwaltung, url: 'https://www.gl.ch/public-newsroom.html/31/newsroomnews/13200/title/umgang-mit-künstlicher-intelligenz-in-der-verwaltung', published: '2025-08-28',
+    source: 'Kanton Glarus, Regierungsrat', lang: de}
+- code: ZG
+  name: {en: Zug, de: Zug, fr: Zoug, it: Zugo}
+  documents:
+  - {title: Digitalstrategie Kanton Zug (2020–2026), url: /docs/cantons/zug-digitalstrategie-2020-2026.pdf, published: '2020-03-31', lang: de, type: digital, hosted: true, ai: brief}
+  checked: '2026-11-23'
+- code: FR
+  name: {en: Fribourg, de: Freiburg, fr: Fribourg, it: Friburgo}
+  documents:
+  - {title: 'Richtlinie: Intelligence artificielle générative pour les tâches administratives', url: 'https://www.fr.ch/sites/default/files/2024-11/directive-intelligence-artificielle-ia.pdf', published: '2024',
+    lang: fr, type: directive}
+  checked: '2026-11-23'
+- code: SO
+  name: {en: Solothurn, de: Solothurn, fr: Soleure, it: Soletta}
+  documents:
+  - {title: KI-Leitfaden, url: 'https://digital.so.ch/index.php?eID=dumpFile&t=f&f=2009351&fn=4%3A%2Fdigital%2Fform%2Fuploads%2F260601_KI-Leitfaden.pdf&token=b0dea0561aac615f1bcedcb6715b609616a5e853', published: 2026-06,
+    lang: de, type: guidance}
+  - {title: Handreichung KI-Anwendungen (Volksschule), url: 'https://so.ch/verwaltung/departement-fuer-bildung-kultur-und-sport/volksschulamt/informatische-bildung/handreichung-ki-anwendungen/', published: null,
+    lang: de, type: guidance}
+  checked: '2026-11-23'
+- code: BS
+  name: {en: Basel-Stadt, de: Basel-Stadt, fr: Bâle-Ville, it: Basilea Città}
+  documents:
+  - {title: Kantonale KI-Strategie 2026–2029, url: 'https://www.bs.ch/schwerpunkte/daten/databs/schwerpunkte/kuenstliche-intelligenz#kantonale-ki-strategie-20262029', published: '2026', lang: de, type: strategy}
+  - {title: Kantonale KI-Richtlinie Basel-Stadt, url: 'https://www.bs.ch/schwerpunkte/daten/databs/schwerpunkte/kuenstliche-intelligenz/ki-richtlinie', published: '2026', lang: de, type: directive}
+  checked: '2026-11-23'
+- code: BL
+  name: {en: Basel-Landschaft, de: Basel-Landschaft, fr: Bâle-Campagne, it: Basilea Campagna}
+  documents:
+  - {title: Strategie Digitale Transformation, url: 'https://bl-api.webcloud7.ch/politik-und-behorden/besondere-behoerden/landeskanzlei/bl-digital-plus/strategie-digitale-transformation-1/downloads/strategie_digitale_transformation_es_260806.pdf',
+    published: '2026-01-13', lang: de, type: digital, ai: brief}
+  checked: '2026-11-23'
+  articles:
+  - {title: Künstliche Intelligenz (KI) – Pädagogischer ICT-Support, url: 'https://www.baselland.ch/politik-und-behorden/direktionen/bildungs-kultur-und-sportdirektion/it-sbl/paedagogischer-ict-support-ict-bildung/kuenstliche-intelligenz-ki',
+    published: null, source: 'Kanton Basel-Landschaft, Bildungs-, Kultur- und Sportdirektion', lang: de}
+- code: SH
+  name: {en: Schaffhausen, de: Schaffhausen, fr: Schaffhouse, it: Sciaffusa}
+  documents:
+  - {title: Digitalisierungsstrategie Digitale Verwaltung Schaffhausen, url: 'https://irp.cdn-website.com/cb2a8871/files/uploaded/Digitalisierungsstrategie_Kanton_Schaffhausen_240528.pdf', published: 2024-05,
+    lang: de, type: digital, ai: none}
+  checked: '2026-11-23'
+- code: AR
+  name: {en: Appenzell Ausserrhoden, de: Appenzell Ausserrhoden, fr: Appenzell Rhodes-Extérieures, it: Appenzello Esterno}
+  researched: true
+  checked: '2026-11-23'
+  articles:
+  - {title: Kräfte bündeln für Einsatz von KI in der Verwaltung (gemeinsame Mitteilung von sieben Kantonen), url: 'https://ar.ch/schnellzugriff/medienmitteilungen-der-kantonalen-verwaltung/detail/news/kraefte-buendeln-fuer-einsatz-von-ki-in-der-verwaltung/',
+    published: '2026-06-16', source: Kanton Appenzell Ausserrhoden, lang: de}
+- code: AI
+  name: {en: Appenzell Innerrhoden, de: Appenzell Innerrhoden, fr: Appenzell Rhodes-Intérieures, it: Appenzello Interno}
+  documents:
+  - {title: Richtlinie zur Nutzung von generativen KI-Werkzeugen, url: 'https://www.ai.ch/themen/staat-und-recht/digitale-verwaltung/ki-werkzeuge', published: null, lang: de, type: directive}
+  - {title: Verzeichnis über algorithmische Systeme, url: 'https://www.ai.ch/themen/staat-und-recht/digitale-verwaltung/verzeichnis-algorithmischer-systeme', published: null, lang: de, type: register}
+  checked: '2026-11-23'
+- code: SG
+  name: {en: St. Gallen, de: St. Gallen, fr: Saint-Gall, it: San Gallo}
+  documents:
+  - {title: Leitlinien über die Verwendung von ChatGPT und ähnlichen Systemen in der Verwaltung, url: 'https://www.sg.ch/content/dam/sgch/sicherheit/datenschutz/SK_Leitlinien_ueber_die_Verwendung_von_ChatGPT_und_aehnlichen_Systemen_in_der_Verwaltung.pdf',
+    published: '2023', lang: de, type: directive}
+  checked: '2026-11-23'
+- code: GR
+  name: {en: Graubünden, de: Graubünden, fr: Grisons, it: Grigioni}
+  documents:
+  - {title: Künstliche Intelligenz in der kantonalen Verwaltung (Übersicht der Aktivitäten), url: 'https://www.gr.ch/DE/institutionen/verwaltung/dfg/ds/stabdv/aktuelles/Seiten/KI-Verwaltung.aspx', published: 2025-04,
+    lang: de, type: overview}
+  checked: '2026-11-23'
+- code: AG
+  name: {en: Aargau, de: Aargau, fr: Argovie, it: Argovia}
+  documents:
+  - {title: Fachstrategie Künstliche Intelligenz des Kantons Aargau 2025–2027, url: 'https://www.bfh.ch/dam/jcr:ac7183f2-bce5-4c13-80fb-2137bf79999f/KI-Strategie%20Kanton%20Aargau%202025%E2%80%932027.pdf',
+    published: '2025', lang: de, type: strategy}
+  checked: '2026-11-23'
+- code: TG
+  name: {en: Thurgau, de: Thurgau, fr: Thurgovie, it: Turgovia}
+  researched: true
+  checked: '2026-11-23'
+  articles:
+  - {title: Datenstrategie für den Kanton Thurgau (Datenstrategie 2026–2030), url: 'https://www.tg.ch/news.html/485/news/79908', published: '2026-09-03', source: Kanton Thurgau, lang: de}
+- code: TI
+  name: {en: Ticino, de: Tessin, fr: Tessin, it: Ticino}
+  documents:
+  - {title: Attuazione della Strategia per la trasformazione digitale, url: 'https://www.ti.ch/can/portale-della-trasformazione-digitale/trasformazione-digitale/attuazione-della-strategia', published: null,
+    lang: it, type: digital}
+  checked: '2026-11-23'
+  articles:
+  - {title: Kanton Tessin stellt Entwurf einer schulischen KI-Strategie vor – Module ab 2027, url: 'https://eduai.ch/news/2026-10-14-tessin-decs-ki-strategie-schule', published: '2026-10-14', source: eduAI.ch,
+    lang: de}
+- code: VD
+  name: {en: Vaud, de: Waadt, fr: Vaud, it: Vaud}
+  documents:
+  - {title: 'Bericht: Intelligence artificielle dans le Canton de Vaud', url: 'https://www.vd.ch/fileadmin/user_upload/organisation/dinf/dsi/fichiers_pdf/IA_Rapport_interd%C3%A9partemental.pdf', published: '2024',
+    lang: fr, type: report}
+  checked: '2026-11-23'
+  municipal:
+  - name: Communes vaudoises (UCV)
+    documents:
+    - {title: 'Leitfaden: Intelligence artificielle et communes vaudoises', url: 'https://www.ucv.ch/fileadmin/documents/pdf/Th%C3%A8mes/04-Securite/IA-dans-les-communes-vaudoises_GUI_VF.pdf', published: '2025',
+      lang: fr, type: guidance}
+- code: VS
+  name: {en: Valais, de: Wallis, fr: Valais, it: Vallese}
+  documents:
+  - {title: Künstliche Intelligenz im Dienst der Walliser Verwaltung, url: 'https://www.vs.ch/de/web/ia', published: null, lang: de, type: overview}
+  checked: '2026-11-23'
+  articles:
+  - {title: Das Wallis nimmt eine eigene souveräne KI in Betrieb, url: 'https://www.vs.ch/de/web/communication/w/intelligence-artificielle-le-valais-se-dote-de-sa-propre-ia-souveraine', published: '2026-11-05',
+    source: 'Kanton Wallis, Medienmitteilung', lang: de}
+- code: NE
+  name: {en: Neuchâtel, de: Neuenburg, fr: Neuchâtel, it: Neuchâtel}
+  documents:
+  - {title: Stratégie digitale de l'État de Neuchâtel 2023–2028, url: 'https://www.ne.ch/sites/default/files/2025-09/NE_StratégieDigitale_2023-2028.pdf', published: 2023-04, lang: fr, type: digital, ai: brief}
+  checked: '2026-11-23'
+  articles:
+  - {title: 'Réunion interparlementaire à Neuchâtel : l''intelligence artificielle au cœur des débats', url: 'https://www.ne.ch/communiques-de-presse/reunion-interparlementaire-neuchatel-lintelligence-artificielle-au-coeur-des-debats',
+    published: 2024-09, source: République et canton de Neuchâtel, lang: fr}
+- code: GE
+  name: {en: Geneva, de: Genf, fr: Genève, it: Ginevra}
+  researched: true
+  checked: '2026-11-23'
+  articles:
+  - {title: 'Geneva AI Summit 2027 : Genève au cœur de la gouvernance de l''IA', url: 'https://www.ge.ch/actualite/geneva-ai-summit-2027-geneve-au-coeur-gouvernance-ia-19-11-2026', published: '2026-11-19',
+    source: 'République et canton de Genève, actualité', lang: fr}
+  - {title: 'Guide Entreprises & Numérique : Künstliche Intelligenz (KI) (Leitfaden für Unternehmen)', url: 'https://www.ge.ch/document/37867/telecharger', published: 2024-11, source: Kanton Genf, lang: de}
+  municipal:
+  - name: Ville de Genève
+    documents:
+    - {title: Charte de gouvernance et d'encadrement de l'intelligence artificielle, url: 'https://www.geneve.ch/sites/default/files/2025-04/charte-IA-ville-geneve.pdf', published: '2025', lang: fr, type: directive}
+- code: JU
+  name: {en: Jura, de: Jura, fr: Jura, it: Giura}
+  documents:
+  - {title: Digitale Strategie der Republik und des Kantons Jura, url: /docs/cantons/jura-digitale-strategie-2025-de.pdf, published: 2025-05, lang: de, type: digital, hosted: true, ai: brief}
+  checked: '2026-11-23'

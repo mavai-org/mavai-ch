@@ -1,0 +1,40 @@
+{{- /* Homepage band: 26 tiles, one per canton, coloured by its lead document type. Remove this partial and its call in index.html to drop the band. */ -}}
+{{- $ranks := dict "strategy" 1 "directive" 2 "digital" 3 "guidance" 4 "overview" 5 "report" 6 "register" 7 -}}
+{{- $tiles := slice -}}
+{{- $found := 0 -}}
+{{- range site.Data.cantons -}}
+  {{- $best := "" -}}{{- $bestRank := 99 -}}
+  {{- range .documents -}}
+    {{- $rk := index $ranks .type -}}
+    {{- if lt $rk $bestRank -}}{{- $bestRank = $rk -}}{{- $best = .type -}}{{- end -}}
+  {{- end -}}
+  {{- if $best -}}{{- $found = add $found 1 -}}{{- else if .researched -}}{{- $best = "none" -}}{{- else -}}{{- $best = "tbd" -}}{{- end -}}
+  {{- $tiles = $tiles | append (dict "code" .code "name" (index .name site.Language.Lang) "status" $best) -}}
+{{- end -}}
+{{- $cantonsUrl := ref . "/regulations/cantons" -}}
+
+<section class="cantons-band">
+  <div class="container">
+    <div class="cantons-band-text">
+      <p class="eyebrow">{{ i18n "cantons_band_eyebrow" }}</p>
+      <h2>{{ i18n "cantons_band_title" }}</h2>
+      <p>{{ i18n "cantons_band_text" }}</p>
+      <p class="cantons-band-count">{{ i18n "cantons_band_count" (dict "found" $found "total" (len $tiles)) }}</p>
+      <a class="link-arrow" href="{{ $cantonsUrl }}">{{ i18n "cantons_view" }} <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="cantons-band-map">
+      <ul class="cantons-tiles">
+        {{ range $tiles }}
+        {{ $label := cond (or (eq .status "none") (eq .status "tbd")) (cond (eq .status "none") (i18n "cantons_none_found") (i18n "cantons_tbd")) (i18n (printf "cantons_type_%s" .status)) }}
+        <li><a class="cantons-tile cantons-tile--{{ .status }}" href="{{ $cantonsUrl }}#canton-{{ .code }}" title="{{ .name }}: {{ $label }}"><span class="cantons-tile-code">{{ .code }}</span><span class="visually-hidden"> {{ .name }}: {{ $label }}</span></a></li>
+        {{ end }}
+      </ul>
+      <ul class="cantons-legend">
+        {{ range $s := slice "strategy" "directive" "digital" "guidance" "overview" "report" "register" "none" "tbd" }}
+        {{ $n := len (where $tiles "status" $s) }}
+        {{ if gt $n 0 }}<li><span class="cantons-swatch cantons-tile--{{ $s }}" aria-hidden="true"></span>{{ if eq $s "none" }}{{ i18n "cantons_none_found" }}{{ else if eq $s "tbd" }}{{ i18n "cantons_tbd" }}{{ else }}{{ i18n (printf "cantons_type_%s" $s) }}{{ end }} ({{ $n }})</li>{{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>

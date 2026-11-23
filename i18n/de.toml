@@ -327,3 +327,89 @@ other = "Video ansehen"
 
 [bulletin_etsi_ai]
 other = "ETSI, TTC und TTA prüfen eine neue globale Partnerschaft für die Standardisierung der Künstlichen Intelligenz"
+
+[cantons_card_title]
+other = "Kantonale KI-Strategien"
+
+[cantons_card_desc]
+other = "Übersicht über alle 26 Kantone: eigene KI-Strategien, Digitalstrategien und Merkblätter, mit Veröffentlichungsdatum."
+
+[cantons_view]
+other = "Übersicht ansehen"
+
+[cantons_col_canton]
+other = "Kanton"
+
+[cantons_col_document]
+other = "Dokument"
+
+[cantons_col_checked]
+other = "Zuletzt geprüft"
+
+[cantons_municipal]
+other = "kommunal"
+
+[cantons_mock_notice]
+other = "In Arbeit: Diese Tabelle wird laufend aktualisiert und dient als Übersicht. Kantone ohne Eintrag wurden recherchiert, es wurde jedoch keine Strategie gefunden."
+
+[cantons_col_articles]
+other = "Verwandte Artikel"
+
+[cantons_tbd]
+other = "Noch nicht recherchiert"
+
+[cantons_source]
+other = "Zusammengestellt von mavai.ch, teilweise basierend auf der Übersicht der Berner Fachhochschule, veröffentlicht von %s (zuletzt aktualisiert im November 2026), mit eigener Recherche und Ergänzungen."
+
+[cantons_type_strategy]
+other = "Strategie"
+
+[cantons_type_directive]
+other = "Weisung"
+
+[cantons_type_guidance]
+other = "Merkblatt"
+
+[cantons_type_report]
+other = "Bericht"
+
+[cantons_type_register]
+other = "Verzeichnis"
+
+[cantons_articles_count]
+one = "1 verwandter Artikel"
+other = "{{ .Count }} verwandte Artikel"
+
+[cantons_more_docs]
+one = "1 weiteres Dokument"
+other = "{{ .Count }} weitere Dokumente"
+
+[cantons_none_found]
+other = "Kein eigenes KI-Dokument gefunden"
+
+[cantons_ai_none]
+other = "Keine KI-Begriffe im Dokument gefunden"
+
+[cantons_ai_brief]
+other = "KI nur kurz erwähnt"
+
+[cantons_type_digital]
+other = "Digitalstrategie"
+
+[cantons_type_overview]
+other = "Übersichtsseite"
+
+[cantons_band_eyebrow]
+other = "Kantone"
+
+[cantons_band_title]
+other = "KI-Strategien in den 26 Kantonen"
+
+[cantons_band_text]
+other = "Welche Kantone haben KI-Strategien, Weisungen oder Merkblätter veröffentlicht, und wann? Eine Übersicht mit Veröffentlichungsdaten und verwandten Artikeln."
+
+[cantons_band_count]
+other = "Dokumente für {{ .found }} von {{ .total }} Kantonen gefunden."
+
+[cantons_hosted]
+other = "PDF-Kopie auf mavai.ch"

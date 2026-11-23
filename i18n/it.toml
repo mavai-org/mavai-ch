@@ -327,3 +327,89 @@ other = "Guarda il video"
 
 [bulletin_etsi_ai]
 other = "ETSI, TTC e TTA esplorano una nuova partnership globale per la standardizzazione dell’intelligenza artificiale"
+
+[cantons_card_title]
+other = "Strategie cantonali sull'IA"
+
+[cantons_card_desc]
+other = "Panoramica dei 26 cantoni: strategie sull'IA, strategie digitali e linee guida, con le date di pubblicazione."
+
+[cantons_view]
+other = "Vedi la panoramica"
+
+[cantons_col_canton]
+other = "Cantone"
+
+[cantons_col_document]
+other = "Documento"
+
+[cantons_col_checked]
+other = "Ultima verifica"
+
+[cantons_municipal]
+other = "comunale"
+
+[cantons_mock_notice]
+other = "In corso: questa tabella è soggetta ad aggiornamenti e funge da panoramica. I cantoni senza voce sono stati esaminati, ma non è stata trovata alcuna strategia."
+
+[cantons_col_articles]
+other = "Articoli correlati"
+
+[cantons_tbd]
+other = "Non ancora esaminato"
+
+[cantons_source]
+other = "Compilato da mavai.ch, in parte sulla base della panoramica della Scuola universitaria professionale bernese, pubblicata da %s (ultimo aggiornamento: novembre 2026), con ricerche e integrazioni proprie."
+
+[cantons_type_strategy]
+other = "Strategia"
+
+[cantons_type_directive]
+other = "Direttiva"
+
+[cantons_type_guidance]
+other = "Linee guida"
+
+[cantons_type_report]
+other = "Rapporto"
+
+[cantons_type_register]
+other = "Registro"
+
+[cantons_articles_count]
+one = "1 articolo correlato"
+other = "{{ .Count }} articoli correlati"
+
+[cantons_more_docs]
+one = "1 altro documento"
+other = "{{ .Count }} altri documenti"
+
+[cantons_none_found]
+other = "Nessun documento dedicato all'IA trovato"
+
+[cantons_ai_none]
+other = "Nessun termine sull'IA nel documento"
+
+[cantons_ai_brief]
+other = "IA citata solo brevemente"
+
+[cantons_type_digital]
+other = "Strategia digitale"
+
+[cantons_type_overview]
+other = "Pagina informativa"
+
+[cantons_band_eyebrow]
+other = "Cantoni"
+
+[cantons_band_title]
+other = "Strategie sull'IA nei 26 cantoni"
+
+[cantons_band_text]
+other = "Quali cantoni hanno pubblicato strategie, direttive o linee guida sull'IA, e quando? Una panoramica con date di pubblicazione e articoli correlati."
+
+[cantons_band_count]
+other = "Trovati documenti per {{ .found }} cantoni su {{ .total }}."
+
+[cantons_hosted]
+other = "Copia PDF ospitata su mavai.ch"

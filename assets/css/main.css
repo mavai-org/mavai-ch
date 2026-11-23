@@ -2020,3 +2020,70 @@ a.insight-row:hover .insight-title { color: var(--color-accent); }
   .obligation-table th, .obligation-table td { padding: 0.8rem 1rem; }
   .obligation-table td:first-child { width: auto; }
 }
+
+/* ── Cantonal AI strategies table ── */
+.cantons { padding: var(--space-lg) 0 var(--space-xl); }
+.cantons-mock { background: var(--color-accent-tint); border-left: 4px solid var(--color-accent); padding: var(--space-sm) var(--space-md); margin-bottom: var(--space-md); font-family: var(--font-ui); font-size: 0.9rem; }
+.cantons-table-wrap { overflow-x: auto; }
+.cantons-table { width: 100%; border-collapse: collapse; font-family: var(--font-ui); font-size: 0.9rem; }
+.cantons-table th, .cantons-table td { text-align: left; padding: 0.7rem 0.8rem; border-bottom: 1px solid var(--color-border); vertical-align: top; }
+.cantons-table thead th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-light); border-bottom: 2px solid var(--color-border); }
+.cantons-table tbody th { font-weight: 600; color: var(--color-text); white-space: nowrap; }
+.cantons-code { display: inline-block; min-width: 2rem; margin-right: 0.4rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-light); }
+.cantons-sub th, .cantons-sub td { background: var(--color-surface-alt); }
+.cantons-sub th { font-weight: 500; padding-left: 1.6rem; }
+.cantons-level, .cantons-lang { color: var(--color-text-light); font-weight: 400; font-size: 0.8rem; }
+.cantons-empty { color: var(--color-text-light); }
+.cantons-badge { display: inline-block; padding: 0.15rem 0.55rem; border-radius: 999px; font-size: 0.75rem; font-weight: 500; background: var(--color-surface); color: var(--color-text-secondary); white-space: nowrap; }
+.cantons-badge--ai-strategy { background: var(--color-accent); color: var(--color-white); }
+.cantons-badge--digital-strategy { background: var(--color-dark); color: var(--color-white); }
+.cantons-badge--guidance { background: var(--color-accent-tint); color: var(--color-text); border: 1px solid var(--color-border); }
+
+@media (max-width: 720px) {
+  .cantons-table thead { position: absolute; left: -9999px; }
+  .cantons-table, .cantons-table tbody, .cantons-table tr, .cantons-table th, .cantons-table td { display: block; }
+  .cantons-table tr { border-bottom: 1px solid var(--color-border); padding: 0.6rem 0; }
+  .cantons-table th, .cantons-table td { border: 0; padding: 0.2rem 0.8rem; }
+  .cantons-table td::before { content: attr(data-label) ": "; color: var(--color-text-light); font-size: 0.75rem; }
+}
+
+/* Cantons table: multiple documents per row and the related-articles dropdown */
+.cantons-source { margin-top: var(--space-md); font-family: var(--font-ui); font-size: 0.85rem; color: var(--color-text-light); }
+.cantons-docs { list-style: none; margin: 0; padding: 0; }
+.cantons-docs li { margin-bottom: 0.55rem; }
+.cantons-docs li:last-child { margin-bottom: 0; }
+.cantons-docs .cantons-badge { margin-right: 0.35rem; }
+.cantons-meta { color: var(--color-text-light); font-size: 0.8rem; }
+.cantons-articles summary { cursor: pointer; color: var(--color-accent); font-weight: 500; }
+.cantons-articles summary:hover { color: var(--color-accent-hover); }
+.cantons-articles ul { list-style: none; margin: 0.5rem 0 0; padding: 0; }
+.cantons-articles li { margin-bottom: 0.5rem; }
+.cantons-badge--strategy { background: var(--color-accent); color: var(--color-white); }
+.cantons-badge--directive { background: var(--color-dark); color: var(--color-white); }
+.cantons-badge--guidance, .cantons-badge--report, .cantons-badge--register { background: var(--color-accent-tint); color: var(--color-text); border: 1px solid var(--color-border); }
+.cantons-more { margin-top: 0.5rem; }
+.cantons-ai { display: block; color: var(--color-text-light); font-size: 0.75rem; font-style: italic; }
+.cantons-badge--digital, .cantons-badge--overview { background: var(--color-accent-tint); color: var(--color-text); border: 1px solid var(--color-border); }
+
+/* ── Homepage band: cantonal AI strategies ── */
+.cantons-band { padding: var(--space-lg) 0; background: var(--color-surface-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+.cantons-band .container { display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--space-lg); align-items: center; }
+.cantons-band-text h2 { margin: 0 0 var(--space-xs); }
+.cantons-band-text p { color: var(--color-text-secondary); }
+.cantons-band-count { font-family: var(--font-ui); font-size: 0.85rem; color: var(--color-text-light) !important; }
+.cantons-tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); gap: 6px; }
+.cantons-tile { display: flex; align-items: center; justify-content: center; aspect-ratio: 1; border-radius: 6px; font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; text-decoration: none; border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text-light); }
+a.cantons-tile:hover, a.cantons-tile:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
+.cantons-tile--strategy { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-white); }
+.cantons-tile--directive { background: var(--color-dark); border-color: var(--color-dark); color: var(--color-white); }
+.cantons-tile--digital { background: var(--color-accent-soft); border-color: var(--color-accent-soft); color: var(--color-dark); }
+.cantons-tile--guidance, .cantons-tile--overview, .cantons-tile--report, .cantons-tile--register { background: var(--color-accent-tint); color: var(--color-text); }
+.cantons-tile--none, .cantons-tile--tbd { background: transparent; border-style: dashed; }
+.cantons-legend { list-style: none; margin: var(--space-sm) 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; font-family: var(--font-ui); font-size: 0.8rem; color: var(--color-text-secondary); }
+.cantons-swatch { display: inline-block; width: 0.8rem; height: 0.8rem; border-radius: 3px; margin-right: 0.35rem; vertical-align: -1px; border: 1px solid var(--color-border); }
+.cantons-table tr:target { background: var(--color-accent-tint); }
+@media (max-width: 800px) { .cantons-band .container { grid-template-columns: 1fr; gap: var(--space-md); } }
+
+/* Regulation News portal: tighter spacing around the cantons band */
+.feed-portal--lead { padding-bottom: var(--space-lg); }
+.feed-portal--tail { padding: var(--space-lg) 0 var(--space-md); }

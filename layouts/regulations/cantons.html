@@ -1,0 +1,101 @@
+{{ define "main" }}
+{{ partial "section-banner.html" (dict "title" .Title "subtitle" .Description "color" "slate") }}
+
+{{- $lang := site.Language.Lang -}}
+<section class="cantons">
+  <div class="container">
+
+    {{ if .Params.mock }}
+    <p class="cantons-mock" role="note">{{ i18n "cantons_mock_notice" }}</p>
+    {{ end }}
+
+
+    <div class="cantons-table-wrap">
+      <table class="cantons-table">
+        <thead>
+          <tr>
+            <th scope="col">{{ i18n "cantons_col_canton" }}</th>
+            <th scope="col">{{ i18n "cantons_col_document" }}</th>
+            <th scope="col">{{ i18n "cantons_col_articles" }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range site.Data.cantons }}
+            {{ template "cantons-row" (dict "row" . "name" (index .name $lang) "code" .code "sub" false) }}
+            {{ range .municipal }}
+              {{ template "cantons-row" (dict "row" . "name" .name "code" "" "sub" true) }}
+            {{ end }}
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+
+    {{- $link := `<a href="https://www.digitale-verwaltung-schweiz.ch/publikationen/umfragen/uebersicht-zu-ki-strategien-ki-leitfaeden-und-weiteren-ki-grundlagenpapieren" target="_blank" rel="noopener">Digitale Verwaltung Schweiz</a>` }}
+    <p class="cantons-source">{{ printf (i18n "cantons_source") $link | safeHTML }}</p>
+
+  </div>
+</section>
+{{ end }}
+
+{{ define "cantons-row" }}
+{{- $r := .row -}}
+{{- /* Collect document URLs so an article that repeats one is not listed twice. */ -}}
+{{- /* Lead document = highest-ranked type (strategy first), then newest. The rest go in a dropdown. */ -}}
+{{- $ranks := dict "strategy" 1 "directive" 2 "digital" 3 "guidance" 4 "overview" 5 "report" 6 "register" 7 -}}
+{{- $scored := slice -}}
+{{- range $r.documents -}}
+  {{- $year := 0 -}}{{- with .published }}{{ $year = int (substr (printf "%v" .) 0 4) }}{{ end -}}
+  {{- $scored = $scored | append (merge . (dict "score" (sub (mul (index $ranks .type) 10000) $year))) -}}
+{{- end -}}
+{{- $sorted := sort $scored "score" -}}
+{{- $docUrls := slice -}}
+{{- range $r.documents }}{{ with .url }}{{ $docUrls = $docUrls | append . }}{{ end }}{{ end -}}
+{{- $articles := slice -}}
+{{- range $r.articles }}{{ if not (in $docUrls .url) }}{{ $articles = $articles | append . }}{{ end }}{{ end -}}
+<tr{{ if not .sub }} id="canton-{{ .code }}"{{ end }} class="{{ if .sub }}cantons-sub{{ end }}">
+  <th scope="row" data-label="{{ i18n "cantons_col_canton" }}">
+    {{ if .sub }}<span class="cantons-sub-mark" aria-hidden="true">↳</span>{{ else }}<span class="cantons-code">{{ .code }}</span>{{ end }}
+    {{ .name }}{{ if .sub }} <span class="cantons-level">({{ i18n "cantons_municipal" }})</span>{{ end }}
+  </th>
+  <td data-label="{{ i18n "cantons_col_document" }}">
+    {{ if $sorted }}
+    <ul class="cantons-docs">
+      {{ template "cantons-doc" (index $sorted 0) }}
+    </ul>
+    {{ if gt (len $sorted) 1 }}
+    <details class="cantons-articles cantons-more">
+      <summary>{{ i18n "cantons_more_docs" (sub (len $sorted) 1) }}</summary>
+      <ul class="cantons-docs">
+        {{ range after 1 $sorted }}{{ template "cantons-doc" . }}{{ end }}
+      </ul>
+    </details>
+    {{ end }}
+    {{ else }}<span class="cantons-empty">{{ if $r.researched }}{{ i18n "cantons_none_found" }}{{ else }}{{ i18n "cantons_tbd" }}{{ end }}</span>{{ end }}
+  </td>
+  <td data-label="{{ i18n "cantons_col_articles" }}">
+    {{ if $articles }}
+    <details class="cantons-articles">
+      <summary>{{ i18n "cantons_articles_count" (len $articles) }}</summary>
+      <ul>
+        {{ range $articles }}
+        <li>
+          <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
+          <span class="cantons-meta">{{ with .source }}{{ . }}{{ end }}{{ with .published }} · {{ partial "cantons-date.html" . }}{{ end }}</span>
+        </li>
+        {{ end }}
+      </ul>
+    </details>
+    {{ else }}<span class="cantons-empty">—</span>{{ end }}
+  </td>
+</tr>
+{{ end }}
+
+{{ define "cantons-doc" }}
+<li>
+  <span class="cantons-badge cantons-badge--{{ .type }}">{{ i18n (printf "cantons_type_%s" .type) }}</span>
+  {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+  <span class="cantons-meta">{{ with .lang }}{{ upper . }}{{ end }}{{ with .published }} · {{ partial "cantons-date.html" . }}{{ end }}</span>
+  {{ if .hosted }}<span class="cantons-ai">{{ i18n "cantons_hosted" }}</span>{{ end }}
+  {{ with .ai }}<span class="cantons-ai">{{ i18n (printf "cantons_ai_%s" .) }}</span>{{ end }}
+</li>
+{{ end }}
