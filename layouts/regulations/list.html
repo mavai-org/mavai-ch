@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ partial "section-banner.html" (dict "title" .Title "subtitle" .Description "color" "slate") }}
 
-<section class="feed-portal">
+<section class="feed-portal feed-portal--lead">
   <div class="container">
     <p class="feed-portal-intro">{{ i18n "feed_portal_intro" }}</p>
     <div class="feed-portal-grid">
@@ -19,6 +19,16 @@
         </a>
       {{ end }}
 
+    </div>
+  </div>
+</section>
+
+{{/* Cantonal AI strategies: original reference content, so it gets its own band right under the three sector feeds */}}
+{{ partial "cantons-band.html" . }}
+
+<section class="feed-portal feed-portal--tail">
+  <div class="container">
+    <div class="feed-portal-grid">
       {{/* All-content feed — spans full width */}}
       <a href="{{ ref . "/feeds/all" }}" class="topic-card feed-card feed-card--full">
         {{ partial "topic-icon.html" (dict "name" "tech" "class" "topic-card-icon") }}
@@ -35,7 +45,7 @@
 {{ if .Pages }}
 <section class="content-list">
   <div class="container">
-    {{ range .Pages.ByWeight }}
+    {{ range where .Pages.ByWeight "Params.hide_in_list" "ne" true }}
       <article class="regulation-listing">
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <p>{{ .Description }}</p>
