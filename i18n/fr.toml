@@ -350,7 +350,7 @@ other = "Dernière vérification"
 other = "communal"
 
 [cantons_mock_notice]
-other = "En cours : ce tableau est susceptible d'être mis à jour et sert d'aperçu. Si un canton ne figure pas dans la liste, c'est que nous n'avons trouvé en ligne aucune stratégie d'IA publiée le concernant."
+other = "En cours : ce tableau est susceptible d'être mis à jour et sert d'aperçu. Une case hachurée en gris indique qu'aucune documentation relative à une stratégie d'IA n'a pu être trouvée en ligne pour ce canton."
 
 [cantons_col_articles]
 other = "Articles liés"

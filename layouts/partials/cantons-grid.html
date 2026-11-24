@@ -1,0 +1,19 @@
+{{- /* Canton tiles + legend. Params: tiles (from cantons-tiles-data.html), href (link prefix, "" for same page).
+       Cantons without documents are shown as non-clickable tiles. */ -}}
+{{- $href := .href -}}
+<ul class="cantons-tiles">
+  {{ range .tiles }}
+  {{ $label := cond (or (eq .status "none") (eq .status "tbd")) (cond (eq .status "none") (i18n "cantons_none_found") (i18n "cantons_tbd")) (i18n (printf "cantons_type_%s" .status)) }}
+  {{ if not .found }}
+  <li><span class="cantons-tile cantons-tile--{{ .status }} cantons-tile--disabled" aria-disabled="true" title="{{ .name }}: {{ $label }}"><span class="cantons-tile-code">{{ .code }}</span><span class="visually-hidden"> {{ .name }}: {{ $label }}</span></span></li>
+  {{ else }}
+  <li><a class="cantons-tile cantons-tile--{{ .status }}" href="{{ $href }}#canton-{{ .code }}" title="{{ .name }}: {{ $label }}"><span class="cantons-tile-code">{{ .code }}</span><span class="visually-hidden"> {{ .name }}: {{ $label }}</span></a></li>
+  {{ end }}
+  {{ end }}
+</ul>
+<ul class="cantons-legend">
+  {{ range $s := slice "strategy" "directive" "digital" "guidance" "overview" "report" "register" "none" "tbd" }}
+  {{ $n := len (where $.tiles "status" $s) }}
+  {{ if gt $n 0 }}<li><span class="cantons-swatch cantons-tile--{{ $s }}" aria-hidden="true"></span>{{ if eq $s "none" }}{{ i18n "cantons_none_found" }}{{ else if eq $s "tbd" }}{{ i18n "cantons_tbd" }}{{ else }}{{ i18n (printf "cantons_type_%s" $s) }}{{ end }} ({{ $n }})</li>{{ end }}
+  {{ end }}
+</ul>

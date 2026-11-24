@@ -2025,6 +2025,7 @@ a.insight-row:hover .insight-title { color: var(--color-accent); }
 .cantons { padding: var(--space-lg) 0 var(--space-xl); }
 .cantons-mock { background: var(--color-accent-tint); border-left: 4px solid var(--color-accent); padding: var(--space-sm) var(--space-md); margin-bottom: var(--space-md); font-family: var(--font-ui); font-size: 0.9rem; }
 .cantons-table-wrap { overflow-x: auto; }
+.cantons-overview { max-width: 760px; margin-bottom: var(--space-lg); }
 .cantons-table { width: 100%; border-collapse: collapse; font-family: var(--font-ui); font-size: 0.9rem; }
 .cantons-table th, .cantons-table td { text-align: left; padding: 0.7rem 0.8rem; border-bottom: 1px solid var(--color-border); vertical-align: top; }
 .cantons-table thead th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-light); border-bottom: 2px solid var(--color-border); }
@@ -2077,11 +2078,16 @@ a.cantons-tile:hover, a.cantons-tile:focus-visible { outline: 2px solid var(--co
 .cantons-tile--strategy { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-white); }
 .cantons-tile--directive { background: var(--color-dark); border-color: var(--color-dark); color: var(--color-white); }
 .cantons-tile--digital { background: var(--color-accent-soft); border-color: var(--color-accent-soft); color: var(--color-dark); }
-.cantons-tile--guidance, .cantons-tile--overview, .cantons-tile--report, .cantons-tile--register { background: var(--color-accent-tint); color: var(--color-text); }
-.cantons-tile--none, .cantons-tile--tbd { background: transparent; border-style: dashed; }
+.cantons-tile--guidance, .cantons-tile--overview, .cantons-tile--report, .cantons-tile--register { background: #e6d6c6; border-color: #cdb6a1; color: var(--color-text); }
+.cantons-tile--none { background: repeating-linear-gradient(45deg, #e8e8e8 0 3px, #f8f8f8 3px 7px); border-color: #d4d4d4; color: #666666; }
+.cantons-swatch.cantons-tile--none { background: repeating-linear-gradient(45deg, #c4c4c4 0 1.5px, #f8f8f8 1.5px 3.5px); }
+.cantons-tile--tbd { background: transparent; border-style: dashed; }
 .cantons-legend { list-style: none; margin: var(--space-sm) 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; font-family: var(--font-ui); font-size: 0.8rem; color: var(--color-text-secondary); }
 .cantons-swatch { display: inline-block; width: 0.8rem; height: 0.8rem; border-radius: 3px; margin-right: 0.35rem; vertical-align: -1px; border: 1px solid var(--color-border); }
 .cantons-table tr:target { background: var(--color-accent-tint); }
+.cantons-table tr[id] { scroll-margin-top: 8rem; }
+.cantons-tile--disabled { cursor: not-allowed; }
+@media (min-width: 801px) { .cantons-overview .cantons-tiles { grid-template-columns: repeat(13, 1fr); } }
 @media (max-width: 800px) { .cantons-band .container { grid-template-columns: 1fr; gap: var(--space-md); } }
 
 /* Regulation News portal: tighter spacing around the cantons band */

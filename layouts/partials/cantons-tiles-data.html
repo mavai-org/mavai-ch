@@ -1,0 +1,14 @@
+{{- /* Returns one tile per canton, coloured by its lead document type, sorted alphabetically by canton code. */ -}}
+{{- $ranks := dict "strategy" 1 "directive" 2 "digital" 3 "guidance" 4 "overview" 5 "report" 6 "register" 7 -}}
+{{- $tiles := slice -}}
+{{- range site.Data.cantons -}}
+  {{- $best := "" -}}{{- $bestRank := 99 -}}
+  {{- range .documents -}}
+    {{- $rk := index $ranks .type -}}
+    {{- if lt $rk $bestRank -}}{{- $bestRank = $rk -}}{{- $best = .type -}}{{- end -}}
+  {{- end -}}
+  {{- $found := ne $best "" -}}
+  {{- if not $found -}}{{- if .researched -}}{{- $best = "none" -}}{{- else -}}{{- $best = "tbd" -}}{{- end -}}{{- end -}}
+  {{- $tiles = $tiles | append (dict "code" .code "name" (index .name site.Language.Lang) "status" $best "found" $found) -}}
+{{- end -}}
+{{- return (sort $tiles "code") -}}
