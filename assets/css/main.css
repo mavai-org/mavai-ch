@@ -2083,7 +2083,9 @@ a.cantons-tile:hover, a.cantons-tile:focus-visible { outline: 2px solid var(--co
 .cantons-legend { list-style: none; margin: var(--space-sm) 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; font-family: var(--font-ui); font-size: 0.8rem; color: var(--color-text-secondary); }
 .cantons-swatch { display: inline-block; width: 0.8rem; height: 0.8rem; border-radius: 3px; margin-right: 0.35rem; vertical-align: -1px; border: 1px solid var(--color-border); }
 .cantons-table tr:target { background: var(--color-accent-tint); }
-.cantons-tile--disabled { background: #e3e3e3; border: 1px solid #cfcfcf; color: #616161; cursor: not-allowed; }
+.cantons-table tr[id] { scroll-margin-top: 8rem; }
+.cantons-tile--disabled { background: #c9c9c9; border: 1px solid #b5b5b5; color: #3f3f3f; cursor: not-allowed; }
+@media (min-width: 801px) { .cantons-overview .cantons-tiles { grid-template-columns: repeat(13, 1fr); } }
 @media (max-width: 800px) { .cantons-band .container { grid-template-columns: 1fr; gap: var(--space-md); } }
 
 /* Regulation News portal: tighter spacing around the cantons band */
