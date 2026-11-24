@@ -350,7 +350,7 @@ other = "Last checked"
 other = "municipal"
 
 [cantons_mock_notice]
-other = "Work in progress: this table is subject to updates and serves as an overview. A grey tile indicates that no documentation concerning AI strategy could be found online for that canton."
+other = "Work in progress: this table is subject to updates and serves as an overview. A tile with grey stripes indicates that no documentation concerning AI strategy could be found online for that canton."
 
 [cantons_col_articles]
 other = "Related articles"

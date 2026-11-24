@@ -6,7 +6,7 @@
   <div class="container">
 
     <div class="cantons-overview">
-      {{ partial "cantons-grid.html" (dict "tiles" (partial "cantons-tiles-data.html" .) "href" "" "greyEmpty" true) }}
+      {{ partial "cantons-grid.html" (dict "tiles" (partial "cantons-tiles-data.html" .) "href" "") }}
     </div>
 
     {{ if .Params.mock }}

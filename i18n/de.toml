@@ -350,7 +350,7 @@ other = "Zuletzt geprüft"
 other = "kommunal"
 
 [cantons_mock_notice]
-other = "In Arbeit: Diese Tabelle wird laufend aktualisiert und dient als Übersicht. Ein graues Feld bedeutet, dass für diesen Kanton online keine Dokumentation zur KI-Strategie gefunden werden konnte."
+other = "In Arbeit: Diese Tabelle wird laufend aktualisiert und dient als Übersicht. Ein grau schraffiertes Feld bedeutet, dass für diesen Kanton online keine Dokumentation zur KI-Strategie gefunden werden konnte."
 
 [cantons_col_articles]
 other = "Verwandte Artikel"
