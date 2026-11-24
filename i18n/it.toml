@@ -350,7 +350,7 @@ other = "Ultima verifica"
 other = "comunale"
 
 [cantons_mock_notice]
-other = "In corso: questa tabella è soggetta ad aggiornamenti e funge da panoramica. I cantoni senza voce sono stati esaminati, ma non è stata trovata alcuna strategia."
+other = "In corso: questa tabella è soggetta ad aggiornamenti e funge da panoramica. Se un cantone non figura nell'elenco, significa che non abbiamo trovato online alcuna strategia di IA pubblicata che lo riguardi."
 
 [cantons_col_articles]
 other = "Articoli correlati"
