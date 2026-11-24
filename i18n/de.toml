@@ -350,7 +350,7 @@ other = "Zuletzt geprüft"
 other = "kommunal"
 
 [cantons_mock_notice]
-other = "In Arbeit: Diese Tabelle wird laufend aktualisiert und dient als Übersicht. Kantone ohne Eintrag wurden recherchiert, es wurde jedoch keine Strategie gefunden."
+other = "In Arbeit: Diese Tabelle wird laufend aktualisiert und dient als Übersicht. Fehlt ein Kanton in der Liste, konnten wir online keine veröffentlichte KI-Strategie für diesen Kanton finden."
 
 [cantons_col_articles]
 other = "Verwandte Artikel"
