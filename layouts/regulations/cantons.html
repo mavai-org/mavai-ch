@@ -5,6 +5,10 @@
 <section class="cantons">
   <div class="container">
 
+    <div class="cantons-overview">
+      {{ partial "cantons-grid.html" (dict "tiles" (partial "cantons-tiles-data.html" .) "href" "" "greyEmpty" true) }}
+    </div>
+
     {{ if .Params.mock }}
     <p class="cantons-mock" role="note">{{ i18n "cantons_mock_notice" }}</p>
     {{ end }}
@@ -20,7 +24,7 @@
           </tr>
         </thead>
         <tbody>
-          {{ range site.Data.cantons }}
+          {{ range sort site.Data.cantons "code" }}
             {{ template "cantons-row" (dict "row" . "name" (index .name $lang) "code" .code "sub" false) }}
             {{ range .municipal }}
               {{ template "cantons-row" (dict "row" . "name" .name "code" "" "sub" true) }}
